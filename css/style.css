@@ -20,7 +20,7 @@
   --amber-bright: #f4c874;
   --amber-ink: #8a5a0a; /* AA-compliant on --paper */
 
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-display: "EB Garamond", Georgia, "Times New Roman", serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --container: 1180px;
@@ -464,18 +464,20 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
 
 .work-card-body { padding: 1.1rem 1.2rem 1.3rem; }
 .work-card-body h3 {
-  font-size: 1.02rem;
+  font-size: 1.2rem;
   margin-bottom: 0.4rem;
   color: var(--navy-900);
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   gap: 0.4em;
+}
+@media (max-width: 600px) {
+  .work-card-body h3 { font-size: 1.05rem; }
 }
 .work-card-body .ext-icon {
   flex-shrink: 0;
-  margin-top: 0.3em;
-  width: 0.85em;
-  height: 0.85em;
+  width: 0.7em;
+  height: 0.7em;
   opacity: 0.5;
 }
 .work-card-body p {
