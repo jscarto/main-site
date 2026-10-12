@@ -129,15 +129,8 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
   color: var(--amber-ink);
   margin-bottom: 0.85rem;
 }
-.kicker::before {
-  content: "";
-  width: 1.6rem;
-  height: 2px;
-  background: var(--amber-ink);
-}
 
 .kicker-light { color: var(--amber-bright); }
-.kicker-light::before { background: var(--amber-bright); }
 .kicker-center { justify-content: center; }
 
 .section-head {
@@ -330,14 +323,6 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
   margin-bottom: 1.1rem;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9), 0 14px 56px rgba(0, 0, 0, 0.6);
 }
-.hero-eyebrow::before {
-  content: "";
-  width: 1.8rem;
-  height: 2px;
-  background: var(--amber-bright);
-  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.7);
-}
-
 .hero h1 {
   color: var(--white);
   font-size: clamp(2.5rem, 6vw, 4.6rem);
@@ -464,6 +449,7 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
 
 .work-card-body { padding: 1.1rem 1.2rem 1.3rem; }
 .work-card-body h3 {
+  font-family: "Carlito", Calibri, "Segoe UI", sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.4rem;
   color: var(--navy-900);
@@ -494,7 +480,6 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
 /* ---------- As seen in ---------- */
 .seen-in { background: var(--paper-dim); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .seen-in .kicker { display: block; text-align: center; margin: 0 0 1.75rem; }
-.seen-in .kicker::before { display: none; }
 .logo-row {
   display: flex;
   flex-wrap: wrap;
@@ -805,12 +790,13 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
 .post-card-body h2 { font-size: 1.35rem; margin-bottom: 0.35rem; }
 .post-card-body h2 a { color: inherit; text-decoration: none; }
 .post-date {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.4em;
   font-size: 0.82rem;
+  line-height: 1;
   color: var(--muted);
-  margin-bottom: 0.6rem;
+  margin: -0.15em 0 0.6rem;
 }
 .post-card-summary { margin-bottom: 0.9rem; color: var(--ink-soft); }
 
