@@ -27,8 +27,8 @@
     <meta name="twitter:title" content="Tutorial: Turning on The Lights — Joshua Stevens">
     <meta name="twitter:description" content="I am a visual communicator with a background in geovisual analytics, data science, and cartography. I combine journalism and design to communicate about our planet.">
     <meta name="twitter:image" content="https://www.joshuastevens.net/images/earth_vir_th.jpg">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -145,10 +145,12 @@
 <p>Go ahead and try it on the DNB data file. You will see a lot of information.</p>
 <p>We want to get the full path to the DNB data for mapping. The variable within this file that we&rsquo;ll be using is called <strong>Radiance</strong>. (The units are watts per square centimeter per steradian,  W cm<sup>-2</sup> sr<sup>-1</sup>.)</p>
 <p>The full HDF path to the Radiance variable can be retried via:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gdalinfo NPP_VDNES_L1.A2019085.0654.001.2019085123230.hdf | grep Radiance
-</span></span></code></pre></div><p>In the output, one line includes <code>NAME=</code>, followed by the full path to the variable. For the file I&rsquo;ve downloaded, this is:</p>
-<pre tabindex="0"><code>HDF4_EOS:EOS_SWATH:&#34;NPP_VDNES_L1.A2019085.0654.001.2019085123230.hdf&#34;:VIIRS_EV_DNB_SDR:Radiance
-</code></pre><p>Note that this is just the filename in quotations, with <code>HDF4_EOS:EOS_SWATH:</code> prepended to the front, and <code>:VIIRS_EV_DNB_SDR:Radiance</code> appended to the end. These tell GDAL which kind of file it is working with (HDF has many varieties), the name of the file, and where to find the data within the file.</p>
+<pre><code class="language-sh">gdalinfo NPP_VDNES_L1.A2019085.0654.001.2019085123230.hdf | grep Radiance
+</code></pre>
+<p>In the output, one line includes <code>NAME=</code>, followed by the full path to the variable. For the file I&rsquo;ve downloaded, this is:</p>
+<pre><code>HDF4_EOS:EOS_SWATH:&quot;NPP_VDNES_L1.A2019085.0654.001.2019085123230.hdf&quot;:VIIRS_EV_DNB_SDR:Radiance
+</code></pre>
+<p>Note that this is just the filename in quotations, with <code>HDF4_EOS:EOS_SWATH:</code> prepended to the front, and <code>:VIIRS_EV_DNB_SDR:Radiance</code> appended to the end. These tell GDAL which kind of file it is working with (HDF has many varieties), the name of the file, and where to find the data within the file.</p>
 <h3 id="initial-geolocation-and-reprojection">Initial Geolocation and Reprojection</h3>
 <p>The first thing to do is reproject the data and output the variable of interest to a simpler GeoTIFF.</p>
 <p>Using the full path to the <strong>Radiance</strong> variable, we can now use <code>gdalwarp</code> to:</p>
@@ -160,13 +162,14 @@
 <li>Output a GeoTIFF</li>
 </ol>
 <p>This all happens in the command below, which reprojects the data from WGS84 to <a href="https://epsg.io/5070">EPSG:5070</a> (CONUS Albers Equal Area).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gdalwarp -s_srs WGS84 -t_srs EPSG:5070<span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>    -tr <span style="color:#ae81ff">750</span> 750<span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>    -r bilinear<span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>    -geoloc<span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;HDF4_EOS:EOS_SWATH:&#34;NPP_VDNES_L1.A2019085.0654.001.2019085123230.hdf&#34;:VIIRS_EV_DNB_SDR:Radiance&#39;</span><span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>    greatlakes_vir_dnb.tif
-</span></span></code></pre></div><div class="alert alert-warning" role="alert">
+<pre><code class="language-sh">gdalwarp -s_srs WGS84 -t_srs EPSG:5070\
+    -tr 750 750\
+    -r bilinear\
+    -geoloc\
+    'HDF4_EOS:EOS_SWATH:&quot;NPP_VDNES_L1.A2019085.0654.001.2019085123230.hdf&quot;:VIIRS_EV_DNB_SDR:Radiance'\
+    greatlakes_vir_dnb.tif
+</code></pre>
+<div class="alert alert-warning" role="alert">
     <strong>Note:</strong> <strong>gdalwarp</strong> is used in place of the more obvious <strong>gdal_translate</strong>. This is because the <em>-geoloc</em> option is vital. Without it, the geolocation arrays would not be properly read, and the tiff would not be correctly georeferenced.
 </div>
 <p>The resulting GeoTIFF (<code>greatlakes_vir_dnb.tif</code>) would work well in almost any GIS software, though it will need to be &ldquo;stretched&rdquo; between some minimum and maximum value. But if you tried to open it in Photoshop or other image programs, it will probably look like a whole lot of nothing.</p>
@@ -184,10 +187,11 @@
 <li>Resize the image to 800px wide (for display online) using bilinear resampling</li>
 </ol>
 <p>The command below does that:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>gdal_translate -ot UInt16 -scale <span style="color:#ae81ff">0</span> 8e-9 <span style="color:#ae81ff">0</span> 65536<span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>    -outsize <span style="color:#ae81ff">800</span> <span style="color:#ae81ff">0</span> -r bilinear<span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span>    greatlakes_vir_dnb.tif greatlakes_vir_dnb_int.tif
-</span></span></code></pre></div><p>Excellent! We now have a visible image of the data.</p>
+<pre><code class="language-sh">gdal_translate -ot UInt16 -scale 0 8e-9 0 65536\
+    -outsize 800 0 -r bilinear\
+    greatlakes_vir_dnb.tif greatlakes_vir_dnb_int.tif
+</code></pre>
+<p>Excellent! We now have a visible image of the data.</p>
 <div class="fullImage">
     <img src="/images/dnb_tutorial_image.jpg" />
     <p>
@@ -247,7 +251,7 @@ City lights around the Great Lakes shine brightly under the relatively clear ski
   </div>
 </div>
 
-<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.highlightAll();</script>
 
 
 </main>

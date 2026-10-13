@@ -894,11 +894,29 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
   font-style: italic;
   color: var(--ink-soft);
 }
+.article code, .article pre {
+  font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+.article code { font-size: 0.88em; }
 .article pre {
   border-radius: 8px;
   padding: 1.1rem;
-  overflow-x: auto;
+  background: #011627; /* matches the highlight.js "night-owl" theme */
+  font-size: 0.8rem;
+  line-height: 1.65;
+  overflow-x: visible;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
   box-shadow: var(--shadow-sm);
+}
+.article pre code, .article pre code.hljs {
+  display: block;
+  padding: 0;
+  background: transparent;
+  font-size: inherit;
+  overflow-x: visible;
+  white-space: inherit;
+  overflow-wrap: inherit;
 }
 .article img { border-radius: 8px; }
 .article .fullImage, .article .leftImage, .article .rightImage {

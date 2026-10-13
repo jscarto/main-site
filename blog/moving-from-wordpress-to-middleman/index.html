@@ -27,8 +27,8 @@
     <meta name="twitter:title" content="Moving from WordPress to Middleman — Joshua Stevens">
     <meta name="twitter:description" content="I am a visual communicator with a background in geovisual analytics, data science, and cartography. I combine journalism and design to communicate about our planet.">
     <meta name="twitter:image" content="https://www.joshuastevens.net/images/social-card.jpg">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/ocean.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -94,13 +94,15 @@
 <h2 id="some-tips-on-middleman--github-pages">Some tips on Middleman + Github Pages</h2>
 <p>If you&rsquo;re thinking of using Middleman with Github Pages, there are two ways to make it really easy. The first is to use the <a href="https://github.com/neo/middleman-gh-pages">middleman-gh-pages</a> extension. This adds rake tasks to deploy your site upon build.</p>
 <p>The second method is to simply setup your <code>config.rb</code> file to use your Github Pages repo as the build destination by adding:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">### Change build directory to Github Pages repo</span>
-</span></span><span style="display:flex;"><span>set <span style="color:#e6db74">:build_dir</span>, <span style="color:#e6db74">&#39;../YOUR_GH_NAME.github.io&#39;</span>
-</span></span></code></pre></div><p>This is the approach I use. It is much cleaner - no additional rake tasks, overrides, or issues to worry about. In addition, it uses completely separate repositories for the development and production versions of your site. This enables you to test things out, revert changes, and ensure everything is working in a test environment before pushing the changes live, <em>even after a build</em>.</p>
+<pre><code class="language-ruby">### Change build directory to Github Pages repo
+set :build_dir, '../YOUR_GH_NAME.github.io'
+</code></pre>
+<p>This is the approach I use. It is much cleaner - no additional rake tasks, overrides, or issues to worry about. In addition, it uses completely separate repositories for the development and production versions of your site. This enables you to test things out, revert changes, and ensure everything is working in a test environment before pushing the changes live, <em>even after a build</em>.</p>
 <p>Lastly, if you plan to use a custom 404 page, ensure your <code>404.html</code> file is left as-is during the build operation. In <code>config.rb</code> add:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">### Exlude 404.html from being placed in a directory</span>
-</span></span><span style="display:flex;"><span>page <span style="color:#e6db74">&#34;/404.html&#34;</span>, <span style="color:#e6db74">:directory_index</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>
-</span></span></code></pre></div><p>That&rsquo;s it! Just run <code>$ bundle exec middleman build</code> and commit the changes if you&rsquo;re happy with how things work.</p>
+<pre><code class="language-ruby">### Exlude 404.html from being placed in a directory
+page &quot;/404.html&quot;, :directory_index =&gt; false
+</code></pre>
+<p>That&rsquo;s it! Just run <code>$ bundle exec middleman build</code> and commit the changes if you&rsquo;re happy with how things work.</p>
 <h2 id="update-was-developing-a-static-site-worth-it">Update: Was developing a static site worth it?</h2>
 <p>The big question comes down to whether or not it was worth the effort to redevelop a new site. Despite already being happier with the more minimal and personal design, I wanted to compare page load times between the old and new sites. Here are the average page load times for one week before the switch, and one week after:</p>
 <div class="fullImage">
@@ -132,7 +134,7 @@
   </div>
 </div>
 
-<script>hljs.initHighlightingOnLoad();</script>
+<script>hljs.highlightAll();</script>
 
 
 </main>
