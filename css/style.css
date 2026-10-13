@@ -864,8 +864,8 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
   padding-block: clamp(2.5rem, 5vw, 3.5rem);
   font-size: 1.08rem;
 }
-.article h2, .article h3, .article h4, .article h5, .article h6 { margin-top: 1.9em; }
-.article h2 { font-size: clamp(1.65rem, 3.2vw, 1.95rem); margin-top: 2.2em; }
+.article h2, .article h3, .article h4, .article h5, .article h6 { margin-top: 0.9em; }
+.article h2 { font-size: clamp(1.65rem, 3.2vw, 1.95rem); margin-top: 0.8em; }
 .article h3 { font-size: clamp(1.35rem, 2.6vw, 1.55rem); }
 .article h4 { font-size: 1.2rem; }
 .article h5, .article h6 { font-size: 1.08rem; }
