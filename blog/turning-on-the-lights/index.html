@@ -84,7 +84,7 @@
 <p>When it comes to DNB, VIIRS is poetically sensitive. So much so that the instrument is able to <a href="https://www.pnas.org/content/109/39/15706">detect startlight from our galaxy</a> as it scatters across Earth&rsquo;s atmosphere. (I am imagining here scenes described in <em>The Silmarillion</em>, as Tolkien&rsquo;s elves stare longingly skyward at the faint glow of many stars.)</p>
 <p>VIIRS really is incredible. Let&rsquo;s take a look at the process of <strong>acquiring DNB data</strong> and <strong>producing imagery</strong>.</p>
 <p>This tutorial requires <a href="https://www.gdal.org/">GDAL</a> and some basic familiarity with the command line.</p>
-<h4 id="acquiring-data">Acquiring Data</h4>
+<h2 id="acquiring-data">Acquiring Data</h2>
 <div class="alert alert-purp" role="alert">
   You will need a free <a href="https://earthdata.nasa.gov/" class="alert-link">NASA Earthdata</a> account to find and download the data used in this tutorial.
 <p>To create one, visit: <a href="https://urs.earthdata.nasa.go" class="alert-link"><a href="https://urs.earthdata.nasa.gov">https://urs.earthdata.nasa.gov</a></a></p>
@@ -138,7 +138,7 @@
 <p>With the data handy, it is time to process it into imagery.</p>
 </li>
 </ol>
-<h4 id="producing-imagery">Producing Imagery</h4>
+<h2 id="producing-imagery">Producing Imagery</h2>
 <p>Being an HDF (Hierarchical Data Format), the DNB data includes multiple variables, arranged in a well-defined structure.</p>
 <p>GDAL makes it easy to look at this structure and find the variable(s) from which imagery can be produced.</p>
 <p>For instance, if you had a file named MY_FILE, the command <code>gdalinfo MY_FILE</code> will output information about that file, including its data and subdatasets, dimensions, spatial projection, and other metadata.</p>
@@ -149,7 +149,7 @@
 </span></span></code></pre></div><p>In the output, one line includes <code>NAME=</code>, followed by the full path to the variable. For the file I&rsquo;ve downloaded, this is:</p>
 <pre tabindex="0"><code>HDF4_EOS:EOS_SWATH:&#34;NPP_VDNES_L1.A2019085.0654.001.2019085123230.hdf&#34;:VIIRS_EV_DNB_SDR:Radiance
 </code></pre><p>Note that this is just the filename in quotations, with <code>HDF4_EOS:EOS_SWATH:</code> prepended to the front, and <code>:VIIRS_EV_DNB_SDR:Radiance</code> appended to the end. These tell GDAL which kind of file it is working with (HDF has many varieties), the name of the file, and where to find the data within the file.</p>
-<h5 id="initial-geolocation-and-reprojection">Initial Geolocation and Reprojection</h5>
+<h3 id="initial-geolocation-and-reprojection">Initial Geolocation and Reprojection</h3>
 <p>The first thing to do is reproject the data and output the variable of interest to a simpler GeoTIFF.</p>
 <p>Using the full path to the <strong>Radiance</strong> variable, we can now use <code>gdalwarp</code> to:</p>
 <ol>
@@ -172,7 +172,7 @@
 <p>The resulting GeoTIFF (<code>greatlakes_vir_dnb.tif</code>) would work well in almost any GIS software, though it will need to be &ldquo;stretched&rdquo; between some minimum and maximum value. But if you tried to open it in Photoshop or other image programs, it will probably look like a whole lot of nothing.</p>
 <p>This is because the units for DNB Radiance are incredibly small, and the data are 32-bit floating point numbers. Most photo software is not designed for this precision.</p>
 <p>We can solve that by converting the data to 16-bit integers, scaled to a smaller range of values.</p>
-<h5 id="scaling-the-data">Scaling the data</h5>
+<h3 id="scaling-the-data">Scaling the data</h3>
 <p>Rather than asking photo software or web browsers to display the full 32-bit range, which would result in an almost entirely black image, we can scale a small portion of the radiance&ndash;where visible data actually exists&ndash;across the smaller integer range. This &ldquo;stretching&rdquo; will make the data immediately visible.</p>
 <div class="fullImage">
     <img src="/images/dnb_tutorial_data_range.png" />
@@ -198,14 +198,14 @@ City lights around the Great Lakes shine brightly under the relatively clear ski
 <p>One might even apply a logarithmic or square root stretch, which can help emphasize dimmer lights without overblowing clouds or super bright areas. I used a square root stretch when creating the <a href="https://earthobservatory.nasa.gov/images/90008/night-light-maps-open-up-new-applications">2016 and 2012 Black Marble imagery</a>.</p>
 <p>Some outlets <a href="https://go.nasa.gov/2uACmA1">automate this processing with a consistent stretch</a>. This works well for getting an overall sense of the data, but is not optimal. An image of city lights will need to be stretched differently from one that emphasizes an aurora, for instance.</p>
 <p>But you are now equipped to start making these decisions to process the data in a way that fits your needs and end results!</p>
-<h4 id="notes-and-caveats">Notes and Caveats</h4>
+<h2 id="notes-and-caveats">Notes and Caveats</h2>
 <p>Nightlights imagery has been particularly desirable for newsrooms. With countries experiencing power outages, due to manmade or natural causes, showing a before-and-after comparison is appealing.</p>
 <p>Pump the brakes! Recall that VIIRS DNB is mind-blowingly sensitive. The overall brightness or dimness of an area is not without influence from moonlight (and the phase of the moon), the albedo of the landscape—including snow or other seasonal variations, airglow, and even distant stars! It is easy to be misled. A thin veil of clouds can make dim city lights appear larger and brighter, as the light is spread around more diffusely. All of this needs to be accounted for to ensure the changes you see are actually changes in the lighting conditions of interest, and not changes in the environmental conditions.</p>
 <p>Techniques that normalize the data for these factors exist. Most commonly this is through a Bidirectional Reflectance Distribution Function (BRDF). For VIIRS DNB data, this is not straightforward and requires the collection of daytime DNB imagery to determine parameters used in the analysis, among other considerations.</p>
 <p>NASA scientists are producing <a href="https://www.sciencedirect.com/science/article/pii/S003442571830110X">a version of VIIRS DNB data with atmospheric and BRDF corrections</a>. For analytical purposes, this type of data should be preferred. In any case, it is best to speak to a scientist before drawing conclusions from changes observed in DNB imagery.</p>
 <p>This is primarily a concern for comparative analysis. For viewing features at a single point in time (auroras, wildfires, sea ice, and so on), the processing shown here will get you off to a great start.</p>
 <p>So turn on the lights and start making some nighttime images! If you do produce some imagery I would love to see it.</p>
-<h4 id="links-and-further-reading">Links and Further Reading</h4>
+<h2 id="links-and-further-reading">Links and Further Reading</h2>
 <ul>
 <li>
 <p><a href="https://earthobservatory.nasa.gov/features/NightLights">Earth at Night</a> imagery from NASA Earth Observatory</p>

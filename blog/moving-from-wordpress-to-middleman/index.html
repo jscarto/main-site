@@ -91,7 +91,7 @@
 </ul>
 <p>I&rsquo;ve wanted to do this before, but have been a bit hesitant. My post on <a href="http://www.joshuastevens.net/visualization/squatch-watch-92-years-of-bigfoot-sightings-in-us-and-canada/">mapping sasquatch sightings</a> generated a ton of discussion that I didn&rsquo;t want to lose. Fortunately I could import all the comments to <a href="https://disqus.com/">Disqus</a>.</p>
 <p>With that all done, the new site is up and chugging along. Stay tuned for more content, and if you notice anything wonky please let me know!</p>
-<h3 id="some-tips-on-middleman--github-pages">Some tips on Middleman + Github Pages</h3>
+<h2 id="some-tips-on-middleman--github-pages">Some tips on Middleman + Github Pages</h2>
 <p>If you&rsquo;re thinking of using Middleman with Github Pages, there are two ways to make it really easy. The first is to use the <a href="https://github.com/neo/middleman-gh-pages">middleman-gh-pages</a> extension. This adds rake tasks to deploy your site upon build.</p>
 <p>The second method is to simply setup your <code>config.rb</code> file to use your Github Pages repo as the build destination by adding:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">### Change build directory to Github Pages repo</span>
@@ -101,7 +101,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e">### Exlude 404.html from being placed in a directory</span>
 </span></span><span style="display:flex;"><span>page <span style="color:#e6db74">&#34;/404.html&#34;</span>, <span style="color:#e6db74">:directory_index</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>
 </span></span></code></pre></div><p>That&rsquo;s it! Just run <code>$ bundle exec middleman build</code> and commit the changes if you&rsquo;re happy with how things work.</p>
-<h3 id="update-was-developing-a-static-site-worth-it">Update: Was developing a static site worth it?</h3>
+<h2 id="update-was-developing-a-static-site-worth-it">Update: Was developing a static site worth it?</h2>
 <p>The big question comes down to whether or not it was worth the effort to redevelop a new site. Despite already being happier with the more minimal and personal design, I wanted to compare page load times between the old and new sites. Here are the average page load times for one week before the switch, and one week after:</p>
 <div class="fullImage">
 <img src="/images/siteSpeed.png" alt="WordPress is slower than mollasses in January" />

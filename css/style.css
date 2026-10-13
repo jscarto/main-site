@@ -864,7 +864,27 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
   padding-block: clamp(2.5rem, 5vw, 3.5rem);
   font-size: 1.08rem;
 }
-.article h2, .article h3, .article h4 { margin-top: 1.9em; }
+.article h2, .article h3, .article h4, .article h5, .article h6 { margin-top: 1.9em; }
+.article h2 { font-size: clamp(1.65rem, 3.2vw, 1.95rem); margin-top: 2.2em; }
+.article h3 { font-size: clamp(1.35rem, 2.6vw, 1.55rem); }
+.article h4 { font-size: 1.2rem; }
+.article h5, .article h6 { font-size: 1.08rem; }
+.badge {
+  display: inline-block;
+  vertical-align: 0.22em;
+  margin-inline-end: 0.2em;
+  padding: 0.22em 0.65em;
+  border: 1px solid rgba(138, 90, 10, 0.28);
+  border-radius: 999px;
+  background: rgba(231, 179, 84, 0.16);
+  color: var(--amber-ink);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
 .article p, .article li { line-height: 1.8; }
 .article a { font-weight: 600; text-decoration: underline; text-underline-offset: 0.15em; }
 .article blockquote {
