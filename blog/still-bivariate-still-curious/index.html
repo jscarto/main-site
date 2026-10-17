@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Still Bivariate, Still Curious — Joshua Stevens
+    </title>
+    <meta name="description" content="I am a visual communicator with a background in geovisual analytics, data science, and cartography. I combine journalism and design to communicate about our planet.">
+    <meta name="theme-color" content="#0b1220">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Carlito:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <meta property="og:title" content="Still Bivariate, Still Curious — Joshua Stevens">
+    <meta property="og:description" content="I am a visual communicator with a background in geovisual analytics, data science, and cartography. I combine journalism and design to communicate about our planet.">
+    <meta property="og:image" content="https://www.joshuastevens.net/images/still-bivariate-th.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jscarto">
+    <meta name="twitter:title" content="Still Bivariate, Still Curious — Joshua Stevens">
+    <meta name="twitter:description" content="I am a visual communicator with a background in geovisual analytics, data science, and cartography. I combine journalism and design to communicate about our planet.">
+    <meta name="twitter:image" content="https://www.joshuastevens.net/images/still-bivariate-th.jpg">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="/">
+          <img class="brand-mark" src="/images/logo-mark.png" alt="" width="30" height="30">
+          Joshua Stevens
+        </a>
+
+        <nav aria-label="Primary">
+          <ul class="nav-list" id="primary-nav">
+            <li><a href="/" >Home</a></li>
+            <li><a href="/portfolio/" >Work</a></li>
+            <li><a href="/blog/" aria-current="page">Blog</a></li>
+            <li><a href="/about/" >About</a></li>
+            <li><a href="/contact/" >Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+          <svg width="20" height="20" viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16"/></svg>
+        </button>
+      </div>
+    </header>
+
+<main id="main">
+  
+
+<div class="article-mast">
+  <div class="article-mast-media" aria-hidden="true">
+    <img src="/images/still-bivariate-hero.jpg" alt="">
+  </div>
+  <div class="article-mast-scrim" aria-hidden="true"></div>
+  <div class="container">
+    <p class="kicker kicker-light kicker-center">Blog</p>
+    <h1>Still Bivariate, Still Curious</h1>
+    <h3>Bivariate choropleth maps, eleven years later.</h3>
+    <p class="post-date">October 17, 2026</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="article">
+
+    <p>Eleven years ago I wrote <a href="/cartography/make-a-bivariate-choropleth-map/">a how-to guide for bivariate choropleth maps</a>, prompted by a quip I overheard at NACIS: <em>&ldquo;I&rsquo;m not bivariate, but I am curious.&rdquo;</em> Back then, making bivariate maps meant blending color schemes in graphics programs, hand-tuning the corner where both variables run high, and stitching two classifications together into a single attribute your software could understand. It worked in any tool, but it took some patience.</p>
+<p>A lot has changed since then.</p>
+<p>Bivariate maps are now built into the tools many of us use every day, with ArcGIS Pro leading the way. Our understanding of color has caught up too, from perceptual color spaces to quick, reliable colorblind simulation. So let&rsquo;s revisit the bivariate choropleth: what still holds up from 2015, what doesn&rsquo;t, and how to go from an idea to a finished map in a fraction of the time.</p>
+<h2 id="where-we-left-off">Where We Left Off</h2>
+<p>If you missed the original post, here&rsquo;s the short version. A bivariate choropleth shows two variables at once by crossing two color schemes into a grid. One variable runs left to right, the other bottom to top, and every enumeration unit gets the color for its <em>combination</em> of the two. Low and low sits in the bottom-left corner. High and high sits in the top right. The interesting stories usually live in the corners.</p>
+<p>Making one in 2015 went something like this:</p>
+<ol>
+<li><strong>Build a legend by hand.</strong> Make a 3-class sequential scheme for each variable, stretch them into squares, rotate one, and overlay them in a graphics program like Photoshop with the <em>darken</em> or <em>multiply</em> blending mode.</li>
+<li><strong>Fix the colors.</strong> Nudge the saturation of the both-high corner so it stands out, and tweak the center cell until it looks like a believable mix.</li>
+<li><strong>Classify each variable separately.</strong> Record the breakpoints, then calculate new fields (<code>A</code>, <code>B</code>, <code>C</code> and <code>1</code>, <code>2</code>, <code>3</code>) with some SQL.</li>
+<li><strong>Combine them.</strong> Concatenate the two fields into a single <code>Bi_Class</code> attribute like <code>B2</code>, because most GIS software could only symbolize one attribute at a time.</li>
+<li><strong>Symbolize the categories.</strong> Eyedropper each of the nine colors from your legend into the matching category. Carefully.</li>
+</ol>
+<p>It worked! And it worked in any software. But it was a lot of steps, and every one of them was a chance to make a mistake.</p>
+<p>The post traveled further than I ever expected. The four color schemes I shared took on a life of their own. They exist now in ArcGIS Pro and became four of the original palettes in <a href="https://cran.r-project.org/package=biscale">biscale</a>, Christopher Prener&rsquo;s R package for bivariate mapping, and I still bump into them in maps, tutorials, and slide decks all over the place. That&rsquo;s been one of the most rewarding parts of having written that post.</p>
+<figure class="fullImage"><img src="/images/climate-anxietyhazard-risk-map.webp"
+			alt="Bivariate map of US counties"><figcaption>
+			<p>A bivariate choropleth map comparing climate anxiety and risk of climate-related natural hazards. (Source: Joshua Stevens, <a href="https://www.maps.com/climate-anxiety-trends-mapped/">Maps.com</a>)</p>
+		</figcaption>
+</figure>
+
+<h2 id="software-caught-up">Software Caught Up</h2>
+<p>The biggest change since 2015 isn&rsquo;t a new technique. It&rsquo;s that the technique is now <em>built in</em>.</p>
+<h3 id="arcgis-pro">ArcGIS Pro</h3>
+<p><a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/bivariate-colors.htm">ArcGIS Pro</a> added <strong>Bivariate Colors</strong> symbology in version 2.6, released in 2020. It handles nearly every step from the list above:</p>
+<ul>
+<li><strong>Pick two fields</strong> (or write an Arcade expression for either one).</li>
+<li><strong>Choose a grid size:</strong> 2×2, 3×3, or 4×4.</li>
+<li><strong>Choose a classification method</strong> for the data. Pro calculates the breaks and assigns every feature to its cell in the grid. No combined <code>Bi_Class</code> field, no SQL, no eyedropper.</li>
+<li><strong>Get a legend for free.</strong> Pro draws the bivariate legend for you, and you can rotate it 45° into a diamond to emphasize the highs or lows of either variable.</li>
+</ul>
+<p>That&rsquo;s the entire 2015 workflow, minus the Photoshop step, in a single symbology pane. It&rsquo;s genuinely hard to overstate how much easier this makes things.</p>
+<p>Even better, Pro doesn&rsquo;t lock you into its built-in schemes. Any bivariate color scheme saved in a style can be used, as long as its grid matches the size you&rsquo;ve chosen. Which brings us to the color part. But we&rsquo;ll get there in a moment.</p>
+<figure class="fullImage"><img src="/images/arcgis-pro-bivariate-symbology.webp"
+			alt="Bivariate map of US counties"><figcaption>
+			<p>Creating a bivariate choropleth map is a breeze in ArcGIS Pro.</p>
+		</figcaption>
+</figure>
+
+<p>Esri&rsquo;s web side has had a version of this for a while, too. ArcGIS Online added the <a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/what-is-a-relationship-map">Relationship mapping style</a> in <a href="https://www.esri.com/arcgis-blog/products/arcgis-online/announcements/whats-new-arcgis-online-june-2018">June 2018</a>, which builds a bivariate choropleth (and its legend) from two attributes in a few clicks.</p>
+<h3 id="everyone-else">Everyone else</h3>
+<p>In R, <a href="https://cran.r-project.org/package=biscale">biscale</a> wraps classification, color scales, and legends into a handful of functions. QGIS has community plugins, such as the <a href="https://github.com/Heed725/Bivariate-Qgis-Plugin">Bivariate QGIS Plugin</a>, that do the classification and coloring for you. And in Python or on the web, a bivariate map is a few lines of code once you have two classified variables and a lookup table of colors.</p>
+<p>The point isn&rsquo;t any one tool. It&rsquo;s that &ldquo;how do I get my software to do this?&rdquo; is no longer the hard part. Now we can spend that energy on the parts that matter: which two variables, how many classes, and which colors.</p>
+<h2 id="color-caught-up-too">Color Caught Up, Too</h2>
+<p>The software isn&rsquo;t the only thing that improved. The way we design color for data visualization has come a long way since we were blending layers in graphics programs.</p>
+<h3 id="perceptual-color-spaces">Perceptual color spaces</h3>
+<p>In 2015, I designed those palettes by hand, nudging hue, saturation, and brightness until each step <em>looked</em> like an even step. That works, sort of. But HSV was never meant to match how we see. A step from yellow to orange and a step from blue to purple can have the same numeric difference and look nothing alike.</p>
+<p>Perceptual color spaces fix that. <a href="https://bottosson.github.io/posts/oklab/">OKLab</a>, published by Björn Ottosson in 2020, has quickly become a favorite because it&rsquo;s simple, fast, and does a great job predicting perceived lightness. Mix two colors in OKLab and the result is both subjectively and objectively a great midpoint. Step through lightness evenly in OKLab and the steps <em>look</em> even&hellip;because they are. That&rsquo;s exactly what a bivariate scheme needs along each axis.</p>
+<h3 id="colorblind-simulation">Colorblind simulation</h3>
+<p>In the original post I suggested picking &ldquo;a neighbor to the complement&rdquo; for your second hue to give the scheme &ldquo;a better shot&rdquo; at being colorblind-safe. That was a rule of thumb, but still required verification in other tools or software.</p>
+<p>Today, it&rsquo;s trivial. Simulation models like <a href="https://www.inf.ufrgs.br/~oliveira/pubs_files/CVD_Simulation/CVD_Simulation.html">Machado, Oliveira, and Fernandes (2009)</a> are physiologically based and built into browsers, design tools, and dev tools. You can see how a palette looks with protanopia or deuteranopia in seconds, and even measure whether neighboring colors stay distinguishable. ArcGIS Pro has simulation models available within two mouse clicks. So check. Don&rsquo;t guess.</p>
+<p>(And be aware that colorblindness is not a binary: People experience various degrees of it, from mild to severe. What passes when simulated <em>to you</em> may still fail when experienced by someone else.)</p>
+<h3 id="reading-bivariate-maps">Reading bivariate maps</h3>
+<p>Cartographers have studied how people read these maps for a long time. Judy Olson, who served on my graduate committee, was working on this in the 1980s. She found that readers could follow the ordering of each variable, but that judging the <em>relationship</em> between them was harder than comparing two separate maps side by side. Bruce Trumbo laid out <a href="https://doi.org/10.1080/00031305.1981.10479360">principles for coloring bivariate maps</a> the same year, and more recently <a href="https://doi.org/10.14714/CP94.1538">Strode et al. (2020)</a> turned those principles into practical models for choosing a scheme based on the question your map asks: the corners, the range, or the diagonal.</p>
+<p>Others have explored alternatives and refinements. <a href="https://pure.psu.edu/en/publications/guidance-for-representing-uncertainty-on-global-temperature-chang/">Retchless and Brewer (2016)</a> tested bivariate designs for showing climate data alongside its uncertainty, and <a href="https://www.tableau.com/research/publications/value-suppressing-uncertainty-palettes">value-suppressing uncertainty palettes</a> (Correll, Moritz, and Heer, 2018) rethink the grid entirely when one of your two variables is uncertainty.</p>
+<p>The takeaway hasn&rsquo;t changed much since 2015: bivariate maps are powerful, but they ask more of your readers. Keep them simple, label the corners, and make sure a bivariate map is actually the best tool for the job. And provide interactivity, either to expose each variable individually or reveal more insights on action, when possible.</p>
+<h3 id="continuous-bivariate-palettes">Continuous bivariate palettes</h3>
+<p>One more development worth mentioning: bivariate palettes don&rsquo;t <em>have</em> to be classed. In the sciences especially, two-dimensional color maps that blend smoothly from corner to corner have been around for years. <a href="https://doi.org/10.1002/joc.2153">Teuling, Stöckli, and Seneviratne (2011)</a> made a compelling case for them with climate data, where values are continuous and classes can hide meaningful gradients.</p>
+<figure class="fullImage"><img src="/images/continuous-bivariate-legend.webp"
+			alt="A continuous bivariate color scheme"><figcaption>
+			<p>Bivariate color palettes can be continuous, too.</p>
+		</figcaption>
+</figure>
+
+<p>They&rsquo;re beautiful, but they&rsquo;re harder to read precisely. There are no discrete cells to match against the legend, and the middle of the square, where both variables are middling, is the hardest part to interpret. Use them when the overall pattern matters more than reading exact values.</p>
+<p>These palettes, and maps that use them, are even more difficult to produce. Phosphor helps a lot here, making continuous bivariate color palettes as easily as their classed counterparts. But at present, using them in your software of choice requires some manual analysis and coding. Continuous bivariate visualization is not yet available in most mainstream tools out of the box.</p>
+<h2 id="the-2015-advice-revisited">The 2015 Advice, Revisited</h2>
+<p>So how did the original advice hold up? Mostly well, with a few updates.</p>
+<p><strong>Still true:</strong></p>
+<ul>
+<li><strong>3×3 is the sweet spot.</strong> Nine classes is about as many as most readers can hold in their head. 2×2 is great for simple stories. 4×4 is possible, but test it carefully.</li>
+<li><strong>Normalize, normalize, normalize!</strong> Choropleths of raw counts are still mostly maps of population or bias from the underlying variable.</li>
+<li><strong>The corners should be the most salient colors.</strong> Corners and edge cases are usually the most interesting combination, so make them stand out.</li>
+<li><strong>The two axes need clearly different hues.</strong> If both variables use similar hues, readers can only tell them apart by lightness, and the map falls apart.</li>
+<li><strong>Label the corners, not every cell.</strong> Readers can infer the in-betweens.</li>
+</ul>
+<p><strong>Worth updating:</strong></p>
+<ul>
+<li><strong>Blending layers naively mixes colors in RGB.</strong> It works, but mixing in a perceptual space like OKLab gives you steadier lightness steps along each axis and more accurate mixes in the middle.</li>
+<li><strong>&ldquo;A neighbor to the complement&rdquo; is no longer a guess.</strong> Simulate it.</li>
+<li><strong>Complicated data classification is optional now.</strong> ArcGIS Pro and other tools can handle classification for you. The technique is still handy for software without bivariate support, or when you want to query the combinations later.</li>
+</ul>
+<h2 id="bivariate-color-schemes-in-phosphor">Bivariate Color Schemes in Phosphor</h2>
+<p>Many tools make creating bivariate maps much easier now. But designing them, and customizing your palette, requires great care. That&rsquo;s where <a href="/phosphor/">Phosphor</a> comes in.</p>
+<p>If you haven&rsquo;t seen it, Phosphor is a browser-based tool I <a href="/blog/introducing-phosphor/">released last month</a> for building perceptually even color ramps. It now has a <strong>Bivariate</strong> tab that brings the same thinking to bivariate color schemes. Even continuous ones.</p>
+<p><video autoplay loop muted playsinline preload="auto"
+poster="/phosphor/bivariate-demo-poster.jpg"
+width="1920" height="1080"
+style="width:100%; height:auto; display:block; border-radius:8px;"
+aria-label="Screen recording of Phosphor's Bivariate tab: changing the High X and High Y colors updates the grid, map preview and colorblind badge, then the grid switches to 4×4, Continuous with each lightness curve, and back to 3×3.">
+<source src="/phosphor/bivariate-demo.mp4" type="video/mp4">
+</video></p>
+<p><strong>Start from a preset or make your own.</strong> The four schemes from the 2015 post are there (Red–Blue, Teal–Pink, Blue–Green, and Gold–Purple), along with Blue–Pink and Cynthia Brewer&rsquo;s Blue–Gold. Or pick your own three anchor colors: both low, high X, and high Y. Phosphor builds each axis as a ramp with evenly spaced lightness in OKLab, then combines them for every cell in between. You can even choose your own corners and Phosphor will blend the whole grid to meet it. And if you prefer a color space other than OKLab, Phosphor can handle that, too.</p>
+<p><strong>Shape the lightness.</strong> Choose a 2×2, 3×3, or 4×4 grid, then bend the lightness curve if you want the grid to linger in the lights or the darks.</p>
+<p><strong>Check it as you go.</strong> A badge tells you whether the grid holds up under simulated protanopia and deuteranopia, including the case where your two high colors look like the same hue to colorblind readers. Phosphor also reports the minimum contrast between neighboring cells, with context from <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">WCAG&rsquo;s guidance on non-text contrast</a>. And a live preview shows the scheme on a real county map, so you can see how it behaves on actual shapes instead of a tidy grid.</p>
+<p><strong>Go continuous.</strong> Flip the grid to <strong>Continuous</strong> and Phosphor blends smoothly across the whole square, with the same lightness corrections and curves. The colorblind badge gets more humble here. It can confirm a failure, but it can only say a continuous palette <em>may be</em> colorblind-safe, because the colors blended in the middle begin to narrow the differences and introduce a great deal of uncertainty that is not readily quantified.</p>
+<p><strong>Make a legend.</strong> Phosphor&rsquo;s Legend Lab draws bivariate legends as a square or a diamond, with axis labels or corner labels, and exports them as PNG or SVG.</p>
+<p><strong>Take it anywhere.</strong> Export the scheme as hex codes, for Python or R (biscale), for the Bivariate QGIS Plugin, or as an ArcGIS Pro style. Continuous palettes export as small Python, R, and JavaScript functions, plus a CSS legend. And every palette gets a share link.</p>
+<h2 id="from-phosphor-to-arcgis-pro">From Phosphor to ArcGIS Pro</h2>
+<p>Here&rsquo;s where it all comes together. Remember the five-step process from 2015? Here&rsquo;s what it looks like now:</p>
+<ol>
+<li><strong>Design your scheme in Phosphor.</strong> Pick a preset or your own colors, choose the grid size, and keep an eye on the badges.</li>
+<li><strong>Download the ArcGIS Pro style</strong> (<code>.stylx</code>) from the Export section.</li>
+<li><strong>Add it to ArcGIS Pro.</strong> In the Catalog pane, open <strong>Styles</strong>, choose <strong>Add Style</strong>, and select the file.</li>
+<li><strong>Symbolize your layer with Bivariate Colors.</strong> Choose your two fields, the same grid size as your Phosphor scheme, and a classification method.</li>
+<li><strong>Pick your scheme</strong> from the color scheme menu. Done.</li>
+</ol>
+<p>No Photoshop. No SQL. No concatenated fields. No eyedropper. The parts that used to eat an afternoon now take a few minutes, and you can spend the rest of it on the map itself.</p>
+<p>A few things to keep in mind:</p>
+<ul>
+<li><strong>The grid size has to match.</strong> A 3×3 scheme only shows up when Pro is set to a 3×3 grid.</li>
+<li><strong>Classification still matters.</strong> Quantiles are a popular choice for bivariate maps because they fill every row and column evenly, but they can split very similar values. Natural breaks or other methods might suit your data better. Pick each one on purpose.</li>
+<li><strong>Normalization still matters, too.</strong> The software got smarter. Raw counts did not.</li>
+</ul>
+<h2 id="its-still-dangerous-to-go-alone">It&rsquo;s Still Dangerous to Go Alone</h2>
+<p>Bivariate maps went from &ldquo;mysterious&rdquo; to built in. In 2015 the hardest part was getting your software to cooperate. Today, the hard part is the part that should be hard: deciding which two variables belong together, how many classes your readers can handle, and whether a bivariate map is the right choice at all.</p>
+<p>For everything else, take this: <a href="/phosphor/">Phosphor</a> for the colors, your favorite software for the map, and the <a href="/cartography/make-a-bivariate-choropleth-map/">original guide</a> if you want to see how the sausage used to be made.</p>
+<p>And if you make something with Phosphor, I&rsquo;d love to see it!</p>
+<h3 id="further-reading">Further Reading</h3>
+<ol>
+<li><a href="/cartography/make-a-bivariate-choropleth-map/">Bivariate Choropleth Maps: A How-to Guide</a> (the 2015 original)</li>
+<li><a href="/blog/introducing-phosphor/">Introducing Phosphor</a></li>
+<li><a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/layer-properties/bivariate-colors.htm">Bivariate colors symbology in ArcGIS Pro</a> (Esri documentation)</li>
+<li><a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/what-is-a-relationship-map">What is a relationship map?</a> (Esri)</li>
+<li><a href="https://cran.r-project.org/package=biscale">biscale: Tools and Palettes for Bivariate Thematic Mapping</a></li>
+<li>Trumbo, B. E. 1981. <a href="https://doi.org/10.1080/00031305.1981.10479360">A Theory for Coloring Bivariate Statistical Maps</a>. <em>The American Statistician</em> 35 (4): 220–226.</li>
+<li>Strode, G., et al. 2020. <a href="https://doi.org/10.14714/CP94.1538">Operationalizing Trumbo&rsquo;s Principles of Bivariate Choropleth Map Design</a>. <em>Cartographic Perspectives</em> 94.</li>
+<li>Teuling, A. J., R. Stöckli, and S. I. Seneviratne. 2011. <a href="https://doi.org/10.1002/joc.2153">Bivariate Colour Maps for Visualizing Climate Data</a>. <em>International Journal of Climatology</em>.</li>
+<li>Ottosson, B. 2020. <a href="https://bottosson.github.io/posts/oklab/">A Perceptual Color Space for Image Processing</a> (OKLab).</li>
+<li>Machado, G. M., M. M. Oliveira, and L. A. F. Fernandes. 2009. <a href="https://www.inf.ufrgs.br/~oliveira/pubs_files/CVD_Simulation/CVD_Simulation.html">A Physiologically-based Model for Simulation of Color Vision Deficiency</a>. <em>IEEE Transactions on Visualization and Computer Graphics</em> 15 (6).</li>
+</ol>
+
+    <hr>
+
+    <div class="share">
+      <span>Share this</span>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text=Still%20Bivariate%2c%20Still%20Curious&url=https%3a%2f%2fwww.joshuastevens.net%2fblog%2fstill-bivariate-still-curious%2f&via=jscarto" target="_blank" rel="noopener" aria-label="Share on Twitter / X">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.2l-5.6-7.3L4 22H1l8.2-9.3L1 2h7.3l5.1 6.7L18.9 2zm-1.3 18h1.9L7.5 4H5.4l12.2 16z"/></svg>
+      </a>
+      <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fwww.joshuastevens.net%2fblog%2fstill-bivariate-still-curious%2f" target="_blank" rel="noopener" aria-label="Share on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V21h-4V9z"/></svg>
+      </a>
+      <button type="button" class="share-btn" data-copy-link="https://www.joshuastevens.net/blog/still-bivariate-still-curious/" aria-label="Copy link to this post">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.9 12a5 5 0 0 1 5-5h4v2h-4a3 3 0 1 0 0 6h4v2h-4a5 5 0 0 1-5-5zm7-1h6v2h-6v-2zm3-4h4a5 5 0 1 1 0 10h-4v-2h4a3 3 0 1 0 0-6h-4V7z"/></svg>
+      </button>
+    </div>
+
+    <nav class="pager" aria-label="Post navigation">
+      <a href="https://www.joshuastevens.net/blog/introducing-phosphor/">&larr; Introducing Phosphor</a>
+      </nav>
+  </div>
+</div>
+
+<script>hljs.highlightAll();</script>
+
+
+</main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <strong>Joshua Stevens</strong>
+            Cartography & Visual Storytelling
+          </div>
+
+          <nav aria-label="Footer">
+            <ul class="footer-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/portfolio/">Work</a></li>
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-social">
+            <a href="https://twitter.com/jscarto" aria-label="Joshua Stevens on Twitter / X" rel="me noopener" target="_blank">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.2l-5.6-7.3L4 22H1l8.2-9.3L1 2h7.3l5.1 6.7L18.9 2zm-1.3 18h1.9L7.5 4H5.4l12.2 16z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jscarto/" aria-label="Joshua Stevens on LinkedIn" rel="me noopener" target="_blank">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V21h-4V9z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <span>&copy; 2026 Joshua Stevens</span>
+          <span>Cartography, data visualization &amp; visual journalism</span>
+        </div>
+      </div>
+    </footer>
+
+    <div id="copy-status" class="visually-hidden" role="status" aria-live="polite"></div>
+
+    <script src="/js/main.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-39165504-1', 'joshuastevens.net');
+        ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+

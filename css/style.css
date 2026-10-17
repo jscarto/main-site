@@ -925,6 +925,8 @@ section { padding-block: clamp(3rem, 6vw, 5.5rem); }
   padding: 0.2rem 0;
 }
 .article .fullImage { text-align: center; margin: 1.5rem auto; }
+/* Images are display: block site-wide, so text-align can't center them; auto margins do. */
+.article .fullImage img { margin-inline: auto; }
 .article .leftImage { float: left; padding-right: 1.75rem; padding-bottom: 0.5rem; max-width: 45%; }
 .article .rightImage { float: right; padding-left: 1.75rem; padding-bottom: 0.5rem; max-width: 45%; }
 .article hr { border: none; border-top: 1px solid var(--line); margin-block: 2.5rem; }

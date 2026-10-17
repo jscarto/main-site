@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Wed, 23 Sep 2026 15:05:57 -0400</lastBuildDate>
+			<lastBuildDate>Sat, 17 Oct 2026 09:00:00 -0400</lastBuildDate>
 		
 			<atom:link href="https://www.joshuastevens.net/blog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Still Bivariate, Still Curious</title>
+				<link>https://www.joshuastevens.net/blog/still-bivariate-still-curious/</link>
+				<pubDate>Sat, 17 Oct 2026 09:00:00 -0400</pubDate>
+				<guid>https://www.joshuastevens.net/blog/still-bivariate-still-curious/</guid>
+				<description>&lt;p&gt;Eleven years ago I wrote &lt;a href=&#34;https://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/&#34;&gt;a how-to guide for bivariate choropleth maps&lt;/a&gt;, prompted by a quip I overheard at NACIS: &lt;em&gt;&amp;ldquo;I&amp;rsquo;m not bivariate, but I am curious.&amp;rdquo;&lt;/em&gt; Back then, making bivariate maps meant blending color schemes in graphics programs, hand-tuning the corner where both variables run high, and stitching two classifications together into a single attribute your software could understand. It worked in any tool, but it took some patience.&lt;/p&gt;&#xA;&lt;p&gt;A lot has changed since then.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Introducing Phosphor</title>
 				<link>https://www.joshuastevens.net/blog/introducing-phosphor/</link>
