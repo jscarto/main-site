@@ -28,7 +28,8 @@
     outHex: $('out-hex'), outCss: $('out-css'), outPy: $('out-py'), outR: $('out-r'),
     proPreview: $('pro-preview'), rampName: $('ramp-name'), proDownload: $('pro-download'),
     outQgis: $('out-qgis'), qgisDownload: $('qgis-download'),
-    outGdal: $('out-gdal'), gdalDownload: $('gdal-download'),
+    outGdal: $('out-gdal'), gdalDownload: $('gdal-download'), outRgis: $('out-rgis'), rgisDownload: $('rgis-download'),
+    outCpt: $('out-cpt'), cptDownload: $('cpt-download'), cptDiscrete: $('cpt-discrete'),
     gdalMin: $('gdal-min'), gdalMax: $('gdal-max'), gdalNodata: $('gdal-nodata'),
     share: $('share'), shareBtnLabel: $('share-label'), shareStatus: $('share-status'),
   };
@@ -249,6 +250,8 @@
     el.proDownload.disabled = true;
     el.qgisDownload.disabled = true;
     el.gdalDownload.disabled = true;
+    el.rgisDownload.disabled = true;
+    el.cptDownload.disabled = true;
 
     el.divHint.hidden = !isDiverging();
     el.divNote.hidden = true;
@@ -316,6 +319,8 @@
     setExport(el.outCss, 'css', cssSnippet(positions(CSS_STOPS).map((t) => result(t).hex())));
     el.proDownload.disabled = false;
     el.qgisDownload.disabled = false;
+    el.rgisDownload.disabled = false;
+    el.cptDownload.disabled = false;
     renderSteps();
   }
 
@@ -360,7 +365,19 @@
     setExport(el.outPy, 'python', pythonSnippet(gradient, hexes, gradient.dense32));
     setExport(el.outR, 'r', rSnippet(gradient, hexes, gradient.dense32));
     setExport(el.outQgis, 'xml', qgisXml(rampName(), gradient.dense32));
+    setExport(el.outRgis, 'json', rgisRamp(rgisRampName(), isDiverging() ? 'diverging' : 'sequential', hexes));
+    renderCpt();
     renderGdal();
+  }
+
+  /** The GMT palette: depends on the steps, the name and the Discrete option. */
+  function renderCpt() {
+    if (!gradient || !gradient.stepHexes) return;
+    setExport(el.outCpt, 'cpt', gmtCpt(rampName(), gradient.stepHexes, {
+      diverging: isDiverging(),
+      discrete: el.cptDiscrete.checked,
+      mid: gradient.result(0.5).hex(),
+    }));
   }
 
   /** The GDAL color file: depends on the steps and on the min, max and no-data inputs. */
@@ -597,8 +614,18 @@
     return t !== '' && Number.isFinite(+t) ? +t : null;
   };
 
-  // Enough digits to tell neighbors apart, without float noise like 0.30000000000000004.
-  const gdalValue = (v) => String(+v.toPrecision(12));
+  /**
+   * A formatter for color files' data values: 3 decimals (without float noise like
+   * 0.30000000000000004 or trailing zeros), or as many more as it takes to keep `values` apart.
+   */
+  function zFormat(values) {
+    const distinct = new Set(values).size;
+    for (let d = 3; d <= 12; d++) {
+      const f = (v) => String(+v.toFixed(d));
+      if (new Set(values.map(f)).size === distinct) return f;
+    }
+    return (v) => String(+v.toPrecision(12));
+  }
   const gdalColor = (hex) => chroma(hex).rgb().join(', ') + ', 255';
 
   /**
@@ -606,9 +633,61 @@
    * spaced evenly from min to max. The optional `nv` row colors no-data pixels (the min color).
    */
   function gdalColorFile(hexes, min, max, nodata) {
-    const rows = hexes.map((h, i) => `${gdalValue(min + (max - min) * i / (hexes.length - 1))}, ${gdalColor(h)}`);
+    const values = hexes.map((h, i) => min + (max - min) * i / (hexes.length - 1));
+    const f = zFormat(values);
+    const rows = hexes.map((h, i) => `${f(values[i])}, ${gdalColor(h)}`);
     if (nodata) rows.push(`nv, ${gdalColor(hexes[0])}`);
     return rows.join('\n');
+  }
+
+  // RustGIS refuses a custom ramp named like one of its built-in schemes (by id or label).
+  const RGIS_BUILT_IN = ['ember', 'lagoon', 'forest', 'dusk', 'thermal', 'diverging', 'red–blue', 'greys', 'harbour',
+    'harbour (qualitative)', 'terrain', 'aurora'];
+  const rgisRampName = () => (RGIS_BUILT_IN.includes(rampName().toLowerCase()) ? `${rampName()} (Phosphor)` : rampName());
+
+  /**
+   * A RustGIS color ramp file (.rgisramp): JSON with the ramp's name, kind and one evenly spaced
+   * stop per step. RustGIS gives each class a stop's exact color when the counts match.
+   */
+  function rgisRamp(name, kind, hexes) {
+    const stops = hexes.map((h) => `    "${h}"`).join(',\n');
+    return `[{\n  "name": ${JSON.stringify(name)},\n  "kind": "${kind}",\n  "stops": [\n${stops}\n  ]\n}]`;
+  }
+
+  const cptColor = (hex) => chroma(hex).rgb().join('/');
+
+  /**
+   * A GMT color palette table, as a master CPT: z from 0 to 1, or from -1 to 1 for a diverging
+   * palette, whose 0 is the midpoint and a soft hinge (so makecpt keeps the midpoint at 0 when a
+   * range is lopsided). Continuous slices run from step to step; for an even number of diverging
+   * steps a boundary at 0 takes the gradient's midpoint color (`mid`), since a hinge must sit on
+   * one. Discrete slices are one flat color per step, splitting the range evenly; with an odd
+   * number of diverging steps the middle class straddles 0, so there's no hinge.
+   */
+  function gmtCpt(name, hexes, { diverging, discrete, mid }) {
+    const n = hexes.length;
+    const lo = diverging ? -1 : 0;
+    const value = (t) => lo + (1 - lo) * t;
+    let slices;
+    if (discrete) {
+      slices = hexes.map((h, i) => [i / n, h, (i + 1) / n, h]);
+    } else {
+      const stops = hexes.map((h, i) => [i / (n - 1), h]);
+      if (diverging && n % 2 === 0) stops.splice(n / 2, 0, [0.5, mid]);
+      slices = stops.slice(1).map(([t, h], i) => [stops[i][0], stops[i][1], t, h]);
+    }
+    const f = zFormat(slices.flatMap(([t0, , t1]) => [value(t0), value(t1)]));
+    const z = (t) => f(value(t));
+    const hinge = diverging && slices.some(([t0]) => Math.abs(t0 - 0.5) < 1e-9);
+    return [
+      `# ${name}: made with Phosphor, https://www.joshuastevens.net/phosphor/`,
+      '# COLOR_MODEL = RGB',
+      ...(hinge ? ['# SOFT_HINGE'] : []),
+      ...slices.map(([t0, h0, t1, h1]) => `${z(t0)}\t${cptColor(h0)}\t${z(t1)}\t${cptColor(h1)}`),
+      `B\t${cptColor(hexes[0])}`,
+      `F\t${cptColor(hexes[n - 1])}`,
+      'N\t128/128/128',
+    ].join('\n');
   }
 
   function downloadText(text, filename, type) {
@@ -644,6 +723,16 @@
       ['kw', /\bnv\b/y],
       ['num', /-?(?:\d+\.?\d*|\.\d+)(?:e[+-]?\d+)?/iy],
     ],
+    cpt: [
+      ['com', /#.*/y],
+      ['kw', /^[BFN](?=\t)/my],
+      ['rgba', /\d{1,3}\/\d{1,3}\/\d{1,3}/y],
+      ['num', /-?(?:\d+\.?\d*|\.\d+)(?:e[+-]?\d+)?/iy],
+    ],
+    json: [
+      ['prop', /"[^"\n]*"(?=\s*:)/y],
+      ['str', /"(?:[^"\\\n]|\\.)*"/y],
+    ],
     python: [
       ['str', /"[^"\n]*"/y],
       ['com', /#.*/y],
@@ -675,8 +764,8 @@
       if (!hit) { html += escapeHtml(code[i]); i += 1; continue; }
       const [cls, text] = hit;
       const hex = /^"?(#[0-9a-f]{6})"?$/i.exec(text);
-      const rgb = /^"(\d{1,3},\d{1,3},\d{1,3}),255"$|^(\d{1,3}, \d{1,3}, \d{1,3}), \d{1,3}$/.exec(text);
-      const swatch = cls === 'com' ? null : hex ? hex[1] : rgb ? `rgb(${rgb[1] || rgb[2]})` : null;
+      const rgb = /^"(\d{1,3},\d{1,3},\d{1,3}),255"$|^(\d{1,3}, \d{1,3}, \d{1,3}), \d{1,3}$|^(\d{1,3}\/\d{1,3}\/\d{1,3})$/.exec(text);
+      const swatch = cls === 'com' ? null : hex ? hex[1] : rgb ? `rgb(${(rgb[1] || rgb[2] || rgb[3]).replace(/\//g, ',')})` : null;
       const chip = swatch ? `<i class="chip" style="background:${swatch}"></i>` : '';
       html += cls ? `${chip}<span class="tok-${cls}">${escapeHtml(text)}</span>` : escapeHtml(text);
       i += text.length;
@@ -1170,6 +1259,21 @@
         { name: 'Topo', colors: ['#281a2c', '#372c4f', '#413e76', '#3e5691', '#3f6f97', '#46879c', '#4fa1a2', '#5dbaa4', '#7dd0a3', '#b0e2a9', '#e3f4bd', '#133018', '#1d451d', '#365723', '#566635', '#76753e', '#998540', '#bc943e', '#cdab65', '#dac68f', '#e8e1b9', '#f9fde4'] },
       ],
     },
+    {
+      // The Generic Mapping Tools' own CPTs (GMT 6, share/cpt/gmt, LGPL-3.0), sampled at 7 points
+      // the way GMT blends them (in RGB). GEBCO and IBCSO are discrete tables: GEBCO's classes are
+      // sampled evenly, and IBCSO takes 7 of its 10 class colors, since its first class covers
+      // 42% of the range. Dry–wet's lightness rises and falls, so it loads uncorrected.
+      title: 'GMT',
+      presets: [
+        { name: 'Abyss', colors: ['#000000', '#1a2847', '#2b497c', '#3563a0', '#4ea2da', '#7ccaed', '#f5ffff'] },
+        { name: 'Bathy', colors: ['#000000', '#212f58', '#2b497c', '#3563a0', '#61c4b1', '#84d1e0', '#f5ffff'] },
+        { name: 'GEBCO', colors: ['#00f0ff', '#23ffff', '#5affff', '#8cffe6', '#a5ffd7', '#c3ffd7', '#ebffff'] },
+        { name: 'IBCSO', colors: ['#1f284f', '#2e5085', '#3563a0', '#4897d3', '#5ab9e9', '#72caee', '#8dd2ef'] },
+        { name: 'Seafloor', colors: ['#6900b6', '#6d0ecc', '#4739d6', '#1770e0', '#32a2ec', '#81c8f5', '#f1fcff'] },
+        { name: 'Dry–wet', colors: ['#86612a', '#eec764', '#b4ee87', '#32eeeb', '#0c78ee', '#2601b7', '#083371'] },
+      ],
+    },
   ];
   // Diverging presets: 11-class ColorBrewer diverging schemes (midpoint in the center) and
   // Stevens ramps: Frostfire, whose lightness bottoms out at its fourth color, and Chlorophyll,
@@ -1230,6 +1334,17 @@
         { name: 'Diff', mid: 3, colors: ['#082340', '#3a647b', '#989faa', '#f6f1f0', '#b0a68d', '#6b5f2e', '#1f260b'] },
         { name: 'Tarn', mid: 3, colors: ['#17230e', '#6e6600', '#c88246', '#fcf7f6', '#c3c8a4', '#1f7779', '#0c194a'] },
         { name: 'Topo', mid: 16, colors: ['#281a2c', '#322643', '#3b325c', '#413e76', '#404d8c', '#3e5f93', '#3f6f97', '#437f9a', '#488f9e', '#4e9fa1', '#56afa4', '#63c0a4', '#7acea3', '#9adba5', '#bde7ad', '#dff2bb', '#0d2514', '#153319', '#1b411d', '#254f1e', '#3c5a26', '#516333', '#666d3a', '#7b773e', '#918140', '#a78c3f', '#bf953f', '#caa55a', '#d2b676', '#dbc892', '#e4daae', '#eeedcb', '#f9fde4'] },
+      ],
+    },
+    {
+      // GMT 6's polar tables (LGPL-3.0): Red2green and Split from share/cpt/gmt, Polar from its
+      // MATLAB set. Red2green and Polar are sampled at 7 points the way GMT blends them (in RGB);
+      // Split keeps its 5 stops, dark at the midpoint.
+      title: 'GMT',
+      presets: [
+        { name: 'Polar', mid: 3, colors: ['#0000ff', '#5555ff', '#aaaaff', '#ffffff', '#ffaaaa', '#ff5555', '#ff0000'] },
+        { name: 'Red2green', mid: 3, colors: ['#ff0000', '#ff5555', '#ffaaaa', '#ffffff', '#aaffaa', '#55ff55', '#00ff00'] },
+        { name: 'Split', mid: 2, colors: ['#8080ff', '#000080', '#000000', '#800000', '#ff8080'] },
       ],
     },
   ];
@@ -1522,6 +1637,11 @@
   [el.gdalMin, el.gdalMax, el.gdalNodata].forEach((input) => input.addEventListener('input', renderGdal));
   el.gdalDownload.addEventListener('click', () =>
     downloadText(exportText['out-gdal'] + '\n', safeFilename(rampName()) + '.txt', 'text/plain'));
+  el.cptDiscrete.addEventListener('input', renderCpt);
+  el.cptDownload.addEventListener('click', () =>
+    downloadText(exportText['out-cpt'] + '\n', safeFilename(rampName()) + '.cpt', 'text/plain'));
+  el.rgisDownload.addEventListener('click', () =>
+    downloadText(exportText['out-rgis'] + '\n', safeFilename(rampName()) + '.rgisramp', 'application/json'));
 
   // Theme: dark by default; an explicit choice is saved.
   const THEME_KEY = 'phosphor-theme';

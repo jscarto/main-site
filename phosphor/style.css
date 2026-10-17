@@ -453,6 +453,7 @@ input[type="text"], select { padding: 6px 8px; width: 100%; min-width: 0; }
 .gdal-options input[type="text"] { font-family: ui-monospace, Menlo, monospace; }
 .gdal-options input[aria-invalid="true"] { border-color: var(--warn-text); }
 .check { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; padding-bottom: 7px; white-space: nowrap; cursor: pointer; }
+.cpt-option { padding: 0; margin-bottom: 8px; white-space: normal; }
 @media (max-width: 480px) { .gdal-options { grid-template-columns: 1fr 1fr; } .check { grid-column: 1 / -1; padding-bottom: 0; } }
 .code {
   margin: 0;

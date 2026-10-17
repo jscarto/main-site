@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Joshua Stevens">
   <meta property="og:title" content="Phosphor">
-  <meta property="og:description" content="Sequential, diverging and bivariate color palettes with perceptually even lightness. Export to CSS, Python, R, QGIS, ArcGIS Pro or GDAL.">
+  <meta property="og:description" content="Sequential, diverging and bivariate color palettes with perceptually even lightness. Export to CSS, Python, R, QGIS, ArcGIS Pro, GDAL, RustGIS or GMT.">
   <meta property="og:url" content="https://www.joshuastevens.net/phosphor/">
   <meta property="og:image" content="https://www.joshuastevens.net/phosphor/assets/social-card.jpg">
   <meta property="og:image:width" content="1200">
@@ -166,7 +166,7 @@
 
       <h2>Export</h2>
       <label class="field ramp-name">
-        <span>Ramp name <span class="hint-inline">(used by the Python, R, QGIS, ArcGIS Pro and GDAL exports)</span></span>
+        <span>Ramp name <span class="hint-inline">(used by the Python, R, QGIS, ArcGIS Pro, GDAL, RustGIS and GMT exports)</span></span>
         <input id="ramp-name" type="text" placeholder="Ramp name" spellcheck="false" autocomplete="off">
       </label>
       <div class="exports">
@@ -211,6 +211,23 @@
           </div>
           <pre class="code"><code id="out-gdal"></code></pre>
           <p class="hint">One row per step (<code>value, R, G, B, A</code>), with data values spaced evenly from min to max. No-data pixels (<code>nv</code>) get the min color. Use it with <code>gdaldem color-relief input.tif ramp.txt output.tif -alpha</code>. GDAL blends between rows; add <code>-exact_color_entry</code> or <code>-nearest_color_entry</code> for classed colors.</p>
+        </div>
+        <div class="export">
+          <div class="export-head">
+            <span>GMT color palette (.cpt)</span>
+            <span class="row"><button type="button" data-copy="out-cpt">Copy</button><button id="cpt-download" type="button">Download .cpt</button></span>
+          </div>
+          <label class="check cpt-option"><input id="cpt-discrete" type="checkbox"> Discrete classes (one flat color per step)</label>
+          <pre class="code"><code id="out-cpt"></code></pre>
+          <p class="hint">A master CPT for the <a href="https://www.generic-mapping-tools.org/">Generic Mapping Tools</a>: z runs from 0 to 1, or from −1 to 1 around a soft hinge for diverging palettes, as GMT's own diverging tables do. Stretch it to your data with <code>gmt makecpt -Cramp.cpt -T<i>min</i>/<i>max</i> &gt; data.cpt</code>, or add an interval (<code>-T<i>min</i>/<i>max</i>/<i>step</i></code>) for classes. GMT blends between rows unless Discrete is on.</p>
+        </div>
+        <div class="export">
+          <div class="export-head">
+            <span>RustGIS color ramp (.rgisramp)</span>
+            <span class="row"><button type="button" data-copy="out-rgis">Copy</button><button id="rgis-download" type="button">Download .rgisramp</button></span>
+          </div>
+          <pre class="code"><code id="out-rgis"></code></pre>
+          <p class="hint">One stop per step. In RustGIS, choose <b>Style → Styles → Add Color Ramp File</b> and pick this file; the ramp then appears under <b>Custom</b> in the Symbology pane, for feature layers and rasters. With as many classes as steps, each class takes a step's color exactly; otherwise RustGIS blends between steps in RGB.</p>
         </div>
       </div>
     </section>
