@@ -57,6 +57,11 @@
   const transpose = (cells) => cells.map((row, y) => row.map((_, x) => cells[x][y]));
   let nameEdited = false;
   let grid = null;
+  // continuous: a smooth palette instead of classes (bivariate-continuous.js). `cont` holds its
+  // table of colors and a sampler; state.size keeps the classed size to return to.
+  const C = window.PhosphorContinuous;
+  state.continuous = false;
+  let cont = null;
 
   const el = {
     presets: $('biv-presets'), presetsToggle: $('biv-presets-toggle'), map: $('biv-map'), proPreview: $('biv-pro-preview'), grid: $('biv-grid'), note: $('biv-note'), cvd: $('biv-cvd'), contrast: $('biv-contrast'),
@@ -69,6 +74,8 @@
     curveBtns: [...document.querySelectorAll('.biv-curve-btn')],
     mode: $('biv-mode'),
     share: $('biv-share'), shareStatus: $('biv-share-status'), shareLabel: $('biv-share-label'),
+    // continuous
+    outCpy: $('biv-out-cpy'), outCr: $('biv-out-cr'), outCjs: $('biv-out-cjs'), outCcss: $('biv-out-ccss'),
   };
 
   // ---------- the grid ----------
@@ -215,10 +222,18 @@
   function render() {
     grid = buildGrid(state);
     const { n } = grid;
+    // continuous: the same surface at TABLE_SIZE × TABLE_SIZE, blended between its points.
+    const smooth = state.continuous && !!C;
+    if (smooth) {
+      const table = buildGrid({ ...state, size: C.TABLE_SIZE });
+      const sample = C.sampler(C.rgbTable(table.cells));
+      cont = { table, sample, map: C.mapTable(sample) };
+    } else cont = null;
 
-    el.grid.style.setProperty('--n', n);
+    el.grid.style.setProperty('--n', smooth ? 1 : n);
     el.grid.innerHTML = '';
-    topRows(grid).forEach((row) => row.forEach((c) => {
+    if (smooth) drawSmooth(); // continuous
+    else topRows(grid).forEach((row) => row.forEach((c) => {
       const b = document.createElement('button');
       b.type = 'button';
       b.className = 'biv-cell';
@@ -230,7 +245,9 @@
       el.grid.appendChild(b);
     }));
 
-    const { safe, alike, hue } = assess(grid);
+    // continuous: checked as the 4 × 4 grid, the strictest classed check (its cells sit closest
+    // together), so a palette whose 4 × 4 grid fails never passes as continuous.
+    const { safe, alike, hue } = assess(smooth ? buildGrid({ ...state, size: 4 }) : grid);
     el.cvd.hidden = false;
     el.cvd.className = 'cvd-badge ' + (safe ? 'is-safe' : 'is-unsafe');
     el.cvd.title = hue === 'normal' ? 'Not colorblind-safe: High X and High Y share a hue, so the two variables differ only in lightness.'
@@ -238,6 +255,13 @@
       : alike ? 'Not colorblind-safe: some cells look alike even with normal vision, so no one can tell them apart.'
       : P.CVD_TITLE[safe];
     el.cvd.innerHTML = P.cvdIcon(safe) + (safe ? 'colorblind-safe' : 'not colorblind-safe');
+    // continuous: a failing 4 × 4 grid fails the palette too, but a passing one can't vouch for the
+    // colors blended between its cells, so it earns only a "may be".
+    if (smooth && safe) {
+      el.cvd.className = 'cvd-badge is-unsafe'; // gray: only a full pass gets the green cue
+      el.cvd.title = 'May be red-green colorblind-safe: a 4 × 4 grid sampled from this palette stays distinguishable with simulated protanopia and deuteranopia, but the colors blended between those points aren\u2019t checked, and some may look alike.';
+      el.cvd.innerHTML = C.maybeIcon + 'may be colorblind-safe';
+    }
 
     // Neighbors share an edge: each cell against the one to its right and the one above.
     const at = (x, y) => grid.cells.flat().find((c) => c.x === x && c.y === y);
@@ -247,9 +271,11 @@
       if (d) pairs.push([c.hex, d.hex, `${cellName(c)} and ${cellName(d)}`]);
     }));
     P.renderContrast(el.contrast, P.minContrast(pairs));
+    if (smooth) el.contrast.hidden = true; // continuous: neighbors are infinitely close
 
     const notes = [];
-    if (grid.clamped) notes.push(`${grid.clamped} cell${grid.clamped > 1 ? 's' : ''} ran past black or white; try lighter high colors.`);
+    if (smooth && cont.table.clamped) notes.push('Parts of the square ran past black or white; try lighter high colors.'); // continuous
+    else if (!smooth && grid.clamped) notes.push(`${grid.clamped} cell${grid.clamped > 1 ? 's' : ''} ran past black or white; try lighter high colors.`);
     el.note.hidden = !notes.length;
     el.note.textContent = notes.join(' ');
 
@@ -264,18 +290,35 @@
     el.xyAuto.hidden = !state.xy;
     const preset = !state.xy && PRESETS.find((p) => p.base === state.base && p.x === state.x && p.y === state.y);
     el.presets.querySelectorAll('.preset-card').forEach((b) => b.setAttribute('aria-pressed', String(!!preset && b.dataset.name === preset.name)));
-    if (!nameEdited) el.name.value = `Phosphor ${preset ? preset.name : 'bivariate'} ${n}×${n}`;
+    if (!nameEdited) el.name.value = `Phosphor ${preset ? preset.name : 'bivariate'} ${smooth ? 'continuous' : `${n}×${n}`}`;
 
     el.curveBtns.forEach((b) => {
       b.setAttribute('aria-pressed', String(b.dataset.curve === state.curve));
-      // A 2×2 grid is just its four corners, which no curve moves.
-      b.disabled = n === 2;
+      // A 2×2 grid is just its four corners, which no curve moves (a continuous one bends).
+      b.disabled = !smooth && n === 2;
     });
     el.proPreview.style.setProperty('--n', n);
     el.proPreview.innerHTML = miniCells(grid);
+    // continuous: swap the classed exports for the continuous ones.
+    document.querySelectorAll('.biv-classed-only').forEach((node) => { node.hidden = smooth; });
+    document.querySelectorAll('.biv-continuous-only').forEach((node) => { node.hidden = !smooth; });
     renderExports();
     renderMap();
     clearStaleLink();
+  }
+
+  // continuous: the square in place of the grid's cells; a click copies the color under the pointer.
+  function drawSmooth() {
+    const canvas = C.paint(document.createElement('canvas'), cont.sample, 256);
+    canvas.className = 'biv-smooth';
+    canvas.setAttribute('role', 'img');
+    canvas.setAttribute('aria-label', 'Continuous bivariate color square');
+    canvas.title = 'Click to copy the color under the pointer.';
+    canvas.addEventListener('click', (e) => {
+      const r = canvas.getBoundingClientRect();
+      P.copy(chroma(cont.sample((e.clientX - r.left) / r.width, 1 - (e.clientY - r.top) / r.height)).hex());
+    });
+    el.grid.appendChild(canvas);
   }
 
   // ---------- share links ----------
@@ -288,6 +331,7 @@
 
   function stateHash() {
     const p = new URLSearchParams({ t: 'b', n: String(state.size) });
+    if (state.continuous) p.set('c', '1'); // continuous
     if (state.curve !== 'linear') p.set('k', state.curve);
     if (state.mode !== 'oklab') p.set('m', state.mode);
     ['base', 'x', 'y'].forEach((k) => p.set(k === 'base' ? 'b' : k, state[k].replace('#', '')));
@@ -318,9 +362,10 @@
     const pre = PRESETS.find((q) => q.name === p.get('p'));
     const swapped = !!pre && p.get('s') === '1';
     Object.assign(state, { size, curve, mode, base, x, y, xy: hex(p.get('h')), preset: pre ? pre.name : null, swapped });
+    state.continuous = !!C && p.get('c') === '1'; // continuous
     el.mode.value = mode;
     state.published = pre ? (swapped ? transpose(presetCells(pre)) : presetCells(pre)) : null;
-    document.querySelectorAll('input[name="biv-size"]').forEach((r) => { r.checked = +r.value === size; });
+    document.querySelectorAll('input[name="biv-size"]').forEach((r) => { r.checked = state.continuous ? r.value === 'c' : +r.value === size; });
     return true;
   }
 
@@ -349,16 +394,24 @@
   const codeName = () => schemeName().toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '').replace(/^(?=\d)/, 'p_') || 'phosphor_bivariate';
 
   /** How this grid was made, for the export comments. */
-  function howMade() {
+  function howMade(g = grid) {
     const curve = state.curve === 'linear' ? '' : `, lightness ${CURVE_LABELS[state.curve]}`;
     const space = el.mode.options[el.mode.selectedIndex].text;
-    return grid.exact ? `the preset’s published colors${curve}`
-      : grid.fromPublished ? `interpolated in ${space} from the preset’s published 3 × 3 colors${curve}`
+    return g.exact ? `the preset’s published colors${curve}`
+      : g.fromPublished ? `interpolated in ${space} from the preset’s published 3 × 3 colors${curve}`
       : state.xy ? `four corners, edges in ${space}, blended in OKLab${curve}`
       : `axes in ${space}, combined in OKLab${curve}`;
   }
 
   function renderExports() {
+    if (cont) { // continuous
+      const out = C.exports(cont.table.cells, codeName(), howMade(cont.table));
+      P.setExport(el.outCpy, 'python', out.python);
+      P.setExport(el.outCr, 'r', out.r);
+      P.setExport(el.outCjs, 'js', out.js);
+      P.setExport(el.outCcss, 'css', out.css);
+      return;
+    }
     const { n } = grid;
     const rows = topRows(grid).map((row) => row.map((c) => `"${c.hex}"`).join(', '));
     P.setExport(el.outHex, 'list', rows.join(',\n'));
@@ -442,7 +495,8 @@
       const o = i * 4;
       let c = bg;
       if (d[o + 3] > 127) {
-        c = colors[Math.min(n - 1, (d[o + 1] * n) >> 8)][Math.min(n - 1, (d[o] * n) >> 8)];
+        c = cont ? cont.map[d[o + 1]][d[o]] // continuous
+          : colors[Math.min(n - 1, (d[o + 1] * n) >> 8)][Math.min(n - 1, (d[o] * n) >> 8)];
         const a = (d[o + 2] / 255) * 0.85;
         if (a) c = [c[0] + (bg[0] - c[0]) * a, c[1] + (bg[1] - c[1]) * a, c[2] + (bg[2] - c[2]) * a];
       }
@@ -529,7 +583,8 @@
     render();
   });
   document.querySelectorAll('input[name="biv-size"]').forEach((r) => r.addEventListener('change', () => {
-    state.size = +r.value;
+    state.continuous = r.value === 'c'; // continuous
+    if (!state.continuous) state.size = +r.value;
     render();
   }));
   el.anchors.forEach((a) => {
@@ -627,9 +682,13 @@
     };
     const gap = 7;
 
+    // continuous: the square as an image, drawn at 3× the legend’s size, as the PNG export is.
+    const smoothImage = (G, transform = '') => `<image href="${C.dataUrl(cont.sample, 384)}" x="0" y="0" width="${G}" height="${G}" preserveAspectRatio="none"${transform ? ` transform="${transform}"` : ''}/>`;
+
     if (!diamond) {
       const G = 120, c = G / n;
-      topRows(grid).forEach((row, r) => row.forEach((cell, k) => {
+      if (cont) parts.push(smoothImage(G)); // continuous
+      else topRows(grid).forEach((row, r) => row.forEach((cell, k) => {
         parts.push(`<rect x="${(k * c).toFixed(2)}" y="${(r * c).toFixed(2)}" width="${(c + 0.4).toFixed(2)}" height="${(c + 0.4).toFixed(2)}" fill="${cell.hex}"/>`);
       }));
       grow(0, 0, G, G);
@@ -646,7 +705,9 @@
       // Low/low at the bottom point, high X to the right, high Y to the left, both high on top.
       const G = 100, c = G / n, r2 = Math.SQRT1_2;
       const pt = (u, v) => [(u - v) * r2, -(u + v) * r2]; // grid units -> screen, bottom point at 0, 0
-      for (let y = 0; y < n; y++) {
+      // continuous: the square image turned 45°, its bottom-left (both low) corner at the bottom point.
+      if (cont) parts.push(smoothImage(G, `matrix(${r2} ${-r2} ${r2} ${r2} ${-G * r2} ${-G * r2})`));
+      for (let y = 0; y < n && !cont; y++) {
         for (let x = 0; x < n; x++) {
           const q = [[x, y], [x + 1, y], [x + 1, y + 1], [x, y + 1]].map(([u, v]) => pt(u * c, v * c));
           const grown = q.map(([px, py], i) => { // a hair of overlap hides seams between cells

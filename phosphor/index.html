@@ -248,6 +248,7 @@
             <label><input type="radio" name="biv-size" value="2"><span>2×2</span></label>
             <label><input type="radio" name="biv-size" value="3" checked><span>3×3</span></label>
             <label><input type="radio" name="biv-size" value="4"><span>4×4</span></label>
+            <label><input type="radio" name="biv-size" value="c"><span>Continuous</span></label><!-- continuous -->
           </div>
         </div>
 
@@ -322,32 +323,51 @@
 
         <h2>Export</h2>
         <label class="field ramp-name">
-          <span>Scheme name <span class="hint-inline">(used by the Python, R and ArcGIS Pro exports)</span></span>
+          <span>Scheme name <span class="hint-inline">(names the exports below)</span></span>
           <input id="biv-name" type="text" placeholder="Scheme name" spellcheck="false" autocomplete="off">
         </label>
         <div class="exports">
-          <div class="export">
+          <div class="export biv-classed-only">
             <div class="export-head"><span>Hex grid <span class="hint-inline">(top row is high Y)</span></span><button type="button" data-copy="biv-out-hex">Copy</button></div>
             <pre class="code"><code id="biv-out-hex"></code></pre>
           </div>
-          <div class="export">
+          <div class="export biv-classed-only">
             <div class="export-head"><span>Python</span><button type="button" data-copy="biv-out-py">Copy</button></div>
             <pre class="code"><code id="biv-out-py"></code></pre>
           </div>
-          <div class="export">
+          <div class="export biv-classed-only">
             <div class="export-head"><span>R (biscale)</span><button type="button" data-copy="biv-out-r">Copy</button></div>
             <pre class="code"><code id="biv-out-r"></code></pre>
           </div>
-          <div class="export">
+          <div class="export biv-classed-only">
             <div class="export-head"><span>ArcGIS Pro style (.stylx)</span><button id="biv-pro-download" type="button">Download .stylx</button></div>
             <div id="biv-pro-preview" class="biv-pro-preview" aria-hidden="true"></div>
             <p id="biv-pro-hint" class="hint">A bivariate color scheme for ArcGIS Pro's Bivariate Colors symbology. Add the file under <b>Catalog → Styles → Add Style</b>, choose Bivariate Colors with the same grid size, and pick the scheme from the color scheme menu.</p>
           </div>
-          <div class="export">
+          <div class="export biv-classed-only">
             <div class="export-head"><span>QGIS Bivariate plugin</span><button type="button" data-copy="biv-out-qgis">Copy</button></div>
             <pre class="code"><code id="biv-out-qgis"></code></pre>
             <p class="hint">For the <a href="https://github.com/Heed725/Bivariate-Qgis-Plugin">Bivariate QGIS Plugin</a>: in its tools, choose <b>Custom / Staridas import</b> as the palette, set the same grid size, and paste these lines. Letters are X classes (A is low) and numbers are Y classes (1 is low).</p>
           </div>
+          <!-- continuous -->
+          <div class="export biv-continuous-only" hidden>
+            <div class="export-head"><span>Python (NumPy)</span><button type="button" data-copy="biv-out-cpy">Copy</button></div>
+            <pre class="code"><code id="biv-out-cpy"></code></pre>
+          </div>
+          <div class="export biv-continuous-only" hidden>
+            <div class="export-head"><span>R</span><button type="button" data-copy="biv-out-cr">Copy</button></div>
+            <pre class="code"><code id="biv-out-cr"></code></pre>
+          </div>
+          <div class="export biv-continuous-only" hidden>
+            <div class="export-head"><span>JavaScript</span><button type="button" data-copy="biv-out-cjs">Copy</button></div>
+            <pre class="code"><code id="biv-out-cjs"></code></pre>
+          </div>
+          <div class="export biv-continuous-only" hidden>
+            <div class="export-head"><span>CSS legend</span><button type="button" data-copy="biv-out-ccss">Copy</button></div>
+            <pre class="code"><code id="biv-out-ccss"></code></pre>
+          </div>
+          <p class="hint biv-continuous-only" hidden>Each export holds a 17 × 17 table of Phosphor's colors and blends between its points. ArcGIS Pro and the QGIS Bivariate plugin take classed grids only. For a finished legend, use the Legend Lab.</p>
+          <!-- /continuous -->
         </div>
       </section>
     </div>
@@ -463,6 +483,7 @@
   </svg>
 
   <script src="app.js"></script>
+  <script src="bivariate-continuous.js"></script><!-- continuous -->
   <script src="bivariate.js"></script><!-- bivariate -->
 </body>
 </html>

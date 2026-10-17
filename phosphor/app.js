@@ -733,6 +733,14 @@
       ['prop', /"[^"\n]*"(?=\s*:)/y],
       ['str', /"(?:[^"\\\n]|\\.)*"/y],
     ],
+    // continuous (bivariate-continuous.js's JavaScript export)
+    js: [
+      ['str', /'[^'\n]*'|"[^"\n]*"|`[^`\n]*`/y],
+      ['com', /\/\/.*|\/\*\*.*\*\//y],
+      ['kw', /\b(?:const|function|return|if|null)\b/y],
+      ['fn', /\b[A-Za-z_]\w*(?=\()/y],
+      ['num', /\b\d+\b/y],
+    ],
     python: [
       ['str', /"[^"\n]*"/y],
       ['com', /#.*/y],

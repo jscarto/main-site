@@ -444,10 +444,13 @@ input[type="text"], select { padding: 6px 8px; width: 100%; min-width: 0; }
 .key-target { border-color: var(--chart-target); border-top-style: dotted; }
 
 .exports { display: grid; gap: 10px; }
-.export-head { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; margin-bottom: 4px; }
+/* The title and its buttons share a line; when they don't fit, the buttons drop below the title,
+   staying together on one line. */
+.export-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 8px; font-size: 0.85rem; margin-bottom: 4px; }
 .ramp-name { margin: 0 0 12px; }
 .hint-inline { color: var(--muted); font-size: 0.8rem; }
-.export-head .row { gap: 6px; }
+.export-head .row { gap: 6px; flex-wrap: nowrap; }
+.export-head button { white-space: nowrap; }
 .gdal-options { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; align-items: end; margin-bottom: 8px; }
 .gdal-options .field { margin: 0; }
 .gdal-options input[type="text"] { font-family: ui-monospace, Menlo, monospace; }
