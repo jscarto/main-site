@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eikon - A Library of the Saints</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A library of Orthodox icons: the saints, the feasts, and the days of the Church year.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Marcellus+SC&display=swap">
+<link rel="stylesheet" href="css/eikon.css?v=36">
+</head>
+<body>
+<div class="wall" aria-hidden="true"></div>
+<canvas id="nave" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="vault">
+  <div class="vault-inner">
+    <a class="mark" href="#today" aria-label="Eikon, home">
+      <svg viewBox="0 0 26 34" aria-hidden="true"><g fill="none" stroke="#e9c873" stroke-width="2.2" stroke-linecap="round"><path d="M13 1v32"/><path d="M8 5h10"/><path d="M3 12h20"/><path d="M8 22l10 4"/></g></svg>
+      <span><b>Eikon</b><small>A Library of the Saints</small></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#today">Today</a>
+      <a href="#library">Library</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#sources">Sources</a>
+    </nav>
+    <div class="style-toggle" role="group" aria-label="Church calendar">
+      <button type="button" id="style-new" data-style="new" aria-pressed="true" title="Revised Julian calendar">New</button>
+      <button type="button" id="style-old" data-style="old" aria-pressed="false" title="Julian calendar">Old</button>
+    </div>
+  </div>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<footer class="crypt">
+  <div class="wrap">
+    <p>Eikon · A Library of the Saints. Images are public domain or openly licensed, from museum open-access programmes and Wikimedia Commons. See <a href="#sources">Sources</a>.</p>
+    <p>Fasting guidance is a general summary. Follow the practice of your parish and the counsel of your spiritual father.</p>
+  </div>
+</footer>
+
+<dialog id="share-dialog" aria-label="Share this icon as a card">
+  <div class="placard share-shell">
+    <button type="button" class="iconbtn close-x" id="share-close" aria-label="Close">✕</button>
+    <div class="share-box">
+      <div class="share-preview"><canvas id="share-canvas" width="1080" height="1350"></canvas></div>
+      <form class="share-opts" id="share-form">
+        <div>
+          <p class="eyebrow">Share a card</p>
+          <h3 id="share-title">Icon</h3>
+        </div>
+        <div class="opt-group" id="share-kind-group">
+          <span>Card</span>
+          <div class="radio-row" id="share-kinds"></div>
+        </div>
+        <div class="opt-group" id="share-day-group">
+          <span>Day</span>
+          <div id="share-day-control"></div>
+          <p class="share-readout" id="share-day-note"></p>
+        </div>
+        <div class="opt-group" id="share-icons-group">
+          <span id="share-icons-label">Icons on the card</span>
+          <div class="pick-icons" id="share-icons"></div>
+        </div>
+        <div class="opt-group">
+          <span>Shape</span>
+          <div class="radio-row">
+            <label><input type="radio" name="shape" value="portrait" checked><span class="chip">Portrait</span></label>
+            <label><input type="radio" name="shape" value="square"><span class="chip">Square</span></label>
+            <label><input type="radio" name="shape" value="story"><span class="chip">Story</span></label>
+          </div>
+        </div>
+        <div class="radio-row">
+          <button type="button" class="btn" id="share-download">Save image</button>
+          <button type="button" class="btn ghost" id="share-native">Share…</button>
+          <button type="button" class="btn ghost" id="share-copy">Copy link</button>
+        </div>
+        <p class="note" id="share-hint">Dates and commemorations come from the Church calendar and cannot be edited. If saving does nothing here, right-click or long-press the card to save it.</p>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/data/menaion.js?v=36"></script>
+<script src="js/data/icons.js?v=36"></script>
+<script src="js/calendar.js?v=36"></script>
+<script src="js/atmosphere.js?v=36"></script>
+<script src="js/share.js?v=36"></script>
+<script src="js/app.js?v=36"></script>
+</body>
+</html>
