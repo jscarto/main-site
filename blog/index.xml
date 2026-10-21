@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sat, 17 Oct 2026 09:00:00 -0400</lastBuildDate>
+			<lastBuildDate>Wed, 21 Oct 2026 16:31:09 -0400</lastBuildDate>
 		
 			<atom:link href="https://www.joshuastevens.net/blog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Eikon: A Library of The Saints</title>
+				<link>https://www.joshuastevens.net/blog/eikon-a-library-of-the-saints/</link>
+				<pubDate>Wed, 21 Oct 2026 16:31:09 -0400</pubDate>
+				<guid>https://www.joshuastevens.net/blog/eikon-a-library-of-the-saints/</guid>
+				<description>&lt;p&gt;Maps are one of my core passions. But I also have a deep interest in art, history, and the church. In my spare time I&amp;rsquo;ve been tinkering with an idea to build an interactive, searchable library of iconography. Some recent downtime provided just the right opportunity to bring it to life.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Still Bivariate, Still Curious</title>
 				<link>https://www.joshuastevens.net/blog/still-bivariate-still-curious/</link>
