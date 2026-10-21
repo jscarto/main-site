@@ -1,0 +1,13 @@
+{
+  "name": "Eikon - A Library of the Saints",
+  "short_name": "Eikon",
+  "description": "A candle-lit library of Orthodox icons, with the saints and feasts of every day.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b0806",
+  "theme_color": "#0b0806",
+  "icons": [
+    { "src": "assets/social/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/social/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

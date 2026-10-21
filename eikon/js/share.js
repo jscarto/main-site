@@ -17,7 +17,7 @@
   const SHAPES = {
     portrait: { w: 1080, h: 1350, top: 0, bottom: 0 },
     square: { w: 1080, h: 1080, top: 0, bottom: 0 },
-    story: { w: 1080, h: 1920, top: 260, bottom: 420 },
+    story: { w: 1080, h: 1920, top: 220, bottom: 380 },
   };
   const KIND_LABELS = { day: "Of the day", fast: "Fast of the day", patron: "My patron saint", icon: "The icon alone" };
   const PATRON_KINDS = ["saint", "theotokos", "angel"];
@@ -44,7 +44,8 @@
     if (o.kind === "fast") {
       return { rubric: "Fast of the Day", head: [info.fast.note || info.fast.label], sub: `${info.fast.label} · ${dateLine}`, foot: names.join(" · ") };
     }
-    const feasty = icons.map((ic, k) => ["feast", "christ", "theotokos"].includes(ic.kind) || ["great", "pascha", "holy"].includes((comms[k] || {}).rank));
+    // A feast of the Lord, the Theotokos, the Cross or the angels is a "feast"; anyone else is a saint.
+    const feasty = comms.map((c) => ["great", "pascha", "holy"].includes(c.rank) || c.movable || /\b(Lord|Christ|Theotokos|Mother of God|Icon|Cross|Synaxis|Nativity|Entry|Meeting|Annunciation|Dormition|Transfiguration|Pentecost|Trinity|Indiction)\b/.test(c.name));
     const rubric = feasty.every(Boolean) ? (names.length > 1 ? "Feasts of the Day" : "Feast of the Day")
       : feasty.some(Boolean) ? "Kept This Day"
       : (names.length > 1 ? "Saints of the Day" : "Saint of the Day");
@@ -114,80 +115,151 @@
     ctx.strokeStyle = "rgba(0,0,0,.6)"; ctx.lineWidth = 1; ctx.strokeRect(x, y, w, h);
   }
 
+  // A soft shaft of light, drawn from a gradient texture (no canvas filters, so Safari matches).
+  let shaftTex = null;
+  function shaft(x, y, angle, len, w0, w1, alpha) {
+    if (!shaftTex) {
+      const w = 64, h = 256; shaftTex = document.createElement("canvas"); shaftTex.width = w; shaftTex.height = h;
+      const g = shaftTex.getContext("2d"), img = g.createImageData(w, h);
+      for (let yy = 0; yy < h; yy++) for (let xx = 0; xx < w; xx++) {
+        const u = (xx - (w - 1) / 2) / (w / 2), t = yy / (h - 1), o = (yy * w + xx) * 4;
+        img.data[o] = 255; img.data[o + 1] = 226; img.data[o + 2] = 170;
+        img.data[o + 3] = Math.round(255 * Math.exp(-u * u * 3) * Math.pow(1 - t, 1.4));
+      }
+      g.putImageData(img, 0, 0);
+    }
+    ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.globalAlpha = alpha;
+    ctx.translate(x, y); ctx.rotate(angle - Math.PI / 2);
+    const N = 8, th = shaftTex.height / N;
+    for (let k = 0; k < N; k++) {
+      const w = w0 + (w1 - w0) * ((k + 0.5) / N);
+      ctx.drawImage(shaftTex, 0, k * th, shaftTex.width, th, -w / 2, (k * len) / N - 1, w, len / N + 2);
+    }
+    ctx.restore();
+  }
+  function gilt(text, x, y, size) {
+    const g = ctx.createLinearGradient(0, y - size * 0.85, 0, y + size * 0.1);
+    g.addColorStop(0, "#fff6d8"); g.addColorStop(0.3, "#f4dc94"); g.addColorStop(0.6, "#dcb766"); g.addColorStop(0.82, "#c9a24a"); g.addColorStop(1, "#ecd08a");
+    ctx.fillStyle = g; ctx.fillText(text, x, y);
+  }
+  // Text that stays legible over a photograph: a soft dark halo, then the fill.
+  function shadowed(fn) {
+    ctx.save(); ctx.shadowColor = "rgba(0,0,0,.9)"; ctx.shadowBlur = 18; ctx.shadowOffsetY = 2; fn(); ctx.restore();
+  }
+
   async function draw() {
     const o = cur; if (!o || !o.selected.length) return;
     const S = SHAPES[o.shape], W = S.w, H = S.h;
     cv.width = W; cv.height = H;
     await Promise.all([document.fonts.load('700 80px "Cormorant Unicase"'), document.fonts.load('italic 40px "EB Garamond"'), document.fonts.load('30px "Marcellus SC"')]).catch(() => {});
     const icons = o.selected.map((id) => window.EikonApp.BY_ID[id]);
-    const imgs = await Promise.all(icons.map((i) => loadImg(i.image)));
+    const [bg, ...imgs] = await Promise.all([loadImg("assets/textures/iconostasis.jpg"), ...icons.map((i) => loadImg(i.image))]);
     if (cur !== o) return;
     const t = texts(o);
 
-    // Ground, full bleed.
-    ctx.fillStyle = "#0d0907"; ctx.fillRect(0, 0, W, H);
-    let g = ctx.createRadialGradient(W / 2, H * 0.44, 50, W / 2, H * 0.44, H * 0.75);
-    g.addColorStop(0, "#2d1e12"); g.addColorStop(1, "rgba(13,9,7,0)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-    g = ctx.createRadialGradient(W / 2, H * 1.05, 10, W / 2, H * 1.05, H * 0.55);
-    g.addColorStop(0, "rgba(255,160,60,.26)"); g.addColorStop(1, "rgba(255,160,60,0)"); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
-    ctx.save(); ctx.globalCompositeOperation = "lighter";
-    g = ctx.createLinearGradient(W, 0, 0, H);
-    g.addColorStop(0, "rgba(240,200,120,.10)"); g.addColorStop(0.6, "rgba(240,200,120,.03)"); g.addColorStop(1, "rgba(240,200,120,0)");
-    ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(W * 0.78, 0); ctx.lineTo(W * 1.02, 0); ctx.lineTo(W * 0.25, H); ctx.lineTo(-W * 0.1, H); ctx.closePath(); ctx.fill();
-    ctx.restore();
+    // 1. The church: the iconostasis photograph, cropped to fill, centred on the royal doors.
+    const scale = Math.max(W / bg.width, H / bg.height) * 1.08;
+    const bw = bg.width * scale, bh = bg.height * scale;
+    ctx.drawImage(bg, W / 2 - bw * 0.485, H * 0.56 - bh * 0.62, bw, bh);
+    // Darken, then a heavy vignette so the edges fall away into shadow.
+    ctx.fillStyle = "rgba(10,6,3,.3)"; ctx.fillRect(0, 0, W, H);
+    let g = ctx.createRadialGradient(W / 2, H * 0.47, Math.min(W, H) * 0.18, W / 2, H * 0.5, Math.hypot(W, H) * 0.62);
+    g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(0.6, "rgba(4,2,1,.55)"); g.addColorStop(1, "rgba(2,1,0,.94)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    // 2. Light falling from a high window, and candle warmth behind the icon.
+    shaft(W * 0.92, -H * 0.04, 2.2, Math.hypot(W, H) * 1.05, W * 0.08, W * 0.36, 0.22);
+    shaft(W * 0.98, -H * 0.02, 2.32, Math.hypot(W, H) * 0.95, W * 0.05, W * 0.24, 0.14);
+    g = ctx.createRadialGradient(W / 2, H * 0.48, 10, W / 2, H * 0.48, Math.min(W, H) * 0.55);
+    g.addColorStop(0, "rgba(255,190,110,.28)"); g.addColorStop(1, "rgba(255,190,110,0)");
+    ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
     ctx.fillStyle = ctx.createPattern(grain, "repeat"); ctx.fillRect(0, 0, W, H);
 
-    // The bordered box sits inside the safe area; everything that must be read is inside it.
-    const m = 34, top = S.top + m, bottom = H - S.bottom - m, left = m, right = W - m;
-    ctx.strokeStyle = "rgba(201,162,74,.75)"; ctx.lineWidth = 2; ctx.strokeRect(left, top, right - left, bottom - top);
-    ctx.strokeStyle = "rgba(201,162,74,.35)"; ctx.lineWidth = 1; ctx.strokeRect(left + 10, top + 10, right - left - 20, bottom - top - 20);
-    guilloche(left + 40, right - 40, top + 46, 7);
-    guilloche(left + 40, right - 40, bottom - 46, 7);
+    // The picture fades to black toward the top and bottom edges, so text sits on shadow.
+    g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, "rgba(2,1,0,.96)"); g.addColorStop(0.24, "rgba(2,1,0,.45)"); g.addColorStop(0.42, "rgba(2,1,0,0)");
+    g.addColorStop(0.58, "rgba(2,1,0,0)"); g.addColorStop(0.74, "rgba(2,1,0,.6)"); g.addColorStop(1, "rgba(2,1,0,.97)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
 
+    const top = S.top, bottom = H - S.bottom, story = o.shape === "story";
     ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
-    ctx.fillStyle = "#d4553a"; ctx.font = '34px "Marcellus SC", Georgia, serif';
-    spaced(t.rubric.toUpperCase(), W / 2, top + 120, 7);
-    ctx.fillStyle = "#b3a17f"; ctx.font = 'italic 32px "EB Garamond", Georgia, serif';
-    ctx.fillText(wrap(t.sub, W - 220, ctx.font)[0], W / 2, top + 166);
 
-    // Headline: one name large, several names smaller and stacked.
-    const many = t.head.length > 1;
-    const size = many ? 46 : (o.shape === "square" ? 58 : 66);
-    const headFont = `700 ${size}px "Cormorant Unicase", Georgia, serif`;
-    const lineH = Math.round(size * 1.06);
-    let headLines = [];
-    t.head.forEach((h, k) => { headLines = headLines.concat(wrap(h, W - 220, headFont).slice(0, many ? 2 : 3).map((l) => ({ l, gap: k > 0 && headLines.length ? 1 : 0 }))); });
-    headLines = headLines.slice(0, many ? 5 : 3);
-    const gaps = headLines.filter((x) => x.gap).length;
-    const textBlock = headLines.length * lineH + gaps * 14 + 70;
-    const imgTop = top + 196, imgBottom = bottom - 172 - textBlock;
-    const availH = imgBottom - imgTop - 40, availW = W - 2 * m - 180;
+    // Layout, from the bottom up: the Eikon mark, the foot line, the headline; then the icon above.
+    // Stories drop the repeated title line and use a smaller mark, to give the icon more height.
+    const logoY = bottom - (story ? 52 : 64), footY = logoY - (story ? 96 : 128), headBottom = story ? footY - 22 : footY - 58;
+    const rubricSize = story ? 64 : 58, rubricY = top + 40 + rubricSize, dateY = rubricY + 58;
+    // Long date or location lines wrap rather than being cut off.
+    ctx.font = 'italic 42px "EB Garamond", Georgia, serif';
+    // Prefer to break at the " · " between date and place, so neither is split mid-name.
+    let subLines = wrap(t.sub, W - 140, ctx.font);
+    if (subLines.length > 1 && t.sub.includes(" · ")) subLines = t.sub.split(" · ").flatMap((part) => wrap(part, W - 140, ctx.font));
+    subLines = subLines.slice(0, 3);
+    ctx.font = 'italic 36px "EB Garamond", Georgia, serif';
+    const footLines = story ? [] : wrap(t.foot || "", W - 140, ctx.font).slice(0, 2);
+    const imgTop = dateY + (subLines.length - 1) * 50 + 44, gap = 44, ars = imgs.map((im) => im.width / im.height);
+    const many = t.head.length > 1, maxLines = many ? 5 : (story ? 4 : 3);
+    // Fit the headline to a width: start large and step down until every name fits.
+    function fitHead(width) {
+      let size = many ? 58 : (o.shape === "square" ? 72 : 82), font, lines;
+      for (;;) {
+        font = `700 ${size}px "Cormorant Unicase", Georgia, serif`;
+        lines = [];
+        t.head.forEach((hh, k) => { lines = lines.concat(wrap(hh, width, font).map((l, j) => ({ l, gap: k > 0 && j === 0 ? 1 : 0 }))); });
+        if (lines.length <= maxLines || size <= 44) break;
+        size -= 6;
+      }
+      lines = lines.slice(0, maxLines);
+      const lineH = Math.round(size * 1.05);
+      const headTop = headBottom - (lines.length - 1) * lineH - lines.filter((x) => x.gap).length * 14;
+      return { size, font, lines, lineH, headTop };
+    }
+    const rowWidth = (hh) => ars.reduce((a, r) => a + r * hh, 0) + gap * (imgs.length - 1);
+    let head, h;
+    if (story) {
+      // Stories are tall: grow the icon as far as it will go, and keep the text no wider than it
+      // (but never narrower than a comfortable column).
+      let lo = 200, hi = bottom - imgTop;
+      for (let i = 0; i < 22; i++) {
+        const mid = (lo + hi) / 2;
+        const w = Math.min(rowWidth(mid), W - 120);
+        const hd = fitHead(Math.max(w, 480) - 20);
+        if (rowWidth(mid) <= W - 120 && imgTop + mid + hd.size + 24 <= hd.headTop) lo = mid; else hi = mid;
+      }
+      h = lo; head = fitHead(Math.max(Math.min(rowWidth(h), W - 120), 480) - 20);
+    } else {
+      head = fitHead(W - 140);
+      const availH = head.headTop - head.size - 40 - imgTop, availW = W - 180;
+      h = availH;
+      if (rowWidth(h) > availW) h = (availW - gap * (imgs.length - 1)) / ars.reduce((a, r) => a + r, 0);
+    }
+    const textW = story ? Math.max(Math.min(rowWidth(h), W - 120), 480) : W - 140;
 
-    // Lay the icons out in a row, all the same height.
-    const gap = 48;
-    const ars = imgs.map((im) => im.width / im.height);
-    let h = availH;
-    let totalW = ars.reduce((a, r) => a + r * h, 0) + gap * (imgs.length - 1);
-    if (totalW > availW) { h = (availW - gap * (imgs.length - 1)) / ars.reduce((a, r) => a + r, 0); totalW = availW; }
+    // Rubric and date.
+    // In stories the title is held to the same width as the icon and headline, never below 48px.
+    let rs = rubricSize;
+    const spacedWidth = (txt, size) => { ctx.font = `${size}px "Marcellus SC", Georgia, serif`; return [...txt].reduce((a2, ch) => a2 + ctx.measureText(ch).width, 0) + size * 0.16 * (txt.length - 1); };
+    if (story) while (rs > 44 && spacedWidth(t.rubric.toUpperCase(), rs) > textW) rs -= 2;
+    shadowed(() => { ctx.fillStyle = "#f08a6c"; ctx.font = `${rs}px "Marcellus SC", Georgia, serif`; spaced(t.rubric.toUpperCase(), W / 2, rubricY, rs * 0.16); });
+    shadowed(() => { ctx.fillStyle = "#eadcbc"; ctx.font = 'italic 42px "EB Garamond", Georgia, serif'; subLines.forEach((l, i) => ctx.fillText(l, W / 2, dateY + i * 50)); });
+
+    // The icon(s), centred in the space between the date and the headline.
+    const totalW = rowWidth(h);
     let x = (W - totalW) / 2;
-    const y = imgTop + (availH - h) / 2 + 20;
+    const y = imgTop + Math.max(0, (head.headTop - head.size - (story ? 24 : 40) - imgTop - h) / 2);
     imgs.forEach((im, k) => { const w = ars[k] * h; kiot(im, x, y, w, h); x += w + gap; });
 
-    let ty = imgBottom + 70;
-    ctx.save(); ctx.font = headFont; ctx.shadowColor = "rgba(0,0,0,.7)"; ctx.shadowOffsetY = 3; ctx.shadowBlur = 4;
-    headLines.forEach(({ l, gap: gp }) => {
-      ty += gp * 14;
-      const gg = ctx.createLinearGradient(0, ty - size * 0.85, 0, ty + 8);
-      gg.addColorStop(0, "#fff4cc"); gg.addColorStop(0.35, "#f4dc94"); gg.addColorStop(0.6, "#c9a24a"); gg.addColorStop(0.85, "#8a6420"); gg.addColorStop(1, "#d8b25e");
-      ctx.fillStyle = gg; ctx.fillText(l, W / 2, ty); ty += lineH;
-    });
-    ctx.restore();
-    ctx.fillStyle = "#b3a17f"; ctx.font = 'italic 28px "EB Garamond", Georgia, serif';
-    ctx.fillText(wrap(t.foot || "", W - 260, ctx.font)[0] || "", W / 2, ty + 2);
-
-    cross(W / 2, bottom - 122, 34);
-    ctx.fillStyle = "#c9a24a"; ctx.font = '24px "Marcellus SC", Georgia, serif';
-    spaced("EIKON · A LIBRARY OF THE SAINTS", W / 2, bottom - 72, 4);
+    // Headline, foot line and the Eikon mark.
+    let ty = head.headTop;
+    ctx.font = head.font;
+    head.lines.forEach(({ l, gap: gp }) => { ty += gp * 14; shadowed(() => gilt(l, W / 2, ty, head.size)); ty += head.lineH; });
+    ctx.font = 'italic 36px "EB Garamond", Georgia, serif';
+    shadowed(() => { ctx.fillStyle = "#e3d2ad"; footLines.forEach((l, i) => ctx.fillText(l, W / 2, footY + i * 42)); });
+    const ls = story ? 64 : 76, k = ls / 76;
+    ctx.font = `700 ${ls}px "Cormorant Unicase", Georgia, serif`;
+    const word = "Eikon", ww = ctx.measureText(word).width, crossW = 54 * k, gapW = 22 * k, total = crossW + gapW + ww;
+    const lx = W / 2 - total / 2;
+    shadowed(() => cross(lx + crossW / 2, logoY - 26 * k, 64 * k));
+    shadowed(() => { ctx.textAlign = "left"; gilt(word, lx + crossW + gapW, logoY, ls); ctx.textAlign = "center"; });
+    shadowed(() => { ctx.fillStyle = "#d8c49a"; ctx.font = `${Math.round(22 * k)}px "Marcellus SC", Georgia, serif`; spaced("A LIBRARY OF THE SAINTS", W / 2, logoY + 40 * k, 6 * k); });
   }
 
   /* ---------- the form ---------- */

@@ -267,7 +267,7 @@
           <p class="medium-line">${esc(icon.medium)}</p>
           <dl class="facts facts-grid">
             <div class="fact wide"><dt>Depicts</dt><dd>${icon.subjects.map((s) => `<a class="tag" href="#library" data-q="${esc(s)}">${esc(s)}</a>`).join(" ")}</dd></div>
-            <div class="fact wide"><dt>Commemorated</dt><dd>${days.map(esc).join("<br>")}${nd ? `<span class="sub">Next: ${C.formatDate(nd)} · ${relDays(C.diffDays(nd, now))} (${state.style === "old" ? "Old" : "New"} Calendar)</span>` : ""}</dd></div>
+            ${days.length ? `<div class="fact wide"><dt>Commemorated</dt><dd>${days.map(esc).join("<br>")}${nd ? `<span class="sub">Next: ${C.formatDate(nd)} · ${relDays(C.diffDays(nd, now))} (${state.style === "old" ? "Old" : "New"} Calendar)</span>` : ""}</dd></div>` : ""}
             <div class="fact"><dt>Period</dt><dd>${esc(icon.date)}${icon.artist ? `<span class="sub">${esc(icon.artist)}</span>` : ""}</dd></div>
             <div class="fact"><dt>School</dt><dd>${esc(icon.school)}</dd></div>
             <div class="fact"><dt>Made in</dt><dd>${esc(icon.origin.name)}</dd></div>
@@ -285,7 +285,7 @@
         <div class="detail-bg" aria-hidden="true" style="background-image:url('${icon.image}')"></div>
         <div class="prose">${icon.text.split("\n\n").map((p) => `<p>${esc(p)}</p>`).join("")}</div>
         <p class="credit">${creditLine(icon)}</p>
-        <div class="pager"><a class="btn ghost" href="#icon.${prev.id}">‹ ${esc(prev.title)}</a><a class="btn ghost" href="#icon.${next.id}">${esc(next.title)} ›</a></div>
+        <div class="pager"><a class="btn ghost" href="#icon.${prev.id}" title="${esc(prev.title)}"><span>‹ ${esc(prev.title)}</span></a><a class="btn ghost" href="#icon.${next.id}" title="${esc(next.title)}"><span>${esc(next.title)} ›</span></a></div>
       </div>
     </div></section>
     ${related.length ? `<section><div class="wrap"><div class="section-head"><h2>Of the same subject</h2></div><div class="wall-grid">${related.map(tile).join("")}</div></div></section>` : ""}`;
@@ -368,6 +368,7 @@
         <p>Each icon's page names where its image came from, its licence, and the photographer or museum, with a link to the original record.</p>
         <p>Many more icons exist than appear here, painted across two thousand years and kept in churches, monasteries and museums around the world. Many of them cannot be shown in Eikon because their photographs are not openly licensed or their owners restrict reuse. The library grows as more images are released for free use.</p>
         <p>The candle-lit background on each icon's page is adapted from <a href="https://commons.wikimedia.org/wiki/File:Mtskheta,_Jvari_Monastery,_Candle_light_2,_Georgia.jpg" target="_blank" rel="noopener">"Mtskheta, Jvari Monastery, Candle light 2"</a> by Vyacheslav Argenberg, used under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</p>
+        <p>Share cards are set against the iconostasis of <a href="https://commons.wikimedia.org/wiki/File:IIconostatus_of_the_Saint_George%27s_Catedral_of_Novi_Sad.jpg" target="_blank" rel="noopener">St George's Cathedral, Novi Sad</a>, photographed by Alexzr88 and released into the public domain.</p>
         <p>The calendar is a summary of the principal commemorations of the Menaion and Triodion, with a simplified guide to fasting. It is not a complete synaxarion, and local practice varies.</p>
       </div>
 

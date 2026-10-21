@@ -111,32 +111,78 @@
     });
   }
 
-  /* ---------- light beams ---------- */
+  const WARM = [246, 222, 176];
+  const tint = (c, k) => c.map((v, i) => Math.round(v * k + WARM[i] * (1 - k)));
+
+  /* ---------- light beams ----------
+     Each beam is a pre-drawn soft texture (a gaussian across its width, fading along its length),
+     stretched in slices so it widens as it falls. No canvas filters, so it renders the same in
+     Safari, Chrome and Firefox. */
+  const BEAM_TEX = {};
+  function beamTexture(color) {
+    const key = color.join(",");
+    if (BEAM_TEX[key]) return BEAM_TEX[key];
+    const w = 96, h = 256, c = document.createElement("canvas"); c.width = w; c.height = h;
+    const g = c.getContext("2d"), img = g.createImageData(w, h);
+    for (let y = 0; y < h; y++) {
+      const t = y / (h - 1);
+      // Bright near the window, then a long, gentle fall-off.
+      const along = t < 0.12 ? 1 : Math.pow(1 - (t - 0.12) / 0.88, 1.6);
+      for (let x = 0; x < w; x++) {
+        const u = (x - (w - 1) / 2) / (w / 2);
+        const across = Math.exp(-u * u * 3.2);
+        const o = (y * w + x) * 4;
+        img.data[o] = color[0]; img.data[o + 1] = color[1]; img.data[o + 2] = color[2];
+        img.data[o + 3] = Math.round(255 * across * along);
+      }
+    }
+    g.putImageData(img, 0, 0);
+    return (BEAM_TEX[key] = c);
+  }
   function beams(t) {
     // Light source: the window, top right. Beams fall toward lower left.
     const sx = W * 0.86, sy = -H * 0.05;
-    const list = [];
+    const len = Math.hypot(W, H) * 1.25;
     const angles = [2.18, 2.3, 2.42, 2.55];
-    angles.forEach((a, i) => {
-      const spread = 0.05 + i * 0.008;
-      const len = Math.hypot(W, H) * 1.3;
+    return angles.map((a, i) => {
       // The beams drift side to side together, slowly, with a little independent waver.
       const sway = Math.sin(t * 0.00011) * 0.05 + Math.sin(t * 0.00027 + i * 1.3) * 0.012;
-      const a1 = a - spread + sway, a2 = a + spread + sway;
-      list.push({
-        poly: [[sx - 30 + i * 18, sy], [sx + 10 + i * 18, sy],
-               [sx + Math.cos(a2) * len, sy + Math.sin(a2) * len], [sx + Math.cos(a1) * len, sy + Math.sin(a1) * len]],
-        color: GLASS[[2, 0, 5, 1][i]],
-        alpha: 0.21 + 0.05 * Math.sin(t * 0.0004 + i * 1.7),
-      });
+      const ang = a + sway;
+      return {
+        x: sx - 30 + i * 22, y: sy, ux: Math.cos(ang), uy: Math.sin(ang), len,
+        w0: 70 + i * 14, w1: len * (0.2 + i * 0.025),
+        color: tint(GLASS[[2, 0, 5, 1][i]], 0.45),
+        alpha: 0.16 + 0.04 * Math.sin(t * 0.0004 + i * 1.7),
+      };
     });
-    return list;
   }
-  function beamPath(b) {
-    const p = new Path2D();
-    p.moveTo(b.poly[0][0], b.poly[0][1]);
-    for (let i = 1; i < 4; i++) p.lineTo(b.poly[i][0], b.poly[i][1]);
-    p.closePath(); return p;
+  // Draw a beam as eight slices of its texture, each a little wider than the last.
+  function drawBeam(g, b) {
+    const tex = beamTexture(b.color), N = 8, th = tex.height / N;
+    g.save();
+    g.translate(b.x, b.y);
+    g.rotate(Math.atan2(b.uy, b.ux) - Math.PI / 2);
+    g.globalAlpha = b.alpha;
+    for (let k = 0; k < N; k++) {
+      const w = b.w0 + (b.w1 - b.w0) * ((k + 0.5) / N);
+      g.drawImage(tex, 0, k * th, tex.width, th, -w / 2, (k * b.len) / N - 1, w, b.len / N + 2);
+    }
+    g.restore();
+  }
+  // How brightly a point sits inside the beams (0 outside, about 1 at the bright core).
+  function beamLight(bs, px, py) {
+    let best = 0;
+    for (const b of bs) {
+      const dx = px - b.x, dy = py - b.y;
+      const along = dx * b.ux + dy * b.uy;
+      if (along <= 0 || along >= b.len) continue;
+      const perp = Math.abs(dx * b.uy - dy * b.ux);
+      const half = (b.w0 + (b.w1 - b.w0) * (along / b.len)) / 2;
+      const f = along / b.len;
+      const v = Math.exp(-((perp / half) ** 2) * 3.2) * (f < 0.12 ? 1 : Math.pow(1 - (f - 0.12) / 0.88, 1.2));
+      if (v > best) best = v;
+    }
+    return best;
   }
 
   function resize() {
@@ -158,8 +204,6 @@
     light.width = Math.ceil(W * LS); light.height = Math.ceil(H * LS);
     fog.width = lit.width = Math.ceil(W * FS); fog.height = lit.height = Math.ceil(H * FS);
   }
-  const WARM = [246, 222, 176];
-  const tint = (c, k) => c.map((v, i) => Math.round(v * k + WARM[i] * (1 - k)));
 
   function frame(t) {
     const bs = beams(t);
@@ -167,17 +211,9 @@
     // 1. Light shafts.
     lctx.setTransform(LS, 0, 0, LS, 0, 0);
     lctx.clearRect(0, 0, W, H);
-    lctx.filter = "blur(6px)";
-    bs.forEach((b) => {
-      const [x0, y0] = b.poly[0], [x1, y1] = b.poly[2];
-      const g = lctx.createLinearGradient(x0, y0, x1, y1);
-      const [r, gg, bb] = tint(b.color, 0.35);
-      g.addColorStop(0, `rgba(${r},${gg},${bb},${b.alpha * 2.6})`);
-      g.addColorStop(0.55, `rgba(${r},${gg},${bb},${b.alpha})`);
-      g.addColorStop(1, `rgba(${r},${gg},${bb},0)`);
-      lctx.fillStyle = g; lctx.fill(beamPath(b));
-    });
-    lctx.filter = "none";
+    lctx.globalCompositeOperation = "lighter";
+    bs.forEach((b) => drawBeam(lctx, b));
+    lctx.globalCompositeOperation = "source-over";
 
     // 2. Smoke and motes.
     for (let i = smoke.length - 1; i >= 0; i--) {
@@ -217,26 +253,20 @@
     ctx.globalCompositeOperation = "lighter";
     ctx.globalAlpha = 1; ctx.drawImage(lit, 0, 0, W, H); ctx.drawImage(lit, 0, 0, W, H);
 
-    // 5. Dust: tiny motes drawn sharp, visible only inside the beams and dimming as the light falls off.
-    const sx = W * 0.86, sy = -H * 0.05, reach = Math.hypot(W, H) * 1.15;
-    ctx.save();
-    const clip = new Path2D();
-    bs.forEach((b) => clip.addPath(beamPath(b)));
-    ctx.clip(clip);
+    // 5. Dust: tiny motes drawn sharp, as bright as the light they drift through.
     motes.forEach((m) => {
       if (!reduce) {
         m.x += m.vx + Math.sin(t * 0.0004 + m.p) * 0.06; m.y += m.vy;
         if (m.y > H + 4) m.y = -4; if (m.x < -4) m.x = W + 4; if (m.x > W + 4) m.x = -4;
       }
-      const fall = 1 - Math.min(1, Math.hypot(m.x - sx, m.y - sy) / reach);
-      if (fall <= 0) return;
+      const lightHere = beamLight(bs, m.x, m.y);
+      if (lightHere < 0.04) return;
       const tw = Math.pow(Math.max(0, Math.sin(t * m.s + m.p)), 3);
-      const a = (0.22 + 0.78 * tw) * Math.pow(fall, 0.6);
+      const a = (0.25 + 0.75 * tw) * Math.min(1, lightHere * 1.4);
       if (a < 0.03) return;
       ctx.fillStyle = `rgba(255,242,210,${a.toFixed(3)})`;
       ctx.fillRect(m.x - m.r, m.y - m.r, m.r * 2, m.r * 2);
     });
-    ctx.restore();
     ctx.globalCompositeOperation = "source-over";
 
     if (!reduce && smoke.length < 46 && Math.random() < 0.08) spawnSmoke(false);
