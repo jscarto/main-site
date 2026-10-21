@@ -1530,7 +1530,8 @@
 
   function clearStaleShareLink() {
     const bivariateLink = /^#(?:.*&)?t=b(?:&|$)/.test(location.hash); // bivariate: bivariate.js manages its own links
-    if (location.hash && !bivariateLink && location.hash !== stateHash()) {
+    const qualitativeLink = /^#(?:.*&)?t=q(?:&|$)/.test(location.hash); // qualitative: so does qualitative.js
+    if (location.hash && !bivariateLink && !qualitativeLink && location.hash !== stateHash()) {
       history.replaceState(null, '', location.pathname + location.search);
     }
   }
@@ -1771,6 +1772,7 @@
   }
 
   function renderLegend() {
+    if (window.PhosphorQualitative && window.PhosphorQualitative.renderLegend(lastPaletteTab)) return; // qualitative
     if (window.PhosphorBivariate && window.PhosphorBivariate.renderLegend(lastPaletteTab)) return; // bivariate
     const o = legendSettings();
     const problem = gradient ? legendProblem(o) : 'Build a valid palette on the Sequential or Diverging tab first.';
@@ -1878,7 +1880,8 @@
 
   function legendFilename(ext) {
     const bivariateName = lastPaletteTab === 'bivariate' && window.PhosphorBivariate && window.PhosphorBivariate.name(); // bivariate
-    return safeFilename(legendSettings().title || bivariateName || rampName()) + ' legend.' + ext;
+    const qualitativeName = lastPaletteTab === 'qualitative' && window.PhosphorQualitative && window.PhosphorQualitative.name(); // qualitative
+    return safeFilename(legendSettings().title || bivariateName || qualitativeName || rampName()) + ' legend.' + ext;
   }
 
   function legendSvgText() {
@@ -1927,6 +1930,7 @@
   let activeTab = state.type;
   let lastPaletteTab = state.type; // bivariate: 'sequential', 'diverging' or 'bivariate', for the Legend Lab
   const bivariatePanel = $('bivariate-panel'); // bivariate
+  const qualitativePanel = $('qualitative-panel'); // qualitative
 
   function markTab(type, focus) {
     activeTab = type;
@@ -1940,14 +1944,16 @@
 
   function selectTab(type, focus) {
     if (activeTab === type) return;
-    const fromOther = activeTab === 'legend' || activeTab === 'bivariate'; // bivariate: was fromLegend
+    const fromOther = activeTab === 'legend' || activeTab === 'bivariate' || activeTab === 'qualitative'; // bivariate, qualitative: was fromLegend
     markTab(type, focus);
-    el.tabPanel.hidden = type === 'legend' || type === 'bivariate';
+    el.tabPanel.hidden = type === 'legend' || type === 'bivariate' || type === 'qualitative'; // qualitative
     legendEl.panel.hidden = type !== 'legend';
     if (bivariatePanel) bivariatePanel.hidden = type !== 'bivariate'; // bivariate
+    if (qualitativePanel) qualitativePanel.hidden = type !== 'qualitative'; // qualitative
     if (type !== 'legend') lastPaletteTab = type;
     if (type === 'legend') { renderLegend(); return; }
     if (type === 'bivariate') { if (window.PhosphorBivariate) window.PhosphorBivariate.show(); return; } // bivariate
+    if (type === 'qualitative') { if (window.PhosphorQualitative) window.PhosphorQualitative.show(); return; } // qualitative
     // Back from another tab to the palette it was showing: nothing to rebuild.
     if (fromOther && state.type === type && gradient) return;
     state = tabStates[type];

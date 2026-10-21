@@ -34,6 +34,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="bivariate.css"><!-- bivariate -->
+  <link rel="stylesheet" href="qualitative.css"><!-- qualitative -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
 </head>
 <body>
@@ -61,8 +62,9 @@
       <button type="button" role="tab" id="tab-sequential" data-type="sequential" aria-selected="true" aria-controls="tab-panel"><svg class="tab-icon" viewBox="0 0 20 16" aria-hidden="true"><circle cx="4" cy="12" r="2.4"/><circle cx="10" cy="8" r="2.4"/><circle cx="16" cy="4" r="2.4"/></svg>Sequential</button>
       <button type="button" role="tab" id="tab-diverging" data-type="diverging" aria-selected="false" aria-controls="tab-panel" tabindex="-1"><svg class="tab-icon" viewBox="0 0 20 16" aria-hidden="true"><circle cx="4" cy="11" r="2.4"/><circle cx="10" cy="5" r="2.4"/><circle cx="16" cy="11" r="2.4"/></svg>Diverging</button>
       <!-- bivariate -->
+      <button type="button" role="tab" id="tab-qualitative" data-type="qualitative" aria-selected="false" aria-controls="qualitative-panel" tabindex="-1"><svg class="tab-icon" viewBox="0 0 20 16" aria-hidden="true"><circle cx="5" cy="8" r="4.2"/><rect x="11" y="3.9" width="8.2" height="8.2" rx="1"/></svg>Qualitative</button><!-- qualitative -->
       <button type="button" role="tab" id="tab-bivariate" data-type="bivariate" aria-selected="false" aria-controls="bivariate-panel" tabindex="-1"><svg class="tab-icon" viewBox="0 0 20 16" aria-hidden="true"><rect x="10.8" y="1" width="6.2" height="6.2" rx="1"/><rect x="3" y="1" width="6.2" height="6.2" rx="1" opacity=".6"/><rect x="10.8" y="8.8" width="6.2" height="6.2" rx="1" opacity=".35"/><rect x="3" y="8.8" width="6.2" height="6.2" rx="1" opacity=".75"/></svg>Bivariate</button>
-      <button type="button" role="tab" id="tab-legend" data-type="legend" aria-selected="false" aria-controls="legend-panel" tabindex="-1"><svg class="tab-icon tab-icon-line" viewBox="0 0 20 16" aria-hidden="true"><path d="M7.5 1.5h5M8.5 1.5v4.2L3.6 13.2a.9.9 0 0 0 .8 1.3h11.2a.9.9 0 0 0 .8-1.3L11.5 5.7V1.5"/><path d="M5.6 10.2h8.8"/></svg>Legend Lab</button>
+      <button type="button" role="tab" id="tab-legend" data-type="legend" aria-selected="false" aria-controls="legend-panel" tabindex="-1"><svg class="tab-icon tab-icon-line" viewBox="0 0 20 16" aria-hidden="true"><path d="M7.5 1.5h5M8.5 1.5v4.2L3.6 13.2a.9.9 0 0 0 .8 1.3h11.2a.9.9 0 0 0 .8-1.3L11.5 5.7V1.5"/><path d="M5.6 10.2h8.8"/></svg>Legend<span class="tab-lab"> Lab</span></button><!-- qualitative: " Lab" drops when the tabs are tight -->
     </div>
     <div id="tab-panel" class="layout" role="tabpanel" aria-labelledby="tab-sequential">
     <section class="presets" aria-label="Preset palettes">
@@ -372,6 +374,99 @@
       </section>
     </div>
 
+    <!-- qualitative -->
+    <div id="qualitative-panel" class="layout qualitative" role="tabpanel" aria-labelledby="tab-qualitative" hidden>
+      <section class="presets" aria-label="Qualitative preset palettes">
+        <button id="qual-presets-toggle" class="presets-toggle" type="button" aria-expanded="false" aria-controls="qual-presets">Show preset palettes</button>
+        <div id="qual-presets" class="panel presets-panel" hidden></div>
+      </section>
+
+      <section class="panel controls" aria-label="Qualitative controls">
+        <h2>Classes</h2>
+        <div class="field">
+          <span>Number of categories</span>
+          <div class="seg" role="radiogroup" aria-label="Number of categories"><label><input type="radio" name="qual-size" value="3"><span>3</span></label><label><input type="radio" name="qual-size" value="4"><span>4</span></label><label><input type="radio" name="qual-size" value="5"><span>5</span></label><label><input type="radio" name="qual-size" value="6"><span>6</span></label><label><input type="radio" name="qual-size" value="7" checked><span>7</span></label><label><input type="radio" name="qual-size" value="8"><span>8</span></label><label><input type="radio" name="qual-size" value="9"><span>9</span></label></div>
+        </div>
+
+        <h2>Colors</h2>
+        <ol id="qual-colors" class="color-list qual-list"></ol>
+        <div class="row qual-actions"><button id="qual-reorder" type="button">Reorder for contrast</button></div>
+        <p class="hint">Each category gets its own color. Colors should differ in both hue and lightness, so they stay apart for colorblind readers too. Reorder for contrast arranges them so neighbors in a legend differ most.</p>
+      </section>
+
+      <section class="panel output" aria-label="Qualitative result">
+        <div class="bar-head">
+          <h2 class="qual-title">Palette</h2>
+          <div class="qual-badges">
+            <span id="qual-cvd" class="cvd-badge" hidden></span>
+            <span id="qual-closest" class="contrast-min" hidden></span>
+          </div>
+        </div>
+        <div id="qual-swatches" class="swatches qual-swatches"></div>
+        <div class="qual-row">
+          <canvas id="qual-map" class="qual-map" width="400" height="400" role="img" aria-label="Map of counties colored by category with the current palette"></canvas>
+        </div>
+        <p id="qual-note" class="hint" hidden></p>
+        <div class="share-cta">
+          <p id="qual-share-status" class="share-status" aria-live="polite">Like this palette? Get a link to bookmark it or share it.</p>
+          <button id="qual-share" class="share-btn" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+            <span id="qual-share-label">Copy share link</span>
+          </button>
+        </div>
+
+        <h2>Export</h2>
+        <label class="field ramp-name">
+          <span>Scheme name <span class="hint-inline">(names the exports below)</span></span>
+          <input id="qual-name" type="text" placeholder="Scheme name" spellcheck="false" autocomplete="off">
+        </label>
+        <div class="exports">
+          <div class="export">
+            <div class="export-head"><span>Hex list</span><button type="button" data-copy="qual-out-hex">Copy</button></div>
+            <pre class="code"><code id="qual-out-hex"></code></pre>
+          </div>
+          <div class="export">
+            <div class="export-head"><span>CSS custom properties</span><button type="button" data-copy="qual-out-css">Copy</button></div>
+            <pre class="code"><code id="qual-out-css"></code></pre>
+          </div>
+          <div class="export">
+            <div class="export-head"><span>Python (matplotlib)</span><button type="button" data-copy="qual-out-py">Copy</button></div>
+            <pre class="code"><code id="qual-out-py"></code></pre>
+          </div>
+          <div class="export">
+            <div class="export-head"><span>R (ggplot2)</span><button type="button" data-copy="qual-out-r">Copy</button></div>
+            <pre class="code"><code id="qual-out-r"></code></pre>
+          </div>
+          <div class="export">
+            <div class="export-head"><span>ArcGIS Pro style (.stylx)</span><button id="qual-pro-download" type="button">Download .stylx</button></div>
+            <div id="qual-pro-preview" class="qual-pro-preview" aria-hidden="true"></div>
+            <p class="hint">A fixed color scheme for Unique Values symbology, with the colors in this order. Add the file under <b>Catalog → Styles → Add Style</b>, then pick the scheme from the color scheme menu when symbolizing by Unique Values.</p>
+          </div>
+          <div class="export">
+            <div class="export-head"><span>QGIS style (.xml)</span><span class="row"><button type="button" data-copy="qual-out-qgis">Copy</button><button id="qual-qgis-download" type="button">Download .xml</button></span></div>
+            <pre class="code"><code id="qual-out-qgis"></code></pre>
+            <p class="hint">A preset color ramp. In QGIS, open <b>Settings → Style Manager</b>, choose <b>Import/Export → Import Item(s)</b> and pick this file; then choose it as the color ramp for <b>Categorized</b> symbology.</p>
+          </div>
+          <div class="export">
+            <div class="export-head"><span>GDAL color table (.txt)</span><span class="row"><button type="button" data-copy="qual-out-gdal">Copy</button><button id="qual-gdal-download" type="button">Download .txt</button></span></div>
+            <pre class="code"><code id="qual-out-gdal"></code></pre>
+            <p class="hint">One row per class code, 1 to n (<code>value, R, G, B, A</code>); no-data is transparent. Use it with <code>gdaldem color-relief input.tif colors.txt output.tif -alpha -exact_color_entry</code>.</p>
+          </div>
+          <div class="export">
+            <div class="export-head"><span>GMT color palette (.cpt)</span><span class="row"><button type="button" data-copy="qual-out-cpt">Copy</button><button id="qual-cpt-download" type="button">Download .cpt</button></span></div>
+            <pre class="code"><code id="qual-out-cpt"></code></pre>
+            <p class="hint">A categorical CPT for the <a href="https://www.generic-mapping-tools.org/">Generic Mapping Tools</a>: one key per class, 1 to n, with a label you can rename.</p>
+          </div>
+          <div class="export">
+            <div class="export-head"><span>RustGIS color ramp (.rgisramp)</span><span class="row"><button type="button" data-copy="qual-out-rgis">Copy</button><button id="qual-rgis-download" type="button">Download .rgisramp</button></span></div>
+            <pre class="code"><code id="qual-out-rgis"></code></pre>
+            <p class="hint">A qualitative ramp. In RustGIS, choose <b>Style → Styles → Add Color Ramp File</b>; for Unique Values, each class takes the next color.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /qualitative -->
+
     <div id="legend-panel" class="layout legend-lab" role="tabpanel" aria-labelledby="tab-legend" hidden>
       <section class="panel controls" aria-label="Legend options">
         <h2>Options</h2>
@@ -421,6 +516,25 @@
         <p id="legend-scale-hint" class="hint"></p>
 
         <!-- bivariate: legend options for a bivariate grid (shown by bivariate.js) -->
+        <!-- qualitative -->
+        <div id="qual-legend-options" class="legend-options" hidden>
+          <fieldset class="field legend-scale-field">
+            <span>Shape</span>
+            <div class="seg">
+              <label><input type="radio" name="qual-legend-shape" value="square" checked><span>Square</span></label>
+              <label><input type="radio" name="qual-legend-shape" value="circle"><span>Circle</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="field legend-scale-field">
+            <span>Layout</span>
+            <div class="seg">
+              <label><input type="radio" name="qual-legend-layout" value="column" checked><span>Column</span></label>
+              <label><input type="radio" name="qual-legend-layout" value="row"><span>Row</span></label>
+            </div>
+          </fieldset>
+          <label class="field legend-colors-field"><span>Labels <span class="hint-inline">(one per line)</span></span><textarea id="qual-legend-labels" rows="5" spellcheck="false" placeholder="Class 1&#10;Class 2&#10;Class 3"></textarea></label>
+        </div>
+        <!-- /qualitative -->
         <div id="biv-legend-options" class="legend-options" hidden>
           <fieldset class="field legend-scale-field">
             <span>Shape</span>
@@ -485,5 +599,6 @@
   <script src="app.js"></script>
   <script src="bivariate-continuous.js"></script><!-- continuous -->
   <script src="bivariate.js"></script><!-- bivariate -->
+  <script src="qualitative.js"></script><!-- qualitative -->
 </body>
 </html>

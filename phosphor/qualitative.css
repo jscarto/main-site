@@ -1,0 +1,39 @@
+/* Phosphor — the Qualitative tab and its legends. Remove with qualitative.js. */
+
+/* Preset cards: the shared .preset-card, with a strip of the scheme's colors as its preview. */
+.qual-card-preview { display: flex; overflow: hidden; }
+.qual-card-preview i, .qual-pro-preview i { display: block; flex: 1 1 0; }
+
+/* The color list uses the Sequential tab's .color-item rows, without the lightness readout. */
+.qual-list .color-item { grid-template-columns: 34px 1fr auto auto auto; }
+.qual-actions { margin-top: 4px; }
+
+/* The palette: badges beside the heading, the Steps swatches (.swatches, .swatch from style.css),
+   then the map at the Sequential tab's map size. */
+.qualitative .bar-head { align-items: baseline; }
+.qual-title { margin: 0; }
+.qual-badges { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.qual-swatches { margin: 12px 0 16px; }
+.qual-row { display: flex; justify-content: center; margin-bottom: 8px; }
+.qual-map { display: block; width: 275px; height: 275px; max-width: 100%; object-fit: contain; border-radius: 4px; }
+
+/* A strip under the ArcGIS Pro export, like the other tabs' previews. */
+.qual-pro-preview { display: flex; height: 18px; border-radius: 4px; overflow: hidden; margin-bottom: 4px; }
+
+/* Legend Lab labels: styled like the other text inputs. */
+#qual-legend-labels {
+  display: block; width: 100%; min-width: 0; padding: 6px 8px; resize: vertical;
+  font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+}
+#qual-legend-labels:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* Tabs in narrow windows, one step at a time (see fitTabs in qualitative.js): no-icons drops the
+   icons, tight narrows the tabs, short turns "Legend Lab" into "Legend", and no-legend drops the
+   Legend Lab tab unless it's open. The icons are shown explicitly because bivariate.css hides them
+   below 400px, which fitTabs now decides. */
+.tabs:not(.tabs-no-icons) .tab-icon { display: block; }
+.tabs.tabs-no-icons .tab-icon, .tabs.tabs-short .tab-lab { display: none; }
+@media (min-width: 481px) { .tabs.tabs-tight [role="tab"] { padding-left: 9px; padding-right: 9px; } }
+@media (min-width: 401px) and (max-width: 480px) { .tabs.tabs-tight [role="tab"] { padding-left: 6px; padding-right: 6px; } }
+@media (max-width: 400px) { .tabs.tabs-tight [role="tab"] { padding-left: 4px; padding-right: 4px; } }
+.tabs.tabs-no-legend #tab-legend:not([aria-selected="true"]) { display: none; }
