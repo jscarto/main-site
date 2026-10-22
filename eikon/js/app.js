@@ -227,14 +227,46 @@
         <div class="chips" role="group" aria-label="Period"><span class="chip-label">Period</span><button type="button" class="chip" data-era="all" aria-pressed="${state.libEra === "all"}">Any</button>${ERAS.map((e) => `<button type="button" class="chip" data-era="${e[0]}" aria-pressed="${state.libEra === e[0]}">${e[1]}</button>`).join("")}</div>
         <p class="result-count" id="lib-count" aria-live="polite"></p>
       </div>
-      <div class="wall-grid" id="lib-grid"></div>
+      <div class="lib-wall" id="lib-grid"></div>
+      <div class="lib-more" id="lib-more" aria-hidden="true"></div>
     </div></section>`;
-    const draw = () => {
-      const list = filterIcons();
-      document.getElementById("lib-count").textContent = list.length === ICONS.length ? "" : `${list.length} ${list.length === 1 ? "icon" : "icons"}`;
-      document.getElementById("lib-grid").innerHTML = list.length ? list.map(tile).join("")
-        : `<div class="empty-state"><h3>Nothing found</h3><p>No icon matches “${esc(state.libQuery)}”. Try a saint's name, a feast such as “Annunciation”, or a city such as “Novgorod”.</p></div>`;
+    const grid = document.getElementById("lib-grid"), sentinel = document.getElementById("lib-more");
+    const BATCH = 30;
+    let list = [], shown = 0, cols = [], heights = [];
+    const layout = () => {
+      const w = grid.clientWidth, gap = w < 600 ? 16 : 22;
+      const n = Math.max(2, Math.floor((w + gap) / (190 + gap)));
+      grid.style.setProperty("--gap", gap + "px");
+      grid.innerHTML = Array(n).fill('<div class="lib-col"></div>').join("");
+      cols = [...grid.children]; heights = cols.map(() => 0);
+      const upTo = shown; shown = 0; more(upTo);
     };
+    const more = (count) => {
+      const end = Math.min(list.length, shown + count);
+      for (; shown < end; shown++) {
+        const icon = list[shown], k = heights.indexOf(Math.min(...heights));
+        cols[k].insertAdjacentHTML("beforeend", tile(icon));
+        heights[k] += icon.h / icon.w + 0.45; // image plus caption, in column widths
+      }
+      sentinel.hidden = shown >= list.length;
+    };
+    const draw = () => {
+      list = filterIcons();
+      document.getElementById("lib-count").textContent = list.length === ICONS.length ? "" : `${list.length} ${list.length === 1 ? "icon" : "icons"}`;
+      if (!list.length) {
+        grid.innerHTML = `<div class="empty-state"><h3>Nothing found</h3><p>No icon matches “${esc(state.libQuery)}”. Try a saint's name, a feast such as “Annunciation”, or a city such as “Novgorod”.</p></div>`;
+        sentinel.hidden = true; return;
+      }
+      shown = 0; layout(); more(BATCH);
+    };
+    const io = new IntersectionObserver((es) => { if (es[0].isIntersecting && shown < list.length) more(BATCH); }, { rootMargin: "900px 0px" });
+    io.observe(sentinel);
+    let lastW = 0;
+    const ro = new ResizeObserver(() => {
+      if (!grid.isConnected) { ro.disconnect(); io.disconnect(); return; }
+      if (list.length && Math.abs(grid.clientWidth - lastW) > 40) { lastW = grid.clientWidth; layout(); }
+    });
+    ro.observe(grid);
     const q = document.getElementById("lib-q");
     q.addEventListener("input", () => { state.libQuery = q.value; draw(); });
     document.getElementById("lib-search").addEventListener("submit", (e) => e.preventDefault());
@@ -254,7 +286,7 @@
     const idx = ICONS.indexOf(icon), prev = ICONS[(idx - 1 + ICONS.length) % ICONS.length], next = ICONS[(idx + 1) % ICONS.length];
     const now = C.today(), nd = nextDateFor(icon, now);
     const isPatron = state.patron === icon.id;
-    const days = icon.kind === "menaion" ? [`Every day of ${C.MONTHS[Number(icon.month) - 1]}`] : icon.days.map(dayLabel);
+    const days = icon.kind === "menaion" ? [icon.month ? `Every day of ${C.MONTHS[Number(icon.month) - 1]}` : "The saints of the whole year, day by day"] : icon.days.map(dayLabel);
     const related = ICONS.filter((o) => o !== icon && o.subjects.some((s) => icon.subjects.includes(s))).slice(0, 6);
     view.innerHTML = `
     <section><div class="wrap detail">
@@ -312,10 +344,11 @@
       if (i >= 35 && d.getUTCMonth() !== mo) break;
       const inf = C.dayInfo(d, state.style);
       const p = inf.principal || inf.commemorations[0] || { name: "", rank: "" };
-      const hasIcon = iconsForDay(inf).specific.length > 0;
+      const dayIcon = iconsForDay(inf).specific[0];
+      const hasIcon = !!dayIcon;
       const jd = C.addDays(d, -C.julianOffset(y));
-      cells.push(`<button type="button" class="day ${d.getUTCMonth() !== mo ? "out" : ""} ${p.rank === "great" || p.rank === "pascha" ? "great" : p.rank === "major" ? "major" : ""} ${+d === +now ? "is-today" : ""} ${+d === +state.selDay ? "is-selected" : ""}" data-day="${isoOf(d)}" data-fast="${inf.fast.level}" aria-label="${C.formatDate(d)}: ${esc(p.name)}">
-        <span class="n">${d.getUTCDate()}</span><span class="jn" title="Julian date">${jd.getUTCDate()}</span>${hasIcon ? `<span class="dot" title="An icon for this day"></span>` : ""}
+      cells.push(`<button type="button" class="day ${hasIcon ? "has-icon" : ""} ${d.getUTCMonth() !== mo ? "out" : ""} ${p.rank === "great" || p.rank === "pascha" ? "great" : p.rank === "major" ? "major" : ""} ${+d === +now ? "is-today" : ""} ${+d === +state.selDay ? "is-selected" : ""}" data-day="${isoOf(d)}" data-fast="${inf.fast.level}" aria-label="${C.formatDate(d)}: ${esc(p.name)}">
+        ${hasIcon ? `<span class="bg" aria-hidden="true" style="background-image:url('${dayIcon.thumb}')"></span>` : ""}<span class="n">${d.getUTCDate()}</span><span class="jn" title="Julian date">${jd.getUTCDate()}</span>${hasIcon ? `<span class="dot" title="An icon for this day"></span>` : ""}
         <span class="c">${esc(p.name)}</span><span class="fastbar"></span></button>`);
     }
     const sel = C.dayInfo(state.selDay, state.style);

@@ -142,6 +142,16 @@
     g.addColorStop(0, "#fff6d8"); g.addColorStop(0.3, "#f4dc94"); g.addColorStop(0.6, "#dcb766"); g.addColorStop(0.82, "#c9a24a"); g.addColorStop(1, "#ecd08a");
     ctx.fillStyle = g; ctx.fillText(text, x, y);
   }
+  // The Eikon wordmark: Cormorant Unicase, with a true dotted i from Cormorant Garamond so it never reads as an L.
+  const WM = [["E", "Cormorant Unicase", 1], ["i", "Cormorant Garamond", 1.12], ["kon", "Cormorant Unicase", 1]];
+  function wordmarkWidth(size) {
+    return WM.reduce((w, [t, f, s]) => { ctx.font = `700 ${size * s}px "${f}", Georgia, serif`; return w + ctx.measureText(t).width; }, 0);
+  }
+  function wordmark(x, y, size) {
+    ctx.save(); ctx.textAlign = "left";
+    WM.forEach(([t, f, s]) => { ctx.font = `700 ${size * s}px "${f}", Georgia, serif`; gilt(t, x, y, size); x += ctx.measureText(t).width; });
+    ctx.restore();
+  }
   // Text that stays legible over a photograph: a soft dark halo, then the fill.
   function shadowed(fn) {
     ctx.save(); ctx.shadowColor = "rgba(0,0,0,.9)"; ctx.shadowBlur = 18; ctx.shadowOffsetY = 2; fn(); ctx.restore();
@@ -151,7 +161,7 @@
     const o = cur; if (!o || !o.selected.length) return;
     const S = SHAPES[o.shape], W = S.w, H = S.h;
     cv.width = W; cv.height = H;
-    await Promise.all([document.fonts.load('700 80px "Cormorant Unicase"'), document.fonts.load('italic 40px "EB Garamond"'), document.fonts.load('30px "Marcellus SC"')]).catch(() => {});
+    await Promise.all([document.fonts.load('700 80px "Cormorant Unicase"'), document.fonts.load('700 80px "Cormorant Garamond"', 'i'), document.fonts.load('italic 40px "EB Garamond"'), document.fonts.load('30px "Marcellus SC"')]).catch(() => {});
     const icons = o.selected.map((id) => window.EikonApp.BY_ID[id]);
     const [bg, ...imgs] = await Promise.all([loadImg("assets/textures/iconostasis.jpg"), ...icons.map((i) => loadImg(i.image))]);
     if (cur !== o) return;
@@ -254,11 +264,10 @@
     ctx.font = 'italic 36px "EB Garamond", Georgia, serif';
     shadowed(() => { ctx.fillStyle = "#e3d2ad"; footLines.forEach((l, i) => ctx.fillText(l, W / 2, footY + i * 42)); });
     const ls = story ? 64 : 76, k = ls / 76;
-    ctx.font = `700 ${ls}px "Cormorant Unicase", Georgia, serif`;
-    const word = "Eikon", ww = ctx.measureText(word).width, crossW = 54 * k, gapW = 22 * k, total = crossW + gapW + ww;
+    const ww = wordmarkWidth(ls), crossW = 54 * k, gapW = 22 * k, total = crossW + gapW + ww;
     const lx = W / 2 - total / 2;
     shadowed(() => cross(lx + crossW / 2, logoY - 26 * k, 64 * k));
-    shadowed(() => { ctx.textAlign = "left"; gilt(word, lx + crossW + gapW, logoY, ls); ctx.textAlign = "center"; });
+    shadowed(() => wordmark(lx + crossW + gapW, logoY, ls));
     shadowed(() => { ctx.fillStyle = "#d8c49a"; ctx.font = `${Math.round(22 * k)}px "Marcellus SC", Georgia, serif`; spaced("A LIBRARY OF THE SAINTS", W / 2, logoY + 40 * k, 6 * k); });
   }
 
