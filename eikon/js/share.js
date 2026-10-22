@@ -18,6 +18,7 @@
     portrait: { w: 1080, h: 1350, top: 0, bottom: 0 },
     square: { w: 1080, h: 1080, top: 0, bottom: 0 },
     story: { w: 1080, h: 1920, top: 220, bottom: 380 },
+    landscape: { w: 1600, h: 900, top: 0, bottom: 0 },
   };
   const KIND_LABELS = { day: "Of the day", fast: "Fast of the day", patron: "My patron saint", icon: "The icon alone" };
   const PATRON_KINDS = ["saint", "theotokos", "angel"];
@@ -166,6 +167,7 @@
     const [bg, ...imgs] = await Promise.all([loadImg("assets/textures/iconostasis.jpg"), ...icons.map((i) => loadImg(i.image))]);
     if (cur !== o) return;
     const t = texts(o);
+    const land = o.shape === "landscape";
 
     // 1. The church: the iconostasis photograph, cropped to fill, centred on the royal doors.
     const scale = Math.max(W / bg.width, H / bg.height) * 1.08;
@@ -179,10 +181,13 @@
     // 2. Light falling from a high window, and candle warmth behind the icon.
     shaft(W * 0.92, -H * 0.04, 2.2, Math.hypot(W, H) * 1.05, W * 0.08, W * 0.36, 0.22);
     shaft(W * 0.98, -H * 0.02, 2.32, Math.hypot(W, H) * 0.95, W * 0.05, W * 0.24, 0.14);
-    g = ctx.createRadialGradient(W / 2, H * 0.48, 10, W / 2, H * 0.48, Math.min(W, H) * 0.55);
+    const glowX = land ? W * 0.27 : W / 2;
+    g = ctx.createRadialGradient(glowX, H * 0.48, 10, glowX, H * 0.48, Math.min(W, H) * 0.55);
     g.addColorStop(0, "rgba(255,190,110,.28)"); g.addColorStop(1, "rgba(255,190,110,0)");
     ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
     ctx.fillStyle = ctx.createPattern(grain, "repeat"); ctx.fillRect(0, 0, W, H);
+
+    if (land) return drawLandscape(t, imgs, W, H);
 
     // The picture fades to black toward the top and bottom edges, so text sits on shadow.
     g = ctx.createLinearGradient(0, 0, 0, H);
@@ -271,6 +276,71 @@
     shadowed(() => { ctx.fillStyle = "#d8c49a"; ctx.font = `${Math.round(22 * k)}px "Marcellus SC", Georgia, serif`; spaced("A LIBRARY OF THE SAINTS", W / 2, logoY + 40 * k, 6 * k); });
   }
 
+  // Landscape: the icon on the left, and the words in a column on the right, over shadow.
+  function drawLandscape(t, imgs, W, H) {
+    let g = ctx.createLinearGradient(0, 0, W, 0);
+    g.addColorStop(0, "rgba(2,1,0,.35)"); g.addColorStop(0.42, "rgba(2,1,0,0)"); g.addColorStop(0.6, "rgba(2,1,0,.72)"); g.addColorStop(1, "rgba(2,1,0,.95)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, "rgba(2,1,0,.55)"); g.addColorStop(0.2, "rgba(2,1,0,0)"); g.addColorStop(0.8, "rgba(2,1,0,0)"); g.addColorStop(1, "rgba(2,1,0,.6)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
+
+    // The icon(s), as large as the left half allows.
+    const gap = 36, ars = imgs.map((im) => im.width / im.height);
+    const boxX = 90, boxY = 90, boxW = W * 0.5 - 130, boxH = H - 180;
+    const rowW = (hh) => ars.reduce((a, r) => a + r * hh, 0) + gap * (imgs.length - 1);
+    let h = boxH;
+    if (rowW(h) > boxW) h = (boxW - gap * (imgs.length - 1)) / ars.reduce((a, r) => a + r, 0);
+    let x = boxX + (boxW - rowW(h)) / 2;
+    const y = boxY + (boxH - h) / 2;
+    imgs.forEach((im, k) => { const w = ars[k] * h; kiot(im, x, y, w, h); x += w + gap; });
+
+    // The words, centred in the right-hand column.
+    const colL = W * 0.54, colR = W - 80, cx = (colL + colR) / 2, colW = colR - colL;
+    let rs = 44;
+    const spacedWidth = (txt, size) => { ctx.font = `${size}px "Marcellus SC", Georgia, serif`; return [...txt].reduce((a2, ch) => a2 + ctx.measureText(ch).width, 0) + size * 0.16 * (txt.length - 1); };
+    while (rs > 30 && spacedWidth(t.rubric.toUpperCase(), rs) > colW) rs -= 2;
+    const subFont = 'italic 34px "EB Garamond", Georgia, serif';
+    let subLines = wrap(t.sub, colW, subFont);
+    if (subLines.length > 1 && t.sub.includes(" · ")) subLines = t.sub.split(" · ").flatMap((part) => wrap(part, colW, subFont));
+    subLines = subLines.slice(0, 3);
+    const footFont = 'italic 30px "EB Garamond", Georgia, serif';
+    const footLines = wrap(t.foot || "", colW, footFont).slice(0, 2);
+    const many = t.head.length > 1, maxLines = many ? 5 : 4;
+    let size = many ? 52 : 74, font, lines;
+    for (;;) {
+      font = `700 ${size}px "Cormorant Unicase", Georgia, serif`;
+      lines = [];
+      t.head.forEach((hh, k) => { lines = lines.concat(wrap(hh, colW, font).map((l, j) => ({ l, gap: k > 0 && j === 0 ? 1 : 0 }))); });
+      if (lines.length <= maxLines || size <= 40) break;
+      size -= 4;
+    }
+    lines = lines.slice(0, maxLines);
+    const lineH = Math.round(size * 1.05), subH = 44, footH = 38;
+    const ls = 60, k = ls / 76, logoBlock = 110;
+    const blockH = rs + 30 + subLines.length * subH + 34 + lines.length * lineH + lines.filter((x2) => x2.gap).length * 12 + (footLines.length ? 24 + footLines.length * footH : 0);
+    let ty = Math.max(70, (H - logoBlock - blockH) / 2) + rs;
+    shadowed(() => { ctx.fillStyle = "#f08a6c"; ctx.font = `${rs}px "Marcellus SC", Georgia, serif`; spaced(t.rubric.toUpperCase(), cx, ty, rs * 0.16); });
+    ty += 30 + subH * 0.7;
+    shadowed(() => { ctx.fillStyle = "#eadcbc"; ctx.font = subFont; subLines.forEach((l, i) => ctx.fillText(l, cx, ty + i * subH)); });
+    ty += (subLines.length - 1) * subH + 34 + size * 0.9;
+    ctx.font = font;
+    lines.forEach(({ l, gap: gp }) => { ty += gp * 12; shadowed(() => gilt(l, cx, ty, size)); ty += lineH; });
+    ty -= lineH;
+    if (footLines.length) {
+      ty += 24 + footH;
+      ctx.font = footFont;
+      shadowed(() => { ctx.fillStyle = "#e3d2ad"; footLines.forEach((l, i) => ctx.fillText(l, cx, ty + i * footH)); });
+    }
+    const logoY = H - 92;
+    const ww = wordmarkWidth(ls), crossW = 54 * k, gapW = 22 * k, total = crossW + gapW + ww;
+    const lx = cx - total / 2;
+    shadowed(() => cross(lx + crossW / 2, logoY - 26 * k, 64 * k));
+    shadowed(() => wordmark(lx + crossW + gapW, logoY, ls));
+    shadowed(() => { ctx.fillStyle = "#d8c49a"; ctx.font = `${Math.round(22 * k)}px "Marcellus SC", Georgia, serif`; spaced("A LIBRARY OF THE SAINTS", cx, logoY + 40 * k, 6 * k); });
+  }
+
   /* ---------- the form ---------- */
   function dayIcons(date) {
     const info = C.dayInfo(date, cur.style);
@@ -322,7 +392,7 @@
   }
 
   function open(state) {
-    cur = Object.assign({ shape: (cur && cur.shape) || "portrait" }, state);
+    cur = Object.assign({ shape: (cur && cur.shape !== "landscape" && cur.shape) || "portrait" }, state);
     $("share-title").textContent = cur.title;
     document.querySelectorAll('#share-form input[name="shape"]').forEach((r) => (r.checked = r.value === cur.shape));
     renderForm();
@@ -336,7 +406,7 @@
   // An icon card: "of the day" is offered only on days this icon is actually commemorated.
   function openIcon(icon, style, mode) {
     const dates = window.EikonApp.upcomingDatesFor(icon, C.today(), 6);
-    open({ mode: "icon", base: icon, dates, date: dates[0] || C.today(), style, kind: mode || (dates.length ? "day" : "icon"), selected: [icon.id], title: icon.title });
+    open({ mode: "icon", shape: "landscape", base: icon, dates, date: dates[0] || C.today(), style, kind: mode || (dates.length ? "day" : "icon"), selected: [icon.id], title: icon.title });
   }
 
   $("share-form").addEventListener("change", (e) => {

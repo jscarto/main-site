@@ -154,7 +154,8 @@
       </div>
       <div class="today${featured ? "" : " no-icon"}">
         ${featured ? `<a class="today-icon" href="#icon.${featured.id}" aria-label="${esc(featured.title)}">${frame(featured, { full: true, eager: true })}</a>` : ""}
-        <div class="placard">
+        <div class="placard glazed">
+          <div class="glazed-body">
           <p class="eyebrow">${esc(info.weekday)} · Today</p>
           <div class="date-line"><h2 class="gilt-text">${C.formatDate(info.civil)}</h2>${churchDateNote(info)}</div>
           ${fastBadge(info.fast)}
@@ -167,10 +168,10 @@
           <div class="actions">
             ${featured ? `<a class="btn" href="#icon.${featured.id}">Learn more</a>` : ""}
             <button type="button" class="btn ghost" data-share-day="${isoOf(now)}">Share today's card</button>
-            <a class="btn ghost" href="#calendar">The calendar</a>
           </div>
+          </div>
+          <div class="lancet-wrap" aria-hidden="true"><div class="stone"></div><canvas class="lancet"></canvas></div>
         </div>
-        <div class="lancet-wrap" aria-hidden="true"><div class="stone"></div><canvas class="lancet"></canvas></div>
       </div>
     </div></section>
     <hr class="rule">
@@ -193,6 +194,7 @@
     <section><div class="wrap">
       <div class="section-head"><h2>From the library</h2><a href="#library" class="btn ghost">Enter the library</a></div>
       <div class="wall-grid">${gallery.map(tile).join("")}</div>
+      <div class="more-row"><a class="btn" href="#library">View full library</a></div>
     </div></section>`;
 
     document.getElementById("hero-search").addEventListener("submit", (e) => {
@@ -221,6 +223,7 @@
       <div class="library-tools">
         <form class="search-big" id="lib-search" role="search" style="margin-top:0">
           <input id="lib-q" type="search" placeholder="Seek a saint, a feast, a city, a painter…" value="${esc(state.libQuery)}" autocomplete="off" aria-label="Search the library">
+          <button type="button" class="clear-btn" id="lib-clear" hidden>Clear</button>
           <button type="submit" aria-label="Search">${SEARCH_ICON}</button>
         </form>
         <div class="chips" role="group" aria-label="Subject"><span class="chip-label">Subject</span>${kinds.map((k) => `<button type="button" class="chip" data-kind="${k}" aria-pressed="${state.libKind === k}">${k === "all" ? "All" : KIND_LABEL[k]}</button>`).join("")}</div>
@@ -250,7 +253,9 @@
       }
       sentinel.hidden = shown >= list.length;
     };
+    const clearBtn = document.getElementById("lib-clear");
     const draw = () => {
+      clearBtn.hidden = !state.libQuery && state.libKind === "all" && state.libEra === "all";
       list = filterIcons();
       document.getElementById("lib-count").textContent = list.length === ICONS.length ? "" : `${list.length} ${list.length === 1 ? "icon" : "icons"}`;
       if (!list.length) {
@@ -270,6 +275,12 @@
     const q = document.getElementById("lib-q");
     q.addEventListener("input", () => { state.libQuery = q.value; draw(); });
     document.getElementById("lib-search").addEventListener("submit", (e) => e.preventDefault());
+    clearBtn.addEventListener("click", () => {
+      state.libQuery = ""; state.libKind = "all"; state.libEra = "all"; q.value = "";
+      view.querySelectorAll("[data-kind]").forEach((x) => x.setAttribute("aria-pressed", x.dataset.kind === "all"));
+      view.querySelectorAll("[data-era]").forEach((x) => x.setAttribute("aria-pressed", x.dataset.era === "all"));
+      draw(); q.focus();
+    });
     view.querySelectorAll("[data-kind]").forEach((b) => b.addEventListener("click", () => {
       state.libKind = b.dataset.kind; view.querySelectorAll("[data-kind]").forEach((x) => x.setAttribute("aria-pressed", x === b)); draw();
     }));
@@ -320,7 +331,8 @@
         <div class="pager"><a class="btn ghost" href="#icon.${prev.id}" title="${esc(prev.title)}"><span>‹ ${esc(prev.title)}</span></a><a class="btn ghost" href="#icon.${next.id}" title="${esc(next.title)}"><span>${esc(next.title)} ›</span></a></div>
       </div>
     </div></section>
-    ${related.length ? `<section><div class="wrap"><div class="section-head"><h2>Of the same subject</h2></div><div class="wall-grid">${related.map(tile).join("")}</div></div></section>` : ""}`;
+    ${related.length ? `<section><div class="wrap"><div class="section-head"><h2>Of the same subject</h2></div><div class="wall-grid">${related.map(tile).join("")}</div></div></section>` : ""}
+    <section class="tail"><div class="wrap more-row"><a class="btn" href="#library">Return to library</a></div></section>`;
     view.querySelectorAll("[data-q]").forEach((a) => a.addEventListener("click", () => { state.libQuery = a.dataset.q; state.libKind = "all"; state.libEra = "all"; }));
     const pb = document.getElementById("patron-btn");
     if (pb) pb.addEventListener("click", () => {
