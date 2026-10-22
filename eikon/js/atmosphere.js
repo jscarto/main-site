@@ -3,6 +3,7 @@
    Everything is drawn on one fixed canvas behind the page. */
 (function () {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const manual = /[?&]reel\b/.test(location.search);
   const canvas = document.getElementById("nave");
   const ctx = canvas.getContext("2d");
   let W = 0, H = 0, DPR = 1;
@@ -270,7 +271,7 @@
     ctx.globalCompositeOperation = "source-over";
 
     if (!reduce && smoke.length < 46 && Math.random() < 0.08) spawnSmoke(false);
-    if (!reduce) requestAnimationFrame(frame);
+    if (!reduce && !manual) requestAnimationFrame(frame);
   }
 
   /* ---------- candle flicker: drives CSS variables on <html> ---------- */
@@ -282,8 +283,9 @@
       b += (0.8 + Math.random() * 0.32 - b) * 0.15;
       root.style.setProperty("--flicker-a", a.toFixed(3));
       root.style.setProperty("--flicker-b", b.toFixed(3));
-      setTimeout(step, 70 + Math.random() * 90);
+      if (!manual) setTimeout(step, 70 + Math.random() * 90);
     }
+    flickerStep = step;
     if (!reduce) step();
   }
 
@@ -296,8 +298,12 @@
     const count = Math.max(250, Math.min(900, Math.round((W * H) / 2000)));
     for (let i = 0; i < count; i++) motes.push({ x: Math.random() * W, y: Math.random() * H, r: 0.45 + Math.random() * 0.75, vx: (Math.random() - 0.5) * 0.05, vy: 0.03 + Math.random() * 0.09, p: Math.random() * 100, s: 0.0015 + Math.random() * 0.005 });
     document.querySelectorAll("canvas.lancet").forEach(drawWindow);
-    requestAnimationFrame(frame);
+    if (!manual) requestAnimationFrame(frame);
     flicker();
   }
-  window.EikonAtmosphere = { init, drawWindow };
+  // Reel mode (?reel in the URL): the demo-reel recorder drives the atmosphere frame by frame
+  // through step(ms), so light, smoke and flicker keep time with the video instead of the wall clock.
+  let flickerStep = null;
+  function step(ms) { frame(ms); if (flickerStep && Math.floor(ms / 110) !== Math.floor((ms - 17) / 110)) flickerStep(); }
+  window.EikonAtmosphere = { init, drawWindow, step };
 })();

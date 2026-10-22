@@ -14803,5 +14803,5247 @@ window.EIKON_ICONS = [
    "artist": "Unknown author",
    "credit": "Tretiakov Galerie"
   }
+ },
+ {
+  "id": "tatiana-19c",
+  "kind": "saint",
+  "title": "The Martyr Tatiana",
+  "alt": "",
+  "cardName": "Holy Martyr Tatiana",
+  "subjects": [
+   "St Tatiana"
+  ],
+  "days": [
+   {
+    "d": "01-12"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Oil and enamel on wood, 13 × 10.5 cm",
+  "text": "Tatiana was a deaconess of Rome, martyred in the third century. In Russia her day is the feast of students, because Moscow University was founded on St Tatiana's Day in 1755.\n\nThis is a small domestic icon of the late nineteenth century.",
+  "image": "assets/icons/tatiana-19c.jpg",
+  "thumb": "assets/icons/tatiana-19c-thumb.jpg",
+  "w": 552,
+  "h": 650,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%98%D0%BA%D0%BE%D0%BD%D0%B0_%D0%A1%D0%B2%D1%8F%D1%82%D0%B0%D1%8F_%D0%A2%D0%B0%D1%82%D1%8C%D1%8F%D0%BD%D0%B0_%D0%A5IX.jpg",
+   "file": "Икона Святая Татьяна ХIX.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://korners.kiev.ua/russian/painters/912"
+  }
+ },
+ {
+  "id": "seven-sleepers-19c",
+  "kind": "saint",
+  "title": "The Seven Holy Youths of Ephesus",
+  "alt": "",
+  "cardName": "Seven Holy Youths of Ephesus",
+  "subjects": [
+   "Seven Sleepers of Ephesus"
+  ],
+  "days": [
+   {
+    "d": "08-04"
+   },
+   {
+    "d": "10-22",
+    "n": "Seven Holy Youths of Ephesus"
+   }
+  ],
+  "month": null,
+  "date": "19th century",
+  "year": 1850,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Seven young men of Ephesus hid in a cave from the persecution of Decius and fell asleep. They woke under Theodosius II, almost two centuries later, a sign to the Church of the resurrection of the dead.\n\nThey lie asleep together in the cave, with four saints in the border.",
+  "image": "assets/icons/seven-sleepers-19c.jpg",
+  "thumb": "assets/icons/seven-sleepers-19c-thumb.jpg",
+  "w": 547,
+  "h": 650,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Russian_Icon_of_the_Seven_Sleepers_of_Ephesos.jpg",
+   "file": "Russian Icon of the Seven Sleepers of Ephesos.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://full-of-grace-and-truth.blogspot.com/2011/08/holy-seven-youths-of-ephesus.html"
+  }
+ },
+ {
+  "id": "maximus-confessor-vita",
+  "kind": "saint",
+  "title": "St Maximus the Confessor, with Scenes from His Life",
+  "alt": "",
+  "cardName": "St Maximus the Confessor",
+  "subjects": [
+   "St Maximus the Confessor"
+  ],
+  "days": [
+   {
+    "d": "01-21"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Stroganov school",
+  "artist": "",
+  "origin": {
+   "name": "Solvychegodsk",
+   "lat": 61.3333,
+   "lng": 46.9167
+  },
+  "originShort": "Solvychegodsk",
+  "home": {
+   "name": "Solvychegodsk History and Art Museum",
+   "lat": 61.3333,
+   "lng": 46.9167,
+   "city": "Solvychegodsk"
+  },
+  "medium": "Tempera on wood, with an embossed metal frame",
+  "text": "Maximus defended the teaching that Christ has a human will as well as a divine one. For it his tongue was cut out and his right hand cut off, and he died in exile in 662. The Sixth Ecumenical Council vindicated him.\n\nThis vita icon from Solvychegodsk is in the Stroganov manner.",
+  "image": "assets/icons/maximus-confessor-vita.jpg",
+  "thumb": "assets/icons/maximus-confessor-vita-thumb.jpg",
+  "w": 952,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Maksim_ispovednik.jpg",
+   "file": "Maksim ispovednik.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "",
+   "credit": ""
+  }
+ },
+ {
+  "id": "dormition-ephraim-bxm",
+  "kind": "saint",
+  "title": "The Dormition of St Ephraim the Syrian",
+  "alt": "",
+  "cardName": "St Ephraim the Syrian",
+  "subjects": [
+   "St Ephraim the Syrian"
+  ],
+  "days": [
+   {
+    "d": "01-28"
+   }
+  ],
+  "month": null,
+  "date": "Middle of the 15th century",
+  "year": 1450,
+  "school": "Cretan school",
+  "artist": "",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Byzantine and Christian Museum",
+   "lat": 37.9757,
+   "lng": 23.7444,
+   "city": "Athens"
+  },
+  "medium": "Tempera on wood",
+  "text": "Ephraim, deacon of Edessa, wrote hymns so beautiful that he is called the Harp of the Spirit. His prayer 'O Lord and Master of my life' is said throughout Great Lent.\n\nMonks gather at his bier in a desert full of hermits, stylites and caves. The museum notes an unusual detail: a large icon of the Hodegetria stands by the bier, as if for the funeral service.",
+  "image": "assets/icons/dormition-ephraim-bxm.jpg",
+  "thumb": "assets/icons/dormition-ephraim-bxm-thumb.jpg",
+  "w": 1080,
+  "h": 812,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Dormition_of_Saint_Ephraim_the_Syrian_(Cretan,_15th_c.,_Byzantine_museum).jpg",
+   "file": "Dormition of Saint Ephraim the Syrian (Cretan, 15th c., Byzantine museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "",
+   "credit": "http://www.ebyzantinemuseum.gr/?i=bxm.en.exhibit&amp;id=56"
+  }
+ },
+ {
+  "id": "agatha-19c",
+  "kind": "saint",
+  "title": "The Martyr Agatha",
+  "alt": "",
+  "cardName": "Holy Martyr Agatha",
+  "subjects": [
+   "St Agatha"
+  ],
+  "days": [
+   {
+    "d": "02-05"
+   }
+  ],
+  "month": null,
+  "date": "19th century",
+  "year": 1850,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood, 18 × 15 cm",
+  "text": "Agatha of Catania in Sicily was martyred under Decius around 251. Russian peasants took her as patron of their cattle, and dairymaids prayed to her.\n\nThis small nineteenth-century icon was made for a household.",
+  "image": "assets/icons/agatha-19c.jpg",
+  "thumb": "assets/icons/agatha-19c-thumb.jpg",
+  "w": 788,
+  "h": 947,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%98%D0%BA%D0%BE%D0%BD%D0%B0_%D0%90%D0%B3%D0%B0%D1%84%D0%B8%D1%8F_XIX.jpg",
+   "file": "Икона Агафия XIX.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "http://www.1939.ru/ikona-svjatoj-agaty-agafii-kupit-v-moskve-AR7985"
+  }
+ },
+ {
+  "id": "alexis-zinovyev",
+  "kind": "saint",
+  "title": "St Alexis, Metropolitan of Moscow",
+  "alt": "",
+  "cardName": "St Alexis, Metropolitan of Moscow",
+  "subjects": [
+   "St Alexis of Moscow"
+  ],
+  "days": [
+   {
+    "d": "02-12"
+   },
+   {
+    "d": "05-20",
+    "n": "Uncovering of the Relics of St Alexis of Moscow"
+   }
+  ],
+  "month": null,
+  "date": "c. 1690",
+  "year": 1690,
+  "school": "Moscow (Kremlin Armoury)",
+  "artist": "Georgy Zinovyev (?)",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood, 172 × 107 cm",
+  "text": "Alexis governed the Russian Church from 1354 to 1378 and, for a time, the Grand Principality as regent. He founded the Chudov Monastery in the Kremlin, which appears behind him.\n\nThe tall icon is attributed to Georgy Zinovyev, a painter of the Kremlin Armoury.",
+  "image": "assets/icons/alexis-zinovyev.jpg",
+  "thumb": "assets/icons/alexis-zinovyev-thumb.jpg",
+  "w": 754,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Mitropolitan_Alexis_by_G.Zinovyev_(1690s,_GTG).jpg",
+   "file": "Mitropolitan Alexis by G.Zinovyev (1690s, GTG).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Georgiy Zinoviev (?) Георгий Зиновьев (?)",
+   "credit": "http://days.pravoslavie.ru/Images/im46.htm"
+  }
+ },
+ {
+  "id": "gerasimus-lion",
+  "kind": "saint",
+  "title": "St Gerasimus of the Jordan with His Lion",
+  "alt": "",
+  "cardName": "St Gerasimus of the Jordan",
+  "subjects": [
+   "St Gerasimus of the Jordan"
+  ],
+  "days": [
+   {
+    "d": "03-04"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Gerasimus pulled a thorn from a lion's paw by the Jordan, and the lion stayed with him for the rest of his life. When the old monk died, the lion lay down on his grave and would not leave.\n\nHere the abbot tends the beast at the mouth of his cave.",
+  "image": "assets/icons/gerasimus-lion.jpg",
+  "thumb": "assets/icons/gerasimus-lion-thumb.jpg",
+  "w": 965,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Gerasimus_of_Jordan_with_a_Lion._Icon._Russia,_16th_century.jpg",
+   "file": "Saint Gerasimus of Jordan with a Lion. Icon. Russia, 16th century.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://fotki.yandex.ru/next/users/diomedes2/album/225371/view/1331951"
+  }
+ },
+ {
+  "id": "gregory-dialogist-heraklion",
+  "kind": "saint",
+  "title": "St Gregory the Dialogist",
+  "alt": "",
+  "cardName": "St Gregory the Dialogist, Pope of Rome",
+  "subjects": [
+   "St Gregory the Dialogist"
+  ],
+  "days": [
+   {
+    "d": "03-12"
+   }
+  ],
+  "month": null,
+  "date": "Second half of the 17th century",
+  "year": 1670,
+  "school": "Cretan school",
+  "artist": "",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Collection of St Catherine of Sinai, Heraklion",
+   "lat": 35.3397,
+   "lng": 25.1336,
+   "city": "Heraklion"
+  },
+  "medium": "Tempera on wood",
+  "text": "Gregory the Great, pope of Rome from 590 to 604, is called the Dialogist in the East after his Dialogues on the lives of Italian saints. The Liturgy of the Presanctified Gifts, served on weekdays in Lent, is traditionally his.\n\nThe icon came from the Savvathiana monastery on Crete.",
+  "image": "assets/icons/gregory-dialogist-heraklion.jpg",
+  "thumb": "assets/icons/gregory-dialogist-heraklion-thumb.jpg",
+  "w": 1092,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%CE%86%CE%B3%CE%B9%CE%BF%CF%82_%CE%93%CF%81%CE%B7%CE%B3%CF%8C%CF%81%CE%B9%CE%BF%CF%82_%CE%BF_%CE%94%CE%B9%CE%AC%CE%BB%CE%BF%CE%B3%CE%BF%CF%82_0633.jpg",
+   "file": "Άγιος Γρηγόριος ο Διάλογος 0633.jpg",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "C messier",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "theophanes-confessor-athos",
+  "kind": "saint",
+  "title": "St Theophanes the Confessor",
+  "alt": "",
+  "cardName": "St Theophanes the Confessor",
+  "subjects": [
+   "St Theophanes the Confessor"
+  ],
+  "days": [
+   {
+    "d": "03-12"
+   }
+  ],
+  "month": null,
+  "date": "14th–15th century",
+  "year": 1400,
+  "school": "Athonite",
+  "artist": "",
+  "origin": {
+   "name": "Mount Athos",
+   "lat": 40.255,
+   "lng": 24.242
+  },
+  "originShort": "Mount Athos",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Theophanes founded the monastery of Megas Agros on the Sea of Marmara and wrote a chronicle of the empire. For defending icons he was imprisoned and exiled to Samothrace, where he died in 818.\n\nHe holds an open scroll in this Athonite icon.",
+  "image": "assets/icons/theophanes-confessor-athos.jpg",
+  "thumb": "assets/icons/theophanes-confessor-athos-thumb.jpg",
+  "w": 817,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Athonite_Icon_of_Saint_Theophanes_the_Confessor_of_Megalos_Agros_2.jpg",
+   "file": "Athonite Icon of Saint Theophanes the Confessor of Megalos Agros 2.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Websites"
+  }
+ },
+ {
+  "id": "cyril-jerusalem-chirikov",
+  "kind": "saint",
+  "title": "St Cyril of Jerusalem (Chirikov)",
+  "alt": "",
+  "cardName": "St Cyril, Archbishop of Jerusalem",
+  "subjects": [
+   "St Cyril of Jerusalem"
+  ],
+  "days": [
+   {
+    "d": "03-18"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "St Petersburg",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "St Petersburg",
+   "lat": 59.9343,
+   "lng": 30.3351
+  },
+  "originShort": "St Petersburg",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Cyril taught the newly baptised of Jerusalem in the church of the Holy Sepulchre, and his Catechetical Lectures are the clearest picture we have of the fourth-century liturgy there.\n\nOsip Chirikov painted a set of month icons, one for each saint of the day, for the church of the Marble Palace in St Petersburg.",
+  "image": "assets/icons/cyril-jerusalem-chirikov.jpg",
+  "thumb": "assets/icons/cyril-jerusalem-chirikov-thumb.jpg",
+  "w": 592,
+  "h": 718,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Cyril_of_Jerusalem_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Cyril of Jerusalem by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344826"
+  }
+ },
+ {
+  "id": "daria-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Daria (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Martyrs Chrysanthus and Daria",
+  "subjects": [
+   "St Daria",
+   "St Chrysanthus"
+  ],
+  "days": [
+   {
+    "d": "03-19"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "St Petersburg",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "St Petersburg",
+   "lat": 59.9343,
+   "lng": 30.3351
+  },
+  "originShort": "St Petersburg",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Daria was a Vestal virgin sent to lure the Christian Chrysanthus back to paganism, but he converted her. They lived as brother and sister and were buried alive together in Rome.\n\nThis is another of Osip Chirikov's month icons for the Marble Palace church.",
+  "image": "assets/icons/daria-chirikov.jpg",
+  "thumb": "assets/icons/daria-chirikov-thumb.jpg",
+  "w": 614,
+  "h": 744,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Daria_by_O.Chirikov_(Muz.ist._relig).jpg",
+   "file": "Daria by O.Chirikov (Muz.ist. relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345824"
+  }
+ },
+ {
+  "id": "irene-vita-macedonia",
+  "kind": "saint",
+  "title": "The Great Martyr Irene, with Scenes from Her Life",
+  "alt": "",
+  "cardName": "Holy Great Martyr Irene",
+  "subjects": [
+   "St Irene"
+  ],
+  "days": [
+   {
+    "d": "05-05"
+   }
+  ],
+  "month": null,
+  "date": "19th century",
+  "year": 1850,
+  "school": "Macedonian",
+  "artist": "",
+  "origin": {
+   "name": "Macedonia",
+   "lat": 41.0,
+   "lng": 22.0
+  },
+  "originShort": "Macedonia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Irene was a princess who was taught the faith in a tower her father built to protect her. She survived torments, converted thousands, and is honoured as a great martyr.\n\nThe scenes around her tell her story, in a Macedonian icon of the nineteenth century.",
+  "image": "assets/icons/irene-vita-macedonia.jpg",
+  "thumb": "assets/icons/irene-vita-macedonia-thumb.jpg",
+  "w": 978,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Irina_makedonska.jpg",
+   "file": "Irina makedonska.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "simon-zealot-1720",
+  "kind": "saint",
+  "title": "The Apostle Simon the Zealot",
+  "alt": "",
+  "cardName": "Holy Apostle Simon the Zealot",
+  "subjects": [
+   "St Simon the Zealot"
+  ],
+  "days": [
+   {
+    "d": "05-10"
+   }
+  ],
+  "month": null,
+  "date": "1720",
+  "year": 1720,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Simon, called the Zealot or the Canaanite, is one of the Twelve. Eastern tradition says it was at his wedding in Cana that Christ turned water into wine, and that he afterwards left everything to follow him.\n\nThis Russian icon is dated 1720.",
+  "image": "assets/icons/simon-zealot-1720.jpg",
+  "thumb": "assets/icons/simon-zealot-1720-thumb.jpg",
+  "w": 587,
+  "h": 933,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Simon_the_Zealot_-_Apostle.jpeg",
+   "file": "Simon the Zealot - Apostle.jpeg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown Russian Orthodox church icon painter from 1720",
+   "credit": "Russian Orthodox Church"
+  }
+ },
+ {
+  "id": "finding-head-lavra",
+  "kind": "feast",
+  "title": "The Finding of the Head of St John the Forerunner",
+  "alt": "",
+  "cardName": "Finding of the Head of St John the Baptist",
+  "subjects": [
+   "St John the Baptist"
+  ],
+  "days": [
+   {
+    "d": "05-25"
+   },
+   {
+    "d": "02-24",
+    "n": "First and Second Finding of the Head of St John the Baptist"
+   }
+  ],
+  "month": null,
+  "date": "14th century",
+  "year": 1350,
+  "school": "Athonite",
+  "artist": "",
+  "origin": {
+   "name": "Mount Athos",
+   "lat": 40.255,
+   "lng": 24.242
+  },
+  "originShort": "Mount Athos",
+  "home": {
+   "name": "Great Lavra, Mount Athos",
+   "lat": 40.172,
+   "lng": 24.383,
+   "city": "Mount Athos"
+  },
+  "medium": "Tempera on wood",
+  "text": "John's head, struck off at Herod's feast, was hidden and found again three times: twice in the fourth century and once in the ninth. The Church keeps a feast for each finding.\n\nThis fourteenth-century icon belongs to the Great Lavra on Mount Athos.",
+  "image": "assets/icons/finding-head-lavra.jpg",
+  "thumb": "assets/icons/finding-head-lavra-thumb.jpg",
+  "w": 731,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Findings_of_John_the_Baptist%27s_head_BETTER.jpg",
+   "file": "Findings of John the Baptist's head BETTER.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://ruvera.ru/3_obretenie_glavy"
+  }
+ },
+ {
+  "id": "ferapont-belozersk",
+  "kind": "saint",
+  "title": "St Ferapont of Belozersk",
+  "alt": "",
+  "cardName": "St Ferapont of Belozersk",
+  "subjects": [
+   "St Ferapont of Belozersk"
+  ],
+  "days": [
+   {
+    "d": "05-27",
+    "n": "St Ferapont of Belozersk"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Kirillo-Belozersky Monastery Museum",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Ferapont came north with St Cyril of White Lake and founded the monastery near Lake Borodaevskoe that bears his name, where Dionisius later painted the frescoes. He died in 1426.\n\nThe icon is in the Kirillo-Belozersky museum.",
+  "image": "assets/icons/ferapont-belozersk.jpg",
+  "thumb": "assets/icons/ferapont-belozersk-thumb.jpg",
+  "w": 608,
+  "h": 1024,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Ferapont_Belozersky.jpg",
+   "file": "Ferapont Belozersky.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "theodosia-ulanov",
+  "kind": "saint",
+  "title": "St Theodosia (a 'measure' icon by Ulanov)",
+  "alt": "",
+  "cardName": "Virgin-martyr Theodosia",
+  "subjects": [
+   "St Theodosia"
+  ],
+  "days": [
+   {
+    "d": "05-29"
+   }
+  ],
+  "month": null,
+  "date": "1690",
+  "year": 1690,
+  "school": "Moscow (Kremlin Armoury)",
+  "artist": "Kirill Ulanov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood, 52 × 16 cm",
+  "text": "Theodosia was a nun of Constantinople killed in 729 for defending the icon of Christ over the Bronze Gate. This narrow panel is a 'measure icon', painted to the length of a newborn child, here Tsarevna Theodosia, daughter of Tsar Ivan V.\n\nKirill Ulanov painted it. It came from the Ascension Convent in the Kremlin.",
+  "image": "assets/icons/theodosia-ulanov.jpg",
+  "thumb": "assets/icons/theodosia-ulanov-thumb.jpg",
+  "w": 212,
+  "h": 700,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Theodosia_by_C.Ulanov_(1690,_GTG).jpg",
+   "file": "Theodosia by C.Ulanov (1690, GTG).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "УЛАНОВ КИРИЛЛ ИВАНОВ (уп. 1684, ум. 1731)",
+   "credit": "http://bestobshenie.su/artists/u/ulanov_ki/index.shtml?adm=5e6b9fe3e1ff5aaac8a6666140ed5d2e"
+  }
+ },
+ {
+  "id": "sisoes-alexander-bxm",
+  "kind": "saint",
+  "title": "St Sisoes at the Tomb of Alexander the Great",
+  "alt": "",
+  "cardName": "St Sisoes the Great",
+  "subjects": [
+   "St Sisoes the Great"
+  ],
+  "days": [
+   {
+    "d": "07-06"
+   }
+  ],
+  "month": null,
+  "date": "17th–18th century (?)",
+  "year": 1700,
+  "school": "Dalmatia (?)",
+  "artist": "",
+  "origin": {
+   "name": "Dalmatia (?)",
+   "lat": 43.5,
+   "lng": 16.4
+  },
+  "originShort": "Dalmatia (?)",
+  "home": {
+   "name": "Byzantine and Christian Museum",
+   "lat": 37.9757,
+   "lng": 23.7444,
+   "city": "Athens"
+  },
+  "medium": "Tempera on wood, 56 × 78 cm",
+  "text": "Sisoes, an Egyptian hermit, looks into an open tomb at the skeleton of Alexander the Great and grieves: 'O death, who can escape thee?' The image became a favourite reminder of the end of all earthly glory.\n\nThe icon is in the Byzantine and Christian Museum in Athens.",
+  "image": "assets/icons/sisoes-alexander-bxm.jpg",
+  "thumb": "assets/icons/sisoes-alexander-bxm-thumb.jpg",
+  "w": 1080,
+  "h": 777,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Sisoes_facing_the_tomb_of_Alexander_the_Great_(Byzantine_museum).jpg",
+   "file": "Saint Sisoes facing the tomb of Alexander the Great (Byzantine museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "icon painter",
+   "credit": "http://www.ebyzantinemuseum.gr/?i=bxm.en.exhibit&amp;id=58"
+  }
+ },
+ {
+  "id": "micah-annunciation-cathedral",
+  "kind": "saint",
+  "title": "The Prophet Micah",
+  "alt": "",
+  "cardName": "Holy Prophet Micah",
+  "subjects": [
+   "Prophet Micah"
+  ],
+  "days": [
+   {
+    "d": "08-14"
+   }
+  ],
+  "month": null,
+  "date": "Middle of the 16th century",
+  "year": 1550,
+  "school": "Moscow",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Cathedral of the Annunciation, Moscow Kremlin",
+   "lat": 55.75,
+   "lng": 37.617,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Micah foretold that the ruler of Israel would come from Bethlehem, 'little among the thousands of Judah' (Micah 5:2).\n\nHe stands in the prophets' tier of the main iconostasis of the Annunciation Cathedral in the Moscow Kremlin.",
+  "image": "assets/icons/micah-annunciation-cathedral.jpg",
+  "thumb": "assets/icons/micah-annunciation-cathedral-thumb.jpg",
+  "w": 1022,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Micah_(Annunciation_cathedral_in_Moscow).jpg",
+   "file": "Micah (Annunciation cathedral in Moscow).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://museums.artyx.ru/books/item/f00/s00/z0000016/st002.shtml"
+  }
+ },
+ {
+  "id": "cosmas-aetolia-zitsa",
+  "kind": "saint",
+  "title": "St Cosmas of Aetolia (painted in his lifetime)",
+  "alt": "",
+  "cardName": "St Cosmas of Aetolia",
+  "subjects": [
+   "St Cosmas of Aetolia"
+  ],
+  "days": [
+   {
+    "d": "08-24"
+   }
+  ],
+  "month": null,
+  "date": "1767",
+  "year": 1767,
+  "school": "Epirus",
+  "artist": "",
+  "origin": {
+   "name": "Epirus",
+   "lat": 39.665,
+   "lng": 20.8537
+  },
+  "originShort": "Epirus",
+  "home": {
+   "name": "Monastery of St Nicholas, Zitsa",
+   "lat": 39.7531,
+   "lng": 20.6611,
+   "city": "Zitsa, Epirus"
+  },
+  "medium": "Tempera on wood",
+  "text": "Cosmas left Mount Athos to preach across Ottoman Greece, founding schools wherever he went. He was hanged by the Ottomans in 1779.\n\nThis portrait at the monastery of St Nicholas at Zitsa was made during his lifetime, so it is a true likeness.",
+  "image": "assets/icons/cosmas-aetolia-zitsa.jpg",
+  "thumb": "assets/icons/cosmas-aetolia-zitsa-thumb.jpg",
+  "w": 1200,
+  "h": 690,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%CE%86%CE%B3%CE%B9%CE%BF%CF%82_%CE%9A%CE%BF%CF%83%CE%BC%CE%AC%CF%82_%CE%BF_%CE%91%CE%B9%CF%84%CF%89%CE%BB%CF%8C%CF%82_%CE%A6%CE%BF%CF%81%CE%B7%CF%84%CE%AE_%CE%B5%CE%B9%CE%BA%CF%8C%CE%BD%CE%B1_%CE%8A.%CE%9D.%CE%86%CE%B3._%CE%9D%CE%B9%CE%BA%CE%BF%CE%BB%CE%AC%CE%BF%CF%85_%CE%96%CE%AF%CF%84%CF%83%CE%B1%CF%82_(%CF%84%CE%B5%CF%87%CE%BD%CE%BF%CF%85%CF%81%CE%B3%CE%B7%CE%B8%CE%AE%CE%BA%CE%B5_%CE%B5%CE%BD_%CE%B6%CF%89%CE%AE).jpg",
+   "file": "Άγιος Κοσμάς ο Αιτωλός Φορητή εικόνα Ί.Ν.Άγ. Νικολάου Ζίτσας (τεχνουργηθήκε εν ζωή).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://www.elpedia.gr/agios-kosmas-o-aitolos-o-isapostolos-didaskalos/"
+  }
+ },
+ {
+  "id": "renovation-resurrection",
+  "kind": "feast",
+  "title": "The Dedication of the Church of the Resurrection",
+  "alt": "",
+  "cardName": "Dedication of the Church of the Resurrection",
+  "subjects": [
+   "Church of the Resurrection"
+  ],
+  "days": [
+   {
+    "d": "09-13"
+   }
+  ],
+  "month": null,
+  "date": "Late 16th–early 17th century",
+  "year": 1600,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "On the eve of the Exaltation of the Cross the Church remembers the consecration in 335 of Constantine's Church of the Holy Sepulchre in Jerusalem, built over the tomb of Christ.\n\nThis Russian icon pairs the feast with the praises of the Mother of God.",
+  "image": "assets/icons/renovation-resurrection.jpg",
+  "thumb": "assets/icons/renovation-resurrection-thumb.jpg",
+  "w": 710,
+  "h": 1191,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Icon_of_Renovation_of_the_Church_of_the_Resurrection_in_Jerusalem.jpg",
+   "file": "Icon of Renovation of the Church of the Resurrection in Jerusalem.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://iconsv.ru/index.php?option=com_joomgallery&amp;func=detail&amp;id=3659&amp;Itemid=3 Галерея православных икон"
+  }
+ },
+ {
+  "id": "chariton-vita",
+  "kind": "saint",
+  "title": "St Chariton the Confessor, with Scenes from His Life",
+  "alt": "",
+  "cardName": "St Chariton the Confessor",
+  "subjects": [
+   "St Chariton the Confessor"
+  ],
+  "days": [
+   {
+    "d": "09-28"
+   }
+  ],
+  "month": null,
+  "date": "1660s",
+  "year": 1665,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Chariton was tortured for the faith under Aurelian and survived. Freed, he was captured by robbers on the way to Jerusalem, and when they died he turned their cave into the first monastery of the Judean desert.\n\nTwenty-two scenes of his life surround him.",
+  "image": "assets/icons/chariton-vita.jpg",
+  "thumb": "assets/icons/chariton-vita-thumb.jpg",
+  "w": 859,
+  "h": 985,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Chariton.jpg",
+   "file": "Saint Chariton.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "longinus-zubov",
+  "kind": "saint",
+  "title": "St Longinus the Centurion (Zubov)",
+  "alt": "",
+  "cardName": "Holy Martyr Longinus the Centurion",
+  "subjects": [
+   "St Longinus"
+  ],
+  "days": [
+   {
+    "d": "10-16"
+   }
+  ],
+  "month": null,
+  "date": "1680",
+  "year": 1680,
+  "school": "Moscow (Kremlin Armoury)",
+  "artist": "Fyodor Zubov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Longinus was the centurion who stood at the cross and said, 'Truly this was the Son of God' (Mark 15:39). Tradition says he left the army, preached in Cappadocia and was beheaded.\n\nFyodor Zubov painted him in armour.",
+  "image": "assets/icons/longinus-zubov.jpg",
+  "thumb": "assets/icons/longinus-zubov-thumb.jpg",
+  "w": 690,
+  "h": 988,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:LonginusFyodorZubov.jpg",
+   "file": "LonginusFyodorZubov.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Fyodor Zubov / Фёдор Зубов (? — 1689)",
+   "credit": "http://www.agiograf.globalfolio.net/gallery/longinus/03long.htm"
+  }
+ },
+ {
+  "id": "elisha-zechariah-joel-kirillov",
+  "kind": "saint",
+  "title": "The Prophets Elisha, Zechariah and Joel (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Prophet Joel",
+  "subjects": [
+   "Prophet Elisha",
+   "Prophet Zechariah",
+   "Prophet Joel"
+  ],
+  "days": [
+   {
+    "d": "10-19"
+   },
+   {
+    "d": "06-14"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Kirillo-Belozersky Monastery Museum",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Three prophets stand with their scrolls: Elisha, Zechariah and Joel, who foretold that God would pour out his Spirit upon all flesh (Joel 2:28).\n\nThey come from the prophets' tier of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497. It is one of the oldest Russian iconostases to survive largely complete.",
+  "image": "assets/icons/elisha-zechariah-joel-kirillov.jpg",
+  "thumb": "assets/icons/elisha-zechariah-joel-kirillov-thumb.jpg",
+  "w": 1200,
+  "h": 435,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_07._Elisha,_Zechariah,_Joel.jpg",
+   "file": "Kirillo-Belozersky iconostasis 07. Elisha, Zechariah, Joel.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=85"
+  }
+ },
+ {
+  "id": "artemius-kirillov",
+  "kind": "saint",
+  "title": "The Great Martyr Artemius (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Great Martyr Artemius",
+  "subjects": [
+   "St Artemius"
+  ],
+  "days": [
+   {
+    "d": "10-20"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Kirillo-Belozersky Monastery Museum",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Artemius was a general under Constantine who rebuked Julian the Apostate for persecuting Christians and was beheaded at Antioch in 362.\n\nHe stands in the Deesis tier of the Kirillo-Belozersky iconostasis of 1497.",
+  "image": "assets/icons/artemius-kirillov.jpg",
+  "thumb": "assets/icons/artemius-kirillov-thumb.jpg",
+  "w": 485,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_20_-_Artemius.jpg",
+   "file": "Kirillo-Belozersky iconostasis 20 - Artemius.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "gurias-samonas-abibus",
+  "kind": "saint",
+  "title": "The Martyrs Gurias, Samonas and Abibus",
+  "alt": "",
+  "cardName": "Holy Martyrs Gurias, Samonas and Abibus",
+  "subjects": [
+   "St Gurias",
+   "St Samonas",
+   "St Abibus"
+  ],
+  "days": [
+   {
+    "d": "11-15"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood, 31 × 26 cm",
+  "text": "Three martyrs of Edessa in Syria. A Gothic soldier who betrayed a girl of Edessa was exposed at their tomb, and so Russians pray to them for faithful marriage and happy families.\n\nThis is a nineteenth-century Russian icon.",
+  "image": "assets/icons/gurias-samonas-abibus.jpg",
+  "thumb": "assets/icons/gurias-samonas-abibus-thumb.jpg",
+  "w": 1028,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_holy_martyres_Gurias,_Samonas_and_Aviv.jpg",
+   "file": "The holy martyres Gurias, Samonas and Aviv.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Bukowskis"
+  }
+ },
+ {
+  "id": "zephaniah-yaroslavl",
+  "kind": "saint",
+  "title": "The Prophet Zephaniah",
+  "alt": "",
+  "cardName": "Holy Prophet Zephaniah",
+  "subjects": [
+   "Prophet Zephaniah"
+  ],
+  "days": [
+   {
+    "d": "12-03"
+   }
+  ],
+  "month": null,
+  "date": "Second half of the 18th century",
+  "year": 1770,
+  "school": "Yaroslavl",
+  "artist": "",
+  "origin": {
+   "name": "Yaroslavl",
+   "lat": 57.6261,
+   "lng": 39.8845
+  },
+  "originShort": "Yaroslavl",
+  "home": {
+   "name": "Private collection",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood, 89 × 46 cm",
+  "text": "Zephaniah prophesied the day of the Lord, 'a day of wrath', words later taken into the hymn Dies irae, and the joy that would follow: 'Sing, O daughter of Zion' (Zephaniah 3:14).\n\nHe comes from the prophets' row of a Yaroslavl iconostasis.",
+  "image": "assets/icons/zephaniah-yaroslavl.jpg",
+  "thumb": "assets/icons/zephaniah-yaroslavl-thumb.jpg",
+  "w": 621,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Zephaniah_from_Yaroslavl_(18_c,_priv.coll).jpg",
+   "file": "Zephaniah from Yaroslavl (18 c, priv.coll).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "http://macdougallauction.com/Indexx.asp?id=17710&amp;lx=a"
+  }
+ },
+ {
+  "id": "eugenia-chirikov",
+  "kind": "saint",
+  "title": "The Venerable Martyr Eugenia (Chirikov)",
+  "alt": "",
+  "cardName": "Venerable Martyr Eugenia",
+  "subjects": [
+   "St Eugenia"
+  ],
+  "days": [
+   {
+    "d": "12-24"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "St Petersburg",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "St Petersburg",
+   "lat": 59.9343,
+   "lng": 30.3351
+  },
+  "originShort": "St Petersburg",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Eugenia, daughter of a governor of Egypt, disguised herself as a man to enter a monastery and became its abbot. She was later beheaded in Rome.\n\nThis is one of Osip Chirikov's month icons for the Marble Palace church.",
+  "image": "assets/icons/eugenia-chirikov.jpg",
+  "thumb": "assets/icons/eugenia-chirikov-thumb.jpg",
+  "w": 587,
+  "h": 717,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Eugenia_by_O.Chirikov_(Muz.ist.rel).jpg",
+   "file": "Eugenia by O.Chirikov (Muz.ist.rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346604"
+  }
+ },
+ {
+  "id": "cma-tapestry-virgin",
+  "kind": "theotokos",
+  "title": "The Virgin and Child Enthroned (woven icon)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Archangel Michael",
+   "Archangel Gabriel",
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "6th century",
+  "year": 550,
+  "school": "Byzantine Egypt",
+  "artist": "",
+  "origin": {
+   "name": "Egypt",
+   "lat": 26.8206,
+   "lng": 30.8025
+  },
+  "originShort": "Egypt",
+  "home": {
+   "name": "Cleveland Museum of Art",
+   "lat": 41.5089,
+   "lng": -81.6116,
+   "city": "Cleveland"
+  },
+  "medium": "Wool tapestry",
+  "text": "The Mother of God sits on a jewelled throne with the Child, between the archangels Michael and Gabriel, and Christ appears above in a glory of light. Apostles in medallions frame the scene. It is woven in wool, one of the very few icons of the age before Iconoclasm to survive, and the only great woven one.\n\nThe Cleveland Museum of Art counts it among the rarest objects in its collection, and releases its image under CC0.",
+  "image": "assets/icons/cma-tapestry-virgin.jpg",
+  "thumb": "assets/icons/cma-tapestry-virgin-thumb.jpg",
+  "w": 756,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Egypt,_Byzantine_period,_6th_century_-_Icon_of_the_Virgin_and_Child_-_1967.144_-_Cleveland_Museum_of_Art.tif",
+   "file": "Egypt, Byzantine period, 6th century - Icon of the Virgin and Child - 1967.144 - Cleveland Museum of Art.tif",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "",
+   "credit": "https://clevelandart.org/art/1967.144"
+  }
+ },
+ {
+  "id": "tsilkani-virgin",
+  "kind": "theotokos",
+  "title": "The Tsilkani Mother of God",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Theotokos Hodegetria"
+  ],
+  "days": [],
+  "month": null,
+  "date": "9th century, renewed later",
+  "year": 850,
+  "school": "Georgian",
+  "artist": "",
+  "origin": {
+   "name": "Georgia",
+   "lat": 41.7151,
+   "lng": 44.8271
+  },
+  "originShort": "Georgia",
+  "home": {
+   "name": "Georgian National Museum",
+   "lat": 41.6942,
+   "lng": 44.8015,
+   "city": "Tbilisi"
+  },
+  "medium": "Encaustic and tempera on wood, with later revetment",
+  "text": "One of the oldest icons in Georgia, from the cathedral of Tsilkani. The Mother of God holds the Child in the Hodegetria pose, and only the faces are painted; the rest is covered in later chased metal.\n\nIt is in the Georgian National Museum.",
+  "image": "assets/icons/tsilkani-virgin.jpg",
+  "thumb": "assets/icons/tsilkani-virgin-thumb.jpg",
+  "w": 962,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Tsilkani_icon_of_Virgin_Mary_(Art_Museum_of_Georgia).jpg",
+   "file": "Tsilkani icon of Virgin Mary (Art Museum of Georgia).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Sanikidze, Tamaz (1985), Art Museum of Georgia, plate 135. Aurora Art Publishers, Leningrad."
+  }
+ },
+ {
+  "id": "mosaic-christ-merciful",
+  "kind": "christ",
+  "title": "Christ the Merciful (mosaic icon)",
+  "alt": "",
+  "cardName": "Christ the Merciful",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "12th century",
+  "year": 1150,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Constantinople",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Constantinople",
+  "home": {
+   "name": "Bode Museum",
+   "lat": 52.5219,
+   "lng": 13.3947,
+   "city": "Berlin"
+  },
+  "medium": "Micromosaic",
+  "text": "Christ holds the Gospel and blesses. The inscription calls him Eleemon, the Merciful. Tiny tesserae of stone, glass and gold give the face an almost painted softness.\n\nThis is one of the finest portable mosaics to survive, and is in the Bode Museum in Berlin.",
+  "image": "assets/icons/mosaic-christ-merciful.jpg",
+  "thumb": "assets/icons/mosaic-christ-merciful-thumb.jpg",
+  "w": 861,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Mosaik-Ikone_Christus_der_Barmherzige.jpg",
+   "file": "Mosaik-Ikone Christus der Barmherzige.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Andreas Praefcke",
+   "credit": "Self-photographed"
+  }
+ },
+ {
+  "id": "presentation-enamel-georgia",
+  "kind": "feast",
+  "title": "The Meeting of the Lord (Georgian enamel)",
+  "alt": "",
+  "cardName": "The Meeting of the Lord",
+  "subjects": [
+   "Meeting of the Lord",
+   "Theotokos",
+   "St Symeon the God-receiver"
+  ],
+  "days": [
+   {
+    "d": "02-02"
+   }
+  ],
+  "month": null,
+  "date": "12th century",
+  "year": 1150,
+  "school": "Georgian",
+  "artist": "",
+  "origin": {
+   "name": "Georgia",
+   "lat": 41.7151,
+   "lng": 44.8271
+  },
+  "originShort": "Georgia",
+  "home": {
+   "name": "Georgian National Museum",
+   "lat": 41.6942,
+   "lng": 44.8015,
+   "city": "Tbilisi"
+  },
+  "medium": "Cloisonné enamel, 12 × 10 cm",
+  "text": "The Mother of God brings the Child to the Temple, and the old man Symeon takes him in his arms.\n\nThis small plaque of cloisonné enamel is in the Museum of Fine Arts in Tbilisi. Gold strips divide the colours.",
+  "image": "assets/icons/presentation-enamel-georgia.jpg",
+  "thumb": "assets/icons/presentation-enamel-georgia-thumb.jpg",
+  "w": 985,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Presentation_at_the_Temple_(Georgia,_12th_c.).JPG",
+   "file": "Presentation at the Temple (Georgia, 12th c.).JPG",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown Unknown Georgian artist",
+   "credit": "Goldschmiedekunst und Toreutik in den Museen Georgiens Aurora Leningrad 1986 Source of the first version: Guram Abramishvili (1977), Treasury of the Georgian Mu"
+  }
+ },
+ {
+  "id": "george-british-museum",
+  "kind": "saint",
+  "title": "St George (British Museum)",
+  "alt": "",
+  "cardName": "Holy Great Martyr George",
+  "subjects": [
+   "St George"
+  ],
+  "days": [
+   {
+    "d": "04-23"
+   }
+  ],
+  "month": null,
+  "date": "Late 13th century",
+  "year": 1290,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Byzantine Empire",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Byzantine Empire",
+  "home": {
+   "name": "British Museum",
+   "lat": 51.5194,
+   "lng": -0.127,
+   "city": "London"
+  },
+  "medium": "Tempera on wood",
+  "text": "George stands as a soldier saint in a red cloak, the chlamys of a Byzantine officer, holding his spear and shield.\n\nThe icon is in the British Museum, Room 49.",
+  "image": "assets/icons/george-british-museum.jpg",
+  "thumb": "assets/icons/george-british-museum-thumb.jpg",
+  "w": 900,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Icon_of_St_George_BM_1984.0601.1.jpg",
+   "file": "Icon of St George BM 1984.0601.1.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Marie-Lan Nguyen",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "gabriel-mestia",
+  "kind": "angel",
+  "title": "The Archangel Gabriel (Svaneti)",
+  "alt": "",
+  "cardName": "Synaxis of the Archangel Gabriel",
+  "subjects": [
+   "Archangel Gabriel"
+  ],
+  "days": [
+   {
+    "d": "03-26",
+    "n": "Synaxis of the Archangel Gabriel"
+   }
+  ],
+  "month": null,
+  "date": "12th century",
+  "year": 1150,
+  "school": "Georgian",
+  "artist": "",
+  "origin": {
+   "name": "Georgia",
+   "lat": 41.7151,
+   "lng": 44.8271
+  },
+  "originShort": "Georgia",
+  "home": {
+   "name": "Svaneti Museum of History and Ethnography",
+   "lat": 43.0453,
+   "lng": 42.727,
+   "city": "Mestia"
+  },
+  "medium": "Tempera on wood",
+  "text": "High in the Caucasus, the churches of Svaneti kept their medieval icons through centuries of isolation. This Gabriel, a detail of a larger icon, is one of them.\n\nIt is in the museum at Mestia.",
+  "image": "assets/icons/gabriel-mestia.jpg",
+  "thumb": "assets/icons/gabriel-mestia-thumb.jpg",
+  "w": 848,
+  "h": 1131,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Mestia_Museum._Archangel_Gabriel._12th_c..jpg",
+   "file": "Mestia Museum. Archangel Gabriel. 12th c..jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "unknown medieval artist",
+   "credit": "Internet (now extinct website on Georgian culture)"
+  }
+ },
+ {
+  "id": "pantocrator-yaroslavl",
+  "kind": "christ",
+  "title": "Christ Pantocrator (Yaroslavl)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "13th century",
+  "year": 1250,
+  "school": "Yaroslavl",
+  "artist": "",
+  "origin": {
+   "name": "Yaroslavl",
+   "lat": 57.6261,
+   "lng": 39.8845
+  },
+  "originShort": "Yaroslavl",
+  "home": {
+   "name": "Yaroslavl Art Museum",
+   "lat": 57.6261,
+   "lng": 39.8945,
+   "city": "Yaroslavl"
+  },
+  "medium": "Tempera on wood",
+  "text": "A broad, solemn early Russian Christ, half-length, holding the Gospel and blessing.\n\nThe icon is in the Yaroslavl Art Museum.",
+  "image": "assets/icons/pantocrator-yaroslavl.jpg",
+  "thumb": "assets/icons/pantocrator-yaroslavl-thumb.jpg",
+  "w": 893,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Pantocrator_(13th_c.,_Yaroslavl_museum)_2.jpg",
+   "file": "Pantocrator (13th c., Yaroslavl museum) 2.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://www.icon-art.info/hires.php?lng=ru&amp;type=1&amp;id=149 Воспроизводится по изданию: Лазарев В.Н. Русская иконопись от истоков до начала XVI века. М., Ис"
+  }
+ },
+ {
+  "id": "paraskevi-thessaloniki",
+  "kind": "saint",
+  "title": "St Paraskevi (Thessaloniki)",
+  "alt": "",
+  "cardName": "Venerable Martyr Paraskevi",
+  "subjects": [
+   "St Paraskeva"
+  ],
+  "days": [
+   {
+    "d": "07-26",
+    "n": "Venerable Martyr Paraskevi of Rome"
+   }
+  ],
+  "month": null,
+  "date": "14th century",
+  "year": 1350,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Thessaloniki",
+   "lat": 40.6401,
+   "lng": 22.9444
+  },
+  "originShort": "Thessaloniki",
+  "home": {
+   "name": "Museum of Byzantine Culture",
+   "lat": 40.6237,
+   "lng": 22.9545,
+   "city": "Thessaloniki"
+  },
+  "medium": "Tempera on wood",
+  "text": "Paraskevi, whose name means 'Friday', was born to Christian parents in Rome and martyred under Antoninus Pius. Greeks keep her feast on 26 July and pray to her for the healing of eyes.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "image": "assets/icons/paraskevi-thessaloniki.jpg",
+  "thumb": "assets/icons/paraskevi-thessaloniki-thumb.jpg",
+  "w": 539,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St_Paraskevi_Icon.tif",
+   "file": "St Paraskevi Icon.tif",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "peter-vasilyevsky",
+  "kind": "saint",
+  "title": "The Apostle Peter from the Vladimir Deesis (1408)",
+  "alt": "",
+  "cardName": "Holy Chief Apostles Peter and Paul",
+  "subjects": [
+   "St Peter",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "06-29"
+   }
+  ],
+  "month": null,
+  "date": "c. 1408",
+  "year": 1408,
+  "school": "Moscow (Andrei Rublev and Daniil Chorny)",
+  "artist": "Andrei Rublev (?)",
+  "origin": {
+   "name": "Vladimir",
+   "lat": 56.129,
+   "lng": 40.4066
+  },
+  "originShort": "Vladimir",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Peter bows toward Christ with a scroll. He comes from the great Deesis that Andrei Rublev and Daniil Chorny painted in 1408 for the Dormition Cathedral in Vladimir, whose feast tier is already in Eikon.\n\nThe figures are almost three metres tall. This one is in the Russian Museum.",
+  "image": "assets/icons/peter-vasilyevsky.jpg",
+  "thumb": "assets/icons/peter-vasilyevsky-thumb.jpg",
+  "w": 400,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Andrei_Rublev_-_St_Peter._From_Deisus_Tier_-_Google_Art_Project.jpg",
+   "file": "Andrei Rublev - St Peter. From Deisus Tier - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Andrei Rublev (1360/1370 - 1427/1430) – Icon painter (Russian) Died in Russia, Moscow. Details on Google Art Project",
+   "credit": "jwFBUUTBRgGX4w at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "paul-vasilyevsky",
+  "kind": "saint",
+  "title": "The Apostle Paul from the Vladimir Deesis (1408)",
+  "alt": "",
+  "cardName": "Holy Chief Apostles Peter and Paul",
+  "subjects": [
+   "St Paul",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "06-29"
+   }
+  ],
+  "month": null,
+  "date": "c. 1408",
+  "year": 1408,
+  "school": "Moscow (Andrei Rublev and Daniil Chorny)",
+  "artist": "Andrei Rublev (?)",
+  "origin": {
+   "name": "Vladimir",
+   "lat": 56.129,
+   "lng": 40.4066
+  },
+  "originShort": "Vladimir",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Paul, bald and dark-bearded, carries his book of epistles as he turns toward Christ. He is Peter's companion in the 1408 Deesis of the Dormition Cathedral in Vladimir.\n\nThe icon is in the Russian Museum.",
+  "image": "assets/icons/paul-vasilyevsky.jpg",
+  "thumb": "assets/icons/paul-vasilyevsky-thumb.jpg",
+  "w": 398,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Andrei_Rublev_-_St_Paul._From_Deisus_Tier_-_Google_Art_Project.jpg",
+   "file": "Andrei Rublev - St Paul. From Deisus Tier - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Andrei Rublev (1360/1370 - 1427/1430) – Icon painter (Russian) Died in Russia, Moscow. Details on Google Art Project",
+   "credit": "1AGjN8NgEab9cA at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "yaroslavl-theotokos",
+  "kind": "theotokos",
+  "title": "The Yaroslavl Mother of God",
+  "alt": "",
+  "cardName": "The Mother of God of Tenderness",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Second half of the 15th century",
+  "year": 1470,
+  "school": "Yaroslavl",
+  "artist": "",
+  "origin": {
+   "name": "Yaroslavl",
+   "lat": 57.6261,
+   "lng": 39.8845
+  },
+  "originShort": "Yaroslavl",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "The Child embraces his mother, cheek to cheek, in the tender Eleousa pose. The Yaroslavl type is said to have been brought there by the princes Basil and Constantine in the thirteenth century.",
+  "image": "assets/icons/yaroslavl-theotokos.jpg",
+  "thumb": "assets/icons/yaroslavl-theotokos-thumb.jpg",
+  "w": 924,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%AF%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BA%D0%BE%D0%BD%D0%B0.jpg",
+   "file": "Ярославская икона.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Иллюстрированн. журнал \"Спасите наши души\", 2007 год #5, Дн-ск / Own work photo"
+  }
+ },
+ {
+  "id": "met-presentation",
+  "kind": "feast",
+  "title": "The Presentation in the Temple (Metropolitan Museum)",
+  "alt": "",
+  "cardName": "The Meeting of the Lord",
+  "subjects": [
+   "Meeting of the Lord",
+   "Theotokos",
+   "St Symeon the God-receiver"
+  ],
+  "days": [
+   {
+    "d": "02-02"
+   }
+  ],
+  "month": null,
+  "date": "15th century",
+  "year": 1450,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Byzantine Empire",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Byzantine Empire",
+  "home": {
+   "name": "The Metropolitan Museum of Art",
+   "lat": 40.7794,
+   "lng": -73.9632,
+   "city": "New York"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "The Mother of God gives the Child to Symeon under the canopy of the Temple, while Joseph and the prophetess Anna stand by. Symeon's song, 'Lord, now lettest thou thy servant depart in peace', is sung at every Vespers.\n\nThe icon is in The Metropolitan Museum of Art, which releases its image under CC0.",
+  "image": "assets/icons/met-presentation.jpg",
+  "thumb": "assets/icons/met-presentation-thumb.jpg",
+  "w": 1134,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Presentation_in_the_Temple_MET_DT242201.jpg",
+   "file": "The Presentation in the Temple MET DT242201.jpg",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": "The Metropolitan Museum of Art",
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "anonymous",
+   "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy"
+  }
+ },
+ {
+  "id": "deesis-feasts-thessaloniki",
+  "kind": "christ",
+  "title": "The Deesis and the Twelve Great Feasts",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Deesis",
+   "Jesus Christ",
+   "Theotokos",
+   "St John the Baptist"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1450–1500",
+  "year": 1475,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Thessaloniki",
+   "lat": 40.6401,
+   "lng": 22.9444
+  },
+  "originShort": "Thessaloniki",
+  "home": {
+   "name": "Museum of Byzantine Culture",
+   "lat": 40.6237,
+   "lng": 22.9545,
+   "city": "Thessaloniki"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ, his mother and the Forerunner form the Deesis in the centre, and the twelve great feasts of the Church year are set around them: a whole iconostasis in one panel.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "image": "assets/icons/deesis-feasts-thessaloniki.jpg",
+  "thumb": "assets/icons/deesis-feasts-thessaloniki-thumb.jpg",
+  "w": 974,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Deesis_and_the_Twelve_Great_Feasts.tif",
+   "file": "The Deesis and the Twelve Great Feasts.tif",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "george-enamel-georgia",
+  "kind": "saint",
+  "title": "St George Slaying the Dragon (Georgian enamel)",
+  "alt": "",
+  "cardName": "Holy Great Martyr George",
+  "subjects": [
+   "St George"
+  ],
+  "days": [
+   {
+    "d": "04-23"
+   }
+  ],
+  "month": null,
+  "date": "15th century",
+  "year": 1450,
+  "school": "Georgian",
+  "artist": "",
+  "origin": {
+   "name": "Georgia",
+   "lat": 41.7151,
+   "lng": 44.8271
+  },
+  "originShort": "Georgia",
+  "home": {
+   "name": "Georgian National Museum",
+   "lat": 41.6942,
+   "lng": 44.8015,
+   "city": "Tbilisi"
+  },
+  "medium": "Gold and cloisonné enamel",
+  "text": "Georgia takes its patron especially to heart, and its goldsmiths made some of the finest enamels of the Christian East. Here George rides down the dragon in gold and enamel.\n\nThe icon is in the Georgian National Museum.",
+  "image": "assets/icons/george-enamel-georgia.jpg",
+  "thumb": "assets/icons/george-enamel-georgia-thumb.jpg",
+  "w": 967,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Icon_of_Saint_George_slaying_dragon._15th_century._Gold,_cloisonne_enamel.jpg",
+   "file": "Icon of Saint George slaying dragon. 15th century. Gold, cloisonne enamel.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Surprizi",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "dormition-desyatinny",
+  "kind": "feast",
+  "title": "The Dormition of the Theotokos (12th century)",
+  "alt": "",
+  "cardName": "The Dormition of the Theotokos",
+  "subjects": [
+   "Dormition",
+   "Theotokos",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "08-15"
+   }
+  ],
+  "month": null,
+  "date": "12th century",
+  "year": 1150,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "One of the earliest Russian icons of the Dormition. The apostles stand in two grieving groups around the bier, and Christ, in the centre, receives his mother's soul. Above, angels come down to carry her up.\n\nIt is in the Tretyakov Gallery.",
+  "image": "assets/icons/dormition-desyatinny.jpg",
+  "thumb": "assets/icons/dormition-desyatinny-thumb.jpg",
+  "w": 1056,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Dormition_of_the_Mother_of_God.jpg",
+   "file": "Dormition of the Mother of God.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Michail V Alpatov (1978) Early Russian icon painting , Moscow : Moscow Iskusstvo, pp. 298, 95 OCLC : 180585157 ."
+  }
+ },
+ {
+  "id": "synaxis-apostles-pushkin",
+  "kind": "saint",
+  "title": "The Synaxis of the Twelve Apostles (Constantinople)",
+  "alt": "",
+  "cardName": "Synaxis of the Twelve Apostles",
+  "subjects": [
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "06-30"
+   }
+  ],
+  "month": null,
+  "date": "Early 14th century",
+  "year": 1310,
+  "school": "Constantinople",
+  "artist": "",
+  "origin": {
+   "name": "Constantinople",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Constantinople",
+  "home": {
+   "name": "Pushkin State Museum of Fine Arts",
+   "lat": 55.7473,
+   "lng": 37.6051,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "The twelve apostles stand together in a crowded, animated group, each distinguished by his face. This is one of the finest Palaiologan icons in Russia, though damaged.\n\nIt is in the Pushkin Museum in Moscow.",
+  "image": "assets/icons/synaxis-apostles-pushkin.jpg",
+  "thumb": "assets/icons/synaxis-apostles-pushkin-thumb.jpg",
+  "w": 1034,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Synaxis_of_the_Twelve_Apostles_by_Constantinople_master_(early_14th_c.,_Pushkin_museum).jpg",
+   "file": "Synaxis of the Twelve Apostles by Constantinople master (early 14th c., Pushkin museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "file source Official museum page"
+  }
+ },
+ {
+  "id": "michael-zvenigorod",
+  "kind": "angel",
+  "title": "The Archangel Michael (Zvenigorod)",
+  "alt": "",
+  "cardName": "Synaxis of the Archangel Michael",
+  "subjects": [
+   "Archangel Michael",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "11-08"
+   }
+  ],
+  "month": null,
+  "date": "c. 1410",
+  "year": 1410,
+  "school": "Moscow (Andrei Rublev)",
+  "artist": "Andrei Rublev",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Michael bows gently toward Christ with a face of great calm. He belongs to the Zvenigorod Deesis, found in 1918 in a woodshed near Zvenigorod and attributed to Andrei Rublev.\n\nThe icon is in the Tretyakov Gallery.",
+  "image": "assets/icons/michael-zvenigorod.jpg",
+  "thumb": "assets/icons/michael-zvenigorod-thumb.jpg",
+  "w": 795,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Rublev_Arhangel_Mikhail.jpg",
+   "file": "Rublev Arhangel Mikhail.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Andrei Rublev",
+   "credit": "Self-scanned"
+  }
+ },
+ {
+  "id": "pantocrator-stockholm",
+  "kind": "christ",
+  "title": "Christ Pantocrator (Nationalmuseum)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1385–1399",
+  "year": 1390,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Byzantine Empire",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Byzantine Empire",
+  "home": {
+   "name": "Nationalmuseum",
+   "lat": 59.3294,
+   "lng": 18.0779,
+   "city": "Stockholm"
+  },
+  "medium": "Tempera on wood",
+  "text": "A late Byzantine Christ, holding the Gospel and blessing, with the gentle modelling of the late fourteenth century.\n\nThe icon is in the Nationalmuseum in Stockholm.",
+  "image": "assets/icons/pantocrator-stockholm.jpg",
+  "thumb": "assets/icons/pantocrator-stockholm-thumb.jpg",
+  "w": 587,
+  "h": 1000,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Ok%C3%A4nd_-_Christ_Pantokrator_-_NMI_276_-_Nationalmuseum.jpg",
+   "file": "Okänd - Christ Pantokrator - NMI 276 - Nationalmuseum.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "anonymous",
+   "credit": "Nationalmuseum"
+  }
+ },
+ {
+  "id": "annunciation-pushkin",
+  "kind": "feast",
+  "title": "The Annunciation (Pushkin Museum)",
+  "alt": "",
+  "cardName": "The Annunciation of the Theotokos",
+  "subjects": [
+   "Annunciation",
+   "Archangel Gabriel",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "03-25"
+   }
+  ],
+  "month": null,
+  "date": "Second quarter to middle of the 14th century",
+  "year": 1340,
+  "school": "Constantinople",
+  "artist": "",
+  "origin": {
+   "name": "Constantinople",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Constantinople",
+  "home": {
+   "name": "Pushkin State Museum of Fine Arts",
+   "lat": 55.7473,
+   "lng": 37.6051,
+   "city": "Moscow"
+  },
+  "medium": "Tempera and gold on wood, 55 × 43 cm",
+  "text": "Gabriel brings the news to the Mother of God, who holds the yarn she was spinning for the Temple veil. The left side of the panel is lost.\n\nScholars have linked this icon with Constantinople. It is in the Pushkin Museum in Moscow.",
+  "image": "assets/icons/annunciation-pushkin.jpg",
+  "thumb": "assets/icons/annunciation-pushkin-thumb.jpg",
+  "w": 631,
+  "h": 922,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Byzantine_icon_of_the_Annunciation_(14th_c.,_Pushkin_museum).jpg",
+   "file": "Byzantine icon of the Annunciation (14th c., Pushkin museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Official page of museum"
+  }
+ },
+ {
+  "id": "palamas-pushkin",
+  "kind": "saint",
+  "title": "St Gregory Palamas (Pushkin Museum)",
+  "alt": "",
+  "cardName": "St Gregory Palamas",
+  "subjects": [
+   "St Gregory Palamas"
+  ],
+  "days": [
+   {
+    "d": "pascha-35",
+    "n": "Second Sunday of Great Lent: St Gregory Palamas"
+   },
+   {
+    "d": "11-14",
+    "n": "St Gregory Palamas"
+   }
+  ],
+  "month": null,
+  "date": "Early 15th century",
+  "year": 1410,
+  "school": "Northern Greece (Thessaloniki?)",
+  "artist": "",
+  "origin": {
+   "name": "Thessaloniki",
+   "lat": 40.6401,
+   "lng": 22.9444
+  },
+  "originShort": "Thessaloniki",
+  "home": {
+   "name": "Pushkin State Museum of Fine Arts",
+   "lat": 55.7473,
+   "lng": 37.6051,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Gregory, archbishop of Thessaloniki, defended the monks of Athos who taught that God can be known through his uncreated light. The Church keeps his feast on the second Sunday of Lent.\n\nThis early icon of him, painted soon after his canonisation, is in the Pushkin Museum.",
+  "image": "assets/icons/palamas-pushkin.jpg",
+  "thumb": "assets/icons/palamas-pushkin-thumb.jpg",
+  "w": 897,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Gregor_Palamas_by_North_Greece_anonym_(15th_c.,_Pushkin_museum).jpg",
+   "file": "Gregor Palamas by North Greece anonym (15th c., Pushkin museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Мастер Северной Греции (Фессалоники?) начала XV века",
+   "credit": "photo from icon-art.info Official page - Museum site"
+  }
+ },
+ {
+  "id": "nicholas-12c-gtg",
+  "kind": "saint",
+  "title": "St Nicholas with Saints in the Border (12th century)",
+  "alt": "",
+  "cardName": "St Nicholas the Wonderworker",
+  "subjects": [
+   "St Nicholas"
+  ],
+  "days": [
+   {
+    "d": "12-06"
+   }
+  ],
+  "month": null,
+  "date": "12th century",
+  "year": 1150,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "One of the oldest Russian icons of Nicholas. The bishop's stern face is surrounded by small saints in the border.\n\nIt is in the Tretyakov Gallery.",
+  "image": "assets/icons/nicholas-12c-gtg.jpg",
+  "thumb": "assets/icons/nicholas-12c-gtg-thumb.jpg",
+  "w": 771,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Nikolas_XII_c.jpg",
+   "file": "Saint Nikolas XII c.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "anonimus",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "transfiguration-kirillov",
+  "kind": "feast",
+  "title": "The Transfiguration (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "The Transfiguration of Our Lord",
+  "subjects": [
+   "Transfiguration",
+   "Jesus Christ",
+   "Prophet Elijah",
+   "Prophet Moses"
+  ],
+  "days": [
+   {
+    "d": "08-06"
+   }
+  ],
+  "month": null,
+  "date": "c. 1497",
+  "year": 1497,
+  "school": "Kirillov",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Kirillo-Belozersky Monastery Museum",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ shines in a star of light on Tabor between Elijah and Moses, and the apostles tumble down the mountain below.\n\nIt comes from the feast tier of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497.",
+  "image": "assets/icons/transfiguration-kirillov.jpg",
+  "thumb": "assets/icons/transfiguration-kirillov-thumb.jpg",
+  "w": 948,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Transfiguration_(Kirillo-Belozersk).jpg",
+   "file": "Transfiguration (Kirillo-Belozersk).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "own photo by shakko"
+  }
+ },
+ {
+  "id": "saviour-zvenigorod",
+  "kind": "christ",
+  "title": "The Saviour of Zvenigorod (Rublev)",
+  "alt": "",
+  "cardName": "Christ the Saviour",
+  "subjects": [
+   "Jesus Christ",
+   "Deesis"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1410s",
+  "year": 1410,
+  "school": "Moscow (Andrei Rublev)",
+  "artist": "Andrei Rublev",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Only the face and a little of the robe survive, but this is among the most loved images in Russia. Christ looks out with gentle seriousness, as Rublev imagined him. It was the centre of the Zvenigorod Deesis, found in 1918 in a woodshed near Zvenigorod.\n\nIt is in the Tretyakov Gallery.",
+  "image": "assets/icons/saviour-zvenigorod.jpg",
+  "thumb": "assets/icons/saviour-zvenigorod-thumb.jpg",
+  "w": 713,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Rublev%27s_saviour.jpg",
+   "file": "Rublev's saviour.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Andrei Rublev",
+   "credit": "Google Arts &amp; Culture: Home page – Image Maximum resolution."
+  }
+ },
+ {
+  "id": "descent-cross-novgorod",
+  "kind": "feast",
+  "title": "The Descent from the Cross (Novgorod)",
+  "alt": "",
+  "cardName": "Great and Holy Friday",
+  "subjects": [
+   "Holy Week",
+   "Jesus Christ",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "pascha-2"
+   }
+  ],
+  "month": null,
+  "date": "Late 15th century",
+  "year": 1480,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Joseph of Arimathea lifts Christ's body from the cross, and the Mother of God holds his face to hers. Nicodemus draws out the nails.\n\nThe icon is in the Tretyakov Gallery.",
+  "image": "assets/icons/descent-cross-novgorod.jpg",
+  "thumb": "assets/icons/descent-cross-novgorod-thumb.jpg",
+  "w": 844,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Descent_from_the_Cross,_Novgorod_school_(late_15th_c.,_Tretyakov_gallery).jpg",
+   "file": "Descent from the Cross, Novgorod school (late 15th c., Tretyakov gallery).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "http://ruskline.ru/monitoring_smi/2005/04/29/velikij_pyatok_strastnoj_sedmicy_velikogo_posta"
+  }
+ },
+ {
+  "id": "second-coming-klontzas",
+  "kind": "feast",
+  "title": "The Second Coming (Klontzas)",
+  "alt": "",
+  "cardName": "Sunday of the Last Judgment",
+  "subjects": [
+   "Last Judgment",
+   "Second Coming",
+   "Jesus Christ"
+  ],
+  "days": [
+   {
+    "d": "pascha-56"
+   }
+  ],
+  "month": null,
+  "date": "Late 16th century",
+  "year": 1590,
+  "school": "Cretan school",
+  "artist": "Georgios Klontzas",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Hellenic Institute of Byzantine and Post-Byzantine Studies",
+   "lat": 45.4363,
+   "lng": 12.3424,
+   "city": "Venice"
+  },
+  "medium": "Tempera on wood, 96 × 127 cm",
+  "text": "A river of fire runs down the middle into Hell, and on either side choirs of the saved, patriarchs, kings, priests, monks and martyrs, dance toward Paradise. Georgios Klontzas fills every corner with tiny figures.\n\nThe icon is in the Hellenic Institute in Venice.",
+  "image": "assets/icons/second-coming-klontzas.jpg",
+  "thumb": "assets/icons/second-coming-klontzas-thumb.jpg",
+  "w": 900,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Second_Coming_by_G.Klontzas_(16th_c.).jpg",
+   "file": "Second Coming by G.Klontzas (16th c.).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Georgios Klontzas",
+   "credit": "http://eib.xanthi.ilsp.gr/gr/icons.asp"
+  }
+ },
+ {
+  "id": "descent-hades-arkhangelsk",
+  "kind": "feast",
+  "title": "The Descent into Hades (Arkhangelsk)",
+  "alt": "",
+  "cardName": "Pascha: the Resurrection of Christ",
+  "subjects": [
+   "Resurrection",
+   "Jesus Christ",
+   "Adam",
+   "Eve"
+  ],
+  "days": [
+   {
+    "d": "pascha+0"
+   }
+  ],
+  "month": null,
+  "date": "First quarter of the 16th century",
+  "year": 1515,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Arkhangelsk Regional Museum of Fine Arts",
+   "lat": 64.5393,
+   "lng": 40.5156,
+   "city": "Arkhangelsk"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ breaks the gates of Hades and raises Adam and Eve, with the righteous kings and prophets behind them.\n\nThe icon is in the Arkhangelsk Regional Museum of Fine Arts.",
+  "image": "assets/icons/descent-hades-arkhangelsk.jpg",
+  "thumb": "assets/icons/descent-hades-arkhangelsk-thumb.jpg",
+  "w": 847,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Resurrection,_Descent_into_Hell,_Arkhangelsk_Regional_Museum_of_Fine_Arts.JPG",
+   "file": "Resurrection, Descent into Hell, Arkhangelsk Regional Museum of Fine Arts.JPG",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "photo by Wmpearl Anonymous Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "hodegetria-lambardos",
+  "kind": "theotokos",
+  "title": "The Hodegetria (Lambardos)",
+  "alt": "",
+  "cardName": "The Mother of God Hodegetria",
+  "subjects": [
+   "Theotokos",
+   "Theotokos Hodegetria"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1570–1599",
+  "year": 1585,
+  "school": "Cretan school",
+  "artist": "Emmanuel Lambardos",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "A Cretan Hodegetria of the late sixteenth century, in the manner of the workshop of the Lambardos family of Candia.\n\nIt is in the Benaki Museum.",
+  "image": "assets/icons/hodegetria-lambardos.jpg",
+  "thumb": "assets/icons/hodegetria-lambardos-thumb.jpg",
+  "w": 940,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Lambardos_Emmanuel_-_The_Virgin_Hodegetria_-_Google_Art_Project.jpg",
+   "file": "Lambardos Emmanuel - The Virgin Hodegetria - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Lambardos Emmanuel (1587 - 1631) Details on Google Art Project",
+   "credit": "DwGmSWicTadwLg at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "wisdom-builded-house",
+  "kind": "christ",
+  "title": "Wisdom Hath Builded Her House (Novgorod, 1548)",
+  "alt": "",
+  "cardName": "Holy Wisdom",
+  "subjects": [
+   "Holy Wisdom",
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1548 (?)",
+  "year": 1548,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "'Wisdom hath builded her house, she hath hewn out her seven pillars' (Proverbs 9:1). The Church reads Wisdom as Christ, and this allegorical icon sets out the feast of Wisdom with her seven pillars and her servants calling all to the table.\n\nIt was painted in Novgorod around 1548 and is in the Tretyakov Gallery.",
+  "image": "assets/icons/wisdom-builded-house.jpg",
+  "thumb": "assets/icons/wisdom-builded-house-thumb.jpg",
+  "w": 895,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Holy_Wisdom_created_home.jpg",
+   "file": "Holy Wisdom created home.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "Russian National Museum inv. no. 28830, icon-art.info"
+  }
+ },
+ {
+  "id": "clement-rome-vita",
+  "kind": "saint",
+  "title": "St Clement of Rome, with Scenes from His Life",
+  "alt": "",
+  "cardName": "Hieromartyr Clement, Pope of Rome",
+  "subjects": [
+   "St Clement of Rome"
+  ],
+  "days": [
+   {
+    "d": "11-25",
+    "n": "Hieromartyr Clement, Pope of Rome"
+   }
+  ],
+  "month": null,
+  "date": "Middle of the 16th century",
+  "year": 1550,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Arkhangelsk Regional Museum of Fine Arts",
+   "lat": 64.5393,
+   "lng": 40.5156,
+   "city": "Arkhangelsk"
+  },
+  "medium": "Tempera on wood",
+  "text": "Clement, an early bishop of Rome, was exiled to the Crimea and drowned with an anchor around his neck. His relics were later brought to Rome by St Cyril, the apostle of the Slavs.\n\nThe icon is in the Arkhangelsk Regional Museum of Fine Arts.",
+  "image": "assets/icons/clement-rome-vita.jpg",
+  "thumb": "assets/icons/clement-rome-vita-thumb.jpg",
+  "w": 906,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Holy_Bishop_Clement,_Pope_with_Scenes_from_his_Life,_Arkhangelsk.JPG",
+   "file": "Holy Bishop Clement, Pope with Scenes from his Life, Arkhangelsk.JPG",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "photo by user:Wmpearl Anonymous Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "daniel-lions-novgorod",
+  "kind": "saint",
+  "title": "Daniel in the Lions' Den",
+  "alt": "",
+  "cardName": "Holy Prophet Daniel and the Three Holy Youths",
+  "subjects": [
+   "Prophet Daniel"
+  ],
+  "days": [
+   {
+    "d": "12-17"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "Novgorod State Museum",
+   "lat": 58.5214,
+   "lng": 31.2758,
+   "city": "Veliky Novgorod"
+  },
+  "medium": "Tempera on wood",
+  "text": "Daniel prays among the lions, which do him no harm, and an angel carries the prophet Habakkuk to him with food (Bel and the Dragon 33–39).\n\nThe icon is in the Novgorod museum.",
+  "image": "assets/icons/daniel-lions-novgorod.jpg",
+  "thumb": "assets/icons/daniel-lions-novgorod-thumb.jpg",
+  "w": 485,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Daniel_in_the_lions%27_den_icon.jpg",
+   "file": "Daniel in the lions' den icon.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "(1978) Early russian icon painting , Moscow : Moscow Iskusstvo, pp. 157, 305 OCLC : 806991446 ."
+  }
+ },
+ {
+  "id": "procopius-varlaam-arkhangelsk",
+  "kind": "saint",
+  "title": "Blessed Procopius of Ustyug and St Varlaam of Khutyn",
+  "alt": "",
+  "cardName": "Blessed Procopius of Ustyug",
+  "subjects": [
+   "St Procopius of Ustyug",
+   "St Varlaam of Khutyn"
+  ],
+  "days": [
+   {
+    "d": "07-08",
+    "n": "Blessed Procopius of Ustyug, Fool for Christ"
+   },
+   {
+    "d": "11-06",
+    "n": "St Varlaam of Khutyn"
+   }
+  ],
+  "month": null,
+  "date": "Middle of the 16th century (1544?)",
+  "year": 1544,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Arkhangelsk Regional Museum of Fine Arts",
+   "lat": 64.5393,
+   "lng": 40.5156,
+   "city": "Arkhangelsk"
+  },
+  "medium": "Tempera on wood",
+  "text": "Procopius was a merchant from the West who became a fool for Christ at Veliky Ustyug and, by his prayers, turned a storm of fiery stones away from the town. Varlaam founded the Khutyn monastery near Novgorod.\n\nThe two northern saints stand beneath Christ. The icon is in the Arkhangelsk Regional Museum of Fine Arts.",
+  "image": "assets/icons/procopius-varlaam-arkhangelsk.jpg",
+  "thumb": "assets/icons/procopius-varlaam-arkhangelsk-thumb.jpg",
+  "w": 771,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Blessed_Prokopi_of_Ustiug_and_Holy_Monk_Varlaam_of_Khutyn,_Arkhangelsk.JPG",
+   "file": "Blessed Prokopi of Ustiug and Holy Monk Varlaam of Khutyn, Arkhangelsk.JPG",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "photo by Wmpearl Anonymous Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "in-thee-rejoiceth-klontzas",
+  "kind": "theotokos",
+  "title": "In Thee Rejoiceth (Klontzas)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos",
+   "All Saints"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Late 16th century",
+  "year": 1590,
+  "school": "Cretan school",
+  "artist": "Georgios Klontzas",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Hellenic Institute of Byzantine and Post-Byzantine Studies",
+   "lat": 45.4363,
+   "lng": 12.3424,
+   "city": "Venice"
+  },
+  "medium": "Tempera on wood, 47 × 71.5 cm",
+  "text": "'In thee rejoiceth, O full of grace, all creation: the assembly of angels and the race of men.' Georgios Klontzas fills the whole panel with the hymn of St John of Damascus, sung in place of 'It is truly meet' at the Liturgy of St Basil.\n\nThe icon is in the Hellenic Institute in Venice.",
+  "image": "assets/icons/in-thee-rejoiceth-klontzas.jpg",
+  "thumb": "assets/icons/in-thee-rejoiceth-klontzas-thumb.jpg",
+  "w": 793,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:About_you_rejoices_by_G.Klontzas_(16th_c.).jpg",
+   "file": "About you rejoices by G.Klontzas (16th c.).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Georgios Klontzas",
+   "credit": "http://eib.xanthi.ilsp.gr/gr/icons.asp"
+  }
+ },
+ {
+  "id": "lazarus-athens",
+  "kind": "feast",
+  "title": "The Raising of Lazarus (Athens)",
+  "alt": "",
+  "cardName": "Lazarus Saturday",
+  "subjects": [
+   "Raising of Lazarus",
+   "Jesus Christ",
+   "St Lazarus"
+  ],
+  "days": [
+   {
+    "d": "pascha-8"
+   }
+  ],
+  "month": null,
+  "date": "12th–13th century",
+  "year": 1200,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Byzantine Empire",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Byzantine Empire",
+  "home": {
+   "name": "Private collection",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ calls Lazarus from the tomb, and his sisters Mary and Martha fall at his feet.\n\nThe icon is in a private collection in Athens.",
+  "image": "assets/icons/lazarus-athens.jpg",
+  "thumb": "assets/icons/lazarus-athens-thumb.jpg",
+  "w": 1200,
+  "h": 1003,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Lazarus_Athens.JPG",
+   "file": "Lazarus Athens.JPG",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "scan from book Вейцман К., Хатзидакис М., Миятев К., Радойчич С. Иконы на Балканах. София.-Белград. 1967."
+  }
+ },
+ {
+  "id": "entombment-gtg",
+  "kind": "feast",
+  "title": "The Entombment of Christ (Russian North)",
+  "alt": "",
+  "cardName": "Great and Holy Saturday",
+  "subjects": [
+   "Holy Week",
+   "Lamentation",
+   "Jesus Christ",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "pascha-1"
+   }
+  ],
+  "month": null,
+  "date": "Late 15th century",
+  "year": 1490,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood, 90 × 63 cm",
+  "text": "Christ's body is laid on the stone, and his mother bends over his face while the women and the apostles mourn.\n\nThe icon came from the feast tier of a church at Gorodets and is in the Tretyakov Gallery.",
+  "image": "assets/icons/entombment-gtg.jpg",
+  "thumb": "assets/icons/entombment-gtg-thumb.jpg",
+  "w": 834,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Entombment_of_Christ_(15th_century,_Tretyakov_gallery).jpg",
+   "file": "Entombment of Christ (15th century, Tretyakov gallery).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "http://www.icon-art.info/masterpiece.php?lng=ru&amp;mst_id=378"
+  }
+ },
+ {
+  "id": "last-supper-kyiv",
+  "kind": "feast",
+  "title": "The Mystical Supper",
+  "alt": "",
+  "cardName": "Great and Holy Thursday",
+  "subjects": [
+   "Holy Week",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "pascha-3"
+   }
+  ],
+  "month": null,
+  "date": "Late 15th century",
+  "year": 1490,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "National Museum 'Kyiv Art Gallery'",
+   "lat": 50.4425,
+   "lng": 30.5106,
+   "city": "Kyiv"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ and the twelve recline at a round table. John leans on his breast, and Judas reaches into the dish.\n\nThe icon is in the National Museum 'Kyiv Art Gallery'.",
+  "image": "assets/icons/last-supper-kyiv.jpg",
+  "thumb": "assets/icons/last-supper-kyiv-thumb.jpg",
+  "w": 840,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D1%94%D0%BC%D0%BD%D0%B0_%D0%B2%D0%B5%D1%87%D0%B5%D1%80%D1%8F._%D0%9A%D1%96%D0%BD%D0%B5%D1%86%D1%8C_XV_%D1%81%D1%82._%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D1%8F_%D0%A0%D1%83%D1%81%D1%8C..jpg",
+   "file": "Таємна вечеря. Кінець XV ст. Середня Русь..jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "",
+   "credit": "http://www.icon-art.info/masterpiece.php?lng=ru&amp;mst_id=4012"
+  }
+ },
+ {
+  "id": "andrew-thessaloniki",
+  "kind": "saint",
+  "title": "The Apostle Andrew (Thessaloniki)",
+  "alt": "",
+  "cardName": "Holy Apostle Andrew the First-called",
+  "subjects": [
+   "St Andrew"
+  ],
+  "days": [
+   {
+    "d": "11-30"
+   }
+  ],
+  "month": null,
+  "date": "1550–1600",
+  "year": 1575,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Museum of Byzantine Culture",
+   "lat": 40.6237,
+   "lng": 22.9545,
+   "city": "Thessaloniki"
+  },
+  "medium": "Tempera on wood",
+  "text": "Andrew, the first-called of the apostles, holds his scroll and looks out with tousled grey hair.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "image": "assets/icons/andrew-thessaloniki.jpg",
+  "thumb": "assets/icons/andrew-thessaloniki-thumb.jpg",
+  "w": 907,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Andrew_Icon.tif",
+   "file": "Saint Andrew Icon.tif",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "baptism-kirillov",
+  "kind": "feast",
+  "title": "The Baptism of Christ (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Theophany",
+  "subjects": [
+   "Theophany",
+   "Jesus Christ",
+   "St John the Baptist"
+  ],
+  "days": [
+   {
+    "d": "01-06"
+   }
+  ],
+  "month": null,
+  "date": "c. 1497",
+  "year": 1497,
+  "school": "Kirillov",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Kirillo-Belozersky Monastery Museum",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ stands in the Jordan as John baptises him, angels wait on the bank, and the Spirit descends as a dove.\n\nIt comes from the feast tier of the Kirillo-Belozersky iconostasis of 1497.",
+  "image": "assets/icons/baptism-kirillov.jpg",
+  "thumb": "assets/icons/baptism-kirillov-thumb.jpg",
+  "w": 943,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Baptism_(Kirillo-Belozersk).jpg",
+   "file": "Baptism (Kirillo-Belozersk).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "own photo by shakko"
+  }
+ },
+ {
+  "id": "hospitality-benaki",
+  "kind": "feast",
+  "title": "The Hospitality of Abraham (Benaki)",
+  "alt": "",
+  "cardName": "Holy Pentecost",
+  "subjects": [
+   "Holy Trinity",
+   "Hospitality of Abraham"
+  ],
+  "days": [
+   {
+    "d": "pascha+49"
+   }
+  ],
+  "month": null,
+  "date": "Late 14th century",
+  "year": 1390,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Byzantine Empire",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Byzantine Empire",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Tempera on wood",
+  "text": "Three angels sit at Abraham's table under the oak of Mamre, and Abraham and Sarah serve them. The Church reads the three as a figure of the Holy Trinity.\n\nThe icon is in the Benaki Museum.",
+  "image": "assets/icons/hospitality-benaki.jpg",
+  "thumb": "assets/icons/hospitality-benaki-thumb.jpg",
+  "w": 1200,
+  "h": 699,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Holy_Trinity_Benaki.JPG",
+   "file": "Holy Trinity Benaki.JPG",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "scan from book Вейцман К., Хатзидакис М., Миятев К., Радойчич С. Иконы на Балканах. София.-Белград. 1967."
+  }
+ },
+ {
+  "id": "nativity-theotokos-vologda",
+  "kind": "feast",
+  "title": "The Nativity of the Theotokos, with Scenes from the Life of Joachim and Anna",
+  "alt": "",
+  "cardName": "The Nativity of the Theotokos",
+  "subjects": [
+   "Nativity of the Theotokos",
+   "St Joachim",
+   "St Anna",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "09-08"
+   }
+  ],
+  "month": null,
+  "date": "1565–1566",
+  "year": 1565,
+  "school": "Vologda",
+  "artist": "",
+  "origin": {
+   "name": "Vologda",
+   "lat": 59.2181,
+   "lng": 39.8886
+  },
+  "originShort": "Vologda",
+  "home": {
+   "name": "Vologda Museum-Reserve",
+   "lat": 59.2239,
+   "lng": 39.8843,
+   "city": "Vologda"
+  },
+  "medium": "Tempera on wood, 169.5 × 124 cm",
+  "text": "The birth of the Mother of God fills the centre, and the border tells the story of her parents Joachim and Anna and her own childhood, with feasts of the year.\n\nThe great panel, painted by Sukhoi Milovo, came from the church of St Leontius in Vologda and is in the Vologda museum.",
+  "image": "assets/icons/nativity-theotokos-vologda.jpg",
+  "thumb": "assets/icons/nativity-theotokos-vologda-thumb.jpg",
+  "w": 932,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%BE%D0%B6%D0%B4%D0%B5%D1%81%D1%82%D0%B2%D0%BE_%D0%91%D0%BE%D0%B3%D0%BE%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8_%D1%81_%D0%B6%D0%B8%D1%82%D0%B8%D0%B5%D0%BC._%D0%A1%D1%83%D1%85%D0%BE%D0%B9_%D0%9C%D0%B8%D0%BB%D0%BE%D0%B2%D0%BE.jpg",
+   "file": "Рождество Богоматери с житием. Сухой Милово.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Иконы Вологды XIV -- XVI веков. М.: Северный паломник. 2007"
+  }
+ },
+ {
+  "id": "forerunner-rublevmus",
+  "kind": "saint",
+  "title": "St John the Forerunner (Rublev Museum)",
+  "alt": "",
+  "cardName": "St John the Baptist",
+  "subjects": [
+   "St John the Baptist",
+   "Deesis"
+  ],
+  "days": [],
+  "month": null,
+  "date": "15th century",
+  "year": 1450,
+  "school": "Moscow",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Andrei Rublev Museum of Early Russian Art",
+   "lat": 55.7468,
+   "lng": 37.6825,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "John turns in prayer toward Christ, from a Deesis tier once attributed to Andrei Rublev.\n\nThe icon is in the Andrei Rublev Museum.",
+  "image": "assets/icons/forerunner-rublevmus.jpg",
+  "thumb": "assets/icons/forerunner-rublevmus-thumb.jpg",
+  "w": 955,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:John_the_Baptist_(15th_c.,_Rublev_museum).jpg",
+   "file": "John the Baptist (15th c., Rublev museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "http://www.icon-art.info/masterpiece.php?lng=ru&amp;mst_id=455"
+  }
+ },
+ {
+  "id": "cyril-belozersk-glushitsky",
+  "kind": "saint",
+  "title": "St Cyril of White Lake (Dionisius of Glushitsa)",
+  "alt": "",
+  "cardName": "St Cyril of White Lake",
+  "subjects": [
+   "St Cyril of White Lake"
+  ],
+  "days": [
+   {
+    "d": "06-09",
+    "n": "St Cyril of White Lake"
+   }
+  ],
+  "month": null,
+  "date": "15th century",
+  "year": 1424,
+  "school": "Vologda",
+  "artist": "Dionisius of Glushitsa (attributed)",
+  "origin": {
+   "name": "Vologda",
+   "lat": 59.2181,
+   "lng": 39.8886
+  },
+  "originShort": "Vologda",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Cyril left the Simonov monastery in Moscow and settled by the White Lake, where he founded the monastery of Kirillov. He died in 1427.\n\nThe icon is attributed to his contemporary St Dionisius of Glushitsa and is said to have been painted from life. It is in the Tretyakov Gallery.",
+  "image": "assets/icons/cyril-belozersk-glushitsky.jpg",
+  "thumb": "assets/icons/cyril-belozersk-glushitsky-thumb.jpg",
+  "w": 971,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirill_Belozerskiy_icon_Dionisiy_Glushitskiy.jpg",
+   "file": "Kirill Belozerskiy icon Dionisiy Glushitskiy.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "",
+   "credit": ""
+  }
+ },
+ {
+  "id": "michael-mchadijvari",
+  "kind": "angel",
+  "title": "The Archangel Michael (Mchadijvari)",
+  "alt": "",
+  "cardName": "Synaxis of the Archangel Michael",
+  "subjects": [
+   "Archangel Michael"
+  ],
+  "days": [
+   {
+    "d": "11-08"
+   }
+  ],
+  "month": null,
+  "date": "16th–17th century",
+  "year": 1600,
+  "school": "Georgian",
+  "artist": "",
+  "origin": {
+   "name": "Georgia",
+   "lat": 41.7151,
+   "lng": 44.8271
+  },
+  "originShort": "Georgia",
+  "home": {
+   "name": "Georgian National Museum",
+   "lat": 41.6942,
+   "lng": 44.8015,
+   "city": "Tbilisi"
+  },
+  "medium": "Tempera on wood",
+  "text": "Michael, commander of the heavenly hosts, stands with the measuring rod and orb. The icon comes from Mchadijvari in Georgia and carries an asomtavruli inscription.\n\nIt is in the Georgian National Museum.",
+  "image": "assets/icons/michael-mchadijvari.jpg",
+  "thumb": "assets/icons/michael-mchadijvari-thumb.jpg",
+  "w": 755,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Mchadijvari_icon_of_Archangel_Michael.jpg",
+   "file": "Mchadijvari icon of Archangel Michael.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown artist",
+   "credit": "Sanikidze, Tamaz (1985), Art Museum of Georgia. Aurora Art Publishers, Leningrad"
+  }
+ },
+ {
+  "id": "baptist-head-pp",
+  "kind": "saint",
+  "title": "The Head of St John the Forerunner on a Dish",
+  "alt": "",
+  "cardName": "Finding of the Head of St John the Baptist",
+  "subjects": [
+   "St John the Baptist"
+  ],
+  "days": [
+   {
+    "d": "02-24",
+    "n": "First and Second Finding of the Head of St John the Baptist"
+   },
+   {
+    "d": "08-29"
+   }
+  ],
+  "month": null,
+  "date": "1570–1630",
+  "year": 1600,
+  "school": "Moscow",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood, 31 × 27 cm",
+  "text": "The Forerunner's head lies in a golden dish, as it was brought to Herodias. Such icons were venerated on the feasts of his beheading and of the findings of his head.\n\nThe icon is in the Petit Palais in Paris.",
+  "image": "assets/icons/baptist-head-pp.jpg",
+  "thumb": "assets/icons/baptist-head-pp-thumb.jpg",
+  "w": 1033,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:T%C3%AAte_de_saint_Jean-Baptiste_dans_une_coupe,_PPP4908.jpg",
+   "file": "Tête de saint Jean-Baptiste dans une coupe, PPP4908.jpg",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "Ecole moscovite, peintre",
+   "credit": "https://www.parismuseescollections.paris.fr/fr/petit-palais/oeuvres/tete-de-saint-jean-baptiste-dans-une-coupe"
+  }
+ },
+ {
+  "id": "deesis-phanourios-sinai",
+  "kind": "saint",
+  "title": "Deesis with the Martyr Phanourios",
+  "alt": "",
+  "cardName": "Holy Great Martyr Phanourios",
+  "subjects": [
+   "St Phanourios",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "08-27",
+    "n": "Holy Great Martyr Phanourios"
+   }
+  ],
+  "month": null,
+  "date": "15th century",
+  "year": 1450,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "St Catherine's Monastery, Mount Sinai",
+   "lat": 28.5559,
+   "lng": 33.9759,
+   "city": "Sinai, Egypt"
+  },
+  "medium": "Tempera on wood, 24.4 × 16.9 cm",
+  "text": "Phanourios is known only from an icon found in the ruins of a church on Rhodes in the fourteenth century. Greeks pray to him to 'reveal' lost things, and bake a phanouropita in thanksgiving.\n\nHere he stands below a Deesis on a small icon at Sinai.",
+  "image": "assets/icons/deesis-phanourios-sinai.jpg",
+  "thumb": "assets/icons/deesis-phanourios-sinai-thumb.jpg",
+  "w": 830,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Deesis_with_the_Martyr_Fanourius._Icon._Greece._24.4_x_16.9._Collection_of_the_Monastery_of_Saint_Catherine_on_Sinai.jpg",
+   "file": "Deesis with the Martyr Fanourius. Icon. Greece. 24.4 x 16.9. Collection of the Monastery of Saint Catherine on Sinai.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://pravicon.com/icon-3032"
+  }
+ },
+ {
+  "id": "virgin-blaise-novgorod",
+  "kind": "theotokos",
+  "title": "The Mother of God with St Blaise",
+  "alt": "",
+  "cardName": "Hieromartyr Blaise",
+  "subjects": [
+   "Theotokos",
+   "St Blaise"
+  ],
+  "days": [
+   {
+    "d": "02-11"
+   }
+  ],
+  "month": null,
+  "date": "15th century",
+  "year": 1450,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "St Blaise, bishop of Sebaste, was the patron of cattle in Novgorod. Here he stands below the Mother of God and Child against a red ground.\n\nThe icon is in the Russian Museum.",
+  "image": "assets/icons/virgin-blaise-novgorod.jpg",
+  "thumb": "assets/icons/virgin-blaise-novgorod-thumb.jpg",
+  "w": 955,
+  "h": 1182,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Icone,_la_madre_di_dio_col_bambino_e_san_biagio,_xv_secolo,_novgorod.JPG",
+   "file": "Icone, la madre di dio col bambino e san biagio, xv secolo, novgorod.JPG",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Sailko",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "volokolamsk-theotokos",
+  "kind": "theotokos",
+  "title": "The Vladimir Mother of God (Volokolamsk)",
+  "alt": "",
+  "cardName": "The Vladimir Icon of the Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "08-26"
+   }
+  ],
+  "month": null,
+  "date": "1572",
+  "year": 1572,
+  "school": "Moscow (royal workshops)",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Andrei Rublev Museum of Early Russian Art",
+   "lat": 55.7468,
+   "lng": 37.6825,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood, 109 × 75 cm",
+  "text": "A copy of the Vladimir icon made in the tsar's workshops in Moscow in 1572 for the Joseph-Volokolamsk monastery.\n\nIt is in the Andrei Rublev Museum.",
+  "image": "assets/icons/volokolamsk-theotokos.jpg",
+  "thumb": "assets/icons/volokolamsk-theotokos-thumb.jpg",
+  "w": 963,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%BC%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8%D0%BA%D0%BE%D0%BD%D0%B0.jpg",
+   "file": "Волоколамская икона.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Неизвестный иконописец Царских мастерских в Москве XVI века",
+   "credit": "Царство и Царствие. Русская икона XVI века : Книга-календарь на 2003 год. Минск : Междунар. обществ. объединение «Христианский образовательный центр им. свв. Ме"
+  }
+ },
+ {
+  "id": "crucifixion-benaki",
+  "kind": "feast",
+  "title": "The Crucifixion (Benaki)",
+  "alt": "",
+  "cardName": "Great and Holy Friday",
+  "subjects": [
+   "Crucifixion",
+   "Theotokos",
+   "St John the Theologian"
+  ],
+  "days": [
+   {
+    "d": "pascha-2"
+   }
+  ],
+  "month": null,
+  "date": "1560s",
+  "year": 1565,
+  "school": "Cretan school",
+  "artist": "",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Tempera on wood",
+  "text": "A Cretan Crucifixion of the 1560s, with the mourning women on one side and St John and the centurion on the other.\n\nThe icon is in the Benaki Museum.",
+  "image": "assets/icons/crucifixion-benaki.jpg",
+  "thumb": "assets/icons/crucifixion-benaki-thumb.jpg",
+  "w": 1015,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Crucifixion_-_Google_Art_Project.jpg",
+   "file": "The Crucifixion - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "unknown artist",
+   "credit": "jAFnGkXLJID37g at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "saviour-glory-dionisius",
+  "kind": "christ",
+  "title": "The Saviour in Glory (Dionisius, 1500)",
+  "alt": "",
+  "cardName": "Christ in Glory",
+  "subjects": [
+   "Jesus Christ",
+   "Deesis"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1500",
+  "year": 1500,
+  "school": "Moscow (Dionisius)",
+  "artist": "Dionisius",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ enthroned in glory, within red and blue diamonds, at the centre of the Deesis that Dionisius painted in 1500 for the Pavlo-Obnorsky Monastery.\n\nIt is in the Tretyakov Gallery.",
+  "image": "assets/icons/saviour-glory-dionisius.jpg",
+  "thumb": "assets/icons/saviour-glory-dionisius-thumb.jpg",
+  "w": 817,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:SpasVSilah_Dionisiy_1500.jpg",
+   "file": "SpasVSilah Dionisiy 1500.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Dionisius",
+   "credit": ""
+  }
+ },
+ {
+  "id": "glykophilousa-akotantos",
+  "kind": "theotokos",
+  "title": "The Virgin Glykophilousa (Akotantos)",
+  "alt": "",
+  "cardName": "The Mother of God of Tenderness",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "15th century",
+  "year": 1440,
+  "school": "Cretan school",
+  "artist": "Angelos Akotantos (attributed)",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Byzantine and Christian Museum",
+   "lat": 37.9757,
+   "lng": 23.7444,
+   "city": "Athens"
+  },
+  "medium": "Tempera on wood, 54 × 56 cm",
+  "text": "The Child plays in his mother's arms and presses his cheek to hers. The museum attributes the panel, on stylistic grounds, to Angelos Akotantos.\n\nIt is in the Byzantine and Christian Museum in Athens.",
+  "image": "assets/icons/glykophilousa-akotantos.jpg",
+  "thumb": "assets/icons/glykophilousa-akotantos-thumb.jpg",
+  "w": 994,
+  "h": 1121,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Virgin_Glykophilousa_by_Angelos_Akotantos_(Byzantine_museum).jpg",
+   "file": "Virgin Glykophilousa by Angelos Akotantos (Byzantine museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Angelos Akotantos",
+   "credit": "http://www.ebyzantinemuseum.gr/?i=bxm.en.exhibit&amp;id=48"
+  }
+ },
+ {
+  "id": "luke-painting-hodegetria",
+  "kind": "saint",
+  "title": "St Luke Painting the Hodegetria",
+  "alt": "",
+  "cardName": "Holy Apostle and Evangelist Luke",
+  "subjects": [
+   "St Luke",
+   "Theotokos Hodegetria"
+  ],
+  "days": [
+   {
+    "d": "10-18"
+   }
+  ],
+  "month": null,
+  "date": "Early 15th century",
+  "year": 1410,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Ikonen-Museum Recklinghausen",
+   "lat": 51.6141,
+   "lng": 7.1979,
+   "city": "Recklinghausen"
+  },
+  "medium": "Tempera on wood",
+  "text": "Tradition says the evangelist Luke painted the first icon of the Mother of God from life, and she blessed it. Here he sits at his easel with the Hodegetria before him.\n\nThe icon is in the Ikonen-Museum in Recklinghausen.",
+  "image": "assets/icons/luke-painting-hodegetria.jpg",
+  "thumb": "assets/icons/luke-painting-hodegetria-thumb.jpg",
+  "w": 787,
+  "h": 1080,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Unknown_painter_-_Luke_Paints_the_Icon_of_the_Mother_of_God_Hodegetria_-_WGA23494.jpg",
+   "file": "Unknown painter - Luke Paints the Icon of the Mother of God Hodegetria - WGA23494.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown Icon Painter, Russian (early 15th century)",
+   "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"m/master/zunk_x/03icon\""
+  }
+ },
+ {
+  "id": "passion-theotokos-ritzos",
+  "kind": "theotokos",
+  "title": "The Mother of God of the Passion (Ritzos)",
+  "alt": "",
+  "cardName": "The Mother of God of the Passion",
+  "subjects": [
+   "Theotokos",
+   "Holy Angels"
+  ],
+  "days": [],
+  "month": null,
+  "date": "c. 1490",
+  "year": 1490,
+  "school": "Cretan school",
+  "artist": "Andreas Ritzos",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "Two angels show the Child the instruments of his Passion, the cross and the lance, and he turns to his mother in fear, one sandal slipping from his foot. Andreas Ritzos made this the classic Cretan form of the image.",
+  "image": "assets/icons/passion-theotokos-ritzos.jpg",
+  "thumb": "assets/icons/passion-theotokos-ritzos-thumb.jpg",
+  "w": 804,
+  "h": 1079,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Andreas_Ritzos_-_The_Mother_of_God_of_Passion_-_WGA19511.jpg",
+   "file": "Andreas Ritzos - The Mother of God of Passion - WGA19511.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Andreas Ritzos",
+   "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"r/ritzos/mother2\""
+  }
+ },
+ {
+  "id": "christ-tomb-kastoria",
+  "kind": "christ",
+  "title": "Christ in the Tomb (Kastoria)",
+  "alt": "",
+  "cardName": "Great and Holy Friday",
+  "subjects": [
+   "Jesus Christ",
+   "Holy Week"
+  ],
+  "days": [
+   {
+    "d": "pascha-2"
+   }
+  ],
+  "month": null,
+  "date": "12th century",
+  "year": 1150,
+  "school": "Byzantine",
+  "artist": "",
+  "origin": {
+   "name": "Kastoria",
+   "lat": 40.5193,
+   "lng": 21.2687
+  },
+  "originShort": "Kastoria",
+  "home": {
+   "name": "Byzantine Museum of Kastoria",
+   "lat": 40.5197,
+   "lng": 21.2633,
+   "city": "Kastoria"
+  },
+  "medium": "Tempera on wood",
+  "text": "The dead Christ stands upright in the tomb, his eyes closed and his head bowed. The image, called the Akra Tapeinosis or 'utmost humility', belongs to Holy Week.\n\nThe icon is in Kastoria.",
+  "image": "assets/icons/christ-tomb-kastoria.jpg",
+  "thumb": "assets/icons/christ-tomb-kastoria-thumb.jpg",
+  "w": 712,
+  "h": 1069,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Greek_ikon.12_cent..jpg",
+   "file": "Greek ikon.12 cent..jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Castoria, Greece"
+  }
+ },
+ {
+  "id": "kardiotissa-akotantos",
+  "kind": "theotokos",
+  "title": "The Virgin Kardiotissa (Akotantos)",
+  "alt": "",
+  "cardName": "The Mother of God of Tenderness",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1400–1450",
+  "year": 1430,
+  "school": "Cretan school",
+  "artist": "Angelos Akotantos",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Byzantine and Christian Museum",
+   "lat": 37.9757,
+   "lng": 23.7444,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "Kardiotissa means 'of the heart'. The Child twists in his mother's arms in play, and she holds him close. Angelos Akotantos signed the panel.\n\nIt is in the Byzantine and Christian Museum in Athens.",
+  "image": "assets/icons/kardiotissa-akotantos.jpg",
+  "thumb": "assets/icons/kardiotissa-akotantos-thumb.jpg",
+  "w": 850,
+  "h": 1061,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Angelos_Akotantos_-_The_Virgin_Cardiotissa_-_WGA00097.jpg",
+   "file": "Angelos Akotantos - The Virgin Cardiotissa - WGA00097.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Angelos Akotantos",
+   "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"a/akotanto/cardioti\""
+  }
+ },
+ {
+  "id": "george-kremlin-dormition",
+  "kind": "saint",
+  "title": "St George (Dormition Cathedral, Moscow)",
+  "alt": "",
+  "cardName": "Holy Great Martyr George",
+  "subjects": [
+   "St George"
+  ],
+  "days": [
+   {
+    "d": "04-23"
+   }
+  ],
+  "month": null,
+  "date": "Late 11th–early 12th century",
+  "year": 1100,
+  "school": "Novgorod or Kiev",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "Cathedral of the Dormition, Moscow Kremlin",
+   "lat": 55.7509,
+   "lng": 37.6172,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood, 174 × 122 cm",
+  "text": "George stands half-length in armour and a red cloak, holding a sword and spear. This is one of the oldest Russian icons. It is two-sided, with the Mother of God Peribleptos on the other face.\n\nIt is in the Dormition Cathedral of the Moscow Kremlin.",
+  "image": "assets/icons/george-kremlin-dormition.jpg",
+  "thumb": "assets/icons/george-kremlin-dormition-thumb.jpg",
+  "w": 705,
+  "h": 1024,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:George_Uspenskiy.jpg",
+   "file": "George Uspenskiy.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://expertmus.livejournal.com/27911.html"
+  }
+ },
+ {
+  "id": "peter-leonty-theodosius",
+  "kind": "saint",
+  "title": "Sts Peter of Moscow, Leontius of Rostov and Theodosius of the Caves",
+  "alt": "",
+  "cardName": "St Peter, Metropolitan of Moscow",
+  "subjects": [
+   "St Peter of Moscow",
+   "St Leontius of Rostov",
+   "St Theodosius of the Kiev Caves"
+  ],
+  "days": [
+   {
+    "d": "12-21",
+    "n": "St Peter, Metropolitan of Moscow"
+   }
+  ],
+  "month": null,
+  "date": "Late 15th–early 16th century",
+  "year": 1500,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on gesso on cloth, 24 × 19.5 cm",
+  "text": "Three Russian saints stand together: Metropolitan Peter, who moved the see to Moscow; Leontius, first bishop of Rostov; and Theodosius, a founder of the Kiev Caves Lavra.\n\nThis is a 'tablet' icon from St Sophia in Novgorod, painted on both sides. It is in the Tretyakov Gallery.",
+  "image": "assets/icons/peter-leonty-theodosius.jpg",
+  "thumb": "assets/icons/peter-leonty-theodosius-thumb.jpg",
+  "w": 800,
+  "h": 1007,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Icon_of_Saints_Peter_the_Metropolitan,_Leonty_of_Rostov,_and_Theodosius_of_the_Caves._Novgorod_School_of_Iconography,_late_15th_%E2%80%93_early_16th_century._Tretyakov_Gallery,_Russia.jpg",
+   "file": "Icon of Saints Peter the Metropolitan, Leonty of Rostov, and Theodosius of the Caves. Novgorod School of Iconography, late 15th – early 16th century. Tretyakov Gallery, Russia.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://www.icon-art.info/topic.php?lng=ru&amp;top_id=188&amp;mode=img"
+  }
+ },
+ {
+  "id": "man-of-sorrows-tzafouris",
+  "kind": "christ",
+  "title": "Christ in the Tomb with Mary and John (Tzafouris)",
+  "alt": "",
+  "cardName": "Great and Holy Friday",
+  "subjects": [
+   "Jesus Christ",
+   "Theotokos",
+   "St John the Theologian",
+   "Holy Week"
+  ],
+  "days": [
+   {
+    "d": "pascha-2"
+   }
+  ],
+  "month": null,
+  "date": "1480–1501",
+  "year": 1490,
+  "school": "Cretan school",
+  "artist": "Nikolaos Tzafouris",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Kunsthistorisches Museum",
+   "lat": 48.2038,
+   "lng": 16.3616,
+   "city": "Vienna"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "The dead Christ stands in the tomb, and his mother and St John embrace him on either side. Nikolaos Tzafouris of Candia painted for Greek and Venetian buyers alike.\n\nThe icon is in the Kunsthistorisches Museum in Vienna.",
+  "image": "assets/icons/man-of-sorrows-tzafouris.jpg",
+  "thumb": "assets/icons/man-of-sorrows-tzafouris-thumb.jpg",
+  "w": 1200,
+  "h": 935,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nicolaus_Zafuri_-_Christus_als_Schmerzensmann_mit_Maria_und_Johannes_-_GG_4040_-_Kunsthistorisches_Museum.jpg",
+   "file": "Nicolaus Zafuri - Christus als Schmerzensmann mit Maria und Johannes - GG 4040 - Kunsthistorisches Museum.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Nikolaos Tzafouris",
+   "credit": "Kunsthistorisches Museum"
+  }
+ },
+ {
+  "id": "athanasius-athos-tablet",
+  "kind": "saint",
+  "title": "Sts Athanasius of Athos, Barlaam and Joasaph",
+  "alt": "",
+  "cardName": "St Athanasius of Athos",
+  "subjects": [
+   "St Athanasius of Athos",
+   "St Joasaph"
+  ],
+  "days": [
+   {
+    "d": "07-05",
+    "n": "St Athanasius of Athos"
+   },
+   {
+    "d": "11-19",
+    "n": "St Joasaph, Prince of India"
+   }
+  ],
+  "month": null,
+  "date": "15th century",
+  "year": 1480,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "Novgorod State Museum",
+   "lat": 58.5214,
+   "lng": 31.2758,
+   "city": "Veliky Novgorod"
+  },
+  "medium": "Tempera on gesso on cloth, 24 × 19 cm",
+  "text": "Athanasius founded the Great Lavra on Mount Athos in 963, the first great monastery of the Holy Mountain. Beside him stand Barlaam and Joasaph, heroes of a much-loved tale of renunciation.\n\nThis is another of the 'tablet' icons of St Sophia in Novgorod. It is in the Novgorod museum.",
+  "image": "assets/icons/athanasius-athos-tablet.jpg",
+  "thumb": "assets/icons/athanasius-athos-tablet-thumb.jpg",
+  "w": 717,
+  "h": 900,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saints_Athanasios_of_Athos,_Varlaam,_and_Joasaph._Icon._Novgorod._24_x_19._From_Saint_Sophia_Cathedral._Novgorod_Museum.jpg",
+   "file": "Saints Athanasios of Athos, Varlaam, and Joasaph. Icon. Novgorod. 24 x 19. From Saint Sophia Cathedral. Novgorod Museum.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://pravicon.com/icon-2002"
+  }
+ },
+ {
+  "id": "epitaphios-poulopos",
+  "kind": "feast",
+  "title": "Epitaphios (Theodosia Poulopou, 1599)",
+  "alt": "",
+  "cardName": "Great and Holy Saturday",
+  "subjects": [
+   "Lamentation",
+   "Jesus Christ",
+   "Holy Week"
+  ],
+  "days": [
+   {
+    "d": "pascha-1"
+   }
+  ],
+  "month": null,
+  "date": "1599",
+  "year": 1599,
+  "school": "Greek",
+  "artist": "Theodosia Poulopou",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Embroidery",
+  "text": "The epitaphios is the embroidered cloth of the dead Christ, carried in procession on Good Friday evening and laid in a flowered tomb in the church. Angels mourn around the body.\n\nTheodosia Poulopou embroidered this one in 1599. It is in the Benaki Museum.",
+  "image": "assets/icons/epitaphios-poulopos.jpg",
+  "thumb": "assets/icons/epitaphios-poulopos-thumb.jpg",
+  "w": 1200,
+  "h": 899,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Poulopos_Theodosia_-_Epitaphios_-_Google_Art_Project.jpg",
+   "file": "Poulopos Theodosia - Epitaphios - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Poulopos Theodosia Details on Google Art Project",
+   "credit": "gQF_CncxsHwLNw at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "lamentation-pp",
+  "kind": "feast",
+  "title": "The Lamentation (Petit Palais)",
+  "alt": "",
+  "cardName": "Great and Holy Saturday",
+  "subjects": [
+   "Lamentation",
+   "Jesus Christ",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "pascha-1"
+   }
+  ],
+  "month": null,
+  "date": "1600–1625",
+  "year": 1610,
+  "school": "Cretan school",
+  "artist": "",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood",
+  "text": "The Mother of God holds her dead son's head in her lap, and the apostles and women weep around the stone of anointing.\n\nThe icon is in the Petit Palais in Paris.",
+  "image": "assets/icons/lamentation-pp.jpg",
+  "thumb": "assets/icons/lamentation-pp-thumb.jpg",
+  "w": 1200,
+  "h": 906,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Ecole_cr%C3%A9toise_-_La_d%C3%A9ploration_sur_le_Christ_mort_-_PPP4880_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+   "file": "Ecole crétoise - La déploration sur le Christ mort - PPP4880 - Musée des Beaux-Arts de la ville de Paris.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of Crete",
+   "credit": "Paris Musées"
+  }
+ },
+ {
+  "id": "gleb-vishera",
+  "kind": "saint",
+  "title": "St Gleb (Savvino-Vishera icon)",
+  "alt": "",
+  "cardName": "Holy Passion-bearers Boris and Gleb",
+  "subjects": [
+   "St Gleb"
+  ],
+  "days": [
+   {
+    "d": "07-24"
+   }
+  ],
+  "month": null,
+  "date": "1301–1325",
+  "year": 1310,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "Novgorod State Museum",
+   "lat": 58.5214,
+   "lng": 31.2758,
+   "city": "Veliky Novgorod"
+  },
+  "medium": "Tempera on wood",
+  "text": "The young prince Gleb, in a fur-trimmed cap, from an early icon of Boris and Gleb from the Savvino-Vishera monastery near Novgorod. The figure shown is a detail.\n\nThe icon is in the Novgorod museum.",
+  "image": "assets/icons/gleb-vishera.jpg",
+  "thumb": "assets/icons/gleb-vishera-thumb.jpg",
+  "w": 857,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Gleb_(1301-1325).jpg",
+   "file": "Saint Gleb (1301-1325).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Kiev museum of russian art"
+  }
+ },
+ {
+  "id": "holy-fathers-sunday",
+  "kind": "saint",
+  "title": "The Sunday of the Holy Fathers",
+  "alt": "",
+  "cardName": "Sunday of the Holy Fathers",
+  "subjects": [
+   "Holy Forefathers"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1585",
+  "year": 1585,
+  "school": "Russian",
+  "artist": "Master Persha",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "On the Sunday before the Nativity, the Church remembers all the ancestors of Christ according to the flesh, from Adam to Joseph. This icon gathers them in rows.\n\nIt is dated 1585 and is in the Russian Museum.",
+  "image": "assets/icons/holy-fathers-sunday.jpg",
+  "thumb": "assets/icons/holy-fathers-sunday-thumb.jpg",
+  "w": 970,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Week_of_the_Holy_Fathers.jpg",
+   "file": "Week of the Holy Fathers.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Мастер Перша",
+   "credit": "http://icons.pstgu.ru/icon/3258 Государственный Русский Музей, Санкт-Петербург"
+  }
+ },
+ {
+  "id": "burning-bush-damaskinos",
+  "kind": "theotokos",
+  "title": "The Virgin of the Burning Bush (Damaskinos)",
+  "alt": "",
+  "cardName": "Holy Prophet Moses the God-seer",
+  "subjects": [
+   "Theotokos",
+   "Burning Bush",
+   "Prophet Moses"
+  ],
+  "days": [
+   {
+    "d": "09-04"
+   }
+  ],
+  "month": null,
+  "date": "1550–1593",
+  "year": 1570,
+  "school": "Cretan school",
+  "artist": "Michael Damaskinos",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "Moses saw a bush that burned and was not consumed (Exodus 3:2). Hymns read it as the Virgin, who carried the fire of the Godhead without being destroyed.\n\nMichael Damaskinos sets the Mother of God in the bush on Sinai, with Moses below.",
+  "image": "assets/icons/burning-bush-damaskinos.jpg",
+  "thumb": "assets/icons/burning-bush-damaskinos-thumb.jpg",
+  "w": 948,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Virgin_of_the_Burning_Bush_Michael_Damaskinos.png",
+   "file": "Virgin of the Burning Bush Michael Damaskinos.png",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Michael Damaskinos",
+   "credit": ""
+  }
+ },
+ {
+  "id": "washing-feet-pskov",
+  "kind": "feast",
+  "title": "The Washing of the Feet (Pskov)",
+  "alt": "",
+  "cardName": "Great and Holy Thursday",
+  "subjects": [
+   "Washing of the Feet",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "pascha-3"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Pskov",
+  "artist": "",
+  "origin": {
+   "name": "Pskov",
+   "lat": 57.8136,
+   "lng": 28.3496
+  },
+  "originShort": "Pskov",
+  "home": {
+   "name": "Pskov Museum-Reserve",
+   "lat": 57.816,
+   "lng": 28.334,
+   "city": "Pskov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ kneels to wash the apostles' feet, and Peter protests: 'Lord, not my feet only, but also my hands and my head' (John 13:9).\n\nThe icon is in the Pskov museum.",
+  "image": "assets/icons/washing-feet-pskov.jpg",
+  "thumb": "assets/icons/washing-feet-pskov-thumb.jpg",
+  "w": 909,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Omovenie_nog.jpg",
+   "file": "Omovenie nog.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "procession-cross-1510",
+  "kind": "feast",
+  "title": "The Procession of the Precious Wood of the Cross",
+  "alt": "",
+  "cardName": "Procession of the Precious Wood of the Cross",
+  "subjects": [
+   "Exaltation of the Cross"
+  ],
+  "days": [
+   {
+    "d": "08-01"
+   }
+  ],
+  "month": null,
+  "date": "1510–1520s",
+  "year": 1515,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Vladimir",
+   "lat": 56.129,
+   "lng": 40.4066
+  },
+  "originShort": "Vladimir",
+  "home": {
+   "name": "Vladimir-Suzdal Museum-Reserve",
+   "lat": 56.1285,
+   "lng": 40.4104,
+   "city": "Vladimir"
+  },
+  "medium": "Tempera on wood, 108 × 87 cm",
+  "text": "In August, the season of sickness, the relic of the Cross was carried through the streets of Constantinople. In Russia the day became a blessing of water, and the icon shows the Cross set up beside a spring with crowds coming to bathe.\n\nIt is in the Vladimir-Suzdal Museum-Reserve.",
+  "image": "assets/icons/procession-cross-1510.jpg",
+  "thumb": "assets/icons/procession-cross-1510-thumb.jpg",
+  "w": 963,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Proishozhdenie_chestnih_drev_(1510).jpeg",
+   "file": "Proishozhdenie chestnih drev (1510).jpeg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://fotki.yandex.ru/users/liblion/view/92371/?page=16"
+  }
+ },
+ {
+  "id": "nicholas-dionisius",
+  "kind": "saint",
+  "title": "St Nicholas (Dionisius, Ferapontov)",
+  "alt": "",
+  "cardName": "St Nicholas the Wonderworker",
+  "subjects": [
+   "St Nicholas",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "12-06"
+   }
+  ],
+  "month": null,
+  "date": "c. 1502",
+  "year": 1502,
+  "school": "Moscow (Dionisius)",
+  "artist": "Dionisius",
+  "origin": {
+   "name": "Ferapontov Monastery",
+   "lat": 59.9561,
+   "lng": 38.5672
+  },
+  "originShort": "Ferapontov Monastery",
+  "home": {
+   "name": "Kirillo-Belozersky Monastery Museum",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Nicholas stands full length in a white robe with black crosses. He comes from the Deesis tier that Dionisius painted around 1502 for the Cathedral of the Nativity of the Mother of God at Ferapontov, with its famous frescoes.\n\nIt is in the Kirillo-Belozersky museum.",
+  "image": "assets/icons/nicholas-dionisius.jpg",
+  "thumb": "assets/icons/nicholas-dionisius-thumb.jpg",
+  "w": 463,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nikolay_by_Dionisius_(Kirillo-Belozersk).jpg",
+   "file": "Nikolay by Dionisius (Kirillo-Belozersk).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Dionisius",
+   "credit": "own photo by shakko"
+  }
+ },
+ {
+  "id": "basil-dionisius",
+  "kind": "saint",
+  "title": "St Basil the Great (Dionisius, Ferapontov)",
+  "alt": "",
+  "cardName": "St Basil the Great",
+  "subjects": [
+   "St Basil the Great",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "01-01"
+   }
+  ],
+  "month": null,
+  "date": "c. 1502",
+  "year": 1502,
+  "school": "Moscow (Dionisius)",
+  "artist": "Dionisius",
+  "origin": {
+   "name": "Ferapontov Monastery",
+   "lat": 59.9561,
+   "lng": 38.5672
+  },
+  "originShort": "Ferapontov Monastery",
+  "home": {
+   "name": "Kirillo-Belozersky Monastery Museum",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Basil, archbishop of Caesarea, holds the Gospel. He is a companion of Nicholas in the Ferapontov Deesis by Dionisius, tall, slender and light, as Dionisius painted all his figures.\n\nThe icon is in the Kirillo-Belozersky museum.",
+  "image": "assets/icons/basil-dionisius.jpg",
+  "thumb": "assets/icons/basil-dionisius-thumb.jpg",
+  "w": 470,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Vasiliy_by_Dionisius_(Kirillo-Belozersk).jpg",
+   "file": "Vasiliy by Dionisius (Kirillo-Belozersk).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Dionisius",
+   "credit": "own photo by shakko"
+  }
+ },
+ {
+  "id": "christ-high-priest-damaskinos",
+  "kind": "christ",
+  "title": "Christ the High Priest (Damaskinos)",
+  "alt": "",
+  "cardName": "Christ the Great High Priest",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1550–1593",
+  "year": 1570,
+  "school": "Cretan school",
+  "artist": "Michael Damaskinos",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Byzantine and Christian Museum",
+   "lat": 37.9757,
+   "lng": 23.7444,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "Christ is shown enthroned in the vestments of a bishop, the 'high priest for ever after the order of Melchisedec' (Hebrews 6:20).\n\nMichael Damaskinos painted it. It is in the Byzantine and Christian Museum in Athens, from the Loverdos collection.",
+  "image": "assets/icons/christ-high-priest-damaskinos.jpg",
+  "thumb": "assets/icons/christ-high-priest-damaskinos-thumb.jpg",
+  "w": 769,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Christ_High_Priest_Michael_Damaskinos.png",
+   "file": "Christ High Priest Michael Damaskinos.png",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Michael Damaskinos",
+   "credit": ""
+  }
+ },
+ {
+  "id": "entry-jerusalem-14c",
+  "kind": "feast",
+  "title": "The Entry into Jerusalem (14th century)",
+  "alt": "",
+  "cardName": "Palm Sunday",
+  "subjects": [
+   "Palm Sunday",
+   "Jesus Christ"
+  ],
+  "days": [
+   {
+    "d": "pascha-7"
+   }
+  ],
+  "month": null,
+  "date": "First quarter of the 14th century",
+  "year": 1320,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ rides into Jerusalem on a donkey while children spread their garments and break branches from the palms.\n\nThis is an early Russian icon of the feast.",
+  "image": "assets/icons/entry-jerusalem-14c.jpg",
+  "thumb": "assets/icons/entry-jerusalem-14c-thumb.jpg",
+  "w": 899,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%92%D1%85%D0%BE%D0%B4_%D0%93%D0%BE%D1%81%D0%BF%D0%BE%D0%B4%D0%B5%D0%BD%D1%8C_%D0%B2_%D0%98%D0%B5%D1%80%D1%83%D1%81%D0%B0%D0%BB%D0%B8%D0%BC_XIV.jpg",
+   "file": "Вход Господень в Иерусалим XIV.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work scan / Журнал \"СНД\", Дн-ск, №3 (март) - 2007"
+  }
+ },
+ {
+  "id": "nikita-stylite-pp",
+  "kind": "saint",
+  "title": "St Nikita the Stylite of Pereslavl",
+  "alt": "",
+  "cardName": "St Nikita the Stylite of Pereslavl",
+  "subjects": [
+   "St Nikita of Pereslavl"
+  ],
+  "days": [
+   {
+    "d": "05-24",
+    "n": "St Nikita the Stylite of Pereslavl"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood",
+  "text": "Nikita was a ruthless tax collector of Pereslavl who repented, bound himself in chains and lived on a pillar. He was murdered in 1186 by robbers who mistook his shining chains for silver.\n\nThe icon is in the Petit Palais in Paris.",
+  "image": "assets/icons/nikita-stylite-pp.jpg",
+  "thumb": "assets/icons/nikita-stylite-pp-thumb.jpg",
+  "w": 1007,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_la_(%C3%89cole_de_la_Russie_du_Nord)_Russie_du_Nord_-_Saint_Nikita,_le_stylite_de_Pereyaslav_-_PPP4914_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+   "file": "École de la (École de la Russie du Nord) Russie du Nord - Saint Nikita, le stylite de Pereyaslav - PPP4914 - Musée des Beaux-Arts de la ville de Paris.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of Russia",
+   "credit": "Paris Musées"
+  }
+ },
+ {
+  "id": "virgin-apostles-cpl",
+  "kind": "theotokos",
+  "title": "The Mother of God with Apostles and Saints",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Holy Apostles"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Middle of the 14th century",
+  "year": 1350,
+  "school": "Constantinople",
+  "artist": "",
+  "origin": {
+   "name": "Constantinople",
+   "lat": 41.0082,
+   "lng": 28.9784
+  },
+  "originShort": "Constantinople",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood, 71 × 92 cm",
+  "text": "The Mother of God holds the Child before her with both hands, and apostles and saints fill the border. It is the work of a Constantinopolitan painter of the mid-fourteenth century.",
+  "image": "assets/icons/virgin-apostles-cpl.jpg",
+  "thumb": "assets/icons/virgin-apostles-cpl-thumb.jpg",
+  "w": 900,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Virgin_with_apostles_and_saints_(14th_c.,_Constantinople).jpg",
+   "file": "Virgin with apostles and saints (14th c., Constantinople).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Constantinople master",
+   "credit": "http://eib.xanthi.ilsp.gr/gr/icons.asp"
+  }
+ },
+ {
+  "id": "boris-gleb-rusmus",
+  "kind": "saint",
+  "title": "Sts Boris and Gleb (Russian Museum)",
+  "alt": "",
+  "cardName": "Holy Passion-bearers Boris and Gleb",
+  "subjects": [
+   "St Boris",
+   "St Gleb"
+  ],
+  "days": [
+   {
+    "d": "07-24"
+   }
+  ],
+  "month": null,
+  "date": "Middle of the 14th century",
+  "year": 1350,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "The two princes stand together in fur-lined cloaks, holding the crosses of martyrs and the swords they would not raise against their brother.\n\nThe icon is in the Russian Museum.",
+  "image": "assets/icons/boris-gleb-rusmus.jpg",
+  "thumb": "assets/icons/boris-gleb-rusmus-thumb.jpg",
+  "w": 785,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Unknow_-_St_Boris_and_St_Gleb_-_Google_Art_Project.jpg",
+   "file": "Unknow - St Boris and St Gleb - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknow (1200 - 1250) – Icon painter Details on Google Art Project",
+   "credit": "hAFphp-Ek1qRwA at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "mark-tzanes",
+  "kind": "saint",
+  "title": "St Mark the Evangelist (Tzanes)",
+  "alt": "",
+  "cardName": "Holy Apostle and Evangelist Mark",
+  "subjects": [
+   "St Mark"
+  ],
+  "days": [
+   {
+    "d": "04-25"
+   }
+  ],
+  "month": null,
+  "date": "1657",
+  "year": 1657,
+  "school": "Cretan school (Venice)",
+  "artist": "Emmanuel Tzanes",
+  "origin": {
+   "name": "Venice",
+   "lat": 45.4408,
+   "lng": 12.3155
+  },
+  "originShort": "Venice",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "Mark writes his Gospel with his lion beside him. Tradition says he founded the Church of Alexandria and was martyred there.\n\nEmmanuel Tzanes painted the panel in 1657. It is in the Benaki Museum.",
+  "image": "assets/icons/mark-tzanes.jpg",
+  "thumb": "assets/icons/mark-tzanes-thumb.jpg",
+  "w": 959,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Tzanes_Emmanuel_-_St_Mark_the_Evangelist_-_Google_Art_Project.jpg",
+   "file": "Tzanes Emmanuel - St Mark the Evangelist - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Emmanuel Tzanes",
+   "credit": "zQGLrbRI5mtUnA at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "trinity-zyryan",
+  "kind": "feast",
+  "title": "The Zyryan Trinity",
+  "alt": "",
+  "cardName": "Holy Pentecost",
+  "subjects": [
+   "Holy Trinity",
+   "Hospitality of Abraham"
+  ],
+  "days": [
+   {
+    "d": "pascha+49"
+   }
+  ],
+  "month": null,
+  "date": "14th century",
+  "year": 1380,
+  "school": "Perm lands",
+  "artist": "St Stephen of Perm (by tradition)",
+  "origin": {
+   "name": "Perm lands",
+   "lat": 61.67,
+   "lng": 50.83
+  },
+  "originShort": "Perm lands",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Tradition attributes this Trinity to St Stephen of Perm, who brought the faith to the Komi (Zyrian) people in the fourteenth century and made an alphabet for their language. The three angels sit at Abraham's table, with Abraham and Sarah serving.",
+  "image": "assets/icons/trinity-zyryan.jpg",
+  "thumb": "assets/icons/trinity-zyryan-thumb.jpg",
+  "w": 734,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Trinity_Zuryanskaya.jpg",
+   "file": "Trinity Zuryanskaya.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "По преданию Стефан, епископ Пермский (1346- 1396). St. Stephan, bishop of Perm (legend)",
+   "credit": "Хранится в Вологодском областном музее. [1]"
+  }
+ },
+ {
+  "id": "sava-thessaloniki",
+  "kind": "saint",
+  "title": "St Sava of Serbia",
+  "alt": "",
+  "cardName": "St Sava of Serbia",
+  "subjects": [
+   "St Sava of Serbia"
+  ],
+  "days": [
+   {
+    "d": "01-14",
+    "n": "St Sava, First Archbishop of Serbia"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Museum of Byzantine Culture",
+   "lat": 40.6237,
+   "lng": 22.9545,
+   "city": "Thessaloniki"
+  },
+  "medium": "Tempera on wood",
+  "text": "Sava, a Serbian prince, fled to Mount Athos to become a monk, founded the Hilandar monastery with his father, and became the first archbishop of the Serbian Church in 1219.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "image": "assets/icons/sava-thessaloniki.jpg",
+  "thumb": "assets/icons/sava-thessaloniki-thumb.jpg",
+  "w": 912,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St_Savas.tif",
+   "file": "St Savas.tif",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "matrona-chios",
+  "kind": "saint",
+  "title": "St Matrona of Chios",
+  "alt": "",
+  "cardName": "St Matrona of Chios",
+  "subjects": [
+   "St Matrona of Chios"
+  ],
+  "days": [
+   {
+    "d": "10-20",
+    "n": "St Matrona of Chios"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Museum of Byzantine Culture",
+   "lat": 40.6237,
+   "lng": 22.9545,
+   "city": "Thessaloniki"
+  },
+  "medium": "Tempera on wood",
+  "text": "Matrona founded a convent on Chios in the fifteenth century and is the island's beloved local saint.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "image": "assets/icons/matrona-chios.jpg",
+  "thumb": "assets/icons/matrona-chios-thumb.jpg",
+  "w": 895,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St_Matrona.tif",
+   "file": "St Matrona.tif",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "solovki-1680",
+  "kind": "saint",
+  "title": "The Solovetsky Monastery with Sts Zosimas and Sabbatius",
+  "alt": "",
+  "cardName": "Sts Zosimas and Sabbatius of Solovki",
+  "subjects": [
+   "St Zosimas of Solovki",
+   "St Sabbatius of Solovki"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1680",
+  "year": 1680,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Museum of Russian Icons",
+   "lat": 42.4168,
+   "lng": -71.6829,
+   "city": "Clinton, Massachusetts"
+  },
+  "medium": "Tempera on wood",
+  "text": "The island monastery of Solovki in the White Sea is spread out in detail, with its founders Zosimas and Sabbatius in prayer above it.\n\nThe icon is in the Museum of Russian Icons in Clinton, Massachusetts.",
+  "image": "assets/icons/solovki-1680.jpg",
+  "thumb": "assets/icons/solovki-1680-thumb.jpg",
+  "w": 881,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Solovetsky_Monastery_(1680,_Clinton).jpg",
+   "file": "Solovetsky Monastery (1680, Clinton).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "Museum of Russian Icons (Clinton, Massachusetts)"
+  }
+ },
+ {
+  "id": "john-warrior-krakow",
+  "kind": "saint",
+  "title": "St John the Warrior",
+  "alt": "",
+  "cardName": "Holy Martyr John the Warrior",
+  "subjects": [
+   "St John the Warrior"
+  ],
+  "days": [
+   {
+    "d": "07-30",
+    "n": "Holy Martyr John the Warrior"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "National Museum in Kraków",
+   "lat": 50.0606,
+   "lng": 19.9236,
+   "city": "Kraków"
+  },
+  "medium": "Tempera on wood",
+  "text": "John was a soldier under Julian the Apostate who, sent to hunt down Christians, warned them instead and was imprisoned for it. Russians pray to him to recover what was stolen and to defend the wronged.\n\nThe icon is in the National Museum in Kraków.",
+  "image": "assets/icons/john-warrior-krakow.jpg",
+  "thumb": "assets/icons/john-warrior-krakow-thumb.jpg",
+  "w": 918,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_John_the_Warrior_%E2%80%93_Icon_-_MNK_XII-347_(252791).jpg",
+   "file": "Saint John the Warrior – Icon - MNK XII-347 (252791).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "This file comes from The National Museum in Kraków Digital Collection and is available under the digital ID 252791"
+  }
+ },
+ {
+  "id": "tsar-of-tsars-savin",
+  "kind": "christ",
+  "title": "The Queen Stood at Thy Right Hand (Savin, 1616)",
+  "alt": "",
+  "cardName": "Christ the King of Kings",
+  "subjects": [
+   "Jesus Christ",
+   "Theotokos",
+   "St John the Baptist",
+   "Deesis"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1616",
+  "year": 1616,
+  "school": "Stroganov school",
+  "artist": "Nazary Istomin Savin",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ sits as King of Kings in the vestments of a bishop and the crown of an emperor. The Mother of God, crowned as queen, stands at his right hand: 'Upon thy right hand did stand the queen' (Psalm 45:9).\n\nNazary Istomin Savin painted it in 1616. It is in the Tretyakov Gallery.",
+  "image": "assets/icons/tsar-of-tsars-savin.jpg",
+  "thumb": "assets/icons/tsar-of-tsars-savin-thumb.jpg",
+  "w": 1049,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nazary_Istomin_Savin._Tsar_tsarem._1616.jpg",
+   "file": "Nazary Istomin Savin. Tsar tsarem. 1616.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Nazary Istomin Savin",
+   "credit": "https://icons.pstgu.ru/icon/2205"
+  }
+ },
+ {
+  "id": "nativity-moskos",
+  "kind": "feast",
+  "title": "The Nativity of Christ (Moskos, 1658)",
+  "alt": "",
+  "cardName": "The Nativity of Christ",
+  "subjects": [
+   "Nativity of Christ",
+   "Theotokos",
+   "Jesus Christ"
+  ],
+  "days": [
+   {
+    "d": "12-25"
+   }
+  ],
+  "month": null,
+  "date": "1658",
+  "year": 1658,
+  "school": "Cretan school",
+  "artist": "Elias Moskos",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "The Nativity, crowded with angels, shepherds and magi, with the donors who paid for it kneeling at the corner. Elias Moskos painted it in 1658.\n\nIt is in the Benaki Museum.",
+  "image": "assets/icons/nativity-moskos.jpg",
+  "thumb": "assets/icons/nativity-moskos-thumb.jpg",
+  "w": 1007,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Moskos_Ilias_-_The_Nativity_-_Google_Art_Project.jpg",
+   "file": "Moskos Ilias - The Nativity - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Moskos Ilias (1649 - 1687) Details on Google Art Project",
+   "credit": "qgHtAm1puwf0lw at Google Cultural Institute maximum zoom level"
+  }
  }
 ];
