@@ -8,7 +8,7 @@
   const ctx = canvas.getContext("2d");
   let W = 0, H = 0, DPR = 1;
 
-  // Glass colours: lapis, ruby, amber, emerald, rose.
+  // Glass colors: lapis, ruby, amber, emerald, rose.
   const GLASS = [[58, 96, 196], [168, 34, 40], [236, 170, 64], [42, 128, 92], [190, 90, 140], [240, 214, 140]];
 
   /* ---------- stained-glass window (drawn once to its own canvas) ---------- */
@@ -49,7 +49,7 @@
         const o = (py * w * 2 + px) * 4;
         if (edge < 1.6) { img.data[o] = 16; img.data[o + 1] = 11; img.data[o + 2] = 7; img.data[o + 3] = 255; continue; }
         const sd = seeds[bi], col = GLASS[sd[2]];
-        // Each pane has its own density; light pools toward its centre; a little seedy grain.
+        // Each pane has its own density; light pools toward its center; a little seedy grain.
         const pane = 0.62 + sd[3] * 0.5;
         const pool = 1.18 - Math.min(0.5, Math.sqrt(best) / 26);
         const grainV = 1 + (Math.random() - 0.5) * 0.16;

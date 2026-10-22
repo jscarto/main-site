@@ -234,7 +234,6 @@
     if (state.libSort === "oldest" || state.libSort === "newest") return `${ordinal(century(icon.year))} century`;
     return null;
   }
-  const shortGroup = (g) => (g && g.endsWith(" century") ? g.replace(/(st|nd|rd|th) century$/, "") : g);
 
   function renderLibrary() {
     const kinds = ["all", "christ", "theotokos", "feast", "saint", "angel", "menaion"];
@@ -255,13 +254,8 @@
       <div id="lib-grid"></div>
       <div class="lib-more" id="lib-more" aria-hidden="true"></div>
     </div>
-    <nav class="lib-rail" id="lib-rail" aria-label="Jump to section" hidden></nav>
-    <div class="lib-progress" id="lib-progress" aria-hidden="true" hidden><span id="lib-progress-text"></span><i><b id="lib-progress-bar"></b></i></div>
     </section>`;
     const grid = document.getElementById("lib-grid"), sentinel = document.getElementById("lib-more");
-    const rail = document.getElementById("lib-rail"), meter = document.getElementById("lib-progress");
-    // Fixed to the window, so they live on <body>: the view's entrance animation would otherwise anchor them to the view.
-    document.body.append(rail, meter);
     const BATCH = 30;
     // The grid is a run of sections (one per letter or century, or a single one when unsorted); each section is a
     // masonry of columns, filled shortest-first, so tiles never move as more are added.
@@ -286,46 +280,11 @@
         const icon = list[shown], g = groupOf(icon);
         if (g !== group) newSection(g);
         const k = heights.indexOf(Math.min(...heights));
-        cols[k].insertAdjacentHTML("beforeend", tile(icon).replace('class="icon-tile"', `class="icon-tile" data-n="${shown + 1}"`));
+        cols[k].insertAdjacentHTML("beforeend", tile(icon));
         heights[k] += icon.h / icon.w + 0.45; // image plus caption, in column widths
       }
       sentinel.hidden = shown >= list.length;
     };
-    // The index down the right edge: every section in the current list, with a jump to each.
-    const buildRail = () => {
-      const groups = [];
-      list.forEach((icon, i) => { const g = groupOf(icon); if (g && (!groups.length || groups[groups.length - 1].g !== g)) groups.push({ g, i }); });
-      rail.hidden = groups.length < 2;
-      view.querySelector("section").classList.toggle("has-rail", !rail.hidden);
-      rail.innerHTML = groups.map(({ g, i }) => `<button type="button" data-jump="${i}" data-g="${esc(g)}" title="${esc(g)}">${esc(shortGroup(g))}</button>`).join("");
-    };
-    rail.addEventListener("click", (e) => {
-      const b = e.target.closest("[data-jump]"); if (!b) return;
-      const i = Number(b.dataset.jump);
-      if (shown <= i) more(i - shown + BATCH);
-      const head = [...grid.querySelectorAll(".lib-section")].find((s) => s.dataset.group === b.dataset.g);
-      if (head) window.scrollTo({ top: head.getBoundingClientRect().top + window.scrollY - 90, behavior: "smooth" });
-    });
-    // Where the reader is: how many icons have come into view, and which section is at the top.
-    let ticking = false;
-    const onScroll = () => {
-      if (!grid.isConnected) { window.removeEventListener("scroll", onScroll); rail.remove(); meter.remove(); return; }
-      if (ticking) return; ticking = true;
-      requestAnimationFrame(() => {
-        ticking = false;
-        const top = grid.getBoundingClientRect().top, vh = window.innerHeight;
-        meter.hidden = !list.length || top > vh * 0.6;
-        let seen = 0;
-        grid.querySelectorAll(".icon-tile").forEach((t) => { if (t.getBoundingClientRect().top < vh - 60) seen = Math.max(seen, Number(t.dataset.n)); });
-        document.getElementById("lib-progress-text").textContent = `${seen} of ${list.length}`;
-        document.getElementById("lib-progress-bar").style.width = `${(100 * seen) / Math.max(1, list.length)}%`;
-        let cur = null;
-        grid.querySelectorAll(".lib-section[data-group]").forEach((s) => { if (s.getBoundingClientRect().top < 140) cur = s.dataset.group; });
-        if (!cur && grid.querySelector(".lib-section[data-group]")) cur = grid.querySelector(".lib-section[data-group]").dataset.group;
-        rail.querySelectorAll("button").forEach((b) => b.toggleAttribute("aria-current", b.dataset.g === cur));
-      });
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
     const clearBtn = document.getElementById("lib-clear");
     const draw = () => {
       clearBtn.hidden = !state.libQuery && state.libKind === "all" && state.libEra === "all";
@@ -333,9 +292,9 @@
       document.getElementById("lib-count").textContent = list.length === ICONS.length ? "" : `${list.length} ${list.length === 1 ? "icon" : "icons"}`;
       if (!list.length) {
         grid.innerHTML = `<div class="empty-state"><h3>Nothing found</h3><p>No icon matches “${esc(state.libQuery)}”. Try a saint's name, a feast such as “Annunciation”, or a city such as “Novgorod”.</p></div>`;
-        sentinel.hidden = true; rail.hidden = true; meter.hidden = true; return;
+        sentinel.hidden = true; return;
       }
-      shown = 0; layout(); more(BATCH); buildRail(); onScroll();
+      shown = 0; layout(); more(BATCH);
     };
     const io = new IntersectionObserver((es) => { if (es[0].isIntersecting && shown < list.length) more(BATCH); }, { rootMargin: "900px 0px" });
     io.observe(sentinel);
@@ -483,11 +442,11 @@
   function renderSources() {
     view.innerHTML = `
     <section><div class="wrap">
-      <div class="section-head"><div><p class="eyebrow">Sources and licences</p><h2>Where these images come from</h2></div></div>
+      <div class="section-head"><div><p class="eyebrow">Sources and licenses</p><h2>Where these images come from</h2></div></div>
       <div class="placard prose" style="max-width:none">
-        <p>Eikon uses only images that are in the public domain or released under open licences. It does not rely on fair use. Where a museum releases its own photographs, Eikon takes the image from the museum. Images from The Metropolitan Museum of Art and the Cleveland Museum of Art come directly from their open-access programmes under CC0. Images from the Walters Art Museum are the museum's own CC0 releases, hosted on Wikimedia Commons.</p>
+        <p>Eikon uses only images that are in the public domain or released under open licenses. It does not rely on fair use. Where a museum releases its own photographs, Eikon takes the image from the museum. Images from The Metropolitan Museum of Art and the Cleveland Museum of Art come directly from their open-access programs under CC0. Images from the Walters Art Museum are the museum's own CC0 releases, hosted on Wikimedia Commons.</p>
         <p>The other icons come from Wikimedia Commons. The icons themselves are centuries old and in the public domain. Faithful photographs of flat artworks carry no new copyright in the United States or the European Union, and Commons marks these "PD-Art".</p>
-        <p>Each icon's page names where its image came from, its licence, and the photographer or museum, with a link to the original record.</p>
+        <p>Each icon's page names where its image came from, its license, and the photographer or museum, with a link to the original record.</p>
         <p>Many more icons exist than appear here, painted across two thousand years and kept in churches, monasteries and museums around the world. Many of them cannot be shown in Eikon because their photographs are not openly licensed or their owners restrict reuse. The library grows as more images are released for free use.</p>
         <p>The candle-lit background on each icon's page is adapted from <a href="https://commons.wikimedia.org/wiki/File:Mtskheta,_Jvari_Monastery,_Candle_light_2,_Georgia.jpg" target="_blank" rel="noopener">"Mtskheta, Jvari Monastery, Candle light 2"</a> by Vyacheslav Argenberg, used under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</p>
         <p>Share cards are set against the iconostasis of <a href="https://commons.wikimedia.org/wiki/File:IIconostatus_of_the_Saint_George%27s_Catedral_of_Novi_Sad.jpg" target="_blank" rel="noopener">St George's Cathedral, Novi Sad</a>, photographed by Alexzr88 and released into the public domain.</p>
@@ -513,7 +472,6 @@
     const [name, ...rest] = h.split(".");
     const arg = rest.join(".");
     document.title = "Eikon - A Library of the Saints";
-    document.querySelectorAll("body > .lib-rail, body > .lib-progress").forEach((el) => el.remove());
     const navKey = name === "icon" ? "library" : name === "day" ? "calendar" : name;
     document.querySelectorAll(".nav a").forEach((a) => a.toggleAttribute("aria-current", a.getAttribute("href") === "#" + navKey) || a.removeAttribute("aria-current"));
     document.querySelectorAll(".nav a").forEach((a) => { if (a.getAttribute("href") === "#" + navKey) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
@@ -522,6 +480,7 @@
     else if (name === "calendar") renderCalendar();
     else if (name === "day" && /^\d{4}-\d{2}-\d{2}$/.test(arg)) renderCalendar(arg);
     else if (name === "sources") renderSources();
+    else if (name === "explore") window.EikonExplore.render(view, arg);
     else renderToday();
     view.classList.remove("view-enter"); void view.offsetWidth; view.classList.add("view-enter");
     if (name !== "library" || !state.keepScroll) window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });

@@ -28,7 +28,7 @@ window.EIKON_ICONS = [
    "city": "Sinai, Egypt"
   },
   "medium": "Encaustic (hot wax) on wood",
-  "text": "This is among the oldest surviving icons of Christ, and the most studied. It was painted in hot wax, a technique inherited from the funerary portraits of late antique Egypt, and it survived Byzantine Iconoclasm because Sinai lay beyond the emperor's reach.\n\nThe two halves of the face differ. One side is calm and open, the other stern, with a raised brow. Many read this as the two natures of Christ, divine and human, held in one person. He blesses with his right hand and holds a jewelled Gospel book in his left.",
+  "text": "This is among the oldest surviving icons of Christ, and the most studied. It was painted in hot wax, a technique inherited from the funerary portraits of late antique Egypt, and it survived Byzantine Iconoclasm because Sinai lay beyond the emperor's reach.\n\nThe two halves of the face differ. One side is calm and open, the other stern, with a raised brow. Many read this as the two natures of Christ, divine and human, held in one person. He blesses with his right hand and holds a jeweled Gospel book in his left.",
   "image": "assets/icons/sinai-pantocrator.jpg",
   "thumb": "assets/icons/sinai-pantocrator-thumb.jpg",
   "w": 643,
@@ -137,7 +137,7 @@ window.EIKON_ICONS = [
    "city": "Sinai, Egypt"
   },
   "medium": "Encaustic on wood",
-  "text": "Peter holds the keys of the Kingdom and a cross-staff. His face is modelled in thick strokes of wax, the hair and beard in quick, vigorous touches.\n\nAbove him are three medallions, Christ in the centre with the Theotokos and probably St John. The arrangement recalls the consular diptychs of the late Roman world, in which an official was shown beneath portraits of the emperor and empress.",
+  "text": "Peter holds the keys of the Kingdom and a cross-staff. His face is modeled in thick strokes of wax, the hair and beard in quick, vigorous touches.\n\nAbove him are three medallions, Christ in the center with the Theotokos and probably St John. The arrangement recalls the consular diptychs of the late Roman world, in which an official was shown beneath portraits of the emperor and empress.",
   "image": "assets/icons/sinai-peter.jpg",
   "thumb": "assets/icons/sinai-peter-thumb.jpg",
   "w": 855,
@@ -241,7 +241,7 @@ window.EIKON_ICONS = [
    "city": "Sinai, Egypt"
   },
   "medium": "Tempera on wood, 82 × 57 cm",
-  "text": "Nicholas, the fourth-century bishop of Myra in Lycia, is shown half-length in his omophorion, the wide stole of a bishop, holding the Gospel. His high forehead and short white beard are the features by which painters across the Orthodox world have always recognised him.\n\nFew saints are loved so widely. He is the patron of sailors, children, the poor, and the falsely accused, and almost every Orthodox church keeps his icon.",
+  "text": "Nicholas, the fourth-century bishop of Myra in Lycia, is shown half-length in his omophorion, the wide stole of a bishop, holding the Gospel. His high forehead and short white beard are the features by which painters across the Orthodox world have always recognized him.\n\nFew saints are loved so widely. He is the patron of sailors, children, the poor, and the falsely accused, and almost every Orthodox church keeps his icon.",
   "image": "assets/icons/sinai-nicholas.jpg",
   "thumb": "assets/icons/sinai-nicholas-thumb.jpg",
   "w": 715,
@@ -453,7 +453,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood, 238 × 168 cm",
-  "text": "Gabriel greets the Virgin, and she receives the word. At the centre of her body, in a faint outline, is the Christ Child already present. This rare detail shows the moment of the Incarnation itself.\n\nAbove, the Ancient of Days sends a ray of light down to her. The icon was painted in Novgorod and took its name from a later legend that connected it to the town of Ustyug. Ivan the Terrible brought it to Moscow in the sixteenth century.",
+  "text": "Gabriel greets the Virgin, and she receives the word. At the center of her body, in a faint outline, is the Christ Child already present. This rare detail shows the moment of the Incarnation itself.\n\nAbove, the Ancient of Days sends a ray of light down to her. The icon was painted in Novgorod and took its name from a later legend that connected it to the town of Ustyug. Ivan the Terrible brought it to Moscow in the sixteenth century.",
   "image": "assets/icons/ustyug-annunciation.jpg",
   "thumb": "assets/icons/ustyug-annunciation-thumb.jpg",
   "w": 851,
@@ -560,7 +560,7 @@ window.EIKON_ICONS = [
    "city": "London"
   },
   "medium": "Tempera and gold on wood",
-  "text": "In 843 the Empress Theodora and Patriarch Methodios restored the veneration of icons after more than a century of iconoclasm. The Church has kept the first Sunday of Lent as the Sunday of Orthodoxy ever since.\n\nAt the top centre is the Hodegetria, the most revered icon of Constantinople, carried on a stand. Theodora and her young son Michael III stand to the left, Methodios to the right. Below, a row of confessors who suffered for the icons hold small icons of their own. The British Museum keeps it as one of the finest Byzantine panels in Britain.",
+  "text": "In 843 the Empress Theodora and Patriarch Methodios restored the veneration of icons after more than a century of iconoclasm. The Church has kept the first Sunday of Lent as the Sunday of Orthodoxy ever since.\n\nAt the top center is the Hodegetria, the most revered icon of Constantinople, carried on a stand. Theodora and her young son Michael III stand to the left, Methodios to the right. Below, a row of confessors who suffered for the icons hold small icons of their own. The British Museum keeps it as one of the finest Byzantine panels in Britain.",
   "image": "assets/icons/triumph-orthodoxy.jpg",
   "thumb": "assets/icons/triumph-orthodoxy-thumb.jpg",
   "w": 943,
@@ -669,7 +669,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "Boris and Gleb were sons of St Vladimir, killed in 1015 by agents of their half-brother. They refused to fight, so as not to shed a brother's blood, and the Church honoured them as passion-bearers: those who accepted death without resistance, in imitation of Christ.\n\nThey were the first saints of Rus' to be glorified. Here they stand in princely cloaks with swords and crosses, the elder Boris bearded, Gleb still a youth.",
+  "text": "Boris and Gleb were sons of St Vladimir, killed in 1015 by agents of their half-brother. They refused to fight, so as not to shed a brother's blood, and the Church honored them as passion-bearers: those who accepted death without resistance, in imitation of Christ.\n\nThey were the first saints of Rus' to be glorified. Here they stand in princely cloaks with swords and crosses, the elder Boris bearded, Gleb still a youth.",
   "image": "assets/icons/boris-gleb.jpg",
   "thumb": "assets/icons/boris-gleb-thumb.jpg",
   "w": 813,
@@ -1029,7 +1029,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood, 128 × 92 cm",
-  "text": "Christ rises in a mandorla borne by angels. Below, the apostles look up in astonishment, and in the centre the Mother of God stands perfectly still, flanked by two angels in white who tell the apostles that he will come again in the same way.\n\nThe Virgin's stillness is the point of the image. She stands for the Church, which keeps faith while its Lord is hidden.",
+  "text": "Christ rises in a mandorla borne by angels. Below, the apostles look up in astonishment, and in the center the Mother of God stands perfectly still, flanked by two angels in white who tell the apostles that he will come again in the same way.\n\nThe Virgin's stillness is the point of the image. She stands for the Church, which keeps faith while its Lord is hidden.",
   "image": "assets/icons/ascension-vasilyevsky.jpg",
   "thumb": "assets/icons/ascension-vasilyevsky-thumb.jpg",
   "w": 841,
@@ -1232,7 +1232,7 @@ window.EIKON_ICONS = [
    "city": "St Petersburg"
   },
   "medium": "Tempera on wood",
-  "text": "This is the Orthodox icon of the Resurrection. It does not show an empty tomb. Christ stands on the broken gates of Hades, the keys and locks scattered in the dark beneath, and pulls Adam and Eve up by the wrists. Kings, prophets and the righteous wait behind them to be freed.\n\nDionisius was the leading painter of Moscow around 1500, known for his elongated, almost weightless figures and pale, luminous colours. This icon came from the Ferapontov Monastery, where he also painted the frescoes.",
+  "text": "This is the Orthodox icon of the Resurrection. It does not show an empty tomb. Christ stands on the broken gates of Hades, the keys and locks scattered in the dark beneath, and pulls Adam and Eve up by the wrists. Kings, prophets and the righteous wait behind them to be freed.\n\nDionisius was the leading painter of Moscow around 1500, known for his elongated, almost weightless figures and pale, luminous colors. This icon came from the Ferapontov Monastery, where he also painted the frescoes.",
   "image": "assets/icons/descent-hades-dionisius.jpg",
   "thumb": "assets/icons/descent-hades-dionisius-thumb.jpg",
   "w": 880,
@@ -1340,7 +1340,7 @@ window.EIKON_ICONS = [
    "city": "Yaroslavl"
   },
   "medium": "Tempera on wood",
-  "text": "Sergius (c. 1314–1392) went into the forest north of Moscow to live alone and pray, and disciples gathered around him until his hermitage became the Trinity Lavra. He blessed Prince Dmitry before the battle of Kulikovo and is honoured as the abbot of all Russia.\n\nA vita icon surrounds the saint's portrait with small scenes from his life, read like the pages of a book. Here you can follow him from his birth and childhood vision through his monastic struggles to his repose.",
+  "text": "Sergius (c. 1314–1392) went into the forest north of Moscow to live alone and pray, and disciples gathered around him until his hermitage became the Trinity Lavra. He blessed Prince Dmitry before the battle of Kulikovo and is honored as the abbot of all Russia.\n\nA vita icon surrounds the saint's portrait with small scenes from his life, read like the pages of a book. Here you can follow him from his birth and childhood vision through his monastic struggles to his repose.",
   "image": "assets/icons/sergius-vita.jpg",
   "thumb": "assets/icons/sergius-vita-thumb.jpg",
   "w": 832,
@@ -1500,7 +1500,7 @@ window.EIKON_ICONS = [
    "city": "Oslo"
   },
   "medium": "Tempera on wood",
-  "text": "Basil (c. 330–379), Archbishop of Caesarea in Cappadocia, defended the divinity of the Holy Spirit, wrote the rule that shaped Eastern monasticism, and founded a city of care for the poor and sick outside Caesarea.\n\nHis Divine Liturgy is still served ten times a year, including on his feast on 1 January. This tall, narrow panel probably stood in a Deesis tier, the saint turned in prayer toward Christ at the centre.",
+  "text": "Basil (c. 330–379), Archbishop of Caesarea in Cappadocia, defended the divinity of the Holy Spirit, wrote the rule that shaped Eastern monasticism, and founded a city of care for the poor and sick outside Caesarea.\n\nHis Divine Liturgy is still served ten times a year, including on his feast on 1 January. This tall, narrow panel probably stood in a Deesis tier, the saint turned in prayer toward Christ at the center.",
   "image": "assets/icons/basil-novgorod.jpg",
   "thumb": "assets/icons/basil-novgorod-thumb.jpg",
   "w": 396,
@@ -1560,7 +1560,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "In eleventh-century Constantinople people argued about which of these three bishops was greatest. St John Mauropous resolved it by establishing a single feast for all three on 30 January.\n\nThey are told apart by their beards. Basil's is long and dark, Gregory's broad and white, and John's short and thin under a high forehead. Together they are honoured as teachers of the whole Church.",
+  "text": "In eleventh-century Constantinople people argued about which of these three bishops was greatest. St John Mauropous resolved it by establishing a single feast for all three on 30 January.\n\nThey are told apart by their beards. Basil's is long and dark, Gregory's broad and white, and John's short and thin under a high forehead. Together they are honored as teachers of the whole Church.",
   "image": "assets/icons/three-hierarchs.jpg",
   "thumb": "assets/icons/three-hierarchs-thumb.jpg",
   "w": 881,
@@ -1657,7 +1657,7 @@ window.EIKON_ICONS = [
    "city": "Mount Athos"
   },
   "medium": "Tempera on wood",
-  "text": "Demetrios, a young deacon or officer of Thessaloniki, was martyred under Galerius around 306. His tomb gave off a fragrant myrrh, and he became the protector of the city, credited with defending it from siege after siege.\n\nThis icon comes from the circle of Manuel Panselinos, the painter of the Protaton church on Athos, whose classical, softly modelled figures mark the height of Palaiologan art.",
+  "text": "Demetrios, a young deacon or officer of Thessaloniki, was martyred under Galerius around 306. His tomb gave off a fragrant myrrh, and he became the protector of the city, credited with defending it from siege after siege.\n\nThis icon comes from the circle of Manuel Panselinos, the painter of the Protaton church on Athos, whose classical, softly modeled figures mark the height of Palaiologan art.",
   "image": "assets/icons/demetrios-vatopedi.jpg",
   "thumb": "assets/icons/demetrios-vatopedi-thumb.jpg",
   "w": 600,
@@ -1817,7 +1817,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Michael Damaskinos (c. 1530–1592/3) worked in Venice and in Candia, on Venetian Crete, and was one of the great masters of the Cretan school. He knew Italian painting well and drew on it for the architecture and space of his scenes, while keeping the faces and the colour of Byzantine tradition.\n\nThe Forerunner kneels as the executioner raises his sword, and to the side Salome receives the head on a dish. The day is kept as a strict fast.",
+  "text": "Michael Damaskinos (c. 1530–1592/3) worked in Venice and in Candia, on Venetian Crete, and was one of the great masters of the Cretan school. He knew Italian painting well and drew on it for the architecture and space of his scenes, while keeping the faces and the color of Byzantine tradition.\n\nThe Forerunner kneels as the executioner raises his sword, and to the side Salome receives the head on a dish. The day is kept as a strict fast.",
   "image": "assets/icons/beheading-damaskinos.jpg",
   "thumb": "assets/icons/beheading-damaskinos-thumb.jpg",
   "w": 704,
@@ -1919,7 +1919,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera and oil on wood",
-  "text": "Tradition holds that the original Tikhvin icon appeared in the air over Lake Ladoga in 1383 and came to rest near Tikhvin, where a monastery grew up around it. It is a Hodegetria with the Child seated sideways, one foot turned so the sole shows.\n\nThis copy was painted in the early eighteenth century, when the new capital of St Petersburg was absorbing Western styles of painting. You can see it in the softer modelling of the faces.",
+  "text": "Tradition holds that the original Tikhvin icon appeared in the air over Lake Ladoga in 1383 and came to rest near Tikhvin, where a monastery grew up around it. It is a Hodegetria with the Child seated sideways, one foot turned so the sole shows.\n\nThis copy was painted in the early eighteenth century, when the new capital of St Petersburg was absorbing Western styles of painting. You can see it in the softer modeling of the faces.",
   "image": "assets/icons/tikhvin-andreyev.jpg",
   "thumb": "assets/icons/tikhvin-andreyev-thumb.jpg",
   "w": 1053,
@@ -2286,7 +2286,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "The archangels hold a disc, a mirror bearing the image of Christ Emmanuel. The angels are messengers who carry the light of God, and the Synaxis gathers them in honour of the Lord they serve. Michael and Gabriel lead, and the ranks of the bodiless powers crowd behind.\n\nKirill Ulanov was one of the last great painters of the Armoury workshop in the Moscow Kremlin. He later became a monk and a bishop.",
+  "text": "The archangels hold a disc, a mirror bearing the image of Christ Emmanuel. The angels are messengers who carry the light of God, and the Synaxis gathers them in honor of the Lord they serve. Michael and Gabriel lead, and the ranks of the bodiless powers crowd behind.\n\nKirill Ulanov was one of the last great painters of the Armoury workshop in the Moscow Kremlin. He later became a monk and a bishop.",
   "image": "assets/icons/synaxis-michael-ulanov.jpg",
   "thumb": "assets/icons/synaxis-michael-ulanov-thumb.jpg",
   "w": 743,
@@ -2547,7 +2547,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Mary of Egypt lived a dissolute life in Alexandria. Then, at the door of the Church of the Holy Sepulchre, an invisible force kept her from entering. She repented before an icon of the Theotokos and spent forty-seven years alone in the desert beyond the Jordan. The fifth Sunday of Lent is hers.\n\nAlexius left his wealthy Roman family on his wedding night to live as a beggar, and returned years later to sleep, unrecognised, under their stairs. The two are paired here as images of complete renunciation.",
+  "text": "Mary of Egypt lived a dissolute life in Alexandria. Then, at the door of the Church of the Holy Sepulchre, an invisible force kept her from entering. She repented before an icon of the Theotokos and spent forty-seven years alone in the desert beyond the Jordan. The fifth Sunday of Lent is hers.\n\nAlexius left his wealthy Roman family on his wedding night to live as a beggar, and returned years later to sleep, unrecognized, under their stairs. The two are paired here as images of complete renunciation.",
   "image": "assets/icons/mary-egypt-alexius.jpg",
   "thumb": "assets/icons/mary-egypt-alexius-thumb.jpg",
   "w": 1200,
@@ -2621,7 +2621,7 @@ window.EIKON_ICONS = [
  {
   "id": "mandylion-novgorod",
   "kind": "christ",
-  "title": "The Holy Face: Saviour Not Made by Hands",
+  "title": "The Holy Face: Savior Not Made by Hands",
   "alt": "Spas Nerukotvorny, the Mandylion",
   "cardName": "The Image of Christ Not Made by Hands",
   "subjects": [
@@ -3409,7 +3409,7 @@ window.EIKON_ICONS = [
    "city": "New York"
   },
   "medium": "Miniature mosaic set in wax on wood, with gold and gilded copper, 11.2 × 8.6 cm",
-  "text": "This icon is barely larger than a hand, and every colour in it is a tiny cube of stone, glass or gold set in wax. Micromosaics like this were among the most precious objects made in Palaiologan Constantinople, often for members of the imperial court.\n\nThe Child presses his cheek to his mother's in the Eleousa embrace. At this scale the tesserae are smaller than a grain of rice, yet the modelling of the faces is as soft as paint.",
+  "text": "This icon is barely larger than a hand, and every color in it is a tiny cube of stone, glass or gold set in wax. Micromosaics like this were among the most precious objects made in Palaiologan Constantinople, often for members of the imperial court.\n\nThe Child presses his cheek to his mother's in the Eleousa embrace. At this scale the tesserae are smaller than a grain of rice, yet the modeling of the faces is as soft as paint.",
   "image": "assets/icons/met-mosaic-eleousa.jpg",
   "thumb": "assets/icons/met-mosaic-eleousa-thumb.jpg",
   "w": 1055,
@@ -3502,7 +3502,7 @@ window.EIKON_ICONS = [
    "city": "New York"
   },
   "medium": "Elephant ivory, 16 × 13 cm",
-  "text": "Deesis means 'supplication'. Christ stands at the centre on a footstool, holding the Gospel, and the Mother of God and John the Forerunner stand on either side, turned toward him in prayer for the world. Two small busts of saints look on from the upper corners. The same arrangement crowns every Orthodox iconostasis.\n\nThis carving comes from the Macedonian Renaissance of the tenth century, when Byzantine ivory carvers revived the poise and drapery of classical sculpture.",
+  "text": "Deesis means 'supplication'. Christ stands at the center on a footstool, holding the Gospel, and the Mother of God and John the Forerunner stand on either side, turned toward him in prayer for the world. Two small busts of saints look on from the upper corners. The same arrangement crowns every Orthodox iconostasis.\n\nThis carving comes from the Macedonian Renaissance of the tenth century, when Byzantine ivory carvers revived the poise and drapery of classical sculpture.",
   "image": "assets/icons/met-deesis-ivory.jpg",
   "thumb": "assets/icons/met-deesis-ivory-thumb.jpg",
   "w": 993,
@@ -3657,7 +3657,7 @@ window.EIKON_ICONS = [
    "city": "New York"
   },
   "medium": "Elephant ivory, 19.7 × 12.1 cm",
-  "text": "Demetrios stands in the armour of a Roman officer, his name carved beside his head, holding a sword and resting his hand on a tall shield. In the earliest images he was shown as a young aristocrat in a cloak. From around this time, Byzantine art increasingly showed him as a warrior saint, the defender of Thessaloniki.\n\nThe icon is kept at the Met Cloisters in northern Manhattan.",
+  "text": "Demetrios stands in the armor of a Roman officer, his name carved beside his head, holding a sword and resting his hand on a tall shield. In the earliest images he was shown as a young aristocrat in a cloak. From around this time, Byzantine art increasingly showed him as a warrior saint, the defender of Thessaloniki.\n\nThe icon is kept at the Met Cloisters in northern Manhattan.",
   "image": "assets/icons/met-demetrios-ivory.jpg",
   "thumb": "assets/icons/met-demetrios-ivory-thumb.jpg",
   "w": 960,
@@ -3708,7 +3708,7 @@ window.EIKON_ICONS = [
    "city": "New York"
   },
   "medium": "Elephant ivory with dark stain, 6.7 × 5.1 cm",
-  "text": "The three bishops stand side by side in vestments covered with crosses, each holding a jewelled Gospel book. The Greek inscription across the top names them. Chrysostom stands in the centre.\n\nThe panel is only a few centimetres tall and was made for private devotion. The meander border is a classical ornament that Byzantine and post-Byzantine carvers never abandoned.",
+  "text": "The three bishops stand side by side in vestments covered with crosses, each holding a jeweled Gospel book. The Greek inscription across the top names them. Chrysostom stands in the center.\n\nThe panel is only a few centimeters tall and was made for private devotion. The meander border is a classical ornament that Byzantine and post-Byzantine carvers never abandoned.",
   "image": "assets/icons/met-church-fathers-ivory.jpg",
   "thumb": "assets/icons/met-church-fathers-ivory-thumb.jpg",
   "w": 921,
@@ -3760,7 +3760,7 @@ window.EIKON_ICONS = [
    "city": "New York"
   },
   "medium": "Lead, 5.8 × 4.1 cm",
-  "text": "Small icons cast in lead were worn around the neck for protection. They were the everyday devotional objects of ordinary people, while gold and enamel served the wealthy.\n\nMichael, commander of the heavenly hosts, wears court dress and holds a staff and an orb. Soldiers and travellers especially sought his protection.",
+  "text": "Small icons cast in lead were worn around the neck for protection. They were the everyday devotional objects of ordinary people, while gold and enamel served the wealthy.\n\nMichael, commander of the heavenly hosts, wears court dress and holds a staff and an orb. Soldiers and travelers especially sought his protection.",
   "image": "assets/icons/met-michael-pendant.jpg",
   "thumb": "assets/icons/met-michael-pendant-thumb.jpg",
   "w": 885,
@@ -3976,7 +3976,7 @@ window.EIKON_ICONS = [
    "city": "Cleveland"
   },
   "medium": "Tempera and gold on wood, 96 × 70 cm",
-  "text": "Angelos Akotantos was the leading painter of Venetian Crete in the early fifteenth century. In his workshop the Cretan school took shape, carrying the art of Constantinople forward after the empire fell and sending icons across the Orthodox and Catholic Mediterranean.\n\nThis large icon probably hung on an iconostasis in a Greek church. Cretan icons of the Virgin travelled far: in the early 1500s the Ethiopian emperor Lebna Dengel sent monks to Crete to acquire them, and twenty-nine are still venerated in Ethiopian churches.",
+  "text": "Angelos Akotantos was the leading painter of Venetian Crete in the early fifteenth century. In his workshop the Cretan school took shape, carrying the art of Constantinople forward after the empire fell and sending icons across the Orthodox and Catholic Mediterranean.\n\nThis large icon probably hung on an iconostasis in a Greek church. Cretan icons of the Virgin traveled far: in the early 1500s the Ethiopian emperor Lebna Dengel sent monks to Crete to acquire them, and twenty-nine are still venerated in Ethiopian churches.",
   "image": "assets/icons/cma-eleousa-akotantos.jpg",
   "thumb": "assets/icons/cma-eleousa-akotantos-thumb.jpg",
   "w": 878,
@@ -3997,7 +3997,7 @@ window.EIKON_ICONS = [
   "id": "cma-vladimir-triptych",
   "kind": "theotokos",
   "title": "Adoration of the Vladimir Icon of the Mother of God",
-  "alt": "Centre of a portable triptych",
+  "alt": "Center of a portable triptych",
   "cardName": "The Vladimir Icon of the Mother of God",
   "subjects": [
    "Theotokos",
@@ -4026,8 +4026,8 @@ window.EIKON_ICONS = [
    "lng": -81.6116,
    "city": "Cleveland"
   },
-  "medium": "Painted wood panel within an enamelled brass frame",
-  "text": "This is an icon of an icon. The famous Vladimir Mother of God, also in this library, appears as a framed image above a gathering of saints, with an angel standing at their centre.\n\nThe panel is the right wing of a small portable triptych whose centre shows the Resurrection, also in this library. A lay owner could fold it shut and carry it, and pray before it at home or on a journey.",
+  "medium": "Painted wood panel within an enameled brass frame",
+  "text": "This is an icon of an icon. The famous Vladimir Mother of God, also in this library, appears as a framed image above a gathering of saints, with an angel standing at their center.\n\nThe panel is the right wing of a small portable triptych whose center shows the Resurrection, also in this library. A lay owner could fold it shut and carry it, and pray before it at home or on a journey.",
   "image": "assets/icons/cma-vladimir-triptych.jpg",
   "thumb": "assets/icons/cma-vladimir-triptych-thumb.jpg",
   "w": 1138,
@@ -4077,8 +4077,8 @@ window.EIKON_ICONS = [
    "lng": -81.6116,
    "city": "Cleveland"
   },
-  "medium": "Painted wood panel within an enamelled brass frame",
-  "text": "Russian painters of the seventeenth century often combined two ways of showing the Resurrection: Christ rising from the tomb in glory, and Christ descending into Hades to raise Adam and Eve.\n\nThis is the centre of a small folding triptych made for private prayer. Its left wing shows the Crucifixion and its right wing the Adoration of the Vladimir icon, also in this library.",
+  "medium": "Painted wood panel within an enameled brass frame",
+  "text": "Russian painters of the seventeenth century often combined two ways of showing the Resurrection: Christ rising from the tomb in glory, and Christ descending into Hades to raise Adam and Eve.\n\nThis is the center of a small folding triptych made for private prayer. Its left wing shows the Crucifixion and its right wing the Adoration of the Vladimir icon, also in this library.",
   "image": "assets/icons/cma-resurrection-triptych.jpg",
   "thumb": "assets/icons/cma-resurrection-triptych-thumb.jpg",
   "w": 1130,
@@ -4181,7 +4181,7 @@ window.EIKON_ICONS = [
    "city": "Baltimore"
   },
   "medium": "Tempera on wood",
-  "text": "Three angels sit at Abraham's table under the oak of Mamre (Genesis 18), and Abraham and Sarah sacrifice a calf in their honour. Unlike Rublev, who removed the hosts entirely, this painter keeps the whole story. The icon is inscribed 'The Holy Trinity', because the Church reads the three guests as a foreshadowing of the Father, Son and Holy Spirit.\n\nIt was painted for a large iconostasis. In Russia this is the icon of Pentecost, the Day of the Holy Trinity.",
+  "text": "Three angels sit at Abraham's table under the oak of Mamre (Genesis 18), and Abraham and Sarah sacrifice a calf in their honor. Unlike Rublev, who removed the hosts entirely, this painter keeps the whole story. The icon is inscribed 'The Holy Trinity', because the Church reads the three guests as a foreshadowing of the Father, Son and Holy Spirit.\n\nIt was painted for a large iconostasis. In Russia this is the icon of Pentecost, the Day of the Holy Trinity.",
   "image": "assets/icons/walters-hospitality-abraham.jpg",
   "thumb": "assets/icons/walters-hospitality-abraham-thumb.jpg",
   "w": 992,
@@ -4230,7 +4230,7 @@ window.EIKON_ICONS = [
    "city": "Baltimore"
   },
   "medium": "Tempera on wood",
-  "text": "Andrew, Peter's brother, was a disciple of John the Baptist before he followed Christ, and so the Church calls him the First-called. Tradition says he preached around the Black Sea and was crucified at Patras in Greece. The Patriarchate of Constantinople regards him as its founder.\n\nHe holds a scroll and turns intently to his left. The Walters notes that this suggests the panel once stood in a group with Christ at the centre, probably on the upper tier of an iconostasis. The bright colours of his robe and the mustard-yellow ground are unusual.",
+  "text": "Andrew, Peter's brother, was a disciple of John the Baptist before he followed Christ, and so the Church calls him the First-called. Tradition says he preached around the Black Sea and was crucified at Patras in Greece. The Patriarchate of Constantinople regards him as its founder.\n\nHe holds a scroll and turns intently to his left. The Walters notes that this suggests the panel once stood in a group with Christ at the center, probably on the upper tier of an iconostasis. The bright colors of his robe and the mustard-yellow ground are unusual.",
   "image": "assets/icons/walters-andrew.jpg",
   "thumb": "assets/icons/walters-andrew-thumb.jpg",
   "w": 952,
@@ -4600,7 +4600,7 @@ window.EIKON_ICONS = [
    "city": "Baltimore"
   },
   "medium": "Tempera on wood",
-  "text": "In the 1430s the monks Zosimas and Sabbatius founded the monastery of Solovki on an island in the White Sea, just below the Arctic Circle. It became one of the great spiritual centres of the Russian north.\n\nHere they present a detailed model of their monastery to the Virgin and Child. Zosimas holds a scroll with the last counsel he gave his brethren from his deathbed.",
+  "text": "In the 1430s the monks Zosimas and Sabbatius founded the monastery of Solovki on an island in the White Sea, just below the Arctic Circle. It became one of the great spiritual centers of the Russian north.\n\nHere they present a detailed model of their monastery to the Virgin and Child. Zosimas holds a scroll with the last counsel he gave his brethren from his deathbed.",
   "image": "assets/icons/walters-zosimas-sabbatius.jpg",
   "thumb": "assets/icons/walters-zosimas-sabbatius-thumb.jpg",
   "w": 1067,
@@ -4913,7 +4913,7 @@ window.EIKON_ICONS = [
    "city": "Paris"
   },
   "medium": "Tempera on wood",
-  "text": "Symeon (c. 390–459) spent thirty-seven years on top of a pillar near Aleppo, praying and counselling the crowds who came to him. Emperors wrote to him and pilgrims travelled from Gaul and Britain.\n\nHis memory falls on the first day of the Church year, 1 September.",
+  "text": "Symeon (c. 390–459) spent thirty-seven years on top of a pillar near Aleppo, praying and counseling the crowds who came to him. Emperors wrote to him and pilgrims traveled from Gaul and Britain.\n\nHis memory falls on the first day of the Church year, 1 September.",
   "image": "assets/icons/symeon-stylite-pp.jpg",
   "thumb": "assets/icons/symeon-stylite-pp-thumb.jpg",
   "w": 953,
@@ -5592,7 +5592,7 @@ window.EIKON_ICONS = [
    "city": "St Petersburg"
   },
   "medium": "Tempera on wood",
-  "text": "A rare early Novgorod icon on a red ground. John of the Ladder stands at the centre, with St George and the bishop St Blaise (Vlasy) to either side.\n\nIn Russia Blaise became the protector of cattle, and the painters of Novgorod gave him a prominent place.",
+  "text": "A rare early Novgorod icon on a red ground. John of the Ladder stands at the center, with St George and the bishop St Blaise (Vlasy) to either side.\n\nIn Russia Blaise became the protector of cattle, and the painters of Novgorod gave him a prominent place.",
   "image": "assets/icons/climacus-george-blaise.jpg",
   "thumb": "assets/icons/climacus-george-blaise-thumb.jpg",
   "w": 761,
@@ -5643,7 +5643,7 @@ window.EIKON_ICONS = [
    "city": "Thessaloniki"
   },
   "medium": "Tempera on wood",
-  "text": "Constantine, the first Christian emperor, and his mother Helena hold the True Cross between them. Helena found it in Jerusalem around 326.\n\nThey wear the jewelled loros of Byzantine imperial ceremony. The Church calls them Equal-to-the-Apostles.",
+  "text": "Constantine, the first Christian emperor, and his mother Helena hold the True Cross between them. Helena found it in Jerusalem around 326.\n\nThey wear the jeweled loros of Byzantine imperial ceremony. The Church calls them Equal-to-the-Apostles.",
   "image": "assets/icons/constantine-helen-thess.jpg",
   "thumb": "assets/icons/constantine-helen-thess-thumb.jpg",
   "w": 907,
@@ -7775,9 +7775,9 @@ window.EIKON_ICONS = [
  {
   "id": "saviour-golden-hair",
   "kind": "christ",
-  "title": "The Saviour with the Golden Hair",
+  "title": "The Savior with the Golden Hair",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ"
   ],
@@ -7950,7 +7950,7 @@ window.EIKON_ICONS = [
    "city": "Sinai, Egypt"
   },
   "medium": "Encaustic on wood",
-  "text": "Thaddeus was sent to King Abgar of Edessa with the Image Not-Made-by-Hands, and healed and baptized him. This panel is the left wing of a small triptych whose centre showed the Mandylion. Its right wing, King Abgar holding the cloth, is also in this library.",
+  "text": "Thaddeus was sent to King Abgar of Edessa with the Image Not-Made-by-Hands, and healed and baptized him. This panel is the left wing of a small triptych whose center showed the Mandylion. Its right wing, King Abgar holding the cloth, is also in this library.",
   "image": "assets/icons/thaddeus-sinai.jpg",
   "thumb": "assets/icons/thaddeus-sinai-thumb.jpg",
   "w": 681,
@@ -8162,9 +8162,9 @@ window.EIKON_ICONS = [
  {
   "id": "saviour-golden-robes",
   "kind": "christ",
-  "title": "The Saviour in Golden Robes",
+  "title": "The Savior in Golden Robes",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ"
   ],
@@ -8506,9 +8506,9 @@ window.EIKON_ICONS = [
  {
   "id": "christ-enthroned-gtg",
   "kind": "christ",
-  "title": "The Saviour Enthroned with Selected Saints",
+  "title": "The Savior Enthroned with Selected Saints",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ"
   ],
@@ -8531,7 +8531,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "Christ sits enthroned against a red ground, blessing and holding the Gospel. Small figures of saints line the borders. The bold colour and frontal figure are typical of thirteenth-century Novgorod.",
+  "text": "Christ sits enthroned against a red ground, blessing and holding the Gospel. Small figures of saints line the borders. The bold color and frontal figure are typical of thirteenth-century Novgorod.",
   "image": "assets/icons/christ-enthroned-gtg.jpg",
   "thumb": "assets/icons/christ-enthroned-gtg-thumb.jpg",
   "w": 829,
@@ -8682,7 +8682,7 @@ window.EIKON_ICONS = [
    "city": "Athens"
   },
   "medium": "Tempera on wood",
-  "text": "Paraskevi, whose name means Friday, holds a cross. Several martyrs of the name are honoured, and in Greece the feast of 26 July is a great summer festival.\n\nThe icon was painted in a Macedonian workshop in the first half of the fourteenth century.",
+  "text": "Paraskevi, whose name means Friday, holds a cross. Several martyrs of the name are honored, and in Greece the feast of 26 July is a great summer festival.\n\nThe icon was painted in a Macedonian workshop in the first half of the fourteenth century.",
   "image": "assets/icons/paraskevi-macedonian.jpg",
   "thumb": "assets/icons/paraskevi-macedonian-thumb.jpg",
   "w": 694,
@@ -8831,7 +8831,7 @@ window.EIKON_ICONS = [
    "city": "Sinai, Egypt"
   },
   "medium": "Tempera on wood",
-  "text": "George stands in armour at the centre, and the border scenes tell of his trial and martyrdom under Diocletian.",
+  "text": "George stands in armor at the center, and the border scenes tell of his trial and martyrdom under Diocletian.",
   "image": "assets/icons/george-vita-sinai.jpg",
   "thumb": "assets/icons/george-vita-sinai-thumb.jpg",
   "w": 764,
@@ -9536,7 +9536,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Clement was a disciple of Cyril and Methodius. He taught thousands of pupils at Ohrid, where he founded a monastery and was bishop, and is honoured as an enlightener of the South Slavs.",
+  "text": "Clement was a disciple of Cyril and Methodius. He taught thousands of pupils at Ohrid, where he founded a monastery and was bishop, and is honored as an enlightener of the South Slavs.",
   "image": "assets/icons/clement-ohrid.jpg",
   "thumb": "assets/icons/clement-ohrid-thumb.jpg",
   "w": 847,
@@ -9740,7 +9740,7 @@ window.EIKON_ICONS = [
    "city": "Athens"
   },
   "medium": "Tempera and gold on wood",
-  "text": "The Cretan George rears on a grey horse, armour gleaming, his lance through the dragon. Angelos Akotantos painted it in Candia in the second quarter of the fifteenth century.",
+  "text": "The Cretan George rears on a gray horse, armor gleaming, his lance through the dragon. Angelos Akotantos painted it in Candia in the second quarter of the fifteenth century.",
   "image": "assets/icons/george-akotantos.jpg",
   "thumb": "assets/icons/george-akotantos-thumb.jpg",
   "w": 1102,
@@ -9880,7 +9880,7 @@ window.EIKON_ICONS = [
    "city": "Veliky Novgorod"
   },
   "medium": "Tempera on wood, 136 × 96 cm",
-  "text": "The twelve apostles stand together, the day after the feast of Peter and Paul, when the Church honours them all at once. Painters gave each a recognisable face, so that Peter, Paul and John can be found among the crowd.",
+  "text": "The twelve apostles stand together, the day after the feast of Peter and Paul, when the Church honors them all at once. Painters gave each a recognizable face, so that Peter, Paul and John can be found among the crowd.",
   "image": "assets/icons/synaxis-apostles-1432.jpg",
   "thumb": "assets/icons/synaxis-apostles-1432-thumb.jpg",
   "w": 833,
@@ -9926,7 +9926,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood, 149 × 94 cm",
-  "text": "This Christ is the centre of the Vysotsky Deesis, half-length icons painted in Constantinople in 1387–1395 and brought to the Vysotsky Monastery at Serpukhov. They are among the finest late Byzantine panels in Russia.",
+  "text": "This Christ is the center of the Vysotsky Deesis, half-length icons painted in Constantinople in 1387–1395 and brought to the Vysotsky Monastery at Serpukhov. They are among the finest late Byzantine panels in Russia.",
   "image": "assets/icons/pantocrator-vysotsky.jpg",
   "thumb": "assets/icons/pantocrator-vysotsky-thumb.jpg",
   "w": 768,
@@ -9980,7 +9980,7 @@ window.EIKON_ICONS = [
    "city": "Venice"
   },
   "medium": "Tempera and gold on wood, 84 × 65 cm",
-  "text": "Athanasius, archbishop of Alexandria, defended the faith of Nicaea against the Arians and was driven into exile five times for it. He wrote the life of St Anthony and the first list of the New Testament as the Church now has it.\n\nMichael Damaskinos shows him frontal and still, holding a jewelled Gospel in a veiled hand. The icon is in the Hellenic Institute in Venice.",
+  "text": "Athanasius, archbishop of Alexandria, defended the faith of Nicaea against the Arians and was driven into exile five times for it. He wrote the life of St Anthony and the first list of the New Testament as the Church now has it.\n\nMichael Damaskinos shows him frontal and still, holding a jeweled Gospel in a veiled hand. The icon is in the Hellenic Institute in Venice.",
   "image": "assets/icons/athanasius-damaskinos.jpg",
   "thumb": "assets/icons/athanasius-damaskinos-thumb.jpg",
   "w": 900,
@@ -10000,9 +10000,9 @@ window.EIKON_ICONS = [
  {
   "id": "smolensk-saviour-zubov",
   "kind": "christ",
-  "title": "The Saviour of Smolensk with Kneeling Saints",
+  "title": "The Savior of Smolensk with Kneeling Saints",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ",
    "St Athanasius the Great",
@@ -10032,7 +10032,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Christ stands on clouds above saints who kneel in prayer at his feet, among them the great archbishops of Alexandria. The 'Saviour of Smolensk' type takes its name from a famous image on the Smolensk gate.\n\nFyodor Zubov was one of the tsar's icon painters in the Kremlin Armoury in the 1660s.",
+  "text": "Christ stands on clouds above saints who kneel in prayer at his feet, among them the great archbishops of Alexandria. The 'Savior of Smolensk' type takes its name from a famous image on the Smolensk gate.\n\nFyodor Zubov was one of the tsar's icon painters in the Kremlin Armoury in the 1660s.",
   "image": "assets/icons/smolensk-saviour-zubov.jpg",
   "thumb": "assets/icons/smolensk-saviour-zubov-thumb.jpg",
   "w": 972,
@@ -10081,7 +10081,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Xenia was a Roman senator's daughter who fled on the eve of an arranged marriage. She lived in poverty and prayer on the island of Kos and later at Mylasa in Caria, where she founded a community of women.\n\nShe stands full length in the centre, and the border tells her story scene by scene.",
+  "text": "Xenia was a Roman senator's daughter who fled on the eve of an arranged marriage. She lived in poverty and prayer on the island of Kos and later at Mylasa in Caria, where she founded a community of women.\n\nShe stands full length in the center, and the border tells her story scene by scene.",
   "image": "assets/icons/xenia-rome-vita.jpg",
   "thumb": "assets/icons/xenia-rome-vita-thumb.jpg",
   "w": 930,
@@ -10426,7 +10426,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood, 40 × 35.8 cm",
-  "text": "Halfway between Pascha and Pentecost the Church keeps a feast of Christ the teacher. In the middle of the feast he went up into the temple and taught, and the elders marvelled (John 7:14–15).\n\nThe icon shows the boy Christ enthroned among the doctors of the law, a fine work from the painting village of Mstera.",
+  "text": "Halfway between Pascha and Pentecost the Church keeps a feast of Christ the teacher. In the middle of the feast he went up into the temple and taught, and the elders marveled (John 7:14–15).\n\nThe icon shows the boy Christ enthroned among the doctors of the law, a fine work from the painting village of Mstera.",
   "image": "assets/icons/mid-pentecost-mstera.jpg",
   "thumb": "assets/icons/mid-pentecost-mstera-thumb.jpg",
   "w": 1082,
@@ -10476,7 +10476,7 @@ window.EIKON_ICONS = [
    "city": "Venice"
   },
   "medium": "Tempera on wood",
-  "text": "At Jacob's well Christ asked a Samaritan woman for water and promised her 'a well of water springing up into everlasting life' (John 4:14). Tradition names her Photini and honours her as a martyr.\n\nThe fifth Sunday of Pascha is hers. Emmanuel Tzanes, a Cretan priest-painter working in Venice, painted this panel late in his life. It is damaged, but its Venetian colour survives.",
+  "text": "At Jacob's well Christ asked a Samaritan woman for water and promised her 'a well of water springing up into everlasting life' (John 4:14). Tradition names her Photini and honors her as a martyr.\n\nThe fifth Sunday of Pascha is hers. Emmanuel Tzanes, a Cretan priest-painter working in Venice, painted this panel late in his life. It is damaged, but its Venetian color survives.",
   "image": "assets/icons/samaritan-tzanes.jpg",
   "thumb": "assets/icons/samaritan-tzanes-thumb.jpg",
   "w": 900,
@@ -10525,7 +10525,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Justin searched through the schools of philosophy before he found Christ, and then kept the philosopher's cloak to teach the faith. His defences of Christianity are the earliest that survive at length. He was beheaded in Rome around 165.\n\nThe icon is in the Church of the Resurrection on Uspensky Vrazhek in Moscow.",
+  "text": "Justin searched through the schools of philosophy before he found Christ, and then kept the philosopher's cloak to teach the faith. His defenses of Christianity are the earliest that survive at length. He was beheaded in Rome around 165.\n\nThe icon is in the Church of the Resurrection on Uspensky Vrazhek in Moscow.",
   "image": "assets/icons/justin-martyr-moscow.jpg",
   "thumb": "assets/icons/justin-martyr-moscow-thumb.jpg",
   "w": 529,
@@ -10626,7 +10626,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "In the fifth century a robe of the Mother of God was brought from Palestine to Constantinople and laid up in her church at Blachernae, where it was honoured as a protector of the city.\n\nThe icon is in the Andrei Rublev Museum.",
+  "text": "In the fifth century a robe of the Mother of God was brought from Palestine to Constantinople and laid up in her church at Blachernae, where it was honored as a protector of the city.\n\nThe icon is in the Andrei Rublev Museum.",
   "image": "assets/icons/robe-deposition-1485.jpg",
   "thumb": "assets/icons/robe-deposition-1485-thumb.jpg",
   "w": 840,
@@ -10733,7 +10733,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "Olga ruled Kiev as regent after her husband was killed, was baptised in Constantinople around 957, and prepared the way for her grandson Vladimir to bring all Rus to baptism. The Church calls her Equal-to-the-Apostles.\n\nShe stands crowned beside St George, probably the patron saints of the family who ordered the icon.",
+  "text": "Olga ruled Kiev as regent after her husband was killed, was baptized in Constantinople around 957, and prepared the way for her grandson Vladimir to bring all Rus to baptism. The Church calls her Equal-to-the-Apostles.\n\nShe stands crowned beside St George, probably the patron saints of the family who ordered the icon.",
   "image": "assets/icons/olga-george-gim.jpg",
   "thumb": "assets/icons/olga-george-gim-thumb.jpg",
   "w": 801,
@@ -11502,7 +11502,7 @@ window.EIKON_ICONS = [
  {
   "id": "saviour-in-glory-gtg",
   "kind": "christ",
-  "title": "The Saviour in Glory (Spas v Silakh)",
+  "title": "The Savior in Glory (Spas v Silakh)",
   "alt": "",
   "cardName": "Christ in Glory",
   "subjects": [
@@ -11527,7 +11527,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood, 18 × 16 cm",
-  "text": "Christ sits enthroned within red and blue diamonds and a mandorla of glory, with the symbols of the four evangelists at the corners. It is the image of Christ at the centre of a Russian Deesis.\n\nThis tiny icon, only 18 cm high, was once attributed to Andrei Rublev and is now given to his circle.",
+  "text": "Christ sits enthroned within red and blue diamonds and a mandorla of glory, with the symbols of the four evangelists at the corners. It is the image of Christ at the center of a Russian Deesis.\n\nThis tiny icon, only 18 cm high, was once attributed to Andrei Rublev and is now given to his circle.",
   "image": "assets/icons/saviour-in-glory-gtg.jpg",
   "thumb": "assets/icons/saviour-in-glory-gtg-thumb.jpg",
   "w": 1000,
@@ -11728,7 +11728,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "The Mandylion is the cloth on which Christ pressed his face and sent the image to King Abgar of Edessa. Russian painters called it the Saviour Not Made by Hands, and it was carried before armies and set over city gates.\n\nThis stern early version from Rostov is in the Tretyakov Gallery.",
+  "text": "The Mandylion is the cloth on which Christ pressed his face and sent the image to King Abgar of Edessa. Russian painters called it the Savior Not Made by Hands, and it was carried before armies and set over city gates.\n\nThis stern early version from Rostov is in the Tretyakov Gallery.",
   "image": "assets/icons/holy-face-rostov.jpg",
   "thumb": "assets/icons/holy-face-rostov-thumb.jpg",
   "w": 950,
@@ -11874,7 +11874,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "Michael stands full length in the jewelled loros of a Byzantine emperor, holding a staff and an orb. The image is of the commander of the heavenly hosts as guardian of heaven.\n\nIt came from the Archangel Cathedral in Yaroslavl and is in the Tretyakov Gallery.",
+  "text": "Michael stands full length in the jeweled loros of a Byzantine emperor, holding a staff and an orb. The image is of the commander of the heavenly hosts as guardian of heaven.\n\nIt came from the Archangel Cathedral in Yaroslavl and is in the Tretyakov Gallery.",
   "image": "assets/icons/michael-yaroslavl.jpg",
   "thumb": "assets/icons/michael-yaroslavl-thumb.jpg",
   "w": 723,
@@ -11924,7 +11924,7 @@ window.EIKON_ICONS = [
    "city": "St Petersburg"
   },
   "medium": "Tempera on wood",
-  "text": "The two chief apostles stand together as the pillars of the Church: Peter with his keys and curly grey hair, Paul bald and dark-bearded with his book.\n\nThis tall early panel came from the Church of Peter and Paul in Belozersk and is in the Russian Museum.",
+  "text": "The two chief apostles stand together as the pillars of the Church: Peter with his keys and curly gray hair, Paul bald and dark-bearded with his book.\n\nThis tall early panel came from the Church of Peter and Paul in Belozersk and is in the Russian Museum.",
   "image": "assets/icons/peter-paul-belozersk.jpg",
   "thumb": "assets/icons/peter-paul-belozersk-thumb.jpg",
   "w": 780,
@@ -12278,7 +12278,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood, 134 × 89 cm",
-  "text": "The princes Boris and Gleb were sons of St Vladimir, murdered in 1015 by their brother. They refused to resist, and the Church honours them as passion-bearers, who accepted death without fighting.\n\nThis was the temple icon of their church in Kolomna. The border scenes tell how they died and the miracles that followed.",
+  "text": "The princes Boris and Gleb were sons of St Vladimir, murdered in 1015 by their brother. They refused to resist, and the Church honors them as passion-bearers, who accepted death without fighting.\n\nThis was the temple icon of their church in Kolomna. The border scenes tell how they died and the miracles that followed.",
   "image": "assets/icons/boris-gleb-kolomna.jpg",
   "thumb": "assets/icons/boris-gleb-kolomna-thumb.jpg",
   "w": 801,
@@ -12382,7 +12382,7 @@ window.EIKON_ICONS = [
    "city": "St Petersburg"
   },
   "medium": "Tempera on wood",
-  "text": "At the centre George rides down the dragon, and the border scenes follow him through the long torments of his martyrdom under Diocletian.\n\nIt is a Novgorod vita icon in the Russian Museum.",
+  "text": "At the center George rides down the dragon, and the border scenes follow him through the long torments of his martyrdom under Diocletian.\n\nIt is a Novgorod vita icon in the Russian Museum.",
   "image": "assets/icons/george-vita-rusmus.jpg",
   "thumb": "assets/icons/george-vita-rusmus-thumb.jpg",
   "w": 857,
@@ -12572,7 +12572,7 @@ window.EIKON_ICONS = [
    "city": "Paris"
   },
   "medium": "Carved steatite",
-  "text": "Demetrios of Thessaloniki stands in armour with his sword, shield and spear. He was martyred around 306 and became the protector of his city, the second city of the empire.\n\nThis small carving in soft stone is in the Louvre.",
+  "text": "Demetrios of Thessaloniki stands in armor with his sword, shield and spear. He was martyred around 306 and became the protector of his city, the second city of the empire.\n\nThis small carving in soft stone is in the Louvre.",
   "image": "assets/icons/demetrios-steatite-louvre.jpg",
   "thumb": "assets/icons/demetrios-steatite-louvre-thumb.jpg",
   "w": 843,
@@ -12774,7 +12774,7 @@ window.EIKON_ICONS = [
    "city": "Sinai, Egypt"
   },
   "medium": "Tempera on wood",
-  "text": "Gabriel, in a robe of deep blue, holds a staff and a transparent orb. The day after the Annunciation, the Church gathers to honour the archangel who brought the news.\n\nThe icon is at the Monastery of St Catherine, Sinai.",
+  "text": "Gabriel, in a robe of deep blue, holds a staff and a transparent orb. The day after the Annunciation, the Church gathers to honor the archangel who brought the news.\n\nThe icon is at the Monastery of St Catherine, Sinai.",
   "image": "assets/icons/gabriel-sinai.jpg",
   "thumb": "assets/icons/gabriel-sinai-thumb.jpg",
   "w": 700,
@@ -12819,7 +12819,7 @@ window.EIKON_ICONS = [
    "city": "Mount Athos"
   },
   "medium": "Tempera on wood",
-  "text": "Christ holds a jewelled Gospel and blesses. The modelling of the face is soft and the gaze direct.\n\nThe icon belongs to Hilandar, the Serbian monastery on Mount Athos.",
+  "text": "Christ holds a jeweled Gospel and blesses. The modeling of the face is soft and the gaze direct.\n\nThe icon belongs to Hilandar, the Serbian monastery on Mount Athos.",
   "image": "assets/icons/pantocrator-hilandar.jpg",
   "thumb": "assets/icons/pantocrator-hilandar-thumb.jpg",
   "w": 737,
@@ -13158,7 +13158,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood, 92 × 64 cm",
-  "text": "Christ Pantocrator in the centre, with small apostles and saints around the border. The Tretyakov Gallery thinks it was probably painted in Rostov.\n\nIt came to the gallery from the Yaroslavl museum, after it was rescued from the ruined Musin-Pushkin estate at Ilovna.",
+  "text": "Christ Pantocrator in the center, with small apostles and saints around the border. The Tretyakov Gallery thinks it was probably painted in Rostov.\n\nIt came to the gallery from the Yaroslavl museum, after it was rescued from the ruined Musin-Pushkin estate at Ilovna.",
   "image": "assets/icons/saviour-apostles-gtg.jpg",
   "thumb": "assets/icons/saviour-apostles-gtg-thumb.jpg",
   "w": 872,
@@ -14071,7 +14071,7 @@ window.EIKON_ICONS = [
  {
   "id": "saviour-fiery-eye",
   "kind": "christ",
-  "title": "The Saviour of the Fiery Eye (Spas Yaroe Oko)",
+  "title": "The Savior of the Fiery Eye (Spas Yaroe Oko)",
   "alt": "",
   "cardName": "Christ Pantocrator",
   "subjects": [
@@ -14340,7 +14340,7 @@ window.EIKON_ICONS = [
    "city": "Oslo"
   },
   "medium": "Tempera on wood",
-  "text": "Grand Prince Vladimir, who baptised Rus in 988, stands between his martyred sons Boris and Gleb, all three in princely robes and fur-trimmed hats.\n\nThe panel is in the National Museum in Oslo, and the Transfiguration is painted on its reverse.",
+  "text": "Grand Prince Vladimir, who baptized Rus in 988, stands between his martyred sons Boris and Gleb, all three in princely robes and fur-trimmed hats.\n\nThe panel is in the National Museum in Oslo, and the Transfiguration is painted on its reverse.",
   "image": "assets/icons/boris-vladimir-gleb-oslo.jpg",
   "thumb": "assets/icons/boris-vladimir-gleb-oslo-thumb.jpg",
   "w": 971,
@@ -14391,7 +14391,7 @@ window.EIKON_ICONS = [
    "city": "Oslo"
   },
   "medium": "Tempera on wood",
-  "text": "St Paraskeva Pyatnitsa stands in the centre in red, between two crowned martyrs. The museum identifies them, with a question mark, as Catherine and Barbara.\n\nThe icon is in the National Museum in Oslo. The Raising of Lazarus is painted on its reverse.",
+  "text": "St Paraskeva Pyatnitsa stands in the center in red, between two crowned martyrs. The museum identifies them, with a question mark, as Catherine and Barbara.\n\nThe icon is in the National Museum in Oslo. The Raising of Lazarus is painted on its reverse.",
   "image": "assets/icons/three-women-saints-oslo.jpg",
   "thumb": "assets/icons/three-women-saints-oslo-thumb.jpg",
   "w": 978,
@@ -14735,7 +14735,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "Niketas stands in armour, with the Mother of God above him. An inscription on the back says the 'icon painter Prokopy of Novgorod' painted it in Moscow in 1593.\n\nIt came from the Annunciation Cathedral at Solvychegodsk and is in the Tretyakov Gallery.",
+  "text": "Niketas stands in armor, with the Mother of God above him. An inscription on the back says the 'icon painter Prokopy of Novgorod' painted it in Moscow in 1593.\n\nIt came from the Annunciation Cathedral at Solvychegodsk and is in the Tretyakov Gallery.",
   "image": "assets/icons/nikita-warrior-chirin.jpg",
   "thumb": "assets/icons/nikita-warrior-chirin-thumb.jpg",
   "w": 942,
@@ -15285,7 +15285,7 @@ window.EIKON_ICONS = [
    "city": "St Petersburg"
   },
   "medium": "Tempera on wood",
-  "text": "Cyril taught the newly baptised of Jerusalem in the church of the Holy Sepulchre, and his Catechetical Lectures are the clearest picture we have of the fourth-century liturgy there.\n\nOsip Chirikov painted a set of month icons, one for each saint of the day, for the church of the Marble Palace in St Petersburg.",
+  "text": "Cyril taught the newly baptized of Jerusalem in the church of the Holy Sepulchre, and his Catechetical Lectures are the clearest picture we have of the fourth-century liturgy there.\n\nOsip Chirikov painted a set of month icons, one for each saint of the day, for the church of the Marble Palace in St Petersburg.",
   "image": "assets/icons/cyril-jerusalem-chirikov.jpg",
   "thumb": "assets/icons/cyril-jerusalem-chirikov-thumb.jpg",
   "w": 592,
@@ -15384,7 +15384,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Irene was a princess who was taught the faith in a tower her father built to protect her. She survived torments, converted thousands, and is honoured as a great martyr.\n\nThe scenes around her tell her story, in a Macedonian icon of the nineteenth century.",
+  "text": "Irene was a princess who was taught the faith in a tower her father built to protect her. She survived torments, converted thousands, and is honored as a great martyr.\n\nThe scenes around her tell her story, in a Macedonian icon of the nineteenth century.",
   "image": "assets/icons/irene-vita-macedonia.jpg",
   "thumb": "assets/icons/irene-vita-macedonia-thumb.jpg",
   "w": 978,
@@ -15634,7 +15634,7 @@ window.EIKON_ICONS = [
    "city": "Athens"
   },
   "medium": "Tempera on wood, 56 × 78 cm",
-  "text": "Sisoes, an Egyptian hermit, looks into an open tomb at the skeleton of Alexander the Great and grieves: 'O death, who can escape thee?' The image became a favourite reminder of the end of all earthly glory.\n\nThe icon is in the Byzantine and Christian Museum in Athens.",
+  "text": "Sisoes, an Egyptian hermit, looks into an open tomb at the skeleton of Alexander the Great and grieves: 'O death, who can escape thee?' The image became a favorite reminder of the end of all earthly glory.\n\nThe icon is in the Byzantine and Christian Museum in Athens.",
   "image": "assets/icons/sisoes-alexander-bxm.jpg",
   "thumb": "assets/icons/sisoes-alexander-bxm-thumb.jpg",
   "w": 1080,
@@ -15879,7 +15879,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Longinus was the centurion who stood at the cross and said, 'Truly this was the Son of God' (Mark 15:39). Tradition says he left the army, preached in Cappadocia and was beheaded.\n\nFyodor Zubov painted him in armour.",
+  "text": "Longinus was the centurion who stood at the cross and said, 'Truly this was the Son of God' (Mark 15:39). Tradition says he left the army, preached in Cappadocia and was beheaded.\n\nFyodor Zubov painted him in armor.",
   "image": "assets/icons/longinus-zubov.jpg",
   "thumb": "assets/icons/longinus-zubov-thumb.jpg",
   "w": 690,
@@ -16179,7 +16179,7 @@ window.EIKON_ICONS = [
    "city": "Cleveland"
   },
   "medium": "Wool tapestry",
-  "text": "The Mother of God sits on a jewelled throne with the Child, between the archangels Michael and Gabriel, and Christ appears above in a glory of light. Apostles in medallions frame the scene. It is woven in wool, one of the very few icons of the age before Iconoclasm to survive, and the only great woven one.\n\nThe Cleveland Museum of Art counts it among the rarest objects in its collection, and releases its image under CC0.",
+  "text": "The Mother of God sits on a jeweled throne with the Child, between the archangels Michael and Gabriel, and Christ appears above in a glory of light. Apostles in medallions frame the scene. It is woven in wool, one of the very few icons of the age before Iconoclasm to survive, and the only great woven one.\n\nThe Cleveland Museum of Art counts it among the rarest objects in its collection, and releases its image under CC0.",
   "image": "assets/icons/cma-tapestry-virgin.jpg",
   "thumb": "assets/icons/cma-tapestry-virgin-thumb.jpg",
   "w": 756,
@@ -16321,7 +16321,7 @@ window.EIKON_ICONS = [
    "city": "Tbilisi"
   },
   "medium": "Cloisonné enamel, 12 × 10 cm",
-  "text": "The Mother of God brings the Child to the Temple, and the old man Symeon takes him in his arms.\n\nThis small plaque of cloisonné enamel is in the Museum of Fine Arts in Tbilisi. Gold strips divide the colours.",
+  "text": "The Mother of God brings the Child to the Temple, and the old man Symeon takes him in his arms.\n\nThis small plaque of cloisonné enamel is in the Museum of Fine Arts in Tbilisi. Gold strips divide the colors.",
   "image": "assets/icons/presentation-enamel-georgia.jpg",
   "thumb": "assets/icons/presentation-enamel-georgia-thumb.jpg",
   "w": 985,
@@ -16565,7 +16565,7 @@ window.EIKON_ICONS = [
    "city": "St Petersburg"
   },
   "medium": "Tempera on wood",
-  "text": "Peter bows toward Christ with a scroll. He comes from the great Deesis that Andrei Rublev and Daniil Chorny painted in 1408 for the Dormition Cathedral in Vladimir, whose feast tier is already in Eikon.\n\nThe figures are almost three metres tall. This one is in the Russian Museum.",
+  "text": "Peter bows toward Christ with a scroll. He comes from the great Deesis that Andrei Rublev and Daniil Chorny painted in 1408 for the Dormition Cathedral in Vladimir, whose feast tier is already in Eikon.\n\nThe figures are almost three meters tall. This one is in the Russian Museum.",
   "image": "assets/icons/peter-vasilyevsky.jpg",
   "thumb": "assets/icons/peter-vasilyevsky-thumb.jpg",
   "w": 400,
@@ -16759,7 +16759,7 @@ window.EIKON_ICONS = [
    "city": "Thessaloniki"
   },
   "medium": "Tempera on wood",
-  "text": "Christ, his mother and the Forerunner form the Deesis in the centre, and the twelve great feasts of the Church year are set around them: a whole iconostasis in one panel.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "text": "Christ, his mother and the Forerunner form the Deesis in the center, and the twelve great feasts of the Church year are set around them: a whole iconostasis in one panel.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
   "image": "assets/icons/deesis-feasts-thessaloniki.jpg",
   "thumb": "assets/icons/deesis-feasts-thessaloniki-thumb.jpg",
   "w": 974,
@@ -16860,7 +16860,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "One of the earliest Russian icons of the Dormition. The apostles stand in two grieving groups around the bier, and Christ, in the centre, receives his mother's soul. Above, angels come down to carry her up.\n\nIt is in the Tretyakov Gallery.",
+  "text": "One of the earliest Russian icons of the Dormition. The apostles stand in two grieving groups around the bier, and Christ, in the center, receives his mother's soul. Above, angels come down to carry her up.\n\nIt is in the Tretyakov Gallery.",
   "image": "assets/icons/dormition-desyatinny.jpg",
   "thumb": "assets/icons/dormition-desyatinny-thumb.jpg",
   "w": 1056,
@@ -17004,7 +17004,7 @@ window.EIKON_ICONS = [
    "city": "Stockholm"
   },
   "medium": "Tempera on wood",
-  "text": "A late Byzantine Christ, holding the Gospel and blessing, with the gentle modelling of the late fourteenth century.\n\nThe icon is in the Nationalmuseum in Stockholm.",
+  "text": "A late Byzantine Christ, holding the Gospel and blessing, with the gentle modeling of the late fourteenth century.\n\nThe icon is in the Nationalmuseum in Stockholm.",
   "image": "assets/icons/pantocrator-stockholm.jpg",
   "thumb": "assets/icons/pantocrator-stockholm-thumb.jpg",
   "w": 587,
@@ -17109,7 +17109,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "Gregory, archbishop of Thessaloniki, defended the monks of Athos who taught that God can be known through his uncreated light. The Church keeps his feast on the second Sunday of Lent.\n\nThis early icon of him, painted soon after his canonisation, is in the Pushkin Museum.",
+  "text": "Gregory, archbishop of Thessaloniki, defended the monks of Athos who taught that God can be known through his uncreated light. The Church keeps his feast on the second Sunday of Lent.\n\nThis early icon of him, painted soon after his canonization, is in the Pushkin Museum.",
   "image": "assets/icons/palamas-pushkin.jpg",
   "thumb": "assets/icons/palamas-pushkin-thumb.jpg",
   "w": 897,
@@ -17230,9 +17230,9 @@ window.EIKON_ICONS = [
  {
   "id": "saviour-zvenigorod",
   "kind": "christ",
-  "title": "The Saviour of Zvenigorod (Rublev)",
+  "title": "The Savior of Zvenigorod (Rublev)",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ",
    "Deesis"
@@ -17256,7 +17256,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "Only the face and a little of the robe survive, but this is among the most loved images in Russia. Christ looks out with gentle seriousness, as Rublev imagined him. It was the centre of the Zvenigorod Deesis, found in 1918 in a woodshed near Zvenigorod.\n\nIt is in the Tretyakov Gallery.",
+  "text": "Only the face and a little of the robe survive, but this is among the most loved images in Russia. Christ looks out with gentle seriousness, as Rublev imagined him. It was the center of the Zvenigorod Deesis, found in 1918 in a woodshed near Zvenigorod.\n\nIt is in the Tretyakov Gallery.",
   "image": "assets/icons/saviour-zvenigorod.jpg",
   "thumb": "assets/icons/saviour-zvenigorod-thumb.jpg",
   "w": 713,
@@ -17905,7 +17905,7 @@ window.EIKON_ICONS = [
    "city": "Thessaloniki"
   },
   "medium": "Tempera on wood",
-  "text": "Andrew, the first-called of the apostles, holds his scroll and looks out with tousled grey hair.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "text": "Andrew, the first-called of the apostles, holds his scroll and looks out with tousled gray hair.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
   "image": "assets/icons/andrew-thessaloniki.jpg",
   "thumb": "assets/icons/andrew-thessaloniki-thumb.jpg",
   "w": 907,
@@ -17956,7 +17956,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Christ stands in the Jordan as John baptises him, angels wait on the bank, and the Spirit descends as a dove.\n\nIt comes from the feast tier of the Kirillo-Belozersky iconostasis of 1497.",
+  "text": "Christ stands in the Jordan as John baptizes him, angels wait on the bank, and the Spirit descends as a dove.\n\nIt comes from the feast tier of the Kirillo-Belozersky iconostasis of 1497.",
   "image": "assets/icons/baptism-kirillov.jpg",
   "thumb": "assets/icons/baptism-kirillov-thumb.jpg",
   "w": 943,
@@ -18058,7 +18058,7 @@ window.EIKON_ICONS = [
    "city": "Vologda"
   },
   "medium": "Tempera on wood, 169.5 × 124 cm",
-  "text": "The birth of the Mother of God fills the centre, and the border tells the story of her parents Joachim and Anna and her own childhood, with feasts of the year.\n\nThe great panel, painted by Sukhoi Milovo, came from the church of St Leontius in Vologda and is in the Vologda museum.",
+  "text": "The birth of the Mother of God fills the center, and the border tells the story of her parents Joachim and Anna and her own childhood, with feasts of the year.\n\nThe great panel, painted by Sukhoi Milovo, came from the church of St Leontius in Vologda and is in the Vologda museum.",
   "image": "assets/icons/nativity-theotokos-vologda.jpg",
   "thumb": "assets/icons/nativity-theotokos-vologda-thumb.jpg",
   "w": 932,
@@ -18477,7 +18477,7 @@ window.EIKON_ICONS = [
  {
   "id": "saviour-glory-dionisius",
   "kind": "christ",
-  "title": "The Saviour in Glory (Dionisius, 1500)",
+  "title": "The Savior in Glory (Dionisius, 1500)",
   "alt": "",
   "cardName": "Christ in Glory",
   "subjects": [
@@ -18503,7 +18503,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood",
-  "text": "Christ enthroned in glory, within red and blue diamonds, at the centre of the Deesis that Dionisius painted in 1500 for the Pavlo-Obnorsky Monastery.\n\nIt is in the Tretyakov Gallery.",
+  "text": "Christ enthroned in glory, within red and blue diamonds, at the center of the Deesis that Dionisius painted in 1500 for the Pavlo-Obnorsky Monastery.\n\nIt is in the Tretyakov Gallery.",
   "image": "assets/icons/saviour-glory-dionisius.jpg",
   "thumb": "assets/icons/saviour-glory-dionisius-thumb.jpg",
   "w": 817,
@@ -18788,7 +18788,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood, 174 × 122 cm",
-  "text": "George stands half-length in armour and a red cloak, holding a sword and spear. This is one of the oldest Russian icons. It is two-sided, with the Mother of God Peribleptos on the other face.\n\nIt is in the Dormition Cathedral of the Moscow Kremlin.",
+  "text": "George stands half-length in armor and a red cloak, holding a sword and spear. This is one of the oldest Russian icons. It is two-sided, with the Mother of God Peribleptos on the other face.\n\nIt is in the Dormition Cathedral of the Moscow Kremlin.",
   "image": "assets/icons/george-kremlin-dormition.jpg",
   "thumb": "assets/icons/george-kremlin-dormition-thumb.jpg",
   "w": 705,
@@ -21068,7 +21068,7 @@ window.EIKON_ICONS = [
    "city": "St Petersburg"
   },
   "medium": "Tempera on wood",
-  "text": "Ludmila, duchess of Bohemia, was baptised by St Methodius and raised her grandson Wenceslaus in the faith. She was strangled in 921 at the order of her daughter-in-law.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "text": "Ludmila, duchess of Bohemia, was baptized by St Methodius and raised her grandson Wenceslaus in the faith. She was strangled in 921 at the order of her daughter-in-law.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
   "image": "assets/icons/ludmila-chirikov.jpg",
   "thumb": "assets/icons/ludmila-chirikov-thumb.jpg",
   "w": 564,
@@ -23193,7 +23193,7 @@ window.EIKON_ICONS = [
    "city": "Paris"
   },
   "medium": "Tempera on wood",
-  "text": "George slays the dragon in the centre, and the border tells of his trials and martyrdom.\n\nThe icon is in the Petit Palais in Paris.",
+  "text": "George slays the dragon in the center, and the border tells of his trials and martyrdom.\n\nThe icon is in the Petit Palais in Paris.",
   "image": "assets/icons/george-vita-pp.jpg",
   "thumb": "assets/icons/george-vita-pp-thumb.jpg",
   "w": 991,
@@ -24384,7 +24384,7 @@ window.EIKON_ICONS = [
   "kind": "christ",
   "title": "Only-begotten Son (late 17th century)",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ",
    "Crucifixion"
@@ -24995,7 +24995,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Oil on canvas, 222 × 99 cm",
-  "text": "Gregory survived thirteen years in a pit at Khor Virap, then healed King Tiridates and baptised him, and with him the whole kingdom of Armenia, around 301. Armenia was the first nation to take Christianity as its faith.\n\nThis is a tall painting by an unknown eighteenth-century Armenian artist.",
+  "text": "Gregory survived thirteen years in a pit at Khor Virap, then healed King Tiridates and baptized him, and with him the whole kingdom of Armenia, around 301. Armenia was the first nation to take Christianity as its faith.\n\nThis is a tall painting by an unknown eighteenth-century Armenian artist.",
   "image": "assets/icons/gregory-illuminator-armenian.jpg",
   "thumb": "assets/icons/gregory-illuminator-armenian-thumb.jpg",
   "w": 460,
@@ -25044,7 +25044,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera on wood",
-  "text": "Philip was one of the seven deacons chosen by the apostles. He preached in Samaria and baptised the Ethiopian eunuch on the road to Gaza (Acts 8). He is shown in a deacon's robe, a tall panel from a sixteenth-century Moscow iconostasis.",
+  "text": "Philip was one of the seven deacons chosen by the apostles. He preached in Samaria and baptized the Ethiopian eunuch on the road to Gaza (Acts 8). He is shown in a deacon's robe, a tall panel from a sixteenth-century Moscow iconostasis.",
   "image": "assets/icons/philip-deacon-moscow.jpg",
   "thumb": "assets/icons/philip-deacon-moscow-thumb.jpg",
   "w": 478,
@@ -25542,7 +25542,7 @@ window.EIKON_ICONS = [
    "city": "Vologda"
   },
   "medium": "Tempera on wood",
-  "text": "A Dormition by Dionisius and his workshop from the iconostasis of the Pavlo-Obnorsky Monastery, painted in 1500, a companion to his Crucifixion and Saviour in Glory in the Tretyakov.\n\nThis icon is in the Vologda museum.",
+  "text": "A Dormition by Dionisius and his workshop from the iconostasis of the Pavlo-Obnorsky Monastery, painted in 1500, a companion to his Crucifixion and Savior in Glory in the Tretyakov.\n\nThis icon is in the Vologda museum.",
   "image": "assets/icons/dormition-dionisius-obnorsky.jpg",
   "thumb": "assets/icons/dormition-dionisius-obnorsky-thumb.jpg",
   "w": 584,
@@ -25685,7 +25685,7 @@ window.EIKON_ICONS = [
    "city": "Athens"
   },
   "medium": "Tempera and gold on wood",
-  "text": "Catherine stands crowned, in the jewelled loros of a Byzantine princess, and scenes of her disputation and martyrdom surround her.\n\nKonstantinos Tzanes painted it. It is in the Benaki Museum.",
+  "text": "Catherine stands crowned, in the jeweled loros of a Byzantine princess, and scenes of her disputation and martyrdom surround her.\n\nKonstantinos Tzanes painted it. It is in the Benaki Museum.",
   "image": "assets/icons/catherine-vita-k-tzanes.jpg",
   "thumb": "assets/icons/catherine-vita-k-tzanes-thumb.jpg",
   "w": 935,
@@ -26230,7 +26230,7 @@ window.EIKON_ICONS = [
    "city": "Paris"
   },
   "medium": "Tempera on wood",
-  "text": "John, the soldier who warned the Christians he was sent to arrest, stands in armour.\n\nThe icon is in the Petit Palais in Paris.",
+  "text": "John, the soldier who warned the Christians he was sent to arrest, stands in armor.\n\nThe icon is in the Petit Palais in Paris.",
   "image": "assets/icons/john-warrior-pp.jpg",
   "thumb": "assets/icons/john-warrior-pp-thumb.jpg",
   "w": 987,
@@ -26499,7 +26499,7 @@ window.EIKON_ICONS = [
   "kind": "christ",
   "title": "Triptych: Crucifixion, Resurrection and the Vladimir Mother of God",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Crucifixion",
    "Resurrection",
@@ -26524,7 +26524,7 @@ window.EIKON_ICONS = [
    "city": "Cleveland"
   },
   "medium": "Tempera on wood",
-  "text": "This folding triptych was probably made for a lay person's private prayer. It shows the Crucifixion on the left, the Resurrection and Descent into Hades in the centre, and the veneration of the Vladimir icon on the right.\n\nIt is in the Cleveland Museum of Art, which releases its image under CC0.",
+  "text": "This folding triptych was probably made for a lay person's private prayer. It shows the Crucifixion on the left, the Resurrection and Descent into Hades in the center, and the veneration of the Vladimir icon on the right.\n\nIt is in the Cleveland Museum of Art, which releases its image under CC0.",
   "image": "assets/icons/cma-triptych-17c.jpg",
   "thumb": "assets/icons/cma-triptych-17c-thumb.jpg",
   "w": 1130,
@@ -26895,7 +26895,7 @@ window.EIKON_ICONS = [
   "kind": "christ",
   "title": "The Apocalypse (16th century)",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ",
    "St John the Theologian"
@@ -26989,7 +26989,7 @@ window.EIKON_ICONS = [
  {
   "id": "saviour-glory-nizhny",
   "kind": "christ",
-  "title": "The Saviour in Glory (Nizhny Novgorod)",
+  "title": "The Savior in Glory (Nizhny Novgorod)",
   "alt": "",
   "cardName": "Christ in Glory",
   "subjects": [
@@ -27206,7 +27206,7 @@ window.EIKON_ICONS = [
    "lng": 40.4104,
    "city": "Vladimir"
   },
-  "medium": "Tempera on wood, with an enamelled silver revetment, 42 × 18 cm",
+  "medium": "Tempera on wood, with an enameled silver revetment, 42 × 18 cm",
   "text": "Basil went naked through Moscow in all weathers and rebuked even Ivan the Terrible. The cathedral on Red Square bears his name. Maxim was an earlier fool for Christ of the city.\n\nThis 'measure icon' came from the Pokrovsky Convent in Suzdal and is in the Vladimir-Suzdal Museum-Reserve.",
   "image": "assets/icons/basil-maxim-moscow.jpg",
   "thumb": "assets/icons/basil-maxim-moscow-thumb.jpg",
@@ -27555,7 +27555,7 @@ window.EIKON_ICONS = [
    "city": "Athens"
   },
   "medium": "Tempera on wood",
-  "text": "George, in armour, spears a winged dragon to save the princess of the city, who watches from the palace. Georgios Klontzas painted it.\n\nThe icon is in the Byzantine and Christian Museum in Athens.",
+  "text": "George, in armor, spears a winged dragon to save the princess of the city, who watches from the palace. Georgios Klontzas painted it.\n\nThe icon is in the Byzantine and Christian Museum in Athens.",
   "image": "assets/icons/george-klontzas.jpg",
   "thumb": "assets/icons/george-klontzas-thumb.jpg",
   "w": 1080,
@@ -28096,7 +28096,7 @@ window.EIKON_ICONS = [
    "city": "Washington, DC"
   },
   "medium": "Tempera on wood, 93 × 61.3 cm",
-  "text": "A thirteenth-century Byzantine Peter, grey-haired, holding his scroll.\n\nThe icon is at Dumbarton Oaks in Washington, DC.",
+  "text": "A thirteenth-century Byzantine Peter, gray-haired, holding his scroll.\n\nThe icon is at Dumbarton Oaks in Washington, DC.",
   "image": "assets/icons/peter-dumbarton-oaks.jpg",
   "thumb": "assets/icons/peter-dumbarton-oaks-thumb.jpg",
   "w": 624,
@@ -28673,7 +28673,7 @@ window.EIKON_ICONS = [
    }
   ],
   "month": null,
-  "date": "1640s (border scenes); late 18th century (centre)",
+  "date": "1640s (border scenes); late 18th century (center)",
   "year": 1645,
   "school": "Yaroslavl",
   "artist": "",
@@ -28690,7 +28690,7 @@ window.EIKON_ICONS = [
    "city": "Yaroslavl"
   },
   "medium": "Tempera on wood, 207 × 240 cm",
-  "text": "The brothers Basil and Constantine, princes of Yaroslavl, died in the thirteenth century fighting the Tatars. Their relics were found incorrupt in 1501. The border scenes date from the 1640s, and the centre was repainted in the late eighteenth century.\n\nThe icon is in the Yaroslavl Museum-Preserve.",
+  "text": "The brothers Basil and Constantine, princes of Yaroslavl, died in the thirteenth century fighting the Tatars. Their relics were found incorrupt in 1501. The border scenes date from the 1640s, and the center was repainted in the late eighteenth century.\n\nThe icon is in the Yaroslavl Museum-Preserve.",
   "image": "assets/icons/basil-constantine-yaroslavl.jpg",
   "thumb": "assets/icons/basil-constantine-yaroslavl-thumb.jpg",
   "w": 1200,
@@ -28835,7 +28835,7 @@ window.EIKON_ICONS = [
    "city": "Moscow"
   },
   "medium": "Tempera on wood, 313 × 105 cm",
-  "text": "Chrysostom stands over three metres tall in his cross-patterned robe, from the Deesis that Rublev and Daniil Chorny painted in 1408 for the Dormition Cathedral in Vladimir.\n\nIt is in the Tretyakov Gallery.",
+  "text": "Chrysostom stands over three meters tall in his cross-patterned robe, from the Deesis that Rublev and Daniil Chorny painted in 1408 for the Dormition Cathedral in Vladimir.\n\nIt is in the Tretyakov Gallery.",
   "image": "assets/icons/chrysostom-vasilyevsky.jpg",
   "thumb": "assets/icons/chrysostom-vasilyevsky-thumb.jpg",
   "w": 390,
@@ -29235,7 +29235,7 @@ window.EIKON_ICONS = [
    "city": "Kirillov"
   },
   "medium": "Tempera on wood",
-  "text": "The Korsun type shows the Mother of God pressing her cheek to the Child's. It is named after Korsun (Chersonesus) in the Crimea, where St Vladimir was baptised. This icon came from the church of Borodava.\n\nIt is in the Kirillo-Belozersky museum.",
+  "text": "The Korsun type shows the Mother of God pressing her cheek to the Child's. It is named after Korsun (Chersonesus) in the Crimea, where St Vladimir was baptized. This icon came from the church of Borodava.\n\nIt is in the Kirillo-Belozersky museum.",
   "image": "assets/icons/korsunskaya-kirillov.jpg",
   "thumb": "assets/icons/korsunskaya-kirillov-thumb.jpg",
   "w": 965,
@@ -29257,7 +29257,7 @@ window.EIKON_ICONS = [
   "kind": "christ",
   "title": "The Ship of Faith",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ"
   ],
@@ -29347,7 +29347,7 @@ window.EIKON_ICONS = [
   "kind": "christ",
   "title": "Folding Triptych: Christ, St Nicholas and St Blaise",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ",
    "St Nicholas",
@@ -30007,7 +30007,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera and gold on wood",
-  "text": "Joseph leads the donkey carrying the Mother of God and the Child to Egypt, out of Herod's reach. The day after Christmas the Church honours the Mother of God and remembers the flight.",
+  "text": "Joseph leads the donkey carrying the Mother of God and the Child to Egypt, out of Herod's reach. The day after Christmas the Church honors the Mother of God and remembers the flight.",
   "image": "assets/icons/flight-egypt-cretan.jpg",
   "thumb": "assets/icons/flight-egypt-cretan-thumb.jpg",
   "w": 1200,
@@ -30057,7 +30057,7 @@ window.EIKON_ICONS = [
    "city": ""
   },
   "medium": "Tempera and gold on wood",
-  "text": "A crowded Crucifixion by Andreas Pavias of Candia, with soldiers in fifteenth-century armour around the cross.",
+  "text": "A crowded Crucifixion by Andreas Pavias of Candia, with soldiers in fifteenth-century armor around the cross.",
   "image": "assets/icons/crucifixion-pavias.jpg",
   "thumb": "assets/icons/crucifixion-pavias-thumb.jpg",
   "w": 835,
@@ -30477,7 +30477,7 @@ window.EIKON_ICONS = [
   "kind": "christ",
   "title": "The Deacon's Door with Paradise (Kirillov)",
   "alt": "",
-  "cardName": "Christ the Saviour",
+  "cardName": "Christ the Savior",
   "subjects": [
    "Adam"
   ],

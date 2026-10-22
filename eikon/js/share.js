@@ -169,7 +169,7 @@
     const t = texts(o);
     const land = o.shape === "landscape";
 
-    // 1. The church: the iconostasis photograph, cropped to fill, centred on the royal doors.
+    // 1. The church: the iconostasis photograph, cropped to fill, centered on the royal doors.
     const scale = Math.max(W / bg.width, H / bg.height) * 1.08;
     const bw = bg.width * scale, bh = bg.height * scale;
     ctx.drawImage(bg, W / 2 - bw * 0.485, H * 0.56 - bh * 0.62, bw, bh);
@@ -256,7 +256,7 @@
     shadowed(() => { ctx.fillStyle = "#f08a6c"; ctx.font = `${rs}px "Marcellus SC", Georgia, serif`; spaced(t.rubric.toUpperCase(), W / 2, rubricY, rs * 0.16); });
     shadowed(() => { ctx.fillStyle = "#eadcbc"; ctx.font = 'italic 42px "EB Garamond", Georgia, serif'; subLines.forEach((l, i) => ctx.fillText(l, W / 2, dateY + i * 50)); });
 
-    // The icon(s), centred in the space between the date and the headline.
+    // The icon(s), centered in the space between the date and the headline.
     const totalW = rowWidth(h);
     let x = (W - totalW) / 2;
     const y = imgTop + Math.max(0, (head.headTop - head.size - (story ? 24 : 40) - imgTop - h) / 2);
@@ -296,7 +296,7 @@
     const y = boxY + (boxH - h) / 2;
     imgs.forEach((im, k) => { const w = ars[k] * h; kiot(im, x, y, w, h); x += w + gap; });
 
-    // The words, centred in the right-hand column.
+    // The words, centered in the right-hand column.
     const colL = W * 0.54, colR = W - 80, cx = (colL + colR) / 2, colW = colR - colL;
     let rs = 44;
     const spacedWidth = (txt, size) => { ctx.font = `${size}px "Marcellus SC", Georgia, serif`; return [...txt].reduce((a2, ch) => a2 + ctx.measureText(ch).width, 0) + size * 0.16 * (txt.length - 1); };

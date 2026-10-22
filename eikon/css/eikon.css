@@ -209,7 +209,7 @@ canvas.lancet { position: relative; width: 100%; height: auto; aspect-ratio: 180
 .hero-today .today-icon .kiot { width: fit-content; margin-inline: auto; }
 .hero-today .today-icon .kiot img { width: auto; max-width: min(100%, 520px); max-height: min(64vh, 640px); }
 .hero-today .today.no-icon { grid-template-columns: minmax(0, 1fr); }
-/* The day's placard is glazed: a lancet set into its right side throws coloured light across the stone. */
+/* The day's placard is glazed: a lancet set into its right side throws colored light across the stone. */
 .placard.glazed { overflow: hidden; }
 .placard.glazed::before {
   content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 1;
@@ -298,21 +298,6 @@ a.today-icon:hover .kiot { box-shadow: inset 0 0 0 1px rgba(255, 240, 190, .55),
 .lib-section + .lib-section { margin-top: 18px; }
 .lib-group-head { display: flex; align-items: center; gap: 16px; margin: 6px 0 22px; font-family: var(--display); font-weight: 600; font-size: var(--step-2); color: var(--gold-hi); }
 .lib-group-head::after { content: ""; flex: 1; height: 14px; background: var(--guilloche) repeat-x center / 33px 14px; opacity: .5; }
-/* The index down the right edge, and the depth meter. */
-section.has-rail .wrap { padding-right: calc(var(--gutter-r) + 34px); }
-.lib-rail { position: fixed; z-index: 20; right: max(8px, env(safe-area-inset-right, 0px)); top: 50%; transform: translateY(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 8px 3px; max-height: calc(100vh - 170px); overflow-y: auto; scrollbar-width: none;
-  background: rgba(10, 7, 4, .72); border: 1px solid rgba(201, 162, 74, .25); border-radius: 18px; }
-.lib-rail::-webkit-scrollbar { display: none; }
-.lib-rail button { border: 0; background: none; cursor: pointer; font-family: var(--label); font-size: .74rem; line-height: 1; padding: 4px 6px; min-width: 26px; border-radius: 10px; color: var(--vellum-dim); }
-.lib-rail button:hover { color: var(--gold-hi); }
-.lib-rail button[aria-current] { background: rgba(201, 162, 74, .22); color: var(--gold-hi); }
-.lib-progress { position: fixed; z-index: 20; left: 50%; bottom: max(16px, env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
-  display: grid; gap: 5px; justify-items: center; padding: 7px 14px 8px; min-width: 130px; border-radius: 16px;
-  background: rgba(10, 7, 4, .82); border: 1px solid rgba(201, 162, 74, .3); box-shadow: 0 10px 30px rgba(0, 0, 0, .6);
-  font-family: var(--label); font-size: .8rem; letter-spacing: .1em; color: var(--vellum); pointer-events: none; }
-.lib-progress i { display: block; width: 100%; height: 2px; background: rgba(201, 162, 74, .2); border-radius: 2px; overflow: hidden; }
-.lib-progress b { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), var(--gold-hi)); transition: width .25s ease; }
 .lib-col { flex: 1 1 0; min-width: 0; }
 .lib-wall .icon-tile { margin-bottom: 28px; }
 .lib-wall .icon-tile h3 { font-size: 1.08rem; }
@@ -521,3 +506,110 @@ section.tail { padding-top: 0; }
 @media (max-width: 640px) { .glazed-body .actions { gap: 8px; } .glazed-body .actions .btn { padding: 8px 11px; font-size: .84rem; letter-spacing: .1em; } }
 .glazed-body .actions { flex-wrap: nowrap; }
 .lib-tally { margin-top: 6px; font-style: italic; color: var(--vellum-dim); font-size: var(--step-0); }
+
+/* ---------- Explore: the atlas, the centuries, the company of saints ---------- */
+.explore .ex-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-bottom: 22px; border: 1px solid rgba(201, 162, 74, .35); border-radius: 2px; background: rgba(20, 14, 9, .55); }
+.ex-tabs a { display: flex; flex-direction: column; gap: 2px; padding: 12px 16px; text-decoration: none; color: var(--vellum-dim); border-left: 1px solid rgba(201, 162, 74, .2); min-width: 0; }
+.ex-tabs a:first-child { border-left: 0; }
+.ex-tabs a b { font-family: var(--label); letter-spacing: .18em; font-weight: 400; text-transform: uppercase; font-size: var(--step--1); color: var(--gold); }
+.ex-tabs a small { font-size: .92rem; font-style: italic; }
+.ex-tabs a:hover { background: rgba(201, 162, 74, .06); color: var(--vellum); }
+.ex-tabs a[aria-selected="true"] { background: rgba(201, 162, 74, .12); color: var(--vellum); box-shadow: inset 0 -2px 0 var(--gold); }
+.ex-tabs a[aria-selected="true"] b { color: var(--gold-hi); }
+.ex-intro { max-width: 68ch; color: var(--vellum-dim); margin: 0 0 18px; }
+.ex-loading { padding: 60px 0; text-align: center; color: var(--ash); font-style: italic; }
+
+/* The atlas: a dark plate of umber relief on a sea the color of the nave, its edges fading into the wall */
+.atlas-frame { position: relative; }
+.atlas { position: relative; overflow: hidden; background: var(--soot); touch-action: pan-y; }
+.atlas canvas { position: absolute; inset: 0; display: block; will-change: transform; }
+.atlas > svg { position: absolute; inset: 0; display: block; cursor: grab; font-family: var(--body); }
+.atlas > svg:active { cursor: grabbing; }
+.at-vignette { position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse 75% 70% at 50% 50%, transparent 55%, rgba(11, 8, 6, .55) 80%, var(--soot) 100%),
+    linear-gradient(90deg, var(--soot), transparent 7%, transparent 93%, var(--soot)),
+    linear-gradient(180deg, var(--soot), transparent 8%, transparent 92%, var(--soot)); }
+.at-grat { fill: none; stroke: rgba(201, 162, 74, .16); stroke-width: .6; vector-effect: non-scaling-stroke; }
+.at-coast { fill: none; stroke: rgba(201, 162, 74, .42); stroke-width: .7; vector-effect: non-scaling-stroke; }
+.at-river { fill: none; stroke: rgba(122, 150, 158, .38); stroke-width: .6; vector-effect: non-scaling-stroke; }
+.at-lake { fill: var(--soot); stroke: rgba(201, 162, 74, .3); stroke-width: .5; vector-effect: non-scaling-stroke; }
+.at-sea { fill: rgba(150, 168, 172, .5); font-style: italic; letter-spacing: .28em; text-anchor: middle; pointer-events: none; }
+.at-deg { fill: rgba(201, 162, 74, .55); font-size: 10.5px; letter-spacing: .06em; pointer-events: none; }
+.at-place { cursor: pointer; outline: none; }
+.at-place circle { fill: rgba(178, 58, 34, .6); stroke: #e0785a; stroke-width: 1; transition: fill .15s; }
+.at-place.region circle { fill: rgba(178, 58, 34, .1); stroke: rgba(224, 120, 90, .7); stroke-dasharray: 3 3; }
+.at-place:hover circle, .at-place:focus-visible circle { fill: rgba(214, 82, 48, .85); stroke: var(--gold-hi); stroke-width: 1.6; }
+.at-place.region:hover circle, .at-place.region:focus-visible circle { fill: rgba(178, 58, 34, .25); }
+.at-place.on circle { fill: var(--gold); stroke: #fff6d8; stroke-width: 2; }
+.at-label { fill: var(--vellum); font-size: 16.25px; font-weight: 500; paint-order: stroke; stroke: rgba(11, 8, 6, .85); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
+.at-label.region { font-family: var(--label); font-size: 13.65px; letter-spacing: .2em; fill: rgba(201, 162, 74, .85); }
+.at-cartouche { position: absolute; left: 18px; bottom: 18px; padding: 10px 14px 9px; background: rgba(22, 15, 10, .9); border: 1px solid rgba(201, 162, 74, .45); box-shadow: inset 0 0 0 3px rgba(22, 15, 10, .9), inset 0 0 0 4px rgba(201, 162, 74, .2); color: var(--vellum); pointer-events: none; }
+.at-cartouche p { margin: 0 0 6px; font-family: var(--label); font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.at-cartouche small { display: block; font-size: .82rem; color: var(--vellum-dim); font-style: italic; }
+.at-cartouche .dash { display: inline-block; width: 12px; height: 12px; border: 1px dashed #e0785a; border-radius: 50%; vertical-align: -2px; margin-right: 3px; }
+.at-key svg { display: block; }
+.at-keyc { fill: rgba(178, 58, 34, .3); stroke: #e0785a; stroke-width: .9; }
+.at-keyl { stroke: rgba(201, 162, 74, .5); stroke-width: .6; stroke-dasharray: 2 2; }
+.at-keyt { fill: var(--vellum); font-size: 12px; font-family: var(--body); }
+.at-zoom { position: absolute; right: 16px; top: 16px; display: flex; flex-direction: column; border: 1px solid rgba(201, 162, 74, .45); background: rgba(22, 15, 10, .9); }
+.at-zoom button { width: 34px; height: 34px; border: 0; border-top: 1px solid rgba(201, 162, 74, .25); background: none; color: var(--gold-hi); font: 500 1.25rem/1 var(--body); cursor: pointer; }
+.at-zoom button:first-child { border-top: 0; }
+.at-zoom button:hover { background: rgba(201, 162, 74, .15); }
+.at-credit { margin: 10px 0 0; font-size: .85rem; color: var(--ash); font-style: italic; }
+@media (max-width: 640px) {
+  .at-cartouche { left: 8px; bottom: 8px; padding: 7px 9px; } .at-cartouche p { font-size: .7rem; } .at-key svg { transform: scale(.8); transform-origin: 0 100%; }
+  .ex-tabs a { padding: 10px; } .ex-tabs a small { display: none; }
+}
+
+/* The centuries */
+.ex-bar { display: flex; align-items: start; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+.ex-reset { padding: 6px 14px; font-size: .85rem; flex: none; }
+.ch-legend { display: flex; flex-wrap: wrap; gap: 6px 8px; min-width: 0; }
+.ch-legend button { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border: 1px solid rgba(201, 162, 74, .3); border-radius: 2px; background: rgba(20, 14, 9, .55); color: var(--vellum); font: inherit; font-size: var(--step--1); cursor: pointer; }
+.ch-legend button:hover { border-color: var(--gold); }
+.ch-legend i, .nw-legend i { width: 13px; height: 13px; border-radius: 1px; display: inline-block; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .35); }
+.ch-legend small { color: var(--ash); }
+.ex-chart { position: relative; padding: 14px 10px 6px; background: rgba(20, 14, 9, .55); border: 1px solid rgba(201, 162, 74, .25); }
+.ex-chart svg { display: block; font-family: var(--body); }
+.ch-bar { cursor: pointer; stroke: rgba(11, 8, 6, .8); stroke-width: .8; transition: opacity .15s; outline: none; }
+.ch-bar:hover, .ch-bar:focus-visible { filter: brightness(1.25); }
+.ch-bar.dim { opacity: .28; }
+.ch-grid line { stroke: rgba(201, 162, 74, .12); } .ch-grid path { display: none; }
+.ch-axis path, .ch-axis line { stroke: rgba(201, 162, 74, .4); }
+.ch-axis text { fill: var(--vellum-dim); font-size: 13px; font-family: var(--body); }
+.ch-axis.x .tick:hover text { fill: var(--gold-hi); }
+.ch-cap { fill: var(--ash); font-size: 12px; font-style: italic; }
+.ch-tip { position: absolute; pointer-events: none; padding: 4px 9px; background: rgba(11, 8, 6, .92); border: 1px solid rgba(201, 162, 74, .45); color: var(--vellum); font-size: .9rem; white-space: nowrap; }
+
+/* The company of saints */
+.nw-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 12px; font-size: var(--step--1); color: var(--vellum-dim); }
+.nw-legend span { display: inline-flex; align-items: center; gap: 7px; } .nw-legend i { border-radius: 50%; }
+.nw-legend .nw-note { margin-left: auto; color: var(--ash); font-style: italic; }
+.ex-net-frame { position: relative; background: radial-gradient(ellipse at center, rgba(201, 162, 74, .1), transparent 60%), rgba(14, 10, 7, .7); border: 1px solid rgba(201, 162, 74, .25); }
+.ex-net { touch-action: pan-y; } .ex-net svg { display: block; cursor: grab; font-family: var(--body); }
+.nw-reset { position: absolute; right: 10px; top: 10px; padding: 6px 12px; font-size: .85rem; }
+.nw-links line { stroke: rgba(201, 162, 74, .08); cursor: pointer; transition: opacity .15s, stroke .15s; }
+.nw-links line:hover, .nw-links line.hover { stroke: rgba(244, 220, 148, .75); opacity: 1; }
+.nw-links line.on { stroke: rgba(244, 220, 148, .8); }
+.nw-links line.dim { opacity: .06; }
+.nw-node { stroke: rgba(11, 8, 6, .9); stroke-width: 1; cursor: pointer; transition: opacity .15s; outline: none; }
+.nw-node:hover, .nw-node:focus-visible { stroke: var(--gold-hi); stroke-width: 2; }
+.nw-node.on { stroke: #fff6d8; stroke-width: 2.5; }
+.nw-node.dim, .nw-labels text.dim { opacity: .15; }
+.nw-labels text { fill: var(--vellum); paint-order: stroke; stroke: rgba(11, 8, 6, .9); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+
+/* The list of icons beneath each */
+.ex-list { margin-top: 24px; scroll-margin-top: 90px; }
+.ex-list-head { display: flex; align-items: end; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.ex-list-head h3 { margin: 2px 0 0; font-size: var(--step-2); text-wrap: balance; }
+.ex-list-head .eyebrow { margin: 0; max-width: 70ch; }
+.ex-count { margin: 0; color: var(--vellum-dim); font-style: italic; }
+.ex-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.ex-tile { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--vellum); min-width: 0; }
+.ex-tile img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid rgba(201, 162, 74, .4); box-shadow: 0 8px 18px rgba(0, 0, 0, .5); transition: transform .2s, border-color .2s; }
+.ex-tile:hover img { transform: translateY(-2px); border-color: var(--gold-hi); }
+.ex-tile span { display: flex; flex-direction: column; line-height: 1.25; }
+.ex-tile b { font-weight: 500; font-size: .98rem; }
+.ex-tile i { color: var(--ash); font-size: .85rem; }
+@media (max-width: 520px) { .ex-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+.ex-note { margin: 6px 0 0; max-width: 70ch; color: var(--vellum-dim); font-style: italic; }
