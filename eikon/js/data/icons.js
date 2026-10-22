@@ -15927,10 +15927,10 @@ window.EIKON_ICONS = [
   },
   "originShort": "Kirillo-Belozersky Monastery",
   "home": {
-   "name": "Kirillo-Belozersky Monastery Museum",
-   "lat": 59.8584,
-   "lng": 38.377,
-   "city": "Kirillov"
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
   },
   "medium": "Tempera on wood",
   "text": "Three prophets stand with their scrolls: Elisha, Zechariah and Joel, who foretold that God would pour out his Spirit upon all flesh (Joel 2:28).\n\nThey come from the prophets' tier of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497. It is one of the oldest Russian iconostases to survive largely complete.",
@@ -15976,10 +15976,10 @@ window.EIKON_ICONS = [
   },
   "originShort": "Kirillo-Belozersky Monastery",
   "home": {
-   "name": "Kirillo-Belozersky Monastery Museum",
-   "lat": 59.8584,
-   "lng": 38.377,
-   "city": "Kirillov"
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
   },
   "medium": "Tempera on wood",
   "text": "Artemius was a general under Constantine who rebuked Julian the Apostate for persecuting Christians and was beheaded at Antioch in 362.\n\nHe stands in the Deesis tier of the Kirillo-Belozersky iconostasis of 1497.",
@@ -17204,10 +17204,10 @@ window.EIKON_ICONS = [
   },
   "originShort": "Kirillo-Belozersky Monastery",
   "home": {
-   "name": "Kirillo-Belozersky Monastery Museum",
-   "lat": 59.8584,
-   "lng": 38.377,
-   "city": "Kirillov"
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
   },
   "medium": "Tempera on wood",
   "text": "Christ shines in a star of light on Tabor between Elijah and Moses, and the apostles tumble down the mountain below.\n\nIt comes from the feast tier of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497.",
@@ -17950,10 +17950,10 @@ window.EIKON_ICONS = [
   },
   "originShort": "Kirillo-Belozersky Monastery",
   "home": {
-   "name": "Kirillo-Belozersky Monastery Museum",
-   "lat": 59.8584,
-   "lng": 38.377,
-   "city": "Kirillov"
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
   },
   "medium": "Tempera on wood",
   "text": "Christ stands in the Jordan as John baptises him, angels wait on the bank, and the Spirit descends as a dove.\n\nIt comes from the feast tier of the Kirillo-Belozersky iconostasis of 1497.",
@@ -20044,6 +20044,4776 @@ window.EIKON_ICONS = [
    "licenseUrl": "",
    "artist": "Moskos Ilias (1649 - 1687) Details on Google Art Project",
    "credit": "qgHtAm1puwf0lw at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "acindynus-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Acindynus (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Martyrs Acindynus, Pegasius and those with them",
+  "subjects": [
+   "St Acindynus"
+  ],
+  "days": [
+   {
+    "d": "11-02"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Acindynus was one of five Christians of the Persian court burned under King Shapur II in the fourth century. Thousands who saw them die are said to have believed.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/acindynus-chirikov.jpg",
+  "thumb": "assets/icons/acindynus-chirikov-thumb.jpg",
+  "w": 588,
+  "h": 729,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Acyndinus_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Acyndinus by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345996"
+  }
+ },
+ {
+  "id": "anicetus-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Anicetus (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Martyrs Photius and Anicetus",
+  "subjects": [
+   "St Anicetus"
+  ],
+  "days": [
+   {
+    "d": "08-12"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Anicetus, an officer at Nicomedia, confessed Christ before Diocletian and was burned in 305 with his nephew Photius, who embraced him in the fire.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/anicetus-chirikov.jpg",
+  "thumb": "assets/icons/anicetus-chirikov-thumb.jpg",
+  "w": 580,
+  "h": 710,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Anicetus_of_Nicomedia_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Anicetus of Nicomedia by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345707"
+  }
+ },
+ {
+  "id": "autonomus-chirikov",
+  "kind": "saint",
+  "title": "The Hieromartyr Autonomus (Chirikov)",
+  "alt": "",
+  "cardName": "Hieromartyr Autonomus",
+  "subjects": [
+   "St Autonomus"
+  ],
+  "days": [
+   {
+    "d": "09-12"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Autonomus, a bishop of Italy, fled the persecution of Diocletian to Bithynia, where he preached and built a church. Pagans killed him at its altar.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/autonomus-chirikov.jpg",
+  "thumb": "assets/icons/autonomus-chirikov-thumb.jpg",
+  "w": 556,
+  "h": 674,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Autonomus_of_Italy_by_O.Chirikov_(Muz.ist.rel).jpg",
+   "file": "Autonomus of Italy by O.Chirikov (Muz.ist.rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346741"
+  }
+ },
+ {
+  "id": "gregory-decapolis-chirikov",
+  "kind": "saint",
+  "title": "St Gregory of Decapolis (Chirikov)",
+  "alt": "",
+  "cardName": "St Gregory of Decapolis",
+  "subjects": [
+   "St Gregory of Decapolis"
+  ],
+  "days": [
+   {
+    "d": "11-20"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Gregory was a wandering monk of the ninth century from the Decapolis in Isauria, who defended the holy icons and died in Constantinople around 842.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/gregory-decapolis-chirikov.jpg",
+  "thumb": "assets/icons/gregory-decapolis-chirikov-thumb.jpg",
+  "w": 586,
+  "h": 719,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Gregory_of_Dekapolis_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Gregory of Dekapolis by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345157"
+  }
+ },
+ {
+  "id": "januarius-chirikov",
+  "kind": "saint",
+  "title": "The Hieromartyr Januarius (Chirikov)",
+  "alt": "",
+  "cardName": "Hieromartyr Januarius",
+  "subjects": [
+   "St Januarius"
+  ],
+  "days": [
+   {
+    "d": "04-21"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Januarius, bishop of Benevento, was beheaded near Naples under Diocletian. He is the patron of Naples.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/januarius-chirikov.jpg",
+  "thumb": "assets/icons/januarius-chirikov-thumb.jpg",
+  "w": 592,
+  "h": 720,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Januarius_by_O.Chirikov_(Muz.ist._rel).jpg",
+   "file": "Januarius by O.Chirikov (Muz.ist. rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346762"
+  }
+ },
+ {
+  "id": "lucillian-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Lucillian (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Martyr Lucillian",
+  "subjects": [
+   "St Lucillian"
+  ],
+  "days": [
+   {
+    "d": "06-03"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Lucillian was an old pagan priest of Nicomedia who became a Christian. Under Aurelian he was crucified at Byzantium with four young men he had brought to the faith.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/lucillian-chirikov.jpg",
+  "thumb": "assets/icons/lucillian-chirikov-thumb.jpg",
+  "w": 549,
+  "h": 676,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Lucillian_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Lucillian by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344311"
+  }
+ },
+ {
+  "id": "lupus-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Lupus (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Martyr Lupus",
+  "subjects": [
+   "St Lupus"
+  ],
+  "days": [
+   {
+    "d": "08-23"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Lupus was the servant of St Demetrios of Thessaloniki. He dipped his master's robe and ring in his blood, and with them worked healings, until he too was martyred.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/lupus-chirikov.jpg",
+  "thumb": "assets/icons/lupus-chirikov-thumb.jpg",
+  "w": 598,
+  "h": 730,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Lupp_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Lupp by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346138"
+  }
+ },
+ {
+  "id": "mark-arethusa-chirikov",
+  "kind": "saint",
+  "title": "St Mark of Arethusa (Chirikov)",
+  "alt": "",
+  "cardName": "Sts Mark of Arethusa and Cyril the Deacon",
+  "subjects": [
+   "St Mark of Arethusa"
+  ],
+  "days": [
+   {
+    "d": "03-29"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Mark, an aged bishop of Arethusa in Syria, had once saved the young Julian's life. When Julian became emperor and turned against the faith, Mark was tortured but would not pay to rebuild a pagan temple.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/mark-arethusa-chirikov.jpg",
+  "thumb": "assets/icons/mark-arethusa-chirikov-thumb.jpg",
+  "w": 556,
+  "h": 665,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Mark_of_Arethusa_by_O.Chirikov_(Muz.ist._relig).jpg",
+   "file": "Mark of Arethusa by O.Chirikov (Muz.ist. relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346306"
+  }
+ },
+ {
+  "id": "nicephorus-chirikov",
+  "kind": "saint",
+  "title": "St Nicephorus, Patriarch of Constantinople (Chirikov)",
+  "alt": "",
+  "cardName": "St Nicephorus the Confessor",
+  "subjects": [
+   "St Nicephorus of Constantinople"
+  ],
+  "days": [
+   {
+    "d": "06-02"
+   },
+   {
+    "d": "03-13"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Nicephorus was patriarch of Constantinople from 806 to 815, until he was deposed and exiled for defending the holy icons. His writings set out why the icon of Christ is possible because God became man.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/nicephorus-chirikov.jpg",
+  "thumb": "assets/icons/nicephorus-chirikov-thumb.jpg",
+  "w": 552,
+  "h": 678,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nikephoros_of_Const._by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Nikephoros of Const. by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344245"
+  }
+ },
+ {
+  "id": "leontius-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Leontius (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Martyr Leontius",
+  "subjects": [
+   "St Leontius"
+  ],
+  "days": [
+   {
+    "d": "06-18"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Leontius was a Greek soldier at Tripoli in Phoenicia, famed for his strength and his faith. He was beaten to death under Vespasian, having converted the officer sent to arrest him.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/leontius-chirikov.jpg",
+  "thumb": "assets/icons/leontius-chirikov-thumb.jpg",
+  "w": 590,
+  "h": 729,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Leontius_(June_18)_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Leontius (June 18) by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345461"
+  }
+ },
+ {
+  "id": "simeon-jerusalem-chirikov",
+  "kind": "saint",
+  "title": "St Simeon, Bishop of Jerusalem (Chirikov)",
+  "alt": "",
+  "cardName": "Hieromartyr Simeon, kinsman of the Lord",
+  "subjects": [
+   "St Simeon of Jerusalem"
+  ],
+  "days": [
+   {
+    "d": "04-27"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Simeon, son of Cleopas, was a kinsman of the Lord and followed James as bishop of Jerusalem. He was crucified under Trajan at the age of 120.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/simeon-jerusalem-chirikov.jpg",
+  "thumb": "assets/icons/simeon-jerusalem-chirikov-thumb.jpg",
+  "w": 592,
+  "h": 714,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Simon_of_Jerusalem_(April_27)_by_O.Chirikov_(Muz.it._relig).jpg",
+   "file": "Simon of Jerusalem (April 27) by O.Chirikov (Muz.it. relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345715"
+  }
+ },
+ {
+  "id": "charitina-chirikov",
+  "kind": "saint",
+  "title": "St Charitina, Princess of Lithuania (Chirikov)",
+  "alt": "",
+  "cardName": "St Charitina of Lithuania",
+  "subjects": [
+   "St Charitina of Lithuania"
+  ],
+  "days": [
+   {
+    "d": "10-05",
+    "n": "St Charitina, Princess of Lithuania"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Charitina was a Lithuanian princess who fled to Novgorod in the thirteenth century, became a nun, and was later abbess of a convent there.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/charitina-chirikov.jpg",
+  "thumb": "assets/icons/charitina-chirikov-thumb.jpg",
+  "w": 587,
+  "h": 722,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Charitina_of_Lithuania_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Charitina of Lithuania by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344235"
+  }
+ },
+ {
+  "id": "hieron-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Hieron (Chirikov)",
+  "alt": "",
+  "cardName": "Thirty-three Martyrs of Melitene",
+  "subjects": [
+   "St Hieron"
+  ],
+  "days": [
+   {
+    "d": "11-07"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Hieron was a farmer of great strength from Tyana in Cappadocia, forced into the army under Diocletian. He and thirty-two companions were martyred at Melitene.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/hieron-chirikov.jpg",
+  "thumb": "assets/icons/hieron-chirikov-thumb.jpg",
+  "w": 573,
+  "h": 712,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Hieron_of_Melitene_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Hieron of Melitene by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1343488"
+  }
+ },
+ {
+  "id": "julia-ancyra-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Julia (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Martyr Julia of Ancyra",
+  "subjects": [
+   "St Julia"
+  ],
+  "days": [
+   {
+    "d": "05-18"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Julia was one of seven virgins of Ancyra drowned in a lake for their faith in 303. St Theodotus of Ancyra recovered their bodies and was martyred for it.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/julia-ancyra-chirikov.jpg",
+  "thumb": "assets/icons/julia-ancyra-chirikov-thumb.jpg",
+  "w": 551,
+  "h": 666,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Julia_of_Ankyra_by_O.Chirikov_(Muz.ist.rel).jpg",
+   "file": "Julia of Ankyra by O.Chirikov (Muz.ist.rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1347075"
+  }
+ },
+ {
+  "id": "andronicus-chirikov",
+  "kind": "saint",
+  "title": "The Apostle Andronicus (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Apostles Andronicus and Junia",
+  "subjects": [
+   "St Andronicus"
+  ],
+  "days": [
+   {
+    "d": "05-17"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Paul greets Andronicus and Junia in his letter to the Romans as 'of note among the apostles' (Romans 16:7). They preached in Pannonia.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/andronicus-chirikov.jpg",
+  "thumb": "assets/icons/andronicus-chirikov-thumb.jpg",
+  "w": 586,
+  "h": 719,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Andronikos_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Andronikos by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345095"
+  }
+ },
+ {
+  "id": "vadim-chirikov",
+  "kind": "saint",
+  "title": "The Venerable Martyr Vadim (Chirikov)",
+  "alt": "",
+  "cardName": "Venerable Martyr Vadim of Persia",
+  "subjects": [
+   "St Vadim"
+  ],
+  "days": [
+   {
+    "d": "04-09",
+    "n": "Venerable Martyr Vadim of Persia"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Vadim was a wealthy Persian who founded a monastery and was beheaded with seven disciples under Shapur II in 376.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/vadim-chirikov.jpg",
+  "thumb": "assets/icons/vadim-chirikov-thumb.jpg",
+  "w": 599,
+  "h": 730,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Vadim_by_O.Chirikov_(Muz._ist._rel).jpg",
+   "file": "Vadim by O.Chirikov (Muz. ist. rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1347000"
+  }
+ },
+ {
+  "id": "tabitha-chirikov",
+  "kind": "saint",
+  "title": "The Righteous Tabitha (Chirikov)",
+  "alt": "",
+  "cardName": "Righteous Tabitha",
+  "subjects": [
+   "St Tabitha"
+  ],
+  "days": [
+   {
+    "d": "10-25",
+    "n": "Righteous Tabitha, raised by the Apostle Peter"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Tabitha, or Dorcas, was a disciple at Joppa 'full of good works and almsdeeds'. When she died Peter knelt and said 'Tabitha, arise', and she opened her eyes (Acts 9:36–41).\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/tabitha-chirikov.jpg",
+  "thumb": "assets/icons/tabitha-chirikov-thumb.jpg",
+  "w": 551,
+  "h": 670,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Tabitha_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Tabitha by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344776"
+  }
+ },
+ {
+  "id": "theodore-varangian-chirikov",
+  "kind": "saint",
+  "title": "St Theodore the Varangian (Chirikov)",
+  "alt": "",
+  "cardName": "Martyrs Theodore the Varangian and his son John",
+  "subjects": [
+   "St Theodore the Varangian"
+  ],
+  "days": [
+   {
+    "d": "07-12",
+    "n": "Martyrs Theodore the Varangian and his son John"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Theodore, a Christian Varangian in Kiev, refused to give up his son John to be sacrificed to the idols in 983. Both were killed by the crowd, the first martyrs of Rus.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/theodore-varangian-chirikov.jpg",
+  "thumb": "assets/icons/theodore-varangian-chirikov-thumb.jpg",
+  "w": 955,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Fedor_Varyag_by_O.Chirikov_(Atheism_museum).jpg",
+   "file": "Fedor Varyag by O.Chirikov (Atheism museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Чириков Иосиф (Осип) Семенович",
+   "credit": "http://vm1.culture.ru/muzey_istorii_religii/catalog/0002500492/"
+  }
+ },
+ {
+  "id": "theoktist-chernigov-chirikov",
+  "kind": "saint",
+  "title": "St Theoktist of Chernigov (Chirikov)",
+  "alt": "",
+  "cardName": "St Theoktist of Chernigov",
+  "subjects": [
+   "St Theoktist of Chernigov"
+  ],
+  "days": [
+   {
+    "d": "08-05",
+    "n": "St Theoktist, Bishop of Chernigov"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Theoktist was abbot of the Kiev Caves Lavra and then bishop of Chernigov. He died in 1123.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/theoktist-chernigov-chirikov.jpg",
+  "thumb": "assets/icons/theoktist-chernigov-chirikov-thumb.jpg",
+  "w": 491,
+  "h": 600,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Feoktist_of_Chernigov_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Feoktist of Chernigov by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345613"
+  }
+ },
+ {
+  "id": "nonna-chirikov",
+  "kind": "saint",
+  "title": "The Righteous Nonna (Chirikov)",
+  "alt": "",
+  "cardName": "Righteous Nonna",
+  "subjects": [
+   "St Nonna"
+  ],
+  "days": [
+   {
+    "d": "08-05",
+    "n": "Righteous Nonna, mother of St Gregory the Theologian"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Hermitage Museum",
+   "lat": 59.9398,
+   "lng": 30.3146,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Nonna brought her husband to the faith, and he became bishop of Nazianzus. Three of their children are saints, among them Gregory the Theologian.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/nonna-chirikov.jpg",
+  "thumb": "assets/icons/nonna-chirikov-thumb.jpg",
+  "w": 755,
+  "h": 901,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nonna_by_O.Chirikov_(Hermitage).jpg",
+   "file": "Nonna by O.Chirikov (Hermitage).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://varvar.ru/arhiv/gallery/ikona/chirikov/chirikov31.html"
+  }
+ },
+ {
+  "id": "ludmila-chirikov",
+  "kind": "saint",
+  "title": "The Martyr Ludmila (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Martyr Ludmila of Bohemia",
+  "subjects": [
+   "St Ludmila"
+  ],
+  "days": [
+   {
+    "d": "09-16",
+    "n": "Holy Martyr Ludmila of Bohemia"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Ludmila, duchess of Bohemia, was baptised by St Methodius and raised her grandson Wenceslaus in the faith. She was strangled in 921 at the order of her daughter-in-law.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/ludmila-chirikov.jpg",
+  "thumb": "assets/icons/ludmila-chirikov-thumb.jpg",
+  "w": 564,
+  "h": 681,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Ludmila_by_O.Chirikov_(Muz._ist._rel).jpg",
+   "file": "Ludmila by O.Chirikov (Muz. ist. rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346393"
+  }
+ },
+ {
+  "id": "pimen-caves-chirikov",
+  "kind": "saint",
+  "title": "St Pimen the Much-Ailing (Chirikov)",
+  "alt": "",
+  "cardName": "St Pimen the Much-Ailing",
+  "subjects": [
+   "St Pimen of the Kiev Caves"
+  ],
+  "days": [
+   {
+    "d": "08-07",
+    "n": "St Pimen the Much-Ailing of the Kiev Caves"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Pimen was sick from birth and spent twenty years bedridden in the Kiev Caves monastery. Healed at the end of his life, he was tonsured by angels, the story says.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/pimen-caves-chirikov.jpg",
+  "thumb": "assets/icons/pimen-caves-chirikov-thumb.jpg",
+  "w": 561,
+  "h": 679,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Pimen_Pecherskiy_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Pimen Pecherskiy by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344843"
+  }
+ },
+ {
+  "id": "sophia-suzdal-chirikov",
+  "kind": "saint",
+  "title": "St Sophia of Suzdal (Chirikov)",
+  "alt": "",
+  "cardName": "St Sophia of Suzdal",
+  "subjects": [
+   "St Sophia of Suzdal"
+  ],
+  "days": [
+   {
+    "d": "12-16",
+    "n": "St Sophia of Suzdal"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Sophia was Solomonia Saburova, first wife of Grand Prince Vasily III. Divorced and forced into the convent of Suzdal in 1525, she lived there as a nun for seventeen years.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/sophia-suzdal-chirikov.jpg",
+  "thumb": "assets/icons/sophia-suzdal-chirikov-thumb.jpg",
+  "w": 668,
+  "h": 800,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Sophia_of_Suzdal_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Sophia of Suzdal by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344237"
+  }
+ },
+ {
+  "id": "spyridon-caves-chirikov",
+  "kind": "saint",
+  "title": "St Spyridon the Prosphora-baker (Chirikov)",
+  "alt": "",
+  "cardName": "St Spyridon of the Kiev Caves",
+  "subjects": [
+   "St Spyridon of the Kiev Caves"
+  ],
+  "days": [
+   {
+    "d": "10-31",
+    "n": "St Spyridon the Prosphora-baker of the Kiev Caves"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Spyridon baked the altar bread of the Kiev Caves Lavra, reciting the whole Psalter as he worked. He once put out a fire in the oven with water carried in his own cloak.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/spyridon-caves-chirikov.jpg",
+  "thumb": "assets/icons/spyridon-caves-chirikov-thumb.jpg",
+  "w": 583,
+  "h": 732,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Spiridon_Pecherskiy_by_O.Chirikov_(Muz.it._relig).jpg",
+   "file": "Spiridon Pecherskiy by O.Chirikov (Muz.it. relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346818"
+  }
+ },
+ {
+  "id": "stephen-makhrishchi-chirikov",
+  "kind": "saint",
+  "title": "St Stephen of Makhrishchi (Chirikov)",
+  "alt": "",
+  "cardName": "St Stephen of Makhrishchi",
+  "subjects": [
+   "St Stephen of Makhrishchi"
+  ],
+  "days": [
+   {
+    "d": "07-14",
+    "n": "St Stephen of Makhrishchi"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Stephen, a friend of St Sergius of Radonezh, founded the monastery of the Holy Trinity on the river Makhrishcha. He died in 1406.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/stephen-makhrishchi-chirikov.jpg",
+  "thumb": "assets/icons/stephen-makhrishchi-chirikov-thumb.jpg",
+  "w": 546,
+  "h": 675,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Stephan_of_Makhrischi_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Stephan of Makhrischi by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346106"
+  }
+ },
+ {
+  "id": "michael-tver-chirikov",
+  "kind": "saint",
+  "title": "St Michael of Tver (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Prince Michael of Tver",
+  "subjects": [
+   "St Michael of Tver"
+  ],
+  "days": [
+   {
+    "d": "11-22",
+    "n": "Holy Right-believing Prince Michael of Tver"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Michael, grand prince of Tver, was summoned to the Golden Horde and put to death there in 1318, after refusing to save himself at the cost of his people.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/michael-tver-chirikov.jpg",
+  "thumb": "assets/icons/michael-tver-chirikov-thumb.jpg",
+  "w": 501,
+  "h": 621,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Mikhail_of_Tver_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Mikhail of Tver by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1345917"
+  }
+ },
+ {
+  "id": "nil-stolobny-chirikov",
+  "kind": "saint",
+  "title": "St Nil of Stolobny (Chirikov)",
+  "alt": "",
+  "cardName": "St Nil of Stolobny",
+  "subjects": [
+   "St Nil of Stolobny"
+  ],
+  "days": [
+   {
+    "d": "12-07",
+    "n": "St Nil of Stolobny"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Nil lived as a hermit on the island of Stolobny on Lake Seliger for twenty-seven years. He never lay down to sleep but rested leaning on a hook in the wall, and died standing in 1554.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/nil-stolobny-chirikov.jpg",
+  "thumb": "assets/icons/nil-stolobny-chirikov-thumb.jpg",
+  "w": 789,
+  "h": 960,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nil_Stolobensky_by_O.Chirikov_(GRM).jpg",
+   "file": "Nil Stolobensky by O.Chirikov (GRM).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://varvar.ru/arhiv/gallery/ikona/chirikov/chirikov31.html"
+  }
+ },
+ {
+  "id": "cyril-turov-chirikov",
+  "kind": "saint",
+  "title": "St Cyril of Turov (Chirikov)",
+  "alt": "",
+  "cardName": "St Cyril of Turov",
+  "subjects": [
+   "St Cyril of Turov"
+  ],
+  "days": [
+   {
+    "d": "04-28",
+    "n": "St Cyril, Bishop of Turov"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Cyril, bishop of Turov in the twelfth century, was so fine a preacher and hymnographer that he was called the Chrysostom of Rus.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/cyril-turov-chirikov.jpg",
+  "thumb": "assets/icons/cyril-turov-chirikov-thumb.jpg",
+  "w": 602,
+  "h": 729,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Cyril_of_Turov_by_O.Chirikov_(Muz.ist._rel).jpg",
+   "file": "Cyril of Turov by O.Chirikov (Muz.ist. rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1347075"
+  }
+ },
+ {
+  "id": "john-palaeolaurite-chirikov",
+  "kind": "saint",
+  "title": "St John of the Ancient Caves (Chirikov)",
+  "alt": "",
+  "cardName": "St John of the Ancient Caves",
+  "subjects": [
+   "St John of the Ancient Caves"
+  ],
+  "days": [
+   {
+    "d": "04-19"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "John lived in the eighth century at the Old Lavra of St Chariton in Palestine, the 'ancient caves', where he was known for his silence and prayer.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/john-palaeolaurite-chirikov.jpg",
+  "thumb": "assets/icons/john-palaeolaurite-chirikov-thumb.jpg",
+  "w": 596,
+  "h": 729,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:John_Paleolavrite_by_O.Chrikov_(Muz.ist.relig).jpg",
+   "file": "John Paleolavrite by O.Chrikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344591"
+  }
+ },
+ {
+  "id": "theodore-smolensk-chirikov",
+  "kind": "saint",
+  "title": "St Theodore of Smolensk and Yaroslavl (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Prince Theodore of Smolensk",
+  "subjects": [
+   "St Theodore of Smolensk"
+  ],
+  "days": [
+   {
+    "d": "09-19",
+    "n": "Holy Right-believing Prince Theodore of Smolensk and Yaroslavl"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Theodore the Black, prince of Smolensk and Yaroslavl, took monastic vows on his deathbed in 1299. His relics are kept at Yaroslavl.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/theodore-smolensk-chirikov.jpg",
+  "thumb": "assets/icons/theodore-smolensk-chirikov-thumb.jpg",
+  "w": 561,
+  "h": 678,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Feodor_of_Smolensk_by_O.Chirikov_(Muz._ist._rel).jpg",
+   "file": "Feodor of Smolensk by O.Chirikov (Muz. ist. rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346754"
+  }
+ },
+ {
+  "id": "andrew-bogolyubsky-chirikov",
+  "kind": "saint",
+  "title": "St Andrew Bogolyubsky (Chirikov)",
+  "alt": "",
+  "cardName": "Holy Prince Andrew Bogolyubsky",
+  "subjects": [
+   "St Andrew Bogolyubsky"
+  ],
+  "days": [
+   {
+    "d": "07-04",
+    "n": "Holy Right-believing Prince Andrew Bogolyubsky"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Hermitage Museum",
+   "lat": 59.9398,
+   "lng": 30.3146,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Andrew, prince of Vladimir, carried the Vladimir icon of the Mother of God north from Kiev and built the cathedral of the Dormition to house it. He was murdered by his boyars in 1174.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/andrew-bogolyubsky-chirikov.jpg",
+  "thumb": "assets/icons/andrew-bogolyubsky-chirikov-thumb.jpg",
+  "w": 550,
+  "h": 678,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Andrey_Bogolubskii.jpg",
+   "file": "Andrey Bogolubskii.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Chirikov",
+   "credit": "http://expertmus.livejournal.com/35064.html"
+  }
+ },
+ {
+  "id": "simon-yuryevets-chirikov",
+  "kind": "saint",
+  "title": "Blessed Simon of Yuryevets (Chirikov)",
+  "alt": "",
+  "cardName": "Blessed Simon of Yuryevets",
+  "subjects": [
+   "St Simon of Yuryevets"
+  ],
+  "days": [
+   {
+    "d": "11-04",
+    "n": "Blessed Simon of Yuryevets, Fool for Christ"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Simon was a fool for Christ who wandered barefoot through Yuryevets on the Volga in the sixteenth century, praying for the townspeople who mocked him.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/simon-yuryevets-chirikov.jpg",
+  "thumb": "assets/icons/simon-yuryevets-chirikov-thumb.jpg",
+  "w": 528,
+  "h": 655,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Simon_of_Yuryevets_by_O.Chirikov_(Muz.ist.rel).jpg",
+   "file": "Simon of Yuryevets by O.Chirikov (Muz.ist.rel).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1346705"
+  }
+ },
+ {
+  "id": "arcadius-novgorod-chirikov",
+  "kind": "saint",
+  "title": "St Arcadius of Novgorod (Chirikov)",
+  "alt": "",
+  "cardName": "St Arcadius of Novgorod",
+  "subjects": [
+   "St Arcadius of Novgorod"
+  ],
+  "days": [
+   {
+    "d": "09-18",
+    "n": "St Arcadius, Bishop of Novgorod"
+   }
+  ],
+  "month": null,
+  "date": "Late 19th century",
+  "year": 1890,
+  "school": "Moscow (Chirikov workshop)",
+  "artist": "Osip Chirikov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Arcadius was abbot of a Novgorod monastery and then bishop of Novgorod from 1156 to 1163.\n\nOsip Chirikov came from Mstera, the icon-painting village, and ran a workshop in Moscow. For the church of the Marble Palace in St Petersburg he painted a month icon for each saint of the day, small panels in the old manner.",
+  "image": "assets/icons/arcadius-novgorod-chirikov.jpg",
+  "thumb": "assets/icons/arcadius-novgorod-chirikov-thumb.jpg",
+  "w": 600,
+  "h": 714,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Arcadius_of_Novgorod_by_O.Chirikov_(Muz.ist.relig).jpg",
+   "file": "Arcadius of Novgorod by O.Chirikov (Muz.ist.relig).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Osip Semenovich Chirikov",
+   "credit": "https://goskatalog.ru/portal/#/collections?id=1344479"
+  }
+ },
+ {
+  "id": "leontius-rostov-kirillov",
+  "kind": "saint",
+  "title": "St Leontius of Rostov (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "St Leontius of Rostov",
+  "subjects": [
+   "St Leontius of Rostov",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "05-23",
+    "n": "St Leontius, Bishop of Rostov"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Leontius, the first bishop of Rostov, preached to the pagans of the north and was martyred around 1073. He stands tall and narrow in the Deesis tier, turned toward Christ.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/leontius-rostov-kirillov.jpg",
+  "thumb": "assets/icons/leontius-rostov-kirillov-thumb.jpg",
+  "w": 512,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_04_-_Leontious.jpg",
+   "file": "Kirillo-Belozersky iconostasis 04 - Leontious.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "gregory-theologian-kirillov",
+  "kind": "saint",
+  "title": "St Gregory the Theologian (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "St Gregory the Theologian",
+  "subjects": [
+   "St Gregory the Theologian",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "01-25"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Gregory of Nazianzus, archbishop of Constantinople, holds the Gospel in the Deesis tier, one of the three great hierarchs.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/gregory-theologian-kirillov.jpg",
+  "thumb": "assets/icons/gregory-theologian-kirillov-thumb.jpg",
+  "w": 498,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_05_-_Gregorius.jpg",
+   "file": "Kirillo-Belozersky iconostasis 05 - Gregorius.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "john-evangelist-kirillov",
+  "kind": "saint",
+  "title": "St John the Theologian (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Apostle and Evangelist John the Theologian",
+  "subjects": [
+   "St John the Theologian",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "05-08"
+   },
+   {
+    "d": "09-26"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "The beloved disciple, white-haired, turns in prayer toward Christ in the Deesis tier.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/john-evangelist-kirillov.jpg",
+  "thumb": "assets/icons/john-evangelist-kirillov-thumb.jpg",
+  "w": 500,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_07_-_John_Evangelist.jpg",
+   "file": "Kirillo-Belozersky iconostasis 07 - John Evangelist.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "andrew-kirillov",
+  "kind": "saint",
+  "title": "The Apostle Andrew (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Apostle Andrew the First-called",
+  "subjects": [
+   "St Andrew",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "11-30"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Andrew the First-called, Peter's brother, with his tousled hair and scroll, from the Deesis tier.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/andrew-kirillov.jpg",
+  "thumb": "assets/icons/andrew-kirillov-thumb.jpg",
+  "w": 493,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_15_-_Andrew.jpg",
+   "file": "Kirillo-Belozersky iconostasis 15 - Andrew.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "chrysostom-kirillov",
+  "kind": "saint",
+  "title": "St John Chrysostom (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "St John Chrysostom",
+  "subjects": [
+   "St John Chrysostom",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "11-13"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "John Chrysostom, whose Liturgy is served most Sundays, stands in a cross-patterned robe in the Deesis tier.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/chrysostom-kirillov.jpg",
+  "thumb": "assets/icons/chrysostom-kirillov-thumb.jpg",
+  "w": 480,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_16_-_John_Chrysostom.jpg",
+   "file": "Kirillo-Belozersky iconostasis 16 - John Chrysostom.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "peter-moscow-kirillov",
+  "kind": "saint",
+  "title": "St Peter, Metropolitan of Moscow (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "St Peter, Metropolitan of Moscow",
+  "subjects": [
+   "St Peter of Moscow",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "12-21",
+    "n": "St Peter, Metropolitan of Moscow"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Metropolitan Peter moved the see of the Russian Church to Moscow in the fourteenth century. His place in the Deesis tier shows how far Moscow's saints had joined the great Church fathers.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/peter-moscow-kirillov.jpg",
+  "thumb": "assets/icons/peter-moscow-kirillov-thumb.jpg",
+  "w": 484,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_18_-_Peter_of_Moscow.jpg",
+   "file": "Kirillo-Belozersky iconostasis 18 - Peter of Moscow.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "demetrius-kirillov",
+  "kind": "saint",
+  "title": "St Demetrios of Thessaloniki (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Great Martyr Demetrios",
+  "subjects": [
+   "St Demetrios",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "10-26"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Demetrios, the soldier-martyr of Thessaloniki, stands in the Deesis tier in a red cloak.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/demetrius-kirillov.jpg",
+  "thumb": "assets/icons/demetrius-kirillov-thumb.jpg",
+  "w": 471,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_03_-_Dimitrius.jpg",
+   "file": "Kirillo-Belozersky iconostasis 03 - Dimitrius.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "george-kirillov",
+  "kind": "saint",
+  "title": "St George (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Great Martyr George",
+  "subjects": [
+   "St George",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "04-23"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "George, the soldier-martyr, stands among the saints of the Deesis tier, interceding with Christ.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/george-kirillov.jpg",
+  "thumb": "assets/icons/george-kirillov-thumb.jpg",
+  "w": 469,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_19_-_George.jpg",
+   "file": "Kirillo-Belozersky iconostasis 19 - George.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "symeon-younger-kirillov",
+  "kind": "saint",
+  "title": "St Symeon the Stylite the Younger (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "St Symeon of the Wonderful Mountain",
+  "subjects": [
+   "St Symeon the Stylite"
+  ],
+  "days": [
+   {
+    "d": "05-24"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Symeon went up a pillar near Antioch as a child and lived on pillars for nearly seventy years, on the 'Wonderful Mountain'. He died in 592. The very narrow panel shows him on his column.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/symeon-younger-kirillov.jpg",
+  "thumb": "assets/icons/symeon-younger-kirillov-thumb.jpg",
+  "w": 227,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_21_-_Simeon_Jr.jpg",
+   "file": "Kirillo-Belozersky iconostasis 21 - Simeon Jr.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "gabriel-kirillov",
+  "kind": "angel",
+  "title": "The Archangel Gabriel (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Synaxis of the Archangel Gabriel",
+  "subjects": [
+   "Archangel Gabriel",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "03-26",
+    "n": "Synaxis of the Archangel Gabriel"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Gabriel bows toward Christ in the Deesis tier, the messenger of the Annunciation.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/gabriel-kirillov.jpg",
+  "thumb": "assets/icons/gabriel-kirillov-thumb.jpg",
+  "w": 512,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_13_-_Gabriel.jpg",
+   "file": "Kirillo-Belozersky iconostasis 13 - Gabriel.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=84"
+  }
+ },
+ {
+  "id": "prophets-habakkuk-kirillov",
+  "kind": "saint",
+  "title": "The Prophets Habakkuk, Jeremiah and Jonah (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Prophet Jonah",
+  "subjects": [
+   "Prophet Habakkuk",
+   "Prophet Jeremiah",
+   "Prophet Jonah"
+  ],
+  "days": [
+   {
+    "d": "09-22",
+    "n": "Holy Prophet Jonah"
+   },
+   {
+    "d": "05-01",
+    "n": "Holy Prophet Jeremiah"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Three prophets of the prophets' tier hold their scrolls: Habakkuk, Jeremiah, and Jonah, whose three days in the whale were a sign of the Resurrection.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/prophets-habakkuk-kirillov.jpg",
+  "thumb": "assets/icons/prophets-habakkuk-kirillov-thumb.jpg",
+  "w": 1200,
+  "h": 458,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_01._Habakkuk,_Jeremiah,_Jonah.jpg",
+   "file": "Kirillo-Belozersky iconostasis 01. Habakkuk, Jeremiah, Jonah.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=85"
+  }
+ },
+ {
+  "id": "prophets-haggai-kirillov",
+  "kind": "saint",
+  "title": "The Prophets Nathan, Haggai and Samuel (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Prophet Haggai",
+  "subjects": [
+   "Prophet Nathan",
+   "Prophet Haggai",
+   "Prophet Samuel"
+  ],
+  "days": [
+   {
+    "d": "12-16"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Nathan, who rebuked King David; Haggai, who urged the rebuilding of the Temple; and Samuel, who anointed David. They come from the prophets' tier.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/prophets-haggai-kirillov.jpg",
+  "thumb": "assets/icons/prophets-haggai-kirillov-thumb.jpg",
+  "w": 1200,
+  "h": 482,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_02._Nathan,_Haggai,_Samuel.jpg",
+   "file": "Kirillo-Belozersky iconostasis 02. Nathan, Haggai, Samuel.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=85"
+  }
+ },
+ {
+  "id": "prophets-micah-kirillov",
+  "kind": "saint",
+  "title": "The Prophets Micah, Elijah and Gideon (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Prophet Micah",
+  "subjects": [
+   "Prophet Micah",
+   "Prophet Elijah",
+   "Gideon"
+  ],
+  "days": [
+   {
+    "d": "08-14"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Micah, Elijah, and Gideon, whose fleece wet with dew was read as a figure of the Virgin, from the prophets' tier.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/prophets-micah-kirillov.jpg",
+  "thumb": "assets/icons/prophets-micah-kirillov-thumb.jpg",
+  "w": 1200,
+  "h": 479,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_03._Micah,_Elijah,_Gideon.jpg",
+   "file": "Kirillo-Belozersky iconostasis 03. Micah, Elijah, Gideon.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=85"
+  }
+ },
+ {
+  "id": "prophets-david-kirillov",
+  "kind": "saint",
+  "title": "The Prophets Daniel, David and Solomon (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Prophet and King David",
+  "subjects": [
+   "Prophet Daniel",
+   "Prophet David",
+   "Solomon"
+  ],
+  "days": [
+   {
+    "d": "12-26",
+    "n": "Holy and Righteous David the King"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Daniel stands between the two crowned kings, David the psalmist and Solomon, builder of the Temple.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/prophets-david-kirillov.jpg",
+  "thumb": "assets/icons/prophets-david-kirillov-thumb.jpg",
+  "w": 1200,
+  "h": 454,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_04._Daniel,_David,_Solomon.jpg",
+   "file": "Kirillo-Belozersky iconostasis 04. Daniel, David, Solomon.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=85"
+  }
+ },
+ {
+  "id": "prophets-isaiah-kirillov",
+  "kind": "saint",
+  "title": "The Prophets Ezekiel, Isaiah and Jacob (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Prophet Isaiah",
+  "subjects": [
+   "Prophet Ezekiel",
+   "Prophet Isaiah",
+   "Jacob"
+  ],
+  "days": [
+   {
+    "d": "05-09"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Ezekiel, Isaiah, who foretold that a virgin would conceive, and the patriarch Jacob, who saw the ladder to heaven.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/prophets-isaiah-kirillov.jpg",
+  "thumb": "assets/icons/prophets-isaiah-kirillov-thumb.jpg",
+  "w": 1200,
+  "h": 466,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_05._Ezekiel,_Isaiah,_Jacob.jpg",
+   "file": "Kirillo-Belozersky iconostasis 05. Ezekiel, Isaiah, Jacob.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=85"
+  }
+ },
+ {
+  "id": "prophets-amos-kirillov",
+  "kind": "saint",
+  "title": "The Prophets Hosea, Amos and Zephaniah (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Prophet Amos",
+  "subjects": [
+   "Prophet Hosea",
+   "Prophet Amos",
+   "Prophet Zephaniah"
+  ],
+  "days": [
+   {
+    "d": "06-15"
+   },
+   {
+    "d": "10-17",
+    "n": "Holy Prophet Hosea"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Hosea, Amos the herdsman of Tekoa, and Zephaniah, three of the twelve minor prophets.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/prophets-amos-kirillov.jpg",
+  "thumb": "assets/icons/prophets-amos-kirillov-thumb.jpg",
+  "w": 1200,
+  "h": 471,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_06._Hosea,_Amos,_Zephaniah.jpg",
+   "file": "Kirillo-Belozersky iconostasis 06. Hosea, Amos, Zephaniah.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=85"
+  }
+ },
+ {
+  "id": "prophets-malachi-kirillov",
+  "kind": "saint",
+  "title": "The Prophets Malachi and Nahum (Kirillov, 1497)",
+  "alt": "",
+  "cardName": "Holy Prophet Malachi",
+  "subjects": [
+   "Prophet Malachi",
+   "Prophet Nahum"
+  ],
+  "days": [
+   {
+    "d": "01-03"
+   }
+  ],
+  "month": null,
+  "date": "1497",
+  "year": 1497,
+  "school": "Kirillov (Rostov or Novgorod masters)",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Malachi, the last of the prophets, who foretold the messenger sent before the Lord, and Nahum.\n\nIt comes from the iconostasis of the Dormition Cathedral of the Kirillo-Belozersky Monastery, painted in 1497, one of the oldest Russian iconostases to survive. Its panels are now divided between the monastery museum and museums in St Petersburg and Moscow.",
+  "image": "assets/icons/prophets-malachi-kirillov.jpg",
+  "thumb": "assets/icons/prophets-malachi-kirillov-thumb.jpg",
+  "w": 1200,
+  "h": 624,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Kirillo-Belozersky_iconostasis_08._Malachi,_Naum.jpg",
+   "file": "Kirillo-Belozersky iconostasis 08. Malachi, Naum.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "https://www.icon-art.info/group.php?lng=ru&amp;grp_id=85"
+  }
+ },
+ {
+  "id": "george-mytilene-tsak",
+  "kind": "saint",
+  "title": "St George of Mytilene (from a menaion icon)",
+  "alt": "",
+  "cardName": "St George of Mytilene",
+  "subjects": [
+   "St George of Mytilene"
+  ],
+  "days": [
+   {
+    "d": "04-07"
+   }
+  ],
+  "month": null,
+  "date": "First quarter of the 17th century",
+  "year": 1615,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Church Archaeological Cabinet, Moscow Theological Academy",
+   "lat": 56.3105,
+   "lng": 38.131,
+   "city": "Sergiev Posad"
+  },
+  "medium": "Tempera on wood (detail)",
+  "text": "George, bishop of Mytilene on Lesbos, was exiled for defending the holy icons and died in exile around 816.\n\nThis is a detail of a menaion icon of the first quarter of the seventeenth century, from central Russia, which shows all the saints of one month in rows. The set is kept by the Church Archaeological Cabinet of the Moscow Theological Academy.",
+  "image": "assets/icons/george-mytilene-tsak.jpg",
+  "thumb": "assets/icons/george-mytilene-tsak-thumb.jpg",
+  "w": 485,
+  "h": 863,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Menaion_icon_(17_c.,_TsAK)_-_April_-_01_George_of_Mytilene.jpg",
+   "file": "Menaion icon (17 c., TsAK) - April - 01 George of Mytilene.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "crop from File:Menaion icon (17 c., TsAK) - April.jpg [1] http://christianmuseum.ru/c/kollektsiya/ikonopis/pozdnee-srednevekove-xvi-v/990/"
+  }
+ },
+ {
+  "id": "eupsychius-tsak",
+  "kind": "saint",
+  "title": "The Martyr Eupsychius (from a menaion icon)",
+  "alt": "",
+  "cardName": "Holy Martyr Eupsychius",
+  "subjects": [
+   "St Eupsychius"
+  ],
+  "days": [
+   {
+    "d": "04-09"
+   }
+  ],
+  "month": null,
+  "date": "First quarter of the 17th century",
+  "year": 1615,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Church Archaeological Cabinet, Moscow Theological Academy",
+   "lat": 56.3105,
+   "lng": 38.131,
+   "city": "Sergiev Posad"
+  },
+  "medium": "Tempera on wood (detail)",
+  "text": "Eupsychius of Caesarea in Cappadocia helped destroy a pagan temple there and was martyred under Julian the Apostate in 362.\n\nThis is a detail of a menaion icon of the first quarter of the seventeenth century, from central Russia, which shows all the saints of one month in rows. The set is kept by the Church Archaeological Cabinet of the Moscow Theological Academy.",
+  "image": "assets/icons/eupsychius-tsak.jpg",
+  "thumb": "assets/icons/eupsychius-tsak-thumb.jpg",
+  "w": 388,
+  "h": 815,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Menaion_icon_(17_c.,_TsAK)_-_April_-_13_Eupsychius_of_Caesaria.jpg",
+   "file": "Menaion icon (17 c., TsAK) - April - 13 Eupsychius of Caesaria.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "crop from File:Menaion icon (17 c., TsAK) - April.jpg [1] http://christianmuseum.ru/c/kollektsiya/ikonopis/pozdnee-srednevekove-xvi-v/990/"
+  }
+ },
+ {
+  "id": "aristarchus-tsak",
+  "kind": "saint",
+  "title": "The Apostles Aristarchus, Pudens and Trophimus (from a menaion icon)",
+  "alt": "",
+  "cardName": "Apostles Aristarchus, Pudens and Trophimus",
+  "subjects": [
+   "St Aristarchus",
+   "St Pudens",
+   "St Trophimus"
+  ],
+  "days": [
+   {
+    "d": "04-15"
+   }
+  ],
+  "month": null,
+  "date": "First quarter of the 17th century",
+  "year": 1615,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Church Archaeological Cabinet, Moscow Theological Academy",
+   "lat": 56.3105,
+   "lng": 38.131,
+   "city": "Sergiev Posad"
+  },
+  "medium": "Tempera on wood (detail)",
+  "text": "Three companions of St Paul named in his letters. Tradition says all three were beheaded at Rome under Nero.\n\nThis is a detail of a menaion icon of the first quarter of the seventeenth century, from central Russia, which shows all the saints of one month in rows. The set is kept by the Church Archaeological Cabinet of the Moscow Theological Academy.",
+  "image": "assets/icons/aristarchus-tsak.jpg",
+  "thumb": "assets/icons/aristarchus-tsak-thumb.jpg",
+  "w": 399,
+  "h": 829,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Menaion_icon_(17_c.,_TsAK)_-_April_-_23_Aristarchus,_Pudens,_and_Trophimus.jpg",
+   "file": "Menaion icon (17 c., TsAK) - April - 23 Aristarchus, Pudens, and Trophimus.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "crop from File:Menaion icon (17 c., TsAK) - April.jpg [1] http://christianmuseum.ru/c/kollektsiya/ikonopis/pozdnee-srednevekove-xvi-v/990/"
+  }
+ },
+ {
+  "id": "eusebius-samosata-tsak",
+  "kind": "saint",
+  "title": "The Hieromartyr Eusebius of Samosata (from a menaion icon)",
+  "alt": "",
+  "cardName": "Hieromartyr Eusebius of Samosata",
+  "subjects": [
+   "St Eusebius of Samosata"
+  ],
+  "days": [
+   {
+    "d": "06-22"
+   }
+  ],
+  "month": null,
+  "date": "First quarter of the 17th century",
+  "year": 1615,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Church Archaeological Cabinet, Moscow Theological Academy",
+   "lat": 56.3105,
+   "lng": 38.131,
+   "city": "Sergiev Posad"
+  },
+  "medium": "Tempera on wood (detail)",
+  "text": "Eusebius, bishop of Samosata, defended the faith of Nicaea, helped make Basil the Great a bishop, and was killed in 380 by an Arian woman who threw a roof tile at his head.\n\nThis is a detail of a menaion icon of the first quarter of the seventeenth century, from central Russia, which shows all the saints of one month in rows. The set is kept by the Church Archaeological Cabinet of the Moscow Theological Academy.",
+  "image": "assets/icons/eusebius-samosata-tsak.jpg",
+  "thumb": "assets/icons/eusebius-samosata-tsak-thumb.jpg",
+  "w": 336,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Menaion_icon_(17_c.,_TsAK)_-_June_-_35_Eusebius_of_Samosata.jpg",
+   "file": "Menaion icon (17 c., TsAK) - June - 35 Eusebius of Samosata.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "File:Menaion icon (17 c., TsAK) - June.jpg"
+  }
+ },
+ {
+  "id": "theodore-edessa-tsak",
+  "kind": "saint",
+  "title": "St Theodore of Edessa (from a menaion icon)",
+  "alt": "",
+  "cardName": "St Theodore of Edessa",
+  "subjects": [
+   "St Theodore of Edessa"
+  ],
+  "days": [
+   {
+    "d": "07-09",
+    "n": "St Theodore, Bishop of Edessa"
+   }
+  ],
+  "month": null,
+  "date": "First quarter of the 17th century",
+  "year": 1615,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Church Archaeological Cabinet, Moscow Theological Academy",
+   "lat": 56.3105,
+   "lng": 38.131,
+   "city": "Sergiev Posad"
+  },
+  "medium": "Tempera on wood (detail)",
+  "text": "Theodore was a monk of St Sabbas' monastery who became bishop of Edessa in the ninth century.\n\nThis is a detail of a menaion icon of the first quarter of the seventeenth century, from central Russia, which shows all the saints of one month in rows. The set is kept by the Church Archaeological Cabinet of the Moscow Theological Academy.",
+  "image": "assets/icons/theodore-edessa-tsak.jpg",
+  "thumb": "assets/icons/theodore-edessa-tsak-thumb.jpg",
+  "w": 288,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Menaion_icon_(17_c.,_TsAK)_-_July_-_13_-_Theodore_of_Edessa.jpg",
+   "file": "Menaion icon (17 c., TsAK) - July - 13 - Theodore of Edessa.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "crop from File:Menaion icon (17 c., TsAK) - July.jpg",
+   "credit": "http://pravicon.com/images/icons/10/10635.jpg"
+  }
+ },
+ {
+  "id": "thomas-malea-tsak",
+  "kind": "saint",
+  "title": "St Thomas of Mount Maleon (from a menaion icon)",
+  "alt": "",
+  "cardName": "St Thomas of Mount Maleon",
+  "subjects": [
+   "St Thomas of Maleon"
+  ],
+  "days": [
+   {
+    "d": "07-07"
+   }
+  ],
+  "month": null,
+  "date": "First quarter of the 17th century",
+  "year": 1615,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Church Archaeological Cabinet, Moscow Theological Academy",
+   "lat": 56.3105,
+   "lng": 38.131,
+   "city": "Sergiev Posad"
+  },
+  "medium": "Tempera on wood (detail)",
+  "text": "Thomas was a military commander who became a monk on Mount Maleon in the Peloponnese, where he was known as a healer.\n\nThis is a detail of a menaion icon of the first quarter of the seventeenth century, from central Russia, which shows all the saints of one month in rows. The set is kept by the Church Archaeological Cabinet of the Moscow Theological Academy.",
+  "image": "assets/icons/thomas-malea-tsak.jpg",
+  "thumb": "assets/icons/thomas-malea-tsak-thumb.jpg",
+  "w": 532,
+  "h": 777,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Menaion_icon_(17_c.,_TsAK)_-_July_-_09_-_Thomas_Malea2.jpg",
+   "file": "Menaion icon (17 c., TsAK) - July - 09 - Thomas Malea2.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "crop from File:Menaion icon (17 c., TsAK) - July.jpg"
+  }
+ },
+ {
+  "id": "pantocrator-mainland-benaki",
+  "kind": "christ",
+  "title": "Christ Pantocrator (mainland Greece)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1540–1560",
+  "year": 1550,
+  "school": "Mainland Greek workshop",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "A grave sixteenth-century Christ from a workshop of mainland Greece, holding the Gospel and blessing.\n\nThe icon is in the Benaki Museum.",
+  "image": "assets/icons/pantocrator-mainland-benaki.jpg",
+  "thumb": "assets/icons/pantocrator-mainland-benaki-thumb.jpg",
+  "w": 801,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Mainland_Greek_workshop_-_Christ_Pantokrator_-_Google_Art_Project.jpg",
+   "file": "Mainland Greek workshop - Christ Pantokrator - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "mainland Greek workshop Details on Google Art Project",
+   "credit": "AAELBxmyuAMOQg at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "annunciation-russian-pp",
+  "kind": "feast",
+  "title": "The Annunciation (Petit Palais)",
+  "alt": "",
+  "cardName": "The Annunciation of the Theotokos",
+  "subjects": [
+   "Annunciation",
+   "Archangel Gabriel",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "03-25"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood",
+  "text": "Gabriel brings the news and the Mother of God receives it. A sixteenth-century Russian icon of the feast.\n\nIt is in the Petit Palais in Paris.",
+  "image": "assets/icons/annunciation-russian-pp.jpg",
+  "thumb": "assets/icons/annunciation-russian-pp-thumb.jpg",
+  "w": 1017,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_(%C3%89cole_russe)_Russie_-_L%27Annonciation_-_PPP4903_-_Petit_Palais.jpg",
+   "file": "École de (École russe) Russie - L'Annonciation - PPP4903 - Petit Palais.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of Russia",
+   "credit": "Paris Musées"
+  }
+ },
+ {
+  "id": "tenderness-thessaloniki",
+  "kind": "theotokos",
+  "title": "The Mother of God of Tenderness (Thessaloniki)",
+  "alt": "",
+  "cardName": "The Mother of God of Tenderness",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Museum of Byzantine Culture",
+   "lat": 40.6237,
+   "lng": 22.9545,
+   "city": "Thessaloniki"
+  },
+  "medium": "Tempera on wood",
+  "text": "The Child presses his cheek to his mother's, in the tender Eleousa pose.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "image": "assets/icons/tenderness-thessaloniki.jpg",
+  "thumb": "assets/icons/tenderness-thessaloniki-thumb.jpg",
+  "w": 845,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Virgin_of_tenderness.tif",
+   "file": "The Virgin of tenderness.tif",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "ezekiel-kashin",
+  "kind": "saint",
+  "title": "The Prophet Ezekiel (Kashin)",
+  "alt": "",
+  "cardName": "Holy Prophet Ezekiel",
+  "subjects": [
+   "Prophet Ezekiel"
+  ],
+  "days": [
+   {
+    "d": "07-21"
+   }
+  ],
+  "month": null,
+  "date": "Turn of the 15th–16th century",
+  "year": 1500,
+  "school": "Tver lands",
+  "artist": "",
+  "origin": {
+   "name": "Kashin",
+   "lat": 57.36,
+   "lng": 37.61
+  },
+  "originShort": "Kashin",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Ezekiel holds his scroll in the prophets' tier of an iconostasis from Kashin. He saw the gate through which only the Lord would pass, a figure of the Virgin.\n\nThe icon is in the Russian Museum.",
+  "image": "assets/icons/ezekiel-kashin.jpg",
+  "thumb": "assets/icons/ezekiel-kashin-thumb.jpg",
+  "w": 848,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Prophet_Ezekiel,_Kashin.jpg",
+   "file": "The Prophet Ezekiel, Kashin.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Alpatov, M. (1978) Early russian icon painting , Moscow : Moscow Iskusstvo, pp. 306 OCLC : 806991446 ."
+  }
+ },
+ {
+  "id": "forerunner-vita-arkhangelsk",
+  "kind": "saint",
+  "title": "St John the Forerunner, with Scenes from His Life",
+  "alt": "",
+  "cardName": "St John the Baptist",
+  "subjects": [
+   "St John the Baptist"
+  ],
+  "days": [
+   {
+    "d": "01-07"
+   },
+   {
+    "d": "06-24"
+   }
+  ],
+  "month": null,
+  "date": "First half of the 16th century",
+  "year": 1530,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Arkhangelsk Regional Museum of Fine Arts",
+   "lat": 64.5393,
+   "lng": 40.5156,
+   "city": "Arkhangelsk"
+  },
+  "medium": "Tempera on wood",
+  "text": "John stands in the wilderness, and the scenes around him tell the story of his life and death.\n\nThe icon is in the Arkhangelsk Regional Museum of Fine Arts.",
+  "image": "assets/icons/forerunner-vita-arkhangelsk.jpg",
+  "thumb": "assets/icons/forerunner-vita-arkhangelsk-thumb.jpg",
+  "w": 871,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St._John_the_Forerunner_with_his_Life,_Arkhangelsk_Regional_Museum_of_Fine_Arts.JPG",
+   "file": "St. John the Forerunner with his Life, Arkhangelsk Regional Museum of Fine Arts.JPG",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "photo by Wmpearl Anonymous Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "paraskevi-thessaloniki-16c",
+  "kind": "saint",
+  "title": "St Paraskevi (Thessaloniki, 16th century)",
+  "alt": "",
+  "cardName": "Venerable Martyr Paraskevi",
+  "subjects": [
+   "St Paraskeva"
+  ],
+  "days": [
+   {
+    "d": "07-26",
+    "n": "Venerable Martyr Paraskevi of Rome"
+   }
+  ],
+  "month": null,
+  "date": "1550–1600",
+  "year": 1575,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Museum of Byzantine Culture",
+   "lat": 40.6237,
+   "lng": 22.9545,
+   "city": "Thessaloniki"
+  },
+  "medium": "Tempera on wood",
+  "text": "Paraskevi of Rome, holding a cross, in a sixteenth-century Greek icon. She is prayed to for the healing of eyes.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "image": "assets/icons/paraskevi-thessaloniki-16c.jpg",
+  "thumb": "assets/icons/paraskevi-thessaloniki-16c-thumb.jpg",
+  "w": 875,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St_Paraskevi.tif",
+   "file": "St Paraskevi.tif",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "george-vita-pp",
+  "kind": "saint",
+  "title": "St George, with Scenes from His Life (Petit Palais)",
+  "alt": "",
+  "cardName": "Holy Great Martyr George",
+  "subjects": [
+   "St George"
+  ],
+  "days": [
+   {
+    "d": "04-23"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood",
+  "text": "George slays the dragon in the centre, and the border tells of his trials and martyrdom.\n\nThe icon is in the Petit Palais in Paris.",
+  "image": "assets/icons/george-vita-pp.jpg",
+  "thumb": "assets/icons/george-vita-pp-thumb.jpg",
+  "w": 991,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Novgorod_(%C3%89cole_de_la_Russie_du_Nord)_-_Saint_Georges_et_sc%C3%A8nes_de_sa_vie_-_PPP4907_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+   "file": "Novgorod (École de la Russie du Nord) - Saint Georges et scènes de sa vie - PPP4907 - Musée des Beaux-Arts de la ville de Paris.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of Veliky Novgorod",
+   "credit": "Paris Musées"
+  }
+ },
+ {
+  "id": "descent-hades-bathas",
+  "kind": "feast",
+  "title": "The Descent into Hades (Bathas)",
+  "alt": "",
+  "cardName": "Pascha: the Resurrection of Christ",
+  "subjects": [
+   "Resurrection",
+   "Jesus Christ",
+   "Adam",
+   "Eve"
+  ],
+  "days": [
+   {
+    "d": "pascha+0"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1560,
+  "school": "Cretan school",
+  "artist": "Markos Bathas",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Hellenic Institute of Byzantine and Post-Byzantine Studies",
+   "lat": 45.4363,
+   "lng": 12.3424,
+   "city": "Venice"
+  },
+  "medium": "Tempera on wood, 42.5 × 48.5 cm",
+  "text": "Christ breaks the gates of Hades and draws Adam and Eve from their tombs. Markos Bathas, a Cretan painter who worked in Venice, painted it.\n\nThe icon is in the Hellenic Institute in Venice.",
+  "image": "assets/icons/descent-hades-bathas.jpg",
+  "thumb": "assets/icons/descent-hades-bathas-thumb.jpg",
+  "w": 1007,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Harrowing_of_hell_by_M.Bathas_(16th_c.).jpg",
+   "file": "Harrowing of hell by M.Bathas (16th c.).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Markos Bathas",
+   "credit": "Official Website"
+  }
+ },
+ {
+  "id": "elijah-rusmus-16c",
+  "kind": "saint",
+  "title": "The Prophet Elijah (Russian Museum)",
+  "alt": "",
+  "cardName": "Holy Glorious Prophet Elijah",
+  "subjects": [
+   "Prophet Elijah"
+  ],
+  "days": [
+   {
+    "d": "07-20"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Elijah, the fiery prophet, is one of the most loved saints of the Russian countryside, prayed to for rain and against lightning.\n\nThe icon is in the Russian Museum.",
+  "image": "assets/icons/elijah-rusmus-16c.jpg",
+  "thumb": "assets/icons/elijah-rusmus-16c-thumb.jpg",
+  "w": 961,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Elijah_icon.jpg",
+   "file": "Elijah icon.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Alpatov, M. (1978) Early russian icon painting , Moscow : Moscow Iskusstvo, pp. 315 OCLC : 806991446 ."
+  }
+ },
+ {
+  "id": "dormition-macedonian-pp",
+  "kind": "feast",
+  "title": "The Dormition of the Theotokos (Macedonian)",
+  "alt": "",
+  "cardName": "The Dormition of the Theotokos",
+  "subjects": [
+   "Dormition",
+   "Theotokos",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "08-15"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Macedonian",
+  "artist": "",
+  "origin": {
+   "name": "Macedonia",
+   "lat": 41.0,
+   "lng": 22.0
+  },
+  "originShort": "Macedonia",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood",
+  "text": "The apostles gather at the bier of the Mother of God, and Christ receives her soul.\n\nThe icon is in the Petit Palais in Paris.",
+  "image": "assets/icons/dormition-macedonian-pp.jpg",
+  "thumb": "assets/icons/dormition-macedonian-pp-thumb.jpg",
+  "w": 890,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Ecole_mac%C3%A9donienne_-_La_Dormition_de_la_Vierge_-_PPP4867_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+   "file": "Ecole macédonienne - La Dormition de la Vierge - PPP4867 - Musée des Beaux-Arts de la ville de Paris.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of North Macedonia",
+   "credit": "Paris Musées"
+  }
+ },
+ {
+  "id": "theotokos-vologda-saints",
+  "kind": "theotokos",
+  "title": "The Mother of God Praying for the People (Vologda)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1525–1550",
+  "year": 1540,
+  "school": "Vologda",
+  "artist": "",
+  "origin": {
+   "name": "Vologda",
+   "lat": 59.2181,
+   "lng": 39.8886
+  },
+  "originShort": "Vologda",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "The Mother of God stands in prayer, interceding for the people and the saints of Vologda gathered below her. The icon came from the church of the Vladimir icon in Vologda.",
+  "image": "assets/icons/theotokos-vologda-saints.jpg",
+  "thumb": "assets/icons/theotokos-vologda-saints-thumb.jpg",
+  "w": 955,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Theotokos_praying_for_people_Vologda.jpg",
+   "file": "Theotokos praying for people Vologda.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "VGIAKhMZ"
+  }
+ },
+ {
+  "id": "michael-thessaloniki",
+  "kind": "angel",
+  "title": "The Archangel Michael (Thessaloniki)",
+  "alt": "",
+  "cardName": "Synaxis of the Archangel Michael",
+  "subjects": [
+   "Archangel Michael"
+  ],
+  "days": [
+   {
+    "d": "11-08"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Museum of Byzantine Culture",
+   "lat": 40.6237,
+   "lng": 22.9545,
+   "city": "Thessaloniki"
+  },
+  "medium": "Tempera on wood",
+  "text": "Michael holds the staff and the orb, the guardian of heaven.\n\nThe icon is in the Museum of Byzantine Culture in Thessaloniki.",
+  "image": "assets/icons/michael-thessaloniki.jpg",
+  "thumb": "assets/icons/michael-thessaloniki-thumb.jpg",
+  "w": 1104,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Archangel_Michael_Icon.tif",
+   "file": "Archangel Michael Icon.tif",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "lazarus-oslo",
+  "kind": "feast",
+  "title": "The Raising of Lazarus (Oslo)",
+  "alt": "",
+  "cardName": "Lazarus Saturday",
+  "subjects": [
+   "Raising of Lazarus",
+   "Jesus Christ",
+   "St Lazarus"
+  ],
+  "days": [
+   {
+    "d": "pascha-8"
+   }
+  ],
+  "month": null,
+  "date": "1560",
+  "year": 1560,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "Nasjonalmuseet (National Museum of Art)",
+   "lat": 59.9116,
+   "lng": 10.73,
+   "city": "Oslo"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ calls Lazarus out of the tomb, and his sisters kneel at Christ's feet.\n\nThe icon is in the National Museum in Oslo.",
+  "image": "assets/icons/lazarus-oslo.jpg",
+  "thumb": "assets/icons/lazarus-oslo-thumb.jpg",
+  "w": 898,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Novgorod_School_-_The_Raising_of_Lazarus_-_NG.M.02420_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+   "file": "Novgorod School - The Raising of Lazarus - NG.M.02420 - National Museum of Art, Architecture and Design.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of Novgorod school",
+   "credit": "National Museum of Art, Architecture and Design"
+  }
+ },
+ {
+  "id": "elijah-vologda-vita",
+  "kind": "saint",
+  "title": "The Prophet Elijah in the Desert, with Scenes from His Life",
+  "alt": "",
+  "cardName": "Holy Glorious Prophet Elijah",
+  "subjects": [
+   "Prophet Elijah"
+  ],
+  "days": [
+   {
+    "d": "07-20"
+   }
+  ],
+  "month": null,
+  "date": "Early 16th century",
+  "year": 1510,
+  "school": "Vologda",
+  "artist": "",
+  "origin": {
+   "name": "Vologda",
+   "lat": 59.2181,
+   "lng": 39.8886
+  },
+  "originShort": "Vologda",
+  "home": {
+   "name": "Vologda Museum-Reserve",
+   "lat": 59.2239,
+   "lng": 39.8843,
+   "city": "Vologda"
+  },
+  "medium": "Tempera on wood",
+  "text": "Elijah sits in the wilderness in a shaggy fur cloak, and scenes of his life fill the border. The icon came from the church of Elijah in Vologda.\n\nIt is in the Vologda museum.",
+  "image": "assets/icons/elijah-vologda-vita.jpg",
+  "thumb": "assets/icons/elijah-vologda-vita-thumb.jpg",
+  "w": 1001,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St._Elias_icon_Ilyinskaya_church_in_Vologda.jpg",
+   "file": "St. Elias icon Ilyinskaya church in Vologda.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Неизв. / Unknown",
+   "credit": "VGIAKhMZ"
+  }
+ },
+ {
+  "id": "nativity-theotokos-pp",
+  "kind": "feast",
+  "title": "The Nativity of the Theotokos (Petit Palais)",
+  "alt": "",
+  "cardName": "The Nativity of the Theotokos",
+  "subjects": [
+   "Nativity of the Theotokos",
+   "St Anna",
+   "St Joachim"
+  ],
+  "days": [
+   {
+    "d": "09-08"
+   }
+  ],
+  "month": null,
+  "date": "1575–1600",
+  "year": 1590,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood",
+  "text": "Anna rests on her bed after the birth, and midwives bathe the infant Mary.\n\nThe icon is in the Petit Palais in Paris.",
+  "image": "assets/icons/nativity-theotokos-pp.jpg",
+  "thumb": "assets/icons/nativity-theotokos-pp-thumb.jpg",
+  "w": 893,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_la_(%C3%89cole_de_la_Russie_du_Nord)_Russie_du_Nord_-_Nativit%C3%A9_de_la_M%C3%A8re_de_Dieu_-_PPP4910_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+   "file": "École de la (École de la Russie du Nord) Russie du Nord - Nativité de la Mère de Dieu - PPP4910 - Musée des Beaux-Arts de la ville de Paris.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of Russia",
+   "credit": "Paris Musées"
+  }
+ },
+ {
+  "id": "dormition-glushitsky",
+  "kind": "feast",
+  "title": "The Dormition (Dionisius of Glushitsa)",
+  "alt": "",
+  "cardName": "The Dormition of the Theotokos",
+  "subjects": [
+   "Dormition",
+   "Theotokos",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "08-15"
+   }
+  ],
+  "month": null,
+  "date": "15th century",
+  "year": 1430,
+  "school": "Vologda",
+  "artist": "Dionisius of Glushitsa (attributed)",
+  "origin": {
+   "name": "Vologda",
+   "lat": 59.2181,
+   "lng": 39.8886
+  },
+  "originShort": "Vologda",
+  "home": {
+   "name": "Vologda Museum-Reserve",
+   "lat": 59.2239,
+   "lng": 39.8843,
+   "city": "Vologda"
+  },
+  "medium": "Tempera on wood",
+  "text": "A Dormition attributed to St Dionisius of Glushitsa, a monk-painter of the Vologda forests in the fifteenth century.\n\nThe icon is in the Vologda museum.",
+  "image": "assets/icons/dormition-glushitsky.jpg",
+  "thumb": "assets/icons/dormition-glushitsky-thumb.jpg",
+  "w": 800,
+  "h": 1089,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%B8%D0%BE%D0%BD%D0%B8%D1%81%D0%B8%D0%B9_%D0%93%D0%BB%D1%83%D1%89%D0%B8%D1%86%D0%BA%D0%B8%D0%B9._%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D0%B8%D0%B5_%D0%91%D0%BE%D0%B3%D0%BE%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8._%D0%92%D0%BE%D0%BB%D0%BE%D0%B3%D0%BE%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9-%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA.jpg",
+   "file": "Дионисий Глущицкий. Успение Богоматери. Вологодский музей-заповедник.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Dionisius of Gluszyca",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "annunciation-cretan-recklinghausen",
+  "kind": "feast",
+  "title": "The Annunciation (Cretan, Recklinghausen)",
+  "alt": "",
+  "cardName": "The Annunciation of the Theotokos",
+  "subjects": [
+   "Annunciation",
+   "Archangel Gabriel",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "03-25"
+   }
+  ],
+  "month": null,
+  "date": "1450–1500",
+  "year": 1475,
+  "school": "Cretan school",
+  "artist": "",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Ikonen-Museum Recklinghausen",
+   "lat": 51.6141,
+   "lng": 7.1979,
+   "city": "Recklinghausen"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "Gabriel strides in and the Mother of God, holding her yarn, turns to him. A Cretan icon of the late fifteenth century.\n\nIt is in the Ikonen-Museum in Recklinghausen.",
+  "image": "assets/icons/annunciation-cretan-recklinghausen.jpg",
+  "thumb": "assets/icons/annunciation-cretan-recklinghausen-thumb.jpg",
+  "w": 860,
+  "h": 1041,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Unknown_painter_-_The_Annunciation_-_WGA23482.jpg",
+   "file": "Unknown painter - The Annunciation - WGA23482.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unidentified painter",
+   "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"m/master/zunk_y/04icon\""
+  }
+ },
+ {
+  "id": "nicholas-vita-recklinghausen",
+  "kind": "saint",
+  "title": "St Nicholas, with Scenes from His Life (Recklinghausen)",
+  "alt": "",
+  "cardName": "St Nicholas the Wonderworker",
+  "subjects": [
+   "St Nicholas"
+  ],
+  "days": [
+   {
+    "d": "12-06"
+   }
+  ],
+  "month": null,
+  "date": "1490s",
+  "year": 1495,
+  "school": "Northern Russia",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Ikonen-Museum Recklinghausen",
+   "lat": 51.6141,
+   "lng": 7.1979,
+   "city": "Recklinghausen"
+  },
+  "medium": "Tempera on wood",
+  "text": "Nicholas stands full length, blessing, with the scenes of his life around him. It was painted in northern Russia at the end of the fifteenth century.\n\nThe icon is in the Ikonen-Museum in Recklinghausen.",
+  "image": "assets/icons/nicholas-vita-recklinghausen.jpg",
+  "thumb": "assets/icons/nicholas-vita-recklinghausen-thumb.jpg",
+  "w": 767,
+  "h": 1024,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Unknown_painter_-_St_Nicholas_with_Scenes_from_his_Life_-_WGA23496.jpg",
+   "file": "Unknown painter - St Nicholas with Scenes from his Life - WGA23496.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown Icon Painter, Russian (late 15th century in northern Russia)",
+   "credit": "Web Gallery of Art : Image Info about artwork wga QS:P11807,\"/m/master/zunk_x/05icon\""
+  }
+ },
+ {
+  "id": "christ-enthroned-timken",
+  "kind": "christ",
+  "title": "Christ Enthroned (Timken)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "15th century",
+  "year": 1450,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "Timken Museum of Art",
+   "lat": 32.7317,
+   "lng": -117.1499,
+   "city": "San Diego"
+  },
+  "medium": "Tempera on wood",
+  "text": "Christ sits enthroned against a green ground, holding the Gospel and blessing.\n\nThe icon is in the Timken Museum of Art in San Diego.",
+  "image": "assets/icons/christ-enthroned-timken.jpg",
+  "thumb": "assets/icons/christ-enthroned-timken-thumb.jpg",
+  "w": 749,
+  "h": 1024,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Escola_de_Novgorod_-_O_Salvador_entronado.jpg",
+   "file": "Escola de Novgorod - O Salvador entronado.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "menaion-december-1569",
+  "kind": "menaion",
+  "title": "Menaion Icon for December (1569)",
+  "alt": "",
+  "cardName": "All the Saints of December",
+  "subjects": [
+   "Menaion",
+   "All Saints"
+  ],
+  "days": [],
+  "month": "12",
+  "date": "1569",
+  "year": 1569,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "The saints of December in rows, day by day, from the prophet Nahum on the first to St Melania on the last, with the Nativity of Christ among them. It is dated 1569.\n\nThe icon is in the Russian Museum.",
+  "image": "assets/icons/menaion-december-1569.jpg",
+  "thumb": "assets/icons/menaion-december-1569-thumb.jpg",
+  "w": 959,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Icon_of_the_Minea_for_December._Russian_Museum._1569.jpg",
+   "file": "Icon of the Minea for December. Russian Museum. 1569.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://www.icon-art.info/masterpiece.php?mst_id=4350"
+  }
+ },
+ {
+  "id": "praises-theotokos-tablet",
+  "kind": "theotokos",
+  "title": "The Praises of the Mother of God (tablet icon)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Second half of the 15th century",
+  "year": 1475,
+  "school": "Novgorod",
+  "artist": "",
+  "origin": {
+   "name": "Novgorod",
+   "lat": 58.5215,
+   "lng": 31.2755
+  },
+  "originShort": "Novgorod",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on gesso on cloth, 25 × 19 cm",
+  "text": "The Mother of God is enthroned, and around her the prophets hold the images by which they foretold her: the ladder, the fleece, the burning bush. It is one of the 'tablet' icons of St Sophia in Novgorod, painted on both sides.\n\nIt is in the Tretyakov Gallery.",
+  "image": "assets/icons/praises-theotokos-tablet.jpg",
+  "thumb": "assets/icons/praises-theotokos-tablet-thumb.jpg",
+  "w": 800,
+  "h": 993,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Praises_of_the_Theotokos.jpg",
+   "file": "Praises of the Theotokos.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "passion-tzanfournaris",
+  "kind": "theotokos",
+  "title": "The Virgin of the Passion (Tzanfournaris)",
+  "alt": "",
+  "cardName": "The Mother of God of the Passion",
+  "subjects": [
+   "Theotokos",
+   "Holy Angels"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1585–1630",
+  "year": 1600,
+  "school": "Cretan school",
+  "artist": "Emmanuel Tzanfournaris",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Hellenic Institute of Byzantine and Post-Byzantine Studies",
+   "lat": 45.4363,
+   "lng": 12.3424,
+   "city": "Venice"
+  },
+  "medium": "Tempera on wood, 66.5 × 83.3 cm",
+  "text": "Angels show the Child the instruments of the Passion, and he turns to his mother, resting both hands on hers. Emmanuel Tzanfournaris painted it.\n\nThe icon is in the Hellenic Institute in Venice.",
+  "image": "assets/icons/passion-tzanfournaris.jpg",
+  "thumb": "assets/icons/passion-tzanfournaris-thumb.jpg",
+  "w": 934,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Virgin_of_the_Passion_by_E.Tzanfournaris.jpg",
+   "file": "Virgin of the Passion by E.Tzanfournaris.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Emmanuel Tzanfournaris",
+   "credit": "Source"
+  }
+ },
+ {
+  "id": "hodegetria-jerusalem-belarus",
+  "kind": "theotokos",
+  "title": "The Hodegetria of Jerusalem (Zdzitava)",
+  "alt": "",
+  "cardName": "The Mother of God Hodegetria",
+  "subjects": [
+   "Theotokos",
+   "Theotokos Hodegetria"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Late 16th century",
+  "year": 1590,
+  "school": "Belarusian",
+  "artist": "",
+  "origin": {
+   "name": "Belarus",
+   "lat": 53.7098,
+   "lng": 27.9534
+  },
+  "originShort": "Belarus",
+  "home": {
+   "name": "Museum of Old Belarusian Culture, National Art Museum of Belarus",
+   "lat": 53.897,
+   "lng": 27.5543,
+   "city": "Minsk"
+  },
+  "medium": "Tempera and oil on wood",
+  "text": "A Belarusian Hodegetria of the late sixteenth century, from the church of St Nikita at Zdzitava near Brest.\n\nIt is in the Museum of Old Belarusian Culture in Minsk.",
+  "image": "assets/icons/hodegetria-jerusalem-belarus.jpg",
+  "thumb": "assets/icons/hodegetria-jerusalem-belarus-thumb.jpg",
+  "w": 926,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%B4%D0%B7%D1%96%D0%B3%D1%96%D1%82%D1%80%D1%8B%D1%8F_%D0%86%D0%B5%D1%80%D1%83%D1%81%D0%B0%D0%BB%D1%96%D0%BC%D1%81%D0%BA%D0%B0%D1%8F._%D0%97%D0%B4%D0%B7%D1%96%D1%82%D0%B0%D0%B2%D0%B0.jpg",
+   "file": "Адзігітрыя Іерусалімская. Здзітава.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "-",
+   "credit": "МУЗЕЙ СТАРАЖЫТНАБЕЛАРУСКАЙ КУЛЬТУРЫ А Л Ь Б О М Мінск, УП «Выдавецтва «Беларусь»"
+  }
+ },
+ {
+  "id": "dormition-semigorodnyaya",
+  "kind": "feast",
+  "title": "The Dormition (Semigorodnyaya)",
+  "alt": "",
+  "cardName": "The Dormition of the Theotokos",
+  "subjects": [
+   "Dormition",
+   "Theotokos",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "08-15"
+   }
+  ],
+  "month": null,
+  "date": "15th century",
+  "year": 1430,
+  "school": "Vologda",
+  "artist": "Dionisius of Glushitsa (attributed)",
+  "origin": {
+   "name": "Vologda",
+   "lat": 59.2181,
+   "lng": 39.8886
+  },
+  "originShort": "Vologda",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "The Dormition icon of the Semigorodnaya hermitage near Vologda, attributed to St Dionisius of Glushitsa.",
+  "image": "assets/icons/dormition-semigorodnyaya.jpg",
+  "thumb": "assets/icons/dormition-semigorodnyaya-thumb.jpg",
+  "w": 710,
+  "h": 970,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Dormition_of_the_Theotokos_Semigorodnyaya.jpg",
+   "file": "Dormition of the Theotokos Semigorodnyaya.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Дионисий Глушицкий / Dionysius of Glushitsa",
+   "credit": "http://www.booksite.ru/fulltext/exp/ozi/tsi/ya/13.jpg"
+  }
+ },
+ {
+  "id": "magi-drysviaty",
+  "kind": "feast",
+  "title": "The Adoration of the Magi (Drysviaty)",
+  "alt": "",
+  "cardName": "The Nativity of Christ",
+  "subjects": [
+   "Nativity of Christ",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "12-25"
+   }
+  ],
+  "month": null,
+  "date": "c. 1514",
+  "year": 1514,
+  "school": "Belarusian",
+  "artist": "",
+  "origin": {
+   "name": "Belarus",
+   "lat": 53.7098,
+   "lng": 27.9534
+  },
+  "originShort": "Belarus",
+  "home": {
+   "name": "Museum of Old Belarusian Culture, National Art Museum of Belarus",
+   "lat": 53.897,
+   "lng": 27.5543,
+   "city": "Minsk"
+  },
+  "medium": "Tempera on wood, 175 × 102 cm",
+  "text": "The magi kneel before the Mother of God and the Child, in a tall Belarusian icon of about 1514 from Drysviaty, near Braslaw.\n\nIt is in the Museum of Old Belarusian Culture in Minsk.",
+  "image": "assets/icons/magi-drysviaty.jpg",
+  "thumb": "assets/icons/magi-drysviaty-thumb.jpg",
+  "w": 701,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BA%D0%BB%D0%B0%D0%BD%D0%B5%D0%BD%D0%BD%D0%B5_%D0%B2%D0%B5%D1%88%D1%87%D1%83%D0%BD%D0%BE%D1%9E._%D0%94%D1%80%D1%8B%D1%81%D0%B2%D1%8F%D1%82%D1%8B.jpg",
+   "file": "Пакланенне вешчуноў. Дрысвяты.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "МУЗЕЙ СТАРАЖЫТНАБЕЛАРУСКАЙ КУЛЬТУРЫ А Л Ь Б О М Мінск, УП «Выдавецтва «Беларусь»"
+  }
+ },
+ {
+  "id": "consolation-tzafouris",
+  "kind": "theotokos",
+  "title": "The Madre della Consolazione (Tzafouris)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1480–1501",
+  "year": 1490,
+  "school": "Cretan school",
+  "artist": "Nikolaos Tzafouris",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Paul and Alexandra Canellopoulos Museum",
+   "lat": 37.9731,
+   "lng": 23.7253,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "The Madre della Consolazione, 'Mother of Consolation', was a Cretan type made for Venetian as well as Orthodox buyers: a Byzantine face with a Western, softer tenderness. Nikolaos Tzafouris painted this one.\n\nIt is in the Canellopoulos Museum in Athens.",
+  "image": "assets/icons/consolation-tzafouris.jpg",
+  "thumb": "assets/icons/consolation-tzafouris-thumb.jpg",
+  "w": 713,
+  "h": 945,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Madre_della_Consolazione_Tzafouris.png",
+   "file": "Madre della Consolazione Tzafouris.png",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Nikolaos Tzafouris",
+   "credit": "Website"
+  }
+ },
+ {
+  "id": "beheading-herod-pp",
+  "kind": "feast",
+  "title": "The Beheading of St John and the Feast of Herod",
+  "alt": "",
+  "cardName": "Beheading of St John the Baptist",
+  "subjects": [
+   "Beheading of St John the Baptist",
+   "St John the Baptist"
+  ],
+  "days": [
+   {
+    "d": "08-29"
+   }
+  ],
+  "month": null,
+  "date": "1600–1650",
+  "year": 1625,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood",
+  "text": "Herod feasts while Salome dances, and outside the hall the executioner strikes off John's head.\n\nThe icon is in the Petit Palais in Paris.",
+  "image": "assets/icons/beheading-herod-pp.jpg",
+  "thumb": "assets/icons/beheading-herod-pp-thumb.jpg",
+  "w": 725,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_(%C3%89cole_grecque)_Gr%C3%A8ce_-_La_D%C3%A9collation_de_saint_Jean-Baptiste_et_le_festin_d%27H%C3%A9rode_-_PPP4879_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+   "file": "École de (École grecque) Grèce - La Décollation de saint Jean-Baptiste et le festin d'Hérode - PPP4879 - Musée des Beaux-Arts de la ville de Paris.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of Greece",
+   "credit": "Paris Musées"
+  }
+ },
+ {
+  "id": "daniel-kirillov",
+  "kind": "saint",
+  "title": "The Prophet Daniel (Kirillov)",
+  "alt": "",
+  "cardName": "Holy Prophet Daniel",
+  "subjects": [
+   "Prophet Daniel"
+  ],
+  "days": [
+   {
+    "d": "12-17"
+   }
+  ],
+  "month": null,
+  "date": "Late 16th century",
+  "year": 1590,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Kirillo-Belozersky Monastery",
+   "lat": 59.8584,
+   "lng": 38.377
+  },
+  "originShort": "Kirillo-Belozersky Monastery",
+  "home": {
+   "name": "Kirillo-Belozersky Monastery Museum",
+   "lat": 59.8584,
+   "lng": 38.377,
+   "city": "Kirillov"
+  },
+  "medium": "Tempera on wood",
+  "text": "Daniel holds his scroll in a prophets' tier.\n\nThe icon is in the Kirillo-Belozersky museum.",
+  "image": "assets/icons/daniel-kirillov.jpg",
+  "thumb": "assets/icons/daniel-kirillov-thumb.jpg",
+  "w": 923,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Daniel2_(Kirillo-Belozersk).jpg",
+   "file": "Daniel2 (Kirillo-Belozersk).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "own photo by shakko"
+  }
+ },
+ {
+  "id": "burning-bush-nizhny",
+  "kind": "theotokos",
+  "title": "The Mother of God of the Burning Bush (Nizhny Novgorod)",
+  "alt": "",
+  "cardName": "The Burning Bush Icon of the Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Burning Bush"
+  ],
+  "days": [
+   {
+    "d": "09-04"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Moscow",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Nizhny Novgorod State Art Museum",
+   "lat": 56.3287,
+   "lng": 44.0047,
+   "city": "Nizhny Novgorod"
+  },
+  "medium": "Tempera on wood",
+  "text": "The Mother of God is set within the burning bush that was not consumed. In the corners are the visions of Moses, Isaiah, Jacob and Ezekiel, and the prophets who foretold the Messiah fill the border.\n\nThe icon is in the Nizhny Novgorod State Art Museum.",
+  "image": "assets/icons/burning-bush-nizhny.jpg",
+  "thumb": "assets/icons/burning-bush-nizhny-thumb.jpg",
+  "w": 945,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nizhny_Novgorod_Burning_bush.jpg",
+   "file": "Nizhny Novgorod Burning bush.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "unknown, Moscow school",
+   "credit": "Self-photographed"
+  }
+ },
+ {
+  "id": "shuya-theotokos",
+  "kind": "theotokos",
+  "title": "The Shuya Mother of God",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Pskov",
+  "artist": "",
+  "origin": {
+   "name": "Pskov",
+   "lat": 57.8136,
+   "lng": 28.3496
+  },
+  "originShort": "Pskov",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "A Pskov icon of the Mother of God with saints in the border, later known as the Shuya type.\n\nIt is in the Tretyakov Gallery.",
+  "image": "assets/icons/shuya-theotokos.jpg",
+  "thumb": "assets/icons/shuya-theotokos-thumb.jpg",
+  "w": 1019,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D0%B3%D0%BE%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%8C_%C2%AB%D0%A8%D1%83%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%C2%BB._XVI_%D0%B2.,_%D0%93%D0%A2%D0%93.jpg",
+   "file": "Богоматерь «Шуйская». XVI в., ГТГ.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "яндекс"
+  }
+ },
+ {
+  "id": "magi-permeniates",
+  "kind": "feast",
+  "title": "The Adoration of the Magi (Permeniates)",
+  "alt": "",
+  "cardName": "The Nativity of Christ",
+  "subjects": [
+   "Nativity of Christ",
+   "Theotokos"
+  ],
+  "days": [
+   {
+    "d": "12-25"
+   }
+  ],
+  "month": null,
+  "date": "First half of the 16th century",
+  "year": 1520,
+  "school": "Cretan school (Venice)",
+  "artist": "Ioannis Permeniates (attributed)",
+  "origin": {
+   "name": "Venice",
+   "lat": 45.4408,
+   "lng": 12.3155
+  },
+  "originShort": "Venice",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "The magi bring their gifts, with angels above, in a Venetian-Cretan manner attributed to Ioannis Permeniates.\n\nThe icon is in the Benaki Museum.",
+  "image": "assets/icons/magi-permeniates.jpg",
+  "thumb": "assets/icons/magi-permeniates-thumb.jpg",
+  "w": 1200,
+  "h": 786,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Ioannis_Permeniatis_(attrib)_-_Adoration_of_the_Magi_-_16th_century.jpg",
+   "file": "Ioannis Permeniatis (attrib) - Adoration of the Magi - 16th century.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Giovanni Permeniate",
+   "credit": "scan from A Guide to the Benaki Museum , by Angelos Delivorrias"
+  }
+ },
+ {
+  "id": "only-begotten-son",
+  "kind": "christ",
+  "title": "Only-begotten Son (late 17th century)",
+  "alt": "",
+  "cardName": "Christ the Saviour",
+  "subjects": [
+   "Jesus Christ",
+   "Crucifixion"
+  ],
+  "days": [],
+  "month": null,
+  "date": "1668–1699",
+  "year": 1680,
+  "school": "Moscow",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "This icon illustrates the hymn 'Only-begotten Son and Word of God', sung at every Liturgy. Christ is crucified beneath the heavens rolled up like a scroll, in the ornate late Muscovite manner.\n\nThe icon is in the Tretyakov Gallery.",
+  "image": "assets/icons/only-begotten-son.jpg",
+  "thumb": "assets/icons/only-begotten-son-thumb.jpg",
+  "w": 962,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%95%D0%B4%D0%B8%D0%BD%D0%BE%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%A1%D1%8B%D0%BD_1668-1699.jpg",
+   "file": "Единородный Сын 1668-1699.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Own work scan / Журнал \"СНД\" (Дн-ск)"
+  }
+ },
+ {
+  "id": "michael-pp",
+  "kind": "angel",
+  "title": "The Archangel Michael (Petit Palais)",
+  "alt": "",
+  "cardName": "Synaxis of the Archangel Michael",
+  "subjects": [
+   "Archangel Michael",
+   "Deesis"
+  ],
+  "days": [
+   {
+    "d": "11-08"
+   }
+  ],
+  "month": null,
+  "date": "1650–1700",
+  "year": 1675,
+  "school": "Russian North",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood",
+  "text": "Michael bows in the Deesis tier of a northern Russian iconostasis.\n\nThe icon is in the Petit Palais in Paris.",
+  "image": "assets/icons/michael-pp.jpg",
+  "thumb": "assets/icons/michael-pp-thumb.jpg",
+  "w": 619,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_la_(%C3%89cole_de_la_Russie_du_Nord)_Russie_du_Nord_-_L%27Archange_Michel_-_PPP4921_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+   "file": "École de la (École de la Russie du Nord) Russie du Nord - L'Archange Michel - PPP4921 - Musée des Beaux-Arts de la ville de Paris.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "School of Russia",
+   "credit": "Paris Musées"
+  }
+ },
+ {
+  "id": "theotokos-deesis-stockholm",
+  "kind": "theotokos",
+  "title": "The Mother of God from a Deesis (Stockholm)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Deesis"
+  ],
+  "days": [],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Nationalmuseum",
+   "lat": 59.3294,
+   "lng": 18.0779,
+   "city": "Stockholm"
+  },
+  "medium": "Tempera on wood",
+  "text": "The Mother of God turns to Christ in prayer for the world, in the Hagiosoritissa pose.\n\nThe icon is in the Nationalmuseum in Stockholm.",
+  "image": "assets/icons/theotokos-deesis-stockholm.jpg",
+  "thumb": "assets/icons/theotokos-deesis-stockholm-thumb.jpg",
+  "w": 465,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Mother_of_God._Part_of_Deesis.jpg",
+   "file": "The Mother of God. Part of Deesis.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "unknown, Russian",
+   "credit": "Own work ; Photo by Szilas in the Nationalmuseum, Stockholm"
+  }
+ },
+ {
+  "id": "forerunner-deesis-stockholm",
+  "kind": "saint",
+  "title": "St John the Forerunner from a Deesis (Stockholm)",
+  "alt": "",
+  "cardName": "St John the Baptist",
+  "subjects": [
+   "St John the Baptist",
+   "Deesis"
+  ],
+  "days": [],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Nationalmuseum",
+   "lat": 59.3294,
+   "lng": 18.0779,
+   "city": "Stockholm"
+  },
+  "medium": "Tempera on wood",
+  "text": "John turns to Christ in prayer, the companion of the Mother of God in the Deesis.\n\nThe icon is in the Nationalmuseum in Stockholm.",
+  "image": "assets/icons/forerunner-deesis-stockholm.jpg",
+  "thumb": "assets/icons/forerunner-deesis-stockholm-thumb.jpg",
+  "w": 468,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St_John_the_Baptist._Part_of_Deesis.jpg",
+   "file": "St John the Baptist. Part of Deesis.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "unknown, Russian",
+   "credit": "Own work ; Photo by Szilas in the Nationalmuseum, Stockholm"
+  }
+ },
+ {
+  "id": "trenousa-serbia",
+  "kind": "theotokos",
+  "title": "The Mother of God Trenousa",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "17th–18th century",
+  "year": 1700,
+  "school": "Serbian",
+  "artist": "",
+  "origin": {
+   "name": "Serbia",
+   "lat": 44.0165,
+   "lng": 21.0059
+  },
+  "originShort": "Serbia",
+  "home": {
+   "name": "National Museum of Serbia",
+   "lat": 44.8169,
+   "lng": 20.4601,
+   "city": "Belgrade"
+  },
+  "medium": "Tempera on wood",
+  "text": "Trenousa, 'the one who stoops', is the Mother of God bending tenderly over the Child.\n\nThe icon is in the National Museum of Serbia in Belgrade.",
+  "image": "assets/icons/trenousa-serbia.jpg",
+  "thumb": "assets/icons/trenousa-serbia-thumb.jpg",
+  "w": 915,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Mother_of_God_Trenousa_(17-18._century).jpg",
+   "file": "The Mother of God Trenousa (17-18. century).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown artist",
+   "credit": "Photographer: Petar Milošević This photograph was taken with an Olympus E-M1"
+  }
+ },
+ {
+  "id": "smolensk-rokitin",
+  "kind": "theotokos",
+  "title": "The Smolensk Mother of God (Rokitin, 1693)",
+  "alt": "",
+  "cardName": "The Smolensk Icon of the Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Theotokos Hodegetria"
+  ],
+  "days": [
+   {
+    "d": "07-28",
+    "n": "Smolensk Icon of the Mother of God"
+   }
+  ],
+  "month": null,
+  "date": "1693",
+  "year": 1693,
+  "school": "Moscow (Kremlin workshops)",
+  "artist": "Yakov Rokitin",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood, 120 × 73.5 cm",
+  "text": "The Smolensk icon is a Hodegetria said to have been painted by St Luke and brought to Russia in the eleventh century. Yakov Rokitin, a painter of the Kremlin workshops, made this copy in 1693.\n\nIt is in the State Museum of the History of Religion in St Petersburg.",
+  "image": "assets/icons/smolensk-rokitin.jpg",
+  "thumb": "assets/icons/smolensk-rokitin-thumb.jpg",
+  "w": 746,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Smolenskaya_ikona.jpg",
+   "file": "Smolenskaya ikona.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Рокитин Яков Сергиев Рокитин Яков Сергиев (упом. 1693-1703) – московский иконописец Оружейной палаты.",
+   "credit": "http://vm1.culture.ru/muzey_istorii_religii/catalog/0002500477/"
+  }
+ },
+ {
+  "id": "nicholas-poulakis",
+  "kind": "saint",
+  "title": "St Nicholas, with Scenes from His Life (Poulakis)",
+  "alt": "",
+  "cardName": "St Nicholas the Wonderworker",
+  "subjects": [
+   "St Nicholas"
+  ],
+  "days": [
+   {
+    "d": "12-06"
+   }
+  ],
+  "month": null,
+  "date": "1650–1692",
+  "year": 1670,
+  "school": "Cretan school (Corfu)",
+  "artist": "Theodoros Poulakis (attributed)",
+  "origin": {
+   "name": "Corfu",
+   "lat": 39.6243,
+   "lng": 19.9217
+  },
+  "originShort": "Corfu",
+  "home": {
+   "name": "Hellenic Institute of Byzantine and Post-Byzantine Studies",
+   "lat": 45.4363,
+   "lng": 12.3424,
+   "city": "Venice"
+  },
+  "medium": "Tempera on wood, 24.5 × 30 cm",
+  "text": "Nicholas sits on a marble throne carved with prophets, and Christ and the Mother of God return to him the Gospel and the stole of a bishop. Scenes of his life surround him. The icon is attributed to Theodoros Poulakis.\n\nIt is in the Hellenic Institute in Venice.",
+  "image": "assets/icons/nicholas-poulakis.jpg",
+  "thumb": "assets/icons/nicholas-poulakis-thumb.jpg",
+  "w": 912,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:S._Nicholas_by_T.Poulakis_(%3F),_17th_c.jpg",
+   "file": "S. Nicholas by T.Poulakis (?), 17th c.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Theodore Poulakis",
+   "credit": ""
+  }
+ },
+ {
+  "id": "dormition-victor",
+  "kind": "feast",
+  "title": "The Dormition (Priest Victor)",
+  "alt": "",
+  "cardName": "The Dormition of the Theotokos",
+  "subjects": [
+   "Dormition",
+   "Theotokos",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "08-15"
+   }
+  ],
+  "month": null,
+  "date": "1650–1699",
+  "year": 1670,
+  "school": "Cretan school",
+  "artist": "Victor",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Benaki Museum",
+   "lat": 37.9762,
+   "lng": 23.7401,
+   "city": "Athens"
+  },
+  "medium": "Tempera and gold on wood",
+  "text": "Victor was a priest and one of the last great Cretan painters, working after the Ottoman conquest of the island. Here the apostles gather at the bier of the Mother of God.\n\nThe icon is in the Benaki Museum.",
+  "image": "assets/icons/dormition-victor.jpg",
+  "thumb": "assets/icons/dormition-victor-thumb.jpg",
+  "w": 1000,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Priest_Victor_-_The_Dormition_of_the_Virgin_-_Google_Art_Project.jpg",
+   "file": "Priest Victor - The Dormition of the Virgin - Google Art Project.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Victor of Crete",
+   "credit": "SQEOku5DzcXDXQ at Google Cultural Institute maximum zoom level"
+  }
+ },
+ {
+  "id": "dormition-savin",
+  "kind": "feast",
+  "title": "The Dormition (Savin, 1621)",
+  "alt": "",
+  "cardName": "The Dormition of the Theotokos",
+  "subjects": [
+   "Dormition",
+   "Theotokos",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "08-15"
+   }
+  ],
+  "month": null,
+  "date": "1621",
+  "year": 1621,
+  "school": "Moscow (Stroganov school)",
+  "artist": "Nazary Istomin Savin",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Kolomenskoye Museum-Reserve",
+   "lat": 55.6672,
+   "lng": 37.6707,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Nazary Istomin Savin, a court painter in the Stroganov manner, painted this Dormition in 1621 for the Transfiguration Cathedral of the Solovetsky Monastery.\n\nIt is in the Kolomenskoye museum.",
+  "image": "assets/icons/dormition-savin.jpg",
+  "thumb": "assets/icons/dormition-savin-thumb.jpg",
+  "w": 905,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nazary_Istomin_Savin._Dormition.jpg",
+   "file": "Nazary Istomin Savin. Dormition.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Nazary Istomin Savin",
+   "credit": "https://www.icon-art.info/masterpiece.php?mst_id=6277"
   }
  }
 ];

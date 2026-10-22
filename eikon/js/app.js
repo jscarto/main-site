@@ -11,7 +11,7 @@
     get(k, d) { try { const v = localStorage.getItem("eikon." + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem("eikon." + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } },
   };
-  const state = { style: store.get("style", "new"), patron: store.get("patron", null), libQuery: "", libKind: "all", libEra: "all", calMonth: null, selDay: null };
+  const state = { style: store.get("style", "new"), patron: store.get("patron", null), libQuery: "", libKind: "all", libEra: "all", libSort: store.get("libSort", "featured"), calMonth: null, selDay: null };
 
   /* ---------- helpers ---------- */
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -215,11 +215,32 @@
       && (!era || (i.year >= era[2] && i.year <= era[3]))
       && terms.every((t) => HAY[i.id].includes(t)));
   }
+  // Sorting. A–Z files a title under its name, not its honorific: "St Nicholas" under N, "The Prophet Ezekiel" under E.
+  const SORTS = [["featured", "Featured"], ["az", "A–Z"], ["oldest", "Oldest"], ["newest", "Newest"]];
+  const HONORIFIC = /^(?:(?:the|a|an)\s+)?(?:(?:holy|great|righteous|venerable|blessed|chief)\s+)*(?:saints?|sts?\.?|apostles?|prophets?|archangels?|evangelist|hieromartyrs?|martyrs?|passion-bearers?)?\s+/i;
+  const sortName = (icon) => icon.title.replace(HONORIFIC, "").replace(/^(?:the|a|an)\s+/i, "");
+  const ordinal = (n) => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th");
+  const century = (y) => Math.floor((y - 1) / 100) + 1;
+  function sortIcons(list) {
+    const by = state.libSort, out = list.slice();
+    if (by === "az") out.sort((a, b) => sortName(a).localeCompare(sortName(b)));
+    if (by === "oldest") out.sort((a, b) => a.year - b.year || sortName(a).localeCompare(sortName(b)));
+    if (by === "newest") out.sort((a, b) => b.year - a.year || sortName(a).localeCompare(sortName(b)));
+    return out;
+  }
+  // The section an icon falls in, for the headers and the index: a letter, or a century.
+  function groupOf(icon) {
+    if (state.libSort === "az") { const c = sortName(icon).charAt(0).toUpperCase(); return /[A-Z]/.test(c) ? c : "#"; }
+    if (state.libSort === "oldest" || state.libSort === "newest") return `${ordinal(century(icon.year))} century`;
+    return null;
+  }
+  const shortGroup = (g) => (g && g.endsWith(" century") ? g.replace(/(st|nd|rd|th) century$/, "") : g);
+
   function renderLibrary() {
     const kinds = ["all", "christ", "theotokos", "feast", "saint", "angel", "menaion"];
     view.innerHTML = `
     <section><div class="wrap">
-      <div class="section-head"><div><p class="eyebrow">The Library</p><h2>Icons of the Church</h2></div></div>
+      <div class="section-head"><div><p class="eyebrow">The Library</p><h2>Icons of the Church</h2><p class="lib-tally">${ICONS.length} icons… and growing</p></div></div>
       <div class="library-tools">
         <form class="search-big" id="lib-search" role="search" style="margin-top:0">
           <input id="lib-q" type="search" placeholder="Seek a saint, a feast, a city, a painter…" value="${esc(state.libQuery)}" autocomplete="off" aria-label="Search the library">
@@ -228,41 +249,93 @@
         </form>
         <div class="chips" role="group" aria-label="Subject"><span class="chip-label">Subject</span>${kinds.map((k) => `<button type="button" class="chip" data-kind="${k}" aria-pressed="${state.libKind === k}">${k === "all" ? "All" : KIND_LABEL[k]}</button>`).join("")}</div>
         <div class="chips" role="group" aria-label="Period"><span class="chip-label">Period</span><button type="button" class="chip" data-era="all" aria-pressed="${state.libEra === "all"}">Any</button>${ERAS.map((e) => `<button type="button" class="chip" data-era="${e[0]}" aria-pressed="${state.libEra === e[0]}">${e[1]}</button>`).join("")}</div>
+        <div class="chips" role="group" aria-label="Sort"><span class="chip-label">Sort</span>${SORTS.map(([k, l]) => `<button type="button" class="chip" data-sort="${k}" aria-pressed="${state.libSort === k}">${l}</button>`).join("")}</div>
         <p class="result-count" id="lib-count" aria-live="polite"></p>
       </div>
-      <div class="lib-wall" id="lib-grid"></div>
+      <div id="lib-grid"></div>
       <div class="lib-more" id="lib-more" aria-hidden="true"></div>
-    </div></section>`;
+    </div>
+    <nav class="lib-rail" id="lib-rail" aria-label="Jump to section" hidden></nav>
+    <div class="lib-progress" id="lib-progress" aria-hidden="true" hidden><span id="lib-progress-text"></span><i><b id="lib-progress-bar"></b></i></div>
+    </section>`;
     const grid = document.getElementById("lib-grid"), sentinel = document.getElementById("lib-more");
+    const rail = document.getElementById("lib-rail"), meter = document.getElementById("lib-progress");
+    // Fixed to the window, so they live on <body>: the view's entrance animation would otherwise anchor them to the view.
+    document.body.append(rail, meter);
     const BATCH = 30;
-    let list = [], shown = 0, cols = [], heights = [];
+    // The grid is a run of sections (one per letter or century, or a single one when unsorted); each section is a
+    // masonry of columns, filled shortest-first, so tiles never move as more are added.
+    let list = [], shown = 0, cols = [], heights = [], group = undefined, nCols = 2, gap = 22;
+    const newSection = (g) => {
+      const sec = document.createElement("div"); sec.className = "lib-section";
+      if (g) { sec.dataset.group = g; sec.innerHTML = `<h3 class="lib-group-head" id="lib-g-${encodeURIComponent(g).replace(/%/g, "")}">${esc(g)}</h3>`; }
+      const wall = document.createElement("div"); wall.className = "lib-wall"; wall.style.setProperty("--gap", gap + "px");
+      wall.innerHTML = Array(nCols).fill('<div class="lib-col"></div>').join("");
+      sec.appendChild(wall); grid.appendChild(sec);
+      cols = [...wall.children]; heights = cols.map(() => 0); group = g;
+    };
     const layout = () => {
-      const w = grid.clientWidth, gap = w < 600 ? 16 : 22;
-      const n = Math.max(2, Math.floor((w + gap) / (190 + gap)));
-      grid.style.setProperty("--gap", gap + "px");
-      grid.innerHTML = Array(n).fill('<div class="lib-col"></div>').join("");
-      cols = [...grid.children]; heights = cols.map(() => 0);
+      const w = grid.clientWidth; gap = w < 600 ? 16 : 22;
+      nCols = Math.max(2, Math.floor((w + gap) / (190 + gap)));
+      grid.innerHTML = ""; group = undefined;
       const upTo = shown; shown = 0; more(upTo);
     };
     const more = (count) => {
       const end = Math.min(list.length, shown + count);
       for (; shown < end; shown++) {
-        const icon = list[shown], k = heights.indexOf(Math.min(...heights));
-        cols[k].insertAdjacentHTML("beforeend", tile(icon));
+        const icon = list[shown], g = groupOf(icon);
+        if (g !== group) newSection(g);
+        const k = heights.indexOf(Math.min(...heights));
+        cols[k].insertAdjacentHTML("beforeend", tile(icon).replace('class="icon-tile"', `class="icon-tile" data-n="${shown + 1}"`));
         heights[k] += icon.h / icon.w + 0.45; // image plus caption, in column widths
       }
       sentinel.hidden = shown >= list.length;
     };
+    // The index down the right edge: every section in the current list, with a jump to each.
+    const buildRail = () => {
+      const groups = [];
+      list.forEach((icon, i) => { const g = groupOf(icon); if (g && (!groups.length || groups[groups.length - 1].g !== g)) groups.push({ g, i }); });
+      rail.hidden = groups.length < 2;
+      view.querySelector("section").classList.toggle("has-rail", !rail.hidden);
+      rail.innerHTML = groups.map(({ g, i }) => `<button type="button" data-jump="${i}" data-g="${esc(g)}" title="${esc(g)}">${esc(shortGroup(g))}</button>`).join("");
+    };
+    rail.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-jump]"); if (!b) return;
+      const i = Number(b.dataset.jump);
+      if (shown <= i) more(i - shown + BATCH);
+      const head = [...grid.querySelectorAll(".lib-section")].find((s) => s.dataset.group === b.dataset.g);
+      if (head) window.scrollTo({ top: head.getBoundingClientRect().top + window.scrollY - 90, behavior: "smooth" });
+    });
+    // Where the reader is: how many icons have come into view, and which section is at the top.
+    let ticking = false;
+    const onScroll = () => {
+      if (!grid.isConnected) { window.removeEventListener("scroll", onScroll); rail.remove(); meter.remove(); return; }
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        const top = grid.getBoundingClientRect().top, vh = window.innerHeight;
+        meter.hidden = !list.length || top > vh * 0.6;
+        let seen = 0;
+        grid.querySelectorAll(".icon-tile").forEach((t) => { if (t.getBoundingClientRect().top < vh - 60) seen = Math.max(seen, Number(t.dataset.n)); });
+        document.getElementById("lib-progress-text").textContent = `${seen} of ${list.length}`;
+        document.getElementById("lib-progress-bar").style.width = `${(100 * seen) / Math.max(1, list.length)}%`;
+        let cur = null;
+        grid.querySelectorAll(".lib-section[data-group]").forEach((s) => { if (s.getBoundingClientRect().top < 140) cur = s.dataset.group; });
+        if (!cur && grid.querySelector(".lib-section[data-group]")) cur = grid.querySelector(".lib-section[data-group]").dataset.group;
+        rail.querySelectorAll("button").forEach((b) => b.toggleAttribute("aria-current", b.dataset.g === cur));
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
     const clearBtn = document.getElementById("lib-clear");
     const draw = () => {
       clearBtn.hidden = !state.libQuery && state.libKind === "all" && state.libEra === "all";
-      list = filterIcons();
+      list = sortIcons(filterIcons());
       document.getElementById("lib-count").textContent = list.length === ICONS.length ? "" : `${list.length} ${list.length === 1 ? "icon" : "icons"}`;
       if (!list.length) {
         grid.innerHTML = `<div class="empty-state"><h3>Nothing found</h3><p>No icon matches “${esc(state.libQuery)}”. Try a saint's name, a feast such as “Annunciation”, or a city such as “Novgorod”.</p></div>`;
-        sentinel.hidden = true; return;
+        sentinel.hidden = true; rail.hidden = true; meter.hidden = true; return;
       }
-      shown = 0; layout(); more(BATCH);
+      shown = 0; layout(); more(BATCH); buildRail(); onScroll();
     };
     const io = new IntersectionObserver((es) => { if (es[0].isIntersecting && shown < list.length) more(BATCH); }, { rootMargin: "900px 0px" });
     io.observe(sentinel);
@@ -286,6 +359,10 @@
     }));
     view.querySelectorAll("[data-era]").forEach((b) => b.addEventListener("click", () => {
       state.libEra = b.dataset.era; view.querySelectorAll("[data-era]").forEach((x) => x.setAttribute("aria-pressed", x === b)); draw();
+    }));
+    view.querySelectorAll("[data-sort]").forEach((b) => b.addEventListener("click", () => {
+      state.libSort = b.dataset.sort; store.set("libSort", state.libSort);
+      view.querySelectorAll("[data-sort]").forEach((x) => x.setAttribute("aria-pressed", x === b)); draw();
     }));
     draw();
   }
@@ -436,6 +513,7 @@
     const [name, ...rest] = h.split(".");
     const arg = rest.join(".");
     document.title = "Eikon - A Library of the Saints";
+    document.querySelectorAll("body > .lib-rail, body > .lib-progress").forEach((el) => el.remove());
     const navKey = name === "icon" ? "library" : name === "day" ? "calendar" : name;
     document.querySelectorAll(".nav a").forEach((a) => a.toggleAttribute("aria-current", a.getAttribute("href") === "#" + navKey) || a.removeAttribute("aria-current"));
     document.querySelectorAll(".nav a").forEach((a) => { if (a.getAttribute("href") === "#" + navKey) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
