@@ -61,8 +61,6 @@
     });
     return [...by.values()].map((p) => ({ ...p, name: Object.entries(p.names).sort((a, b) => b[1] - a[1])[0][0] })).sort((a, b) => b.icons.length - a.icons.length);
   }
-  const SEAS = [["Mediterranean Sea", 19, 34.6, 0], ["Black Sea", 34.2, 43.3, 0], ["Baltic Sea", 19.4, 57.2, -60], ["White Sea", 38.4, 65.8, 0], ["Caspian Sea", 50.6, 41.6, -70],
-    ["Aegean Sea", 25.2, 38.3, -70], ["Adriatic", 16.2, 42.6, -42], ["Red Sea", 37.8, 23.6, -58], ["Atlantic Ocean", -14, 44, 0], ["Persian Gulf", 51.5, 27.2, 0], ["Arabian Sea", 62, 17, 0], ["Barents Sea", 40, 72.5, 0], ["North Sea", 3.5, 56, 0]];
 
   function atlas(root, img, list) {
     const d3 = window.d3, G = window.EIKON_GEO, [W0, S0, E0, N0] = G.bounds;
@@ -106,7 +104,6 @@
     gz.append("path").attr("class", "at-river").attr("d", path({ type: "MultiLineString", coordinates: G.rivers }));
     gz.append("path").attr("class", "at-coast").attr("d", path({ type: "MultiLineString", coordinates: G.coast }));
     const gl = svg.append("g");                      // screen-space labels and symbols
-    const seas = gl.append("g").selectAll("text").data(SEAS).join("text").attr("class", "at-sea").text((d) => d[0]);
     const gratLabels = gl.append("g");
     const ps = places();
     const r = d3.scaleSqrt().domain([1, ps[0].icons.length]).range([W < 600 ? 3.5 : 4.5, Math.max(16, Math.min(30, W / 32))]);
@@ -126,7 +123,6 @@
     function place(t) {
       const at = (lon, lat) => { const p = proj([lon, lat]); return [p[0] * t.k + t.x, p[1] * t.k + t.y]; };
       marks.attr("transform", (d) => `translate(${at(d.lng, d.lat)})`);
-      seas.attr("transform", (d) => `translate(${at(d[1], d[2])}) rotate(${d[3] * 0})`).attr("font-size", 1.3 * Math.min(15, 11 + t.k));
       // Place labels, skipping any that would collide with one already drawn.
       const boxes = [];
       labels.each(function (d) {
