@@ -455,8 +455,8 @@
   // Inside an embedding frame (a hosted preview) the page's own address isn't shareable.
   if (window.self !== window.top) $("share-copy").hidden = true;
   $("share-copy").addEventListener("click", () => {
-    const base = location.href.split("#")[0];
-    const url = cur.mode === "day" || (cur.kind === "day" || cur.kind === "fast") ? `${base}#day.${iso(cur.date)}` : `${base}#icon.${cur.base.id}`;
+    const root = document.baseURI.split("#")[0];      // the app's root, from any page
+    const url = cur.mode === "day" || (cur.kind === "day" || cur.kind === "fast") ? `${root}#day.${iso(cur.date)}` : `${root}icon/${cur.base.id}/`;
     navigator.clipboard.writeText(url).then(() => window.EikonToast("Link copied"), () => window.EikonToast(url));
   });
 

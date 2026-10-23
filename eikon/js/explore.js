@@ -33,7 +33,7 @@
   }
 
   // ---------- the shared list of icons ----------
-  const tile = (i) => `<a class="ex-tile" href="#icon.${i.id}"><img src="${i.thumb}" alt="" loading="lazy"><span><b>${esc(i.title)}</b><i>${esc(i.date)}</i></span></a>`;
+  const tile = (i) => `<a class="ex-tile" href="icon/${i.id}/"><img src="${i.thumb}" alt="" loading="lazy"><span><b>${esc(i.title)}</b><i>${esc(i.date)}</i></span></a>`;
   function showList(box, title, sub, icons, note) {
     const first = 48;
     box.hidden = false;

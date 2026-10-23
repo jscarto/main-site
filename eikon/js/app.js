@@ -1,5 +1,5 @@
-/* Eikon — views and routing. Views are named by a bare hash token (#today, #library,
-   #icon.rublev-trinity, #day.2026-10-21, #calendar, #sources). */
+/* Eikon — views and routing. Views are named by a bare hash token at the app's root (#today, #library,
+   #day.2026-10-21, #calendar, #explore, #sources); an icon has a page of its own (icon/rublev-trinity/). */
 (function () {
   const C = window.EikonCalendar;
   const ICONS = window.EIKON_ICONS;
@@ -18,6 +18,7 @@
   const norm = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const isoOf = (d) => d.toISOString().slice(0, 10);
   const fromIso = (s) => { const [y, m, d] = s.split("-").map(Number); return C.utc(y, m - 1, d); };
+  const iconHref = (id) => `icon/${id}/`;           // an icon's own page, relative to the app's root
   const KIND_LABEL = { christ: "Christ", theotokos: "Theotokos", feast: "Feasts", saint: "Saints", angel: "Angels", menaion: "Menaion" };
   const ERAS = [["early", "Before 1100", 0, 1099], ["middle", "1100–1399", 1100, 1399], ["late", "1400–1599", 1400, 1599], ["modern", "1600 onward", 1600, 3000]];
 
@@ -100,14 +101,14 @@
     return `<span class="fast" data-level="${fast.level}">${esc(fast.label)}</span>${fast.note ? `<p class="fast-note">${esc(fast.note)}</p>` : ""}`;
   }
   function commList(list) {
-    return `<ul class="comm-list">${list.map((c) => `<li class="${c.rank}">${c.icon ? `<a href="#icon.${c.icon}">${esc(c.name)}</a>` : esc(c.name)}</li>`).join("")}</ul>`;
+    return `<ul class="comm-list">${list.map((c) => `<li class="${c.rank}">${c.icon ? `<a href="${iconHref(c.icon)}">${esc(c.name)}</a>` : esc(c.name)}</li>`).join("")}</ul>`;
   }
   function churchDateNote(info) {
     if (info.style !== "old") return `<span class="church-date">${C.formatDate(C.addDays(info.civil, -C.julianOffset(info.civil.getUTCFullYear())))} on the Old Calendar</span>`;
     return `<span class="church-date">${C.formatDate(info.church)} on the Old Calendar</span>`;
   }
   function tile(icon) {
-    return `<a class="icon-tile" href="#icon.${icon.id}">${frame(icon)}<div class="cap"><h3>${esc(icon.title)}</h3><p class="meta">${esc(icon.date)} · ${esc(icon.originShort || icon.origin.name)}</p></div></a>`;
+    return `<a class="icon-tile" href="${iconHref(icon.id)}">${frame(icon)}<div class="cap"><h3>${esc(icon.title)}</h3><p class="meta">${esc(icon.date)} · ${esc(icon.originShort || icon.origin.name)}</p></div></a>`;
   }
   const SEARCH_ICON = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg>`;
 
@@ -153,7 +154,7 @@
         </form>
       </div>
       <div class="today${featured ? "" : " no-icon"}">
-        ${featured ? `<a class="today-icon" href="#icon.${featured.id}" aria-label="${esc(featured.title)}">${frame(featured, { full: true, eager: true })}</a>` : ""}
+        ${featured ? `<a class="today-icon" href="${iconHref(featured.id)}" aria-label="${esc(featured.title)}">${frame(featured, { full: true, eager: true })}</a>` : ""}
         <div class="placard glazed">
           <div class="glazed-body">
           <p class="eyebrow">${esc(info.weekday)} · Today</p>
@@ -164,9 +165,9 @@
           ${featured ? `<p class="note">${match.specific.length
             ? `Shown: ${esc(featured.title)}.`
             : `The library has no icon of today's saints yet. Shown: the ${esc(featured.title)}, which gathers all the saints of the month.`}</p>` : ""}
-          ${others.length ? `<div class="mini-icons day-strip">${others.map((i) => `<a href="#icon.${i.id}" title="${esc(i.title)}"><img src="${i.thumb}" alt="${esc(i.title)}" loading="lazy"></a>`).join("")}</div>` : ""}
+          ${others.length ? `<div class="mini-icons day-strip">${others.map((i) => `<a href="${iconHref(i.id)}" title="${esc(i.title)}"><img src="${i.thumb}" alt="${esc(i.title)}" loading="lazy"></a>`).join("")}</div>` : ""}
           <div class="actions">
-            ${featured ? `<a class="btn" href="#icon.${featured.id}">Learn more</a>` : ""}
+            ${featured ? `<a class="btn" href="${iconHref(featured.id)}">Learn more</a>` : ""}
             <button type="button" class="btn ghost" data-share-day="${isoOf(now)}">Share today's card</button>
           </div>
           </div>
@@ -180,13 +181,13 @@
       <div class="today"><div class="today-icon" style="max-width:300px">${frame(patron)}</div>
       <div class="placard"><h3 class="principal">${esc(patron.title)}</h3>
         <p class="fast-note">${patronNext ? `Next commemorated ${C.formatDate(patronNext)} · ${relDays(C.diffDays(patronNext, now))}` : ""}</p>
-        <div class="actions"><a class="btn" href="#icon.${patron.id}">Learn more</a>
+        <div class="actions"><a class="btn" href="${iconHref(patron.id)}">Learn more</a>
         <button type="button" class="btn ghost" data-share="${patron.id}" data-mode="patron">Share as my patron</button></div></div></div>
     </div></section>` : ""}
     <section><div class="wrap">
       <div class="section-head"><h2>Feasts approaching</h2><a href="#calendar" class="btn ghost">See the month</a></div>
       <div class="upcoming">${upcoming.map((u) => `
-        <a class="feast-card" href="${u.icon ? "#icon." + u.icon.id : "#day." + isoOf(u.d)}">
+        <a class="feast-card" href="${u.icon ? iconHref(u.icon.id) : "#day." + isoOf(u.d)}">
           ${u.icon ? `<span class="thumb"><img src="${u.icon.thumb}" alt="" loading="lazy"></span>` : `<span class="thumb empty">☦</span>`}
           <span><h3>${esc(u.c.name)}</h3><p class="when">${C.formatDate(u.d)} · ${relDays(u.i)}</p></span>
         </a>`).join("")}</div>
@@ -198,7 +199,7 @@
     </div></section>`;
 
     document.getElementById("hero-search").addEventListener("submit", (e) => {
-      e.preventDefault(); state.libQuery = document.getElementById("hero-q").value; location.hash = "library";
+      e.preventDefault(); state.libQuery = document.getElementById("hero-q").value; go("#library");
     });
     window.EikonAtmosphere.drawWindow(view.querySelector("canvas.lancet"));
   }
@@ -385,7 +386,7 @@
         <div class="detail-bg" aria-hidden="true" style="background-image:url('${icon.image}')"></div>
         <div class="prose">${icon.text.split("\n\n").map((p) => `<p>${esc(p)}</p>`).join("")}</div>
         <p class="credit">${creditLine(icon)}</p>
-        <div class="pager"><a class="btn ghost" href="#icon.${prev.id}" title="${esc(prev.title)}"><span>‹ ${esc(prev.title)}</span></a><a class="btn ghost" href="#icon.${next.id}" title="${esc(next.title)}"><span>${esc(next.title)} ›</span></a></div>
+        <div class="pager"><a class="btn ghost" href="${iconHref(prev.id)}" title="${esc(prev.title)}"><span>‹ ${esc(prev.title)}</span></a><a class="btn ghost" href="${iconHref(next.id)}" title="${esc(next.title)}"><span>${esc(next.title)} ›</span></a></div>
       </div>
     </div></section>
     ${related.length ? `<section><div class="wrap"><div class="section-head"><h2>Of the same subject</h2></div><div class="wall-grid">${related.map(tile).join("")}</div></div></section>` : ""}
@@ -447,7 +448,7 @@
           ${churchDateNote(sel)}<br>
           ${fastBadge(sel.fast)}
           ${commList(selComms)}
-          ${selIcons.all.length ? `<div class="mini-icons">${selIcons.all.slice(0, 6).map((i) => `<a href="#icon.${i.id}" title="${esc(i.title)}"><img src="${i.thumb}" alt="${esc(i.title)}" loading="lazy"></a>`).join("")}</div>` : ""}
+          ${selIcons.all.length ? `<div class="mini-icons">${selIcons.all.slice(0, 6).map((i) => `<a href="${iconHref(i.id)}" title="${esc(i.title)}"><img src="${i.thumb}" alt="${esc(i.title)}" loading="lazy"></a>`).join("")}</div>` : ""}
           ${selIcons.all.length ? `<div class="actions" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px"><button type="button" class="btn" data-share-day="${isoOf(sel.civil)}">Share this day</button></div>` : ""}
         </div>
       </div>
@@ -488,9 +489,29 @@
   }
 
   /* ---------- routing ---------- */
+  // Every view lives at the app's root under a hash token (#library, #day.2026-10-21), except an icon, which has an
+  // address of its own (icon/<id>/): a real page, generated by tools/pages.py, that search engines can index. Each
+  // document's <base> is the app's root, so links resolve alike from any page, and clicks on them are handled here
+  // with the history API, without reloading.
+  const ROOT = new URL(document.baseURI);
+  function routeOf(url) {
+    if (url.origin !== ROOT.origin || !url.pathname.startsWith(ROOT.pathname)) return null;
+    const rest = url.pathname.slice(ROOT.pathname.length);
+    const m = rest.match(/^icon\/([^/]+)\/?(?:index\.html)?$/);
+    if (m) return "icon." + decodeURIComponent(m[1]);
+    if (rest === "" || rest === "index.html") return url.hash.replace(/^#/, "") || "today";
+    return null;
+  }
+  function go(href) {
+    history.pushState(null, "", new URL(href, ROOT));
+    route();
+  }
+  let current = null;
   function route() {
-    // An icon's own page (icon/<id>/) names its icon on <body data-start>; everywhere else the default is today.
-    const h = location.hash.replace(/^#/, "") || document.body.dataset.start || "today";
+    let h = routeOf(new URL(location.href)) || "today";
+    // Links shared before icons had pages of their own (#icon.<id>) move to the icon's page.
+    if (h.startsWith("icon.") && location.hash) history.replaceState(null, "", new URL(iconHref(h.slice(5)), ROOT));
+    current = h;
     const [name, ...rest] = h.split(".");
     const arg = rest.join(".");
     document.title = "Eikon - A Library of the Saints";
@@ -508,6 +529,16 @@
     view.classList.remove("view-enter"); void view.offsetWidth; view.classList.add("view-enter");
     if (name !== "library" || !state.keepScroll) window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
   }
+  // Links into the app open in place; anything with a modifier key, a target or another address is left to the browser.
+  document.addEventListener("click", (e) => {
+    if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const a = e.target.closest("a[href]");
+    if (!a || a.target || a.hasAttribute("download")) return;
+    const url = new URL(a.href);
+    if (routeOf(url) === null) return;
+    e.preventDefault();
+    if (url.href !== location.href) go(url.href);
+  });
 
   document.addEventListener("click", (e) => {
     const sd = e.target.closest("[data-share-day]");
@@ -525,7 +556,9 @@
   setStyle(state.style);
 
   window.EikonApp = { state, iconsForDay, commemorationsFor, commemorationForIcon, upcomingDatesFor, BY_ID, KIND_LABEL };
-  window.addEventListener("hashchange", route);
+  window.addEventListener("popstate", route);
+  // An address typed or edited by hand; skipped when popstate has already shown it.
+  window.addEventListener("hashchange", () => { if (routeOf(new URL(location.href)) !== current) route(); });
   window.EikonAtmosphere.init();
   route();
 })();
