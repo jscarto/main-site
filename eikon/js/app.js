@@ -254,8 +254,12 @@
       <div id="lib-grid"></div>
       <div class="lib-more" id="lib-more" aria-hidden="true"></div>
     </div>
+    <div class="lib-progress" id="lib-progress" aria-hidden="true" hidden><span id="lib-progress-text"></span><i><b id="lib-progress-bar"></b></i></div>
     </section>`;
     const grid = document.getElementById("lib-grid"), sentinel = document.getElementById("lib-more");
+    const meter = document.getElementById("lib-progress");
+    // Fixed to the window, so it lives on <body>: the view's entrance animation would otherwise anchor it to the view.
+    document.body.append(meter);
     const BATCH = 30;
     // The grid is a run of sections (one per letter or century, or a single one when unsorted); each section is a
     // masonry of columns, filled shortest-first, so tiles never move as more are added.
@@ -280,11 +284,27 @@
         const icon = list[shown], g = groupOf(icon);
         if (g !== group) newSection(g);
         const k = heights.indexOf(Math.min(...heights));
-        cols[k].insertAdjacentHTML("beforeend", tile(icon));
+        cols[k].insertAdjacentHTML("beforeend", tile(icon).replace('class="icon-tile"', `class="icon-tile" data-n="${shown + 1}"`));
         heights[k] += icon.h / icon.w + 0.45; // image plus caption, in column widths
       }
       sentinel.hidden = shown >= list.length;
     };
+    // How far the reader has come: how many icons have scrolled into view.
+    let ticking = false;
+    const onScroll = () => {
+      if (!grid.isConnected) { window.removeEventListener("scroll", onScroll); meter.remove(); return; }
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        const top = grid.getBoundingClientRect().top, vh = window.innerHeight;
+        meter.hidden = !list.length || top > vh * 0.6;
+        let seen = 0;
+        grid.querySelectorAll(".icon-tile").forEach((t) => { if (t.getBoundingClientRect().top < vh - 60) seen = Math.max(seen, Number(t.dataset.n)); });
+        document.getElementById("lib-progress-text").textContent = `${seen} of ${list.length}`;
+        document.getElementById("lib-progress-bar").style.width = `${(100 * seen) / Math.max(1, list.length)}%`;
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
     const clearBtn = document.getElementById("lib-clear");
     const draw = () => {
       clearBtn.hidden = !state.libQuery && state.libKind === "all" && state.libEra === "all";
@@ -292,9 +312,9 @@
       document.getElementById("lib-count").textContent = list.length === ICONS.length ? "" : `${list.length} ${list.length === 1 ? "icon" : "icons"}`;
       if (!list.length) {
         grid.innerHTML = `<div class="empty-state"><h3>Nothing found</h3><p>No icon matches “${esc(state.libQuery)}”. Try a saint's name, a feast such as “Annunciation”, or a city such as “Novgorod”.</p></div>`;
-        sentinel.hidden = true; return;
+        sentinel.hidden = true; meter.hidden = true; return;
       }
-      shown = 0; layout(); more(BATCH);
+      shown = 0; layout(); more(BATCH); onScroll();
     };
     const io = new IntersectionObserver((es) => { if (es[0].isIntersecting && shown < list.length) more(BATCH); }, { rootMargin: "900px 0px" });
     io.observe(sentinel);
@@ -472,6 +492,7 @@
     const [name, ...rest] = h.split(".");
     const arg = rest.join(".");
     document.title = "Eikon - A Library of the Saints";
+    document.querySelectorAll("body > .lib-progress").forEach((el) => el.remove());
     const navKey = name === "icon" ? "library" : name === "day" ? "calendar" : name;
     document.querySelectorAll(".nav a").forEach((a) => a.toggleAttribute("aria-current", a.getAttribute("href") === "#" + navKey) || a.removeAttribute("aria-current"));
     document.querySelectorAll(".nav a").forEach((a) => { if (a.getAttribute("href") === "#" + navKey) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });

@@ -15,6 +15,9 @@
   const ordinal = (n) => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th");
   const century = (y) => Math.floor((y - 1) / 100) + 1;
 
+  // Hooks for the demo reel (tools/reel), which drives the map one frame at a time.
+  const reel = {}, REEL = /[?&]reel\b/.test(location.search);
+
   // ---------- loading ----------
   const V = ((document.currentScript && document.currentScript.src.match(/\?v=\w+/)) || [""])[0];
   let ready = null;
@@ -99,7 +102,15 @@
     const svg = d3.select(wrap.querySelector("svg")).attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`);
     svg.selectAll("*").remove();
     const gz = svg.append("g");                      // zooms with the map: lines keep their width
-    gz.append("path").attr("class", "at-grat").attr("d", path(d3.geoGraticule().step([5, 5]).extent([[-50, 5], [115, 80]])()));
+    // The grid shows only over water: a mask of white sea with the land (its holes, like the Caspian, left open) cut out
+    // in black and the lakes put back. Rings are drawn flat in the projection, so their winding doesn't matter.
+    const ring = (r) => "M" + r.map((c) => proj(c).map((v) => v.toFixed(1)).join(",")).join("L") + "Z";
+    const mask = svg.append("defs").append("mask").attr("id", "at-water").attr("maskUnits", "userSpaceOnUse").attr("maskContentUnits", "userSpaceOnUse")
+      .attr("x", -W * 3).attr("y", -H * 3).attr("width", W * 7).attr("height", H * 7);
+    mask.append("rect").attr("x", -W * 3).attr("y", -H * 3).attr("width", W * 7).attr("height", H * 7).attr("fill", "#fff");
+    mask.append("path").attr("fill", "#000").attr("fill-rule", "evenodd").attr("d", G.land.map((p) => p.map(ring).join("")).join(""));
+    mask.append("path").attr("fill", "#fff").attr("d", G.lakes.map(ring).join(""));
+    gz.append("path").attr("class", "at-grat").attr("mask", "url(#at-water)").attr("d", path(d3.geoGraticule().step([5, 5]).extent([[-50, 5], [115, 80]])()));
     gz.append("path").attr("class", "at-lake").attr("d", path({ type: "MultiPolygon", coordinates: G.lakes.map((r) => [r]) }));
     gz.append("path").attr("class", "at-river").attr("d", path({ type: "MultiLineString", coordinates: G.rivers }));
     gz.append("path").attr("class", "at-coast").attr("d", path({ type: "MultiLineString", coordinates: G.coast }));
@@ -163,6 +174,11 @@
     root.querySelector("[data-zoom-out]").onclick = () => svg.transition().duration(400).call(zoom.scaleBy, 1 / 1.8);
     root.querySelector("[data-zoom-reset]").onclick = () => svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
     relief(d3.zoomIdentity); place(d3.zoomIdentity);
+    // Center the map on a place at a given scale, drawing the relief at once rather than after the zoom settles.
+    reel.mapZoom = (k, lon, lat) => {
+      const p = proj([lon, lat]), t = d3.zoomIdentity.translate(W / 2 - k * p[0], H / 2 - k * p[1]).scale(k);
+      svg.call(zoom.transform, t); clearTimeout(timer); relief(t);
+    };
     // The size key: real counts, drawn at the map's own scale.
     const key = root.querySelector(".at-key svg");
     const ks = [1, 10, 50, 100].filter((n) => n <= ps[0].icons.length);
@@ -196,7 +212,7 @@
       svg.selectAll(".ch-bar").classed("dim", (o) => o.data.c !== c);
       showList(list, `The ${ordinal(c)} century`, "Painted in", icons); reset.hidden = false;
     });
-    svg.append("text").attr("class", "ch-cap").attr("x", W - m.r).attr("y", H - 6).attr("text-anchor", "end").text("Century");
+    svg.append("text").attr("class", "ch-cap").attr("x", (m.l + W - m.r) / 2).attr("y", H - 6).attr("text-anchor", "middle").text("Century");
     const tip = box.appendChild(Object.assign(document.createElement("div"), { className: "ch-tip", hidden: true }));
     const defs = svg.append("defs");
     Object.entries(HATCH).forEach(([k, angle]) => {
@@ -288,41 +304,114 @@
     for (let i = 0; i < 600; i++) sim.tick();
     const svg = d3.select(box).html("").append("svg").attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img")
       .attr("aria-label", "A network of the figures in the icons: lines join figures who appear in the same icon");
+    // Each group's color as a sphere: full at the center, darkening toward the rim.
+    const defs = svg.append("defs");
+    Object.entries(GROUP).forEach(([k, [, c]]) => {
+      const gr = defs.append("radialGradient").attr("id", `nw-${k}`).attr("cx", "42%").attr("cy", "38%").attr("r", "62%");
+      gr.append("stop").attr("offset", "0%").attr("stop-color", d3.color(c).brighter(0.35));
+      gr.append("stop").attr("offset", "55%").attr("stop-color", c);
+      gr.append("stop").attr("offset", "100%").attr("stop-color", d3.color(c).darker(1.3));
+    });
     const g = svg.append("g");
     const ext = d3.extent(N.flatMap((n) => [n.x - 40, n.x + 40])), eyt = d3.extent(N.flatMap((n) => [n.y - 30, n.y + 30]));
     const k0 = Math.min(W / (ext[1] - ext[0]), H / (eyt[1] - eyt[0]), 1.6);
     const t0 = d3.zoomIdentity.translate(W / 2 - k0 * (ext[0] + ext[1]) / 2, H / 2 - k0 * (eyt[0] + eyt[1]) / 2).scale(k0);
     const link = g.append("g").attr("class", "nw-links").selectAll("line").data(L).join("line")
       .attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y)
-      .attr("stroke-width", (d) => Math.min(6, 0.6 + Math.sqrt(d.icons.length) * 0.9));
-    link.append("title").text((d) => `${d.source.id} and ${d.target.id}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}`);
+      // Thin at rest (1–2px); at full weight, by how many icons the pair shares, when lit.
+      .attr("stroke-width", (d) => Math.min(2, 0.6 + Math.sqrt(d.icons.length) * 0.35)).style("--wf", (d) => `${Math.min(6, 0.6 + Math.sqrt(d.icons.length) * 0.9)}px`);
+    // The lines are too thin to aim at, so each has a wider, invisible twin that takes the pointer.
+    const hit = g.append("g").attr("class", "nw-hits").selectAll("line").data(L).join("line")
+      .attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y)
+      .attr("stroke-width", 10 / t0.k);
+    hit.append("title").text((d) => `${d.source.id} and ${d.target.id}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}`);
     const node = g.append("g").selectAll("circle").data(N).join("circle").attr("class", "nw-node").attr("tabindex", 0).attr("role", "button")
-      .attr("cx", (d) => d.x).attr("cy", (d) => d.y).attr("r", (d) => rad(d.icons.length)).attr("fill", (d) => GROUP[d.group][1])
+      .attr("cx", (d) => d.x).attr("cy", (d) => d.y).attr("r", (d) => rad(d.icons.length)).attr("fill", (d) => `url(#nw-${d.group})`)
       .attr("aria-label", (d) => `${d.id}: ${d.icons.length} icons`);
     node.append("title").text((d) => `${d.id}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}, appears with ${deg.get(d.id) || 0} others`);
     const labeled = (d, k) => d.icons.length >= (k > 2.4 ? 1 : k > 1.4 ? 3 : 6) || d.id === "Jesus Christ";
     const label = g.append("g").attr("class", "nw-labels").selectAll("text").data(N).join("text")
-      .attr("x", (d) => d.x).attr("y", (d) => d.y + rad(d.icons.length) + 11).attr("text-anchor", "middle")
+      .attr("x", (d) => d.x).attr("y", (d) => d.y + rad(d.icons.length) + 13).attr("text-anchor", "middle")
       .text((d) => d.id.replace(/^(St|Prophet|Archangel) /, ""))
-      .attr("font-size", 12 / t0.k).attr("display", (d) => (labeled(d, t0.k) ? null : "none"));
-    const zoom = d3.zoom().filter(twoFingers).scaleExtent([k0 * 0.7, 6]).on("zoom", (e) => { g.attr("transform", e.transform); label.attr("font-size", 12 / e.transform.k).attr("display", (d) => (labeled(d, e.transform.k) ? null : "none")); });
+      .attr("font-size", 15 / t0.k);
+    let hovered = new Set();                           // figures whose labels show while the pointer is on them or their line
+    // Show the labels the zoom allows, busiest figures first, skipping any that would overlap one already shown.
+    const byWeight = N.slice().sort((a, b) => b.icons.length - a.icons.length);
+    const declutter = (k, keep = () => false) => {
+      const boxes = [], show = new Set();
+      byWeight.forEach((d) => {
+        if (!labeled(d, k) && !keep(d)) return;
+        const w = (d.id.replace(/^(St|Prophet|Archangel) /, "").length * 7.4) / k, h = 16 / k, x = d.x0 ?? d.x, y = (d.y0 ?? d.y) + rad(d.icons.length) + 13;
+        const b = [x - w / 2, y - h, x + w / 2, y + 3 / k];
+        if (boxes.some((o) => !(b[2] < o[0] || b[0] > o[2] || b[3] < o[1] || b[1] > o[3]))) return;
+        boxes.push(b); show.add(d);
+      });
+      label.attr("display", (d) => (show.has(d) || hovered.has(d) ? null : "none"));
+      label.filter((d) => hovered.has(d)).raise();
+    };
+    const relabel = () => {
+      const nb = focused ? neighbours(focused) : null;
+      declutter(d3.zoomTransform(svg.node()).k, nb ? (n) => nb.has(n.id) : undefined);
+    };
+    const neighbours = (d) => { const nb = new Set([d.id]); L.forEach((l) => { if (l.source.id === d.id) nb.add(l.target.id); if (l.target.id === d.id) nb.add(l.source.id); }); return nb; };
+    declutter(t0.k);
+    let focused = null;
+    const zoom = d3.zoom().filter(twoFingers).scaleExtent([k0 * 0.7, 6]).on("zoom", (e) => { const k = e.transform.k;
+      g.attr("transform", e.transform); label.attr("font-size", 15 / k); hit.attr("stroke-width", 10 / k); relabel(); });
     svg.call(zoom).call(zoom.transform, t0);
     const focus = (d) => {
-      const nb = new Set([d.id]); L.forEach((l) => { if (l.source.id === d.id) nb.add(l.target.id); if (l.target.id === d.id) nb.add(l.source.id); });
+      const nb = neighbours(d);
       node.classed("dim", (n) => !nb.has(n.id)).classed("on", (n) => n === d);
       link.classed("dim", (l) => l.source !== d && l.target !== d).classed("on", (l) => l.source === d || l.target === d);
-      label.classed("dim", (n) => !nb.has(n.id)).attr("display", (n) => (nb.has(n.id) || labeled(n, 1) ? null : "none"));
+      label.classed("dim", (n) => !nb.has(n.id)); focused = d;
+      relabel();
       const others = L.filter((l) => l.source === d || l.target === d).map((l) => ({ who: l.source === d ? l.target.id : l.source.id, n: l.icons.length })).sort((a, b) => b.n - a.n);
       showList(list, d.id, "In the library", d.icons.slice().sort((a, b) => a.year - b.year),
         others.length ? `Appears with ${others.slice(0, 8).map((o) => o.who).join(", ")}${others.length > 8 ? ` and ${others.length - 8} more` : ""}.` : "Appears alone.");
     };
     node.on("click", (e, d) => { e.stopPropagation(); focus(d); }).on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); focus(d); } });
-    link.on("click", (e, d) => { e.stopPropagation(); link.classed("on", (l) => l === d); showList(list, `${d.source.id} and ${d.target.id} together in`, "Shared icons", d.icons.slice().sort((a, b) => a.year - b.year)); });
+    hit.on("click", (e, d) => { e.stopPropagation(); link.classed("on", (l) => l === d); showList(list, `${d.source.id} and ${d.target.id} together in`, "Shared icons", d.icons.slice().sort((a, b) => a.year - b.year)); });
     // Hovering a figure lights its lines; choosing one keeps them lit until the graph is reset.
-    node.on("mouseenter", (e, d) => link.classed("hover", (l) => l.source === d || l.target === d)).on("mouseleave", () => link.classed("hover", false));
+    let held = null;                                   // the figure under the pointer stays still, so it is easy to click
+    node.on("mouseenter", (e, d) => { held = d; hovered = new Set([d]); relabel(); link.classed("hover", (l) => l.source === d || l.target === d); })
+      .on("mouseleave", () => { held = null; hovered = new Set(); relabel(); link.classed("hover", false); });
+    hit.on("mouseenter", (e, d) => {
+      hovered = new Set([d.source, d.target]); relabel(); link.classed("hover", (l) => l === d);
+    }).on("mouseleave", () => { hovered = new Set(); relabel(); link.classed("hover", false); });
+    // A slow drift, as if the figures float: each wanders around its place on two unrelated sine waves per axis,
+    // a couple of screen pixels at most, with Christ the stillest. Off for reduced motion and while off screen.
+    const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    N.forEach((d) => {
+      d.x0 = d.x; d.y0 = d.y; d.amp = d.id === "Jesus Christ" ? 0.6 : 1.6 + Math.random() * 1.6;
+      d.f = [0, 1, 2, 3].map(() => 0.12 + Math.random() * 0.22); d.p = [0, 1, 2, 3].map(() => Math.random() * Math.PI * 2);
+    });
+    let onScreen = true, last = 0;
+    const seen = new IntersectionObserver((es) => (onScreen = es[0].isIntersecting)); seen.observe(box);
+    const float = (now) => {
+      const t = now / 1000, k = d3.zoomTransform(svg.node()).k;
+      N.forEach((d) => {
+        if (d === held) return;
+        const a = d.amp / k, w = 2 * Math.PI * t;
+        d.x = d.x0 + a * (0.7 * Math.sin(w * d.f[0] + d.p[0]) + 0.3 * Math.sin(w * d.f[1] + d.p[1]));
+        d.y = d.y0 + a * (0.7 * Math.sin(w * d.f[2] + d.p[2]) + 0.3 * Math.sin(w * d.f[3] + d.p[3]));
+      });
+      node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+      label.attr("x", (d) => d.x).attr("y", (d) => d.y + rad(d.icons.length) + 13);
+      link.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
+      hit.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
+    };
+    const drift = (now) => {
+      if (!svg.node().isConnected) { seen.disconnect(); return; }   // redrawn or left the page
+      requestAnimationFrame(drift);
+      if (!onScreen || document.hidden || now - last < 33) return;   // about 30 frames a second is plenty for this
+      last = now; float(now);
+    };
+    // The demo reel renders far slower than real time, so it moves the figures on its own clock instead.
+    if (REEL) reel.netFloat = (ms) => { if (svg.node().isConnected) float(ms); };
+    else if (!still) requestAnimationFrame(drift);
     const clear = () => {
-      node.classed("dim", false).classed("on", false); link.classed("dim", false).classed("on", false); label.classed("dim", false)
-        .attr("display", (d) => (labeled(d, d3.zoomTransform(svg.node()).k) ? null : "none"));
+      node.classed("dim", false).classed("on", false); link.classed("dim", false).classed("on", false); label.classed("dim", false);
+      focused = null; relabel();
     };
     svg.on("click", clear);
     root.querySelector(".nw-legend").innerHTML = Object.entries(GROUP).map(([k, [n, c]]) => `<span><i style="background:${c}"></i>${n}</span>`).join("") +
@@ -346,7 +435,7 @@
           <div class="at-cartouche"><p>Number of icons made</p><div class="at-key"><svg aria-hidden="true"></svg></div><small><span class="dash"></span> region, approximate</small></div>
           <div class="at-zoom"><button type="button" data-zoom-in aria-label="Zoom in">+</button><button type="button" data-zoom-out aria-label="Zoom out">−</button><button type="button" data-zoom-reset aria-label="Reset the map">⟲</button></div>
         </div></div>
-        <p class="at-credit">Relief, coastlines and rivers: Natural Earth (public domain). Conic conformal projection.</p>` : ""}
+        <p class="at-credit">Relief, coastlines and rivers: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>.</p>` : ""}
         ${tab === "when" ? `
         <p class="ex-intro">Icons in the library by the century they were painted in, stacked by subject. Click a block, a century or a subject to see the icons.</p>
         <div class="ex-bar"><div class="ch-legend"></div><button type="button" class="btn ghost ex-reset" data-chart-reset hidden>Reset</button></div><div class="ex-chart"></div>` : ""}
@@ -378,5 +467,5 @@
       ro.observe(root);
     }).catch(() => { loading.textContent = "The map could not be loaded."; });
   }
-  window.EikonExplore = { render };
+  window.EikonExplore = { render, reel };
 })();
