@@ -350,6 +350,7 @@
   function renderIcon(id) {
     const icon = BY_ID[id];
     if (!icon) { view.innerHTML = `<section><div class="wrap empty-state"><h3>This icon is not in the library</h3><p><a href="#library">Return to the library</a></p></div></section>`; return; }
+    document.title = `${icon.title} · Eikon`;
     const idx = ICONS.indexOf(icon), prev = ICONS[(idx - 1 + ICONS.length) % ICONS.length], next = ICONS[(idx + 1) % ICONS.length];
     const now = C.today(), nd = nextDateFor(icon, now);
     const isPatron = state.patron === icon.id;
@@ -488,7 +489,8 @@
 
   /* ---------- routing ---------- */
   function route() {
-    const h = location.hash.replace(/^#/, "") || "today";
+    // An icon's own page (icon/<id>/) names its icon on <body data-start>; everywhere else the default is today.
+    const h = location.hash.replace(/^#/, "") || document.body.dataset.start || "today";
     const [name, ...rest] = h.split(".");
     const arg = rest.join(".");
     document.title = "Eikon - A Library of the Saints";
