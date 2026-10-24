@@ -593,16 +593,21 @@ section.tail { padding-top: 0; }
 .nw-legend .nw-note { margin-left: auto; color: var(--ash); font-style: italic; }
 .ex-net-frame { position: relative; background: radial-gradient(ellipse at center, rgba(201, 162, 74, .1), transparent 60%), rgba(14, 10, 7, .7); border: 1px solid rgba(201, 162, 74, .25); }
 .ex-net { touch-action: pan-y; } .ex-net svg { display: block; cursor: grab; font-family: var(--body); }
-.nw-reset { position: absolute; right: 10px; top: 10px; padding: 6px 12px; font-size: .85rem; }
-.nw-links line { stroke: rgba(201, 162, 74, .15); pointer-events: none; transition: opacity .15s, stroke .15s; }
-.nw-links line.hover { stroke: rgba(244, 220, 148, .75); stroke-width: var(--wf); opacity: 1; }
-.nw-links line.on { stroke: rgba(244, 220, 148, .8); stroke-width: var(--wf); }
-.nw-links line.dim { opacity: .06; }
+.nw-tools { position: absolute; right: 10px; top: 10px; display: flex; gap: 8px; }
+.nw-tools .btn { padding: 6px 12px; font-size: .85rem; }
+.no-lone .nw-node.lone, .no-lone .nw-labels .lone, .no-lone .nw-ring, .no-lone .nw-caption { display: none; }
+.nw-links path { fill: none; stroke: rgba(201, 162, 74, .15); pointer-events: none; transition: opacity .15s, stroke .15s; }
+.nw-links path.hover { stroke: rgba(244, 220, 148, .75); stroke-width: var(--wf); opacity: 1; }
+.nw-links path.on { stroke: rgba(244, 220, 148, .8); stroke-width: var(--wf); }
+.nw-links path.dim { opacity: .06; }
 .nw-node { stroke: rgba(11, 8, 6, .9); stroke-width: 1; cursor: pointer; transition: opacity .15s; outline: none; }
 .nw-node:hover, .nw-node:focus-visible { stroke: var(--gold-hi); stroke-width: 2; }
 .nw-node.on { stroke: #fff6d8; stroke-width: 2.5; }
+.nw-node.lone { opacity: .75; }
+.nw-ring { fill: none; stroke: rgba(201, 162, 74, .16); stroke-dasharray: 2 5; pointer-events: none; }
+.nw-caption { fill: var(--ash); font-style: italic; letter-spacing: .02em; pointer-events: none; }
 .nw-node.dim, .nw-labels text.dim { opacity: .15; }
-.nw-hits line { stroke: transparent; cursor: pointer; pointer-events: stroke; }
+.nw-hits path { fill: none; stroke: transparent; cursor: pointer; pointer-events: stroke; }
 .nw-labels text { fill: var(--vellum); paint-order: stroke; stroke: rgba(11, 8, 6, .9); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
 
 /* The list of icons beneath each */

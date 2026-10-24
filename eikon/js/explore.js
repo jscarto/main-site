@@ -251,7 +251,7 @@
   // ---------- WHO: who appears with whom ----------
   // People and angels, from each icon's list of what it depicts; a feast brings its figures with it
   // (a Crucifixion has Christ, a Deesis has Christ, his mother and the Forerunner).
-  const ALIAS = { "Theotokos Hodegetria": "Theotokos" };
+  const ALIAS = { "Theotokos Hodegetria": "Theotokos", "Samaritan Woman": "St Photini" };
   const IMPLY = {
     "Crucifixion": ["Jesus Christ"], "Resurrection": ["Jesus Christ"], "Nativity of Christ": ["Jesus Christ", "Theotokos"], "Transfiguration": ["Jesus Christ", "Prophet Elijah", "Prophet Moses"],
     "Theophany": ["Jesus Christ", "St John the Baptist"], "Ascension": ["Jesus Christ", "Theotokos"], "Raising of Lazarus": ["Jesus Christ", "St Lazarus"],
@@ -260,13 +260,14 @@
     "Washing of the Feet": ["Jesus Christ"], "Annunciation": ["Theotokos", "Archangel Gabriel"], "Dormition": ["Theotokos", "Jesus Christ"],
     "Nativity of the Theotokos": ["Theotokos", "St Anna"], "Entry of the Theotokos": ["Theotokos"], "Protection of the Theotokos": ["Theotokos"], "Mid-Pentecost": ["Jesus Christ"],
     "Pentecost": ["Holy Apostles"], "Beheading of St John the Baptist": ["St John the Baptist"], "Synaxis of the Archangels": ["Archangel Michael", "Archangel Gabriel"],
+    "Hospitality of Abraham": ["Holy Angels"],   // the three angels at Mamre, in every version; Abraham and Sarah are not (Rublev leaves them out)
   };
-  const PERSON = /^(St |Sts |Prophet |Archangel |Righteous |Jesus Christ$|Theotokos$|Holy Apostles$|Holy Angels$|Adam$|Eve$|Jacob$|Solomon$|Gideon$|Seven Sleepers|Forty Martyrs|Holy Fathers|Holy Innocents|Myrrh-bearing Women)/;
+  const PERSON = /^(St |Sts |Prophet |Archangel |Righteous |Jesus Christ$|Theotokos$|Holy Apostles$|Holy Angels$|Adam$|Eve$|Jacob$|Solomon$|Gideon$|Seven Sleepers|Forty Martyrs|Holy Fathers|Holy Forefathers$|Holy Innocents|Myrrh-bearing Women|Three Holy Youths$|Ten Martyrs of Crete$)/;
   const APOSTLES = new Set(["Holy Apostles", "St Peter", "St Paul", "St Andrew", "St John the Theologian", "St Thomas", "St Philip", "St Bartholomew", "St Matthew", "St Mark", "St Luke",
     "St James", "St James, son of Alphaeus", "St James, Brother of the Lord", "St Thaddeus", "St Simon the Zealot"]);
-  const groupOf = (n) => (n === "Jesus Christ" ? "christ" : n === "Theotokos" ? "theotokos" : /^Archangel|Holy Angels/.test(n) ? "angel" : /^Prophet|^Righteous|^(Adam|Eve|Jacob|Solomon|Gideon)$/.test(n) ? "prophet"
+  const groupOf = (n) => (n === "Jesus Christ" ? "christ" : n === "Theotokos" ? "theotokos" : /^Archangel|Holy Angels/.test(n) ? "angel" : /^Prophet|^Righteous|^(Adam|Eve|Jacob|Solomon|Gideon|Holy Forefathers|Three Holy Youths)$/.test(n) ? "prophet"
     : APOSTLES.has(n) ? "apostle" : "saint");
-  const GROUP = { christ: ["Christ", "#e2bd57"], theotokos: ["Theotokos", "#5b7cc4"], angel: ["Angels", "#c3b0dd"], prophet: ["Prophets and the righteous", "#6f9e78"], apostle: ["Apostles", "#c4573f"], saint: ["Saints", "#b89a6a"] };
+  const GROUP = { christ: ["Christ", "#e2bd57"], theotokos: ["Theotokos", "#5b7cc4"], angel: ["Angels", "#c3b0dd"], prophet: ["Prophets and the righteous", "#6f9e78"], apostle: ["Apostles", "#c4573f"], saint: ["Saints", "#b89a6a"], thing: ["Holy things and places", "#9c968a"] };
   function figures(icon) {
     const set = new Set();
     icon.subjects.forEach((s) => { s = ALIAS[s] || s; if (PERSON.test(s)) set.add(s); (IMPLY[s] || []).forEach((x) => set.add(x)); });
@@ -278,8 +279,10 @@
     const W = box.clientWidth, H = Math.round(Math.min(Math.max(W * 0.8, 460), window.innerHeight * 0.82));
     const nodes = new Map(), links = new Map();
     ICONS.forEach((icon) => {
-      const f = figures(icon);
+      // An icon with no single figure to name (a Menaion of all the saints, the Cross, a church) is shown by what it depicts.
+      const f = figures(icon), things = f.length ? [] : icon.subjects.filter((s) => s !== "All Saints");
       f.forEach((n) => { if (!nodes.has(n)) nodes.set(n, { id: n, icons: [], group: groupOf(n) }); nodes.get(n).icons.push(icon); });
+      things.forEach((n) => { if (!nodes.has(n)) nodes.set(n, { id: n, icons: [], group: n === "Menaion" ? "saint" : "thing", thing: true }); nodes.get(n).icons.push(icon); });
       for (let a = 0; a < f.length; a++) for (let b = a + 1; b < f.length; b++) {
         const [s, t] = [f[a], f[b]].sort(), k = s + "|" + t;
         if (!links.has(k)) links.set(k, { source: s, target: t, icons: [] });
@@ -288,7 +291,7 @@
     });
     const L = [...links.values()];
     const deg = new Map(); L.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
-    const N = [...nodes.values()].filter((n) => deg.get(n.id) || n.id === "Jesus Christ");
+    const all = [...nodes.values()], N = all.filter((n) => deg.get(n.id) || n.id === "Jesus Christ"), lone = all.filter((n) => !N.includes(n));
     const christ = N.find((n) => n.id === "Jesus Christ"); christ.fx = 0; christ.fy = 0;
     const rad = d3.scaleSqrt().domain([1, d3.max(N, (n) => n.icons.length)]).range([3.2, 30]);
     // Rings around Christ: the more icons a figure shares with him, the closer it sits; figures who never
@@ -302,6 +305,20 @@
       .force("radial", d3.forceRadial(ring, 0, 0).strength(0.8))
       .stop();
     for (let i = 0; i < 600; i++) sim.tick();
+    // Figures who appear with no one else, and icons of holy things rather than people, gather in a smaller
+    // cluster of their own: packed tight, biggest first, beside the main graph (below it on a narrow screen).
+    const order = Object.keys(GROUP);
+    lone.sort((a, b) => b.icons.length - a.icons.length || order.indexOf(a.group) - order.indexOf(b.group) || a.id.localeCompare(b.id));
+    lone.forEach((d) => { d.r = rad(d.icons.length) + 5; d.lone = true; });
+    d3.packSiblings(lone);
+    const enc = lone.length ? d3.packEnclose(lone) : null, side = W >= H * 1.05;
+    if (enc) {
+      const reach = side ? d3.max(N, (n) => n.x + rad(n.icons.length)) : d3.max(N, (n) => n.y + rad(n.icons.length));
+      const cx = side ? reach + 90 + enc.r : 0, cy = side ? 0 : reach + 90 + enc.r;
+      lone.forEach((d) => { d.x += cx - enc.x; d.y += cy - enc.y; });
+      enc.x = cx; enc.y = cy;
+    }
+    N.push(...lone);
     const svg = d3.select(box).html("").append("svg").attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img")
       .attr("aria-label", "A network of the figures in the icons: lines join figures who appear in the same icon");
     // Each group's color as a sphere: full at the center, darkening toward the rim.
@@ -313,24 +330,38 @@
       gr.append("stop").attr("offset", "100%").attr("stop-color", d3.color(c).darker(1.3));
     });
     const g = svg.append("g");
-    const ext = d3.extent(N.flatMap((n) => [n.x - 40, n.x + 40])), eyt = d3.extent(N.flatMap((n) => [n.y - 30, n.y + 30]));
-    const k0 = Math.min(W / (ext[1] - ext[0]), H / (eyt[1] - eyt[0]), 1.6);
-    const t0 = d3.zoomIdentity.translate(W / 2 - k0 * (ext[0] + ext[1]) / 2, H / 2 - k0 * (eyt[0] + eyt[1]) / 2).scale(k0);
-    const link = g.append("g").attr("class", "nw-links").selectAll("line").data(L).join("line")
-      .attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y)
+    // The view that frames a set of nodes: everything, or the main graph alone while the cluster is hidden.
+    const fit = (ns) => {
+      const ext = d3.extent(ns.flatMap((n) => [n.x - 40, n.x + 40])), eyt = d3.extent(ns.flatMap((n) => [n.y - 30, n.y + 30]));
+      const k = Math.min(W / (ext[1] - ext[0]), H / (eyt[1] - eyt[0]), 1.6);
+      return d3.zoomIdentity.translate(W / 2 - k * (ext[0] + ext[1]) / 2, H / 2 - k * (eyt[0] + eyt[1]) / 2).scale(k);
+    };
+    const t0 = fit(N), tMain = fit(N.filter((n) => !n.lone)), k0 = t0.k;
+    // Each edge bows gently to one side: a quadratic curve whose control point sits off the midpoint,
+    // at a fixed share of the edge's length, so short and long edges bend alike.
+    const arc = (d) => {
+      const { x: x1, y: y1 } = d.source, { x: x2, y: y2 } = d.target, b = 0.14;
+      return `M${x1},${y1}Q${(x1 + x2) / 2 - (y2 - y1) * b},${(y1 + y2) / 2 + (x2 - x1) * b} ${x2},${y2}`;
+    };
+    if (enc) {
+      g.append("circle").attr("class", "nw-ring").attr("cx", enc.x).attr("cy", enc.y).attr("r", enc.r + 18).attr("stroke-width", 1 / t0.k);
+      g.append("text").attr("class", "nw-caption").attr("x", enc.x).attr("y", enc.y - enc.r - 28).attr("text-anchor", "middle").attr("font-size", 13 / t0.k).text("Alone in their icons");
+    }
+    const link = g.append("g").attr("class", "nw-links").selectAll("path").data(L).join("path")
+      .attr("d", arc)
       // Thin at rest (1–2px); at full weight, by how many icons the pair shares, when lit.
       .attr("stroke-width", (d) => Math.min(2, 0.6 + Math.sqrt(d.icons.length) * 0.35)).style("--wf", (d) => `${Math.min(6, 0.6 + Math.sqrt(d.icons.length) * 0.9)}px`);
     // The lines are too thin to aim at, so each has a wider, invisible twin that takes the pointer.
-    const hit = g.append("g").attr("class", "nw-hits").selectAll("line").data(L).join("line")
-      .attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y)
+    const hit = g.append("g").attr("class", "nw-hits").selectAll("path").data(L).join("path")
+      .attr("d", arc)
       .attr("stroke-width", 10 / t0.k);
     hit.append("title").text((d) => `${d.source.id} and ${d.target.id}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}`);
-    const node = g.append("g").selectAll("circle").data(N).join("circle").attr("class", "nw-node").attr("tabindex", 0).attr("role", "button")
+    const node = g.append("g").selectAll("circle").data(N).join("circle").attr("class", (d) => (d.lone ? "nw-node lone" : "nw-node")).attr("tabindex", 0).attr("role", "button")
       .attr("cx", (d) => d.x).attr("cy", (d) => d.y).attr("r", (d) => rad(d.icons.length)).attr("fill", (d) => `url(#nw-${d.group})`)
       .attr("aria-label", (d) => `${d.id}: ${d.icons.length} icons`);
-    node.append("title").text((d) => `${d.id}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}, appears with ${deg.get(d.id) || 0} others`);
+    node.append("title").text((d) => `${d.id}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}, ${d.thing ? "without a single named figure" : d.lone ? "appears with no one else" : `appears with ${deg.get(d.id)} others`}`);
     const labeled = (d, k) => d.icons.length >= (k > 2.4 ? 1 : k > 1.4 ? 3 : 6) || d.id === "Jesus Christ";
-    const label = g.append("g").attr("class", "nw-labels").selectAll("text").data(N).join("text")
+    const label = g.append("g").attr("class", "nw-labels").selectAll("text").data(N).join("text").classed("lone", (d) => d.lone)
       .attr("x", (d) => d.x).attr("y", (d) => d.y + rad(d.icons.length) + 13).attr("text-anchor", "middle")
       .text((d) => d.id.replace(/^(St|Prophet|Archangel) /, ""))
       .attr("font-size", 15 / t0.k);
@@ -357,8 +388,8 @@
     declutter(t0.k);
     let focused = null;
     const zoom = d3.zoom().filter(twoFingers).scaleExtent([k0 * 0.7, 6]).on("zoom", (e) => { const k = e.transform.k;
-      g.attr("transform", e.transform); label.attr("font-size", 15 / k); hit.attr("stroke-width", 10 / k); relabel(); });
-    svg.call(zoom).call(zoom.transform, t0);
+      g.attr("transform", e.transform); label.attr("font-size", 15 / k); hit.attr("stroke-width", 10 / k); g.select(".nw-ring").attr("stroke-width", 1 / k); g.select(".nw-caption").attr("font-size", 13 / k); relabel(); });
+    svg.classed("no-lone", true).call(zoom).call(zoom.transform, tMain);   // the lone figures wait until asked for
     const focus = (d) => {
       const nb = neighbours(d);
       node.classed("dim", (n) => !nb.has(n.id)).classed("on", (n) => n === d);
@@ -367,7 +398,7 @@
       relabel();
       const others = L.filter((l) => l.source === d || l.target === d).map((l) => ({ who: l.source === d ? l.target.id : l.source.id, n: l.icons.length })).sort((a, b) => b.n - a.n);
       showList(list, d.id, "In the library", d.icons.slice().sort((a, b) => a.year - b.year),
-        others.length ? `Appears with ${others.slice(0, 8).map((o) => o.who).join(", ")}${others.length > 8 ? ` and ${others.length - 8} more` : ""}.` : "Appears alone.");
+        others.length ? `Appears with ${others.slice(0, 8).map((o) => o.who).join(", ")}${others.length > 8 ? ` and ${others.length - 8} more` : ""}.` : d.thing ? "Icons with no single named figure." : "Appears alone.");
     };
     node.on("click", (e, d) => { e.stopPropagation(); focus(d); }).on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); focus(d); } });
     hit.on("click", (e, d) => { e.stopPropagation(); link.classed("on", (l) => l === d); showList(list, `${d.source.id} and ${d.target.id} together in`, "Shared icons", d.icons.slice().sort((a, b) => a.year - b.year)); });
@@ -397,8 +428,8 @@
       });
       node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
       label.attr("x", (d) => d.x).attr("y", (d) => d.y + rad(d.icons.length) + 13);
-      link.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
-      hit.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y).attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
+      link.attr("d", arc);
+      hit.attr("d", arc);
     };
     const drift = (now) => {
       if (!svg.node().isConnected) { seen.disconnect(); return; }   // redrawn or left the page
@@ -415,8 +446,20 @@
     };
     svg.on("click", clear);
     root.querySelector(".nw-legend").innerHTML = Object.entries(GROUP).map(([k, [n, c]]) => `<span><i style="background:${c}"></i>${n}</span>`).join("") +
-      `<span class="nw-note">${N.length} figures · ${L.length} connections</span>`;
-    root.querySelector("[data-net-reset]").onclick = () => { clear(); list.hidden = true; list.innerHTML = ""; svg.transition().duration(500).call(zoom.transform, t0); };
+      `<span class="nw-note">${N.length} figures and subjects · ${L.length} connections</span>`;
+    // The cluster of those alone in their icons can be set aside, and the view closes in on the main graph.
+    let showLone = false;
+    const home = () => (showLone ? t0 : tMain);
+    const toggle = root.querySelector("[data-net-lone]");
+    toggle.hidden = !lone.length;
+    toggle.onclick = () => {
+      showLone = !showLone;
+      svg.classed("no-lone", !showLone);
+      toggle.textContent = showLone ? "Hide lone figures" : "Show lone figures";
+      if (!showLone && focused && focused.lone) { clear(); list.hidden = true; list.innerHTML = ""; }
+      svg.transition().duration(600).call(zoom.transform, home());
+    };
+    root.querySelector("[data-net-reset]").onclick = () => { clear(); list.hidden = true; list.innerHTML = ""; svg.transition().duration(500).call(zoom.transform, home()); };
   }
 
   // ---------- the view ----------
@@ -440,8 +483,8 @@
         <p class="ex-intro">Icons in the library by the century they were painted in, stacked by subject. Click a block, a century or a subject to see the icons.</p>
         <div class="ex-bar"><div class="ch-legend"></div><button type="button" class="btn ghost ex-reset" data-chart-reset hidden>Reset</button></div><div class="ex-chart"></div>` : ""}
         ${tab === "who" ? `
-        <p class="ex-intro">Every figure in the library, with Christ at the center. Lines join figures who appear in the same icon, thicker where they appear together more often. A feast brings its figures with it: a Crucifixion counts Christ, and a Deesis counts Christ, his mother and the Forerunner. Click a figure to see its icons and companions, or a line to see the icons two figures share.</p>
-        <div class="nw-legend"></div><div class="ex-net-frame"><div class="ex-net"></div><button type="button" class="btn ghost nw-reset" data-net-reset>Reset</button></div>` : ""}
+        <p class="ex-intro">Every figure in the library, with Christ at the center. Lines join figures who appear in the same icon, thicker where they appear together more often. A feast brings its figures with it: a Crucifixion counts Christ, and a Deesis counts Christ, his mother and the Forerunner. Figures who only ever appear alone, and icons of holy things rather than people (the Cross, a church, the Menaion of all the saints), are set apart in a smaller cluster: choose Show lone figures to see them. Click a figure to see its icons and companions, or a line to see the icons two figures share.</p>
+        <div class="nw-legend"></div><div class="ex-net-frame"><div class="ex-net"></div><div class="nw-tools"><button type="button" class="btn ghost" data-net-lone title="Show or hide the figures and subjects alone in their icons">Show lone figures</button><button type="button" class="btn ghost" data-net-reset>Reset</button></div></div>` : ""}
         <div class="ex-loading">Unrolling the map…</div>
         <div class="placard ex-list" hidden></div>
       </div>
