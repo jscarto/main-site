@@ -58,7 +58,8 @@
     const hit = icon.days.find((d) => d.d === info.churchKey || d.d === info.movableKey);
     if (hit && hit.n) return comms.find((c) => norm(c.name) === norm(hit.n)) || { name: hit.n, rank: "saint" };
     if (hit && hit.d.startsWith("pascha")) return comms.find((c) => c.movable) || info.principal;
-    const want = new Set(icon.subjects.flatMap(stems));
+    // The subjects, and the icon's own names: a Theotokos icon is told apart by its title ("Joy of All Who Sorrow").
+    const want = new Set([...icon.subjects, icon.cardName, icon.title].filter(Boolean).flatMap(stems));
     let best = null, score = 0;
     comms.forEach((c) => { const sc = stems(c.name).filter((w) => want.has(w)).length; if (sc > score) { score = sc; best = c; } });
     return best || info.principal || comms[0];
