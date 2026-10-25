@@ -3,10 +3,18 @@
 (function () {
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const ICONS = window.EIKON_ICONS;
-  const KINDS = ["christ", "theotokos", "feast", "saint", "angel", "menaion"];
-  const KIND_NAME = { christ: "Christ", theotokos: "Theotokos", feast: "Feasts", saint: "Saints", angel: "Angels", menaion: "Menaion" };
-  // Pigments of the icon painter's palette: gold, lapis, cinnabar, malachite, ochre, umber.
-  const KIND_COLOR = { christ: "#d9b24c", theotokos: "#4f6fb3", feast: "#b8432c", saint: "#5d8f6a", angel: "#a98ac7", menaion: "#8a6a45" };
+  const KINDS = ["christ", "theotokos", "feast", "prophet", "apostle", "saint", "angel", "menaion"];
+  const KIND_NAME = { christ: "Christ", theotokos: "Theotokos", feast: "Feasts", prophet: "Prophets and the righteous", apostle: "Apostles", saint: "Saints", angel: "Angels", menaion: "Menaion" };
+  // Pigments of the icon painter's palette: gold, lapis, cinnabar, malachite, ochre, umber; the prophets and apostles
+  // are paler (a grey-blue and a flesh tone), so they part from their neighbors by lightness as well as hue.
+  const KIND_COLOR = { christ: "#d9b24c", theotokos: "#4f6fb3", feast: "#b8432c", prophet: "#7fb3c4", apostle: "#f2c0a8", saint: "#5d8f6a", angel: "#a98ac7", menaion: "#8a6a45" };
+  // The chart's category for an icon: its kind, except that an icon of a saint is counted with the prophets or the
+  // apostles when that is who it shows first (the same grouping as the network's figures).
+  const kindOf = (i) => {
+    if (i.kind !== "saint") return i.kind;
+    const g = groupOf(ALIAS[i.subjects[0]] || i.subjects[0]);
+    return g === "prophet" || g === "apostle" ? g : "saint";
+  };
   // Angels and the Menaion are hatched (in opposite directions), so they can be told from the Theotokos and the
   // feasts without relying on hue alone.
   const HATCH = { angel: 45, menaion: -45 };
@@ -34,7 +42,7 @@
 
   // ---------- the shared list of icons ----------
   const tile = (i) => `<a class="ex-tile" href="icon/${i.id}/"><img src="${i.thumb}" alt="" loading="lazy"><span><b>${esc(i.title)}</b><i>${esc(i.date)}</i></span></a>`;
-  function showList(box, title, sub, icons, note) {
+  function showList(box, title, sub, icons, note, scroll = true) {
     const first = 48;
     box.hidden = false;
     box.innerHTML = `<div class="ex-list-head"><div><p class="eyebrow">${esc(sub)}</p><h3>${esc(title)}</h3>${note ? `<p class="ex-note">${esc(note)}</p>` : ""}</div>
@@ -43,7 +51,7 @@
       ${icons.length > first ? `<div class="more-row"><button type="button" class="btn ghost ex-more">Show all ${icons.length}</button></div>` : ""}`;
     const more = box.querySelector(".ex-more");
     if (more) more.onclick = () => { box.querySelector(".ex-tiles").insertAdjacentHTML("beforeend", icons.slice(first).map(tile).join("")); more.parentNode.remove(); };
-    box.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    if (scroll) box.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
 
   // On a touchscreen one finger scrolls the page past a chart; two fingers pan and zoom it.
@@ -65,10 +73,58 @@
     return [...by.values()].map((p) => ({ ...p, name: Object.entries(p.names).sort((a, b) => b[1] - a[1])[0][0] })).sort((a, b) => b.icons.length - a.icons.length);
   }
 
+  // Journeys: from where each icon was made to where it is kept now, one route per pair of places, so icons that
+  // traveled together draw one thicker arc. A home is a city (its museums together); icons still where they were
+  // made, and those whose home is unknown, have no journey. Homes beyond the map wait at a point on its edge.
+  const ABROAD = [{ name: "the Americas", lng: -13, lat: 40, test: (h) => h.lng < -30 }, { name: "Japan", lng: 61, lat: 39, test: (h) => h.lng > 100 }];
+  function journeys(ps) {
+    const placeOf = new Map(); ps.forEach((p) => p.icons.forEach((i) => placeOf.set(i, p)));
+    const homes = new Map(), routes = new Map();
+    ICONS.forEach((i) => {
+      const from = placeOf.get(i), h = i.home;
+      if (!from || h.lat == null) return;
+      const far = ABROAD.find((a) => a.test(h));
+      const name = far ? far.name : h.city || h.name;
+      if (!far && Math.hypot(h.lat - from.lat, (h.lng - from.lng) * Math.cos(from.lat * Math.PI / 180)) < 0.25) return;   // within ~25 km: it stayed
+      if (!homes.has(name)) homes.set(name, { name, lat: far ? far.lat : h.lat, lng: far ? far.lng : h.lng, abroad: !!far, icons: [], cities: {} });
+      const home = homes.get(name); home.icons.push(i); if (far) home.cities[h.city || h.name] = (home.cities[h.city || h.name] || 0) + 1;
+      const k = from.name + "|" + name;
+      if (!routes.has(k)) routes.set(k, { from, to: home, icons: [] });
+      routes.get(k).icons.push(i);
+    });
+    return { homes: [...homes.values()], routes: [...routes.values()].sort((a, b) => a.icons.length - b.icons.length) };
+  }
+
+  // Full screen: the browser's own where it allows an element (not the iPhone), otherwise the map's frame fills the window.
+  const mapState = { journeys: false };
+  const isFull = (frame) => document.fullscreenElement === frame || frame.classList.contains("is-full");
+  function fullScreen(frame, redraw) {
+    const btn = frame.querySelector("[data-full]");
+    const sync = () => {
+      const on = isFull(frame);
+      btn.setAttribute("aria-label", on ? "Leave full screen" : "Full screen"); btn.classList.toggle("on", on);
+      document.documentElement.classList.toggle("map-full", frame.classList.contains("is-full"));
+      redraw();
+    };
+    btn.onclick = () => {
+      if (document.fullscreenElement === frame) document.exitFullscreen();
+      else if (frame.classList.contains("is-full")) { frame.classList.remove("is-full"); sync(); }
+      else if (frame.requestFullscreen && document.fullscreenEnabled) {
+        // Some embedded browsers neither grant nor refuse; fill the window instead if nothing has happened shortly.
+        const fallback = () => { if (!document.fullscreenElement && !frame.classList.contains("is-full")) { frame.classList.add("is-full"); sync(); } };
+        frame.requestFullscreen().catch(fallback); setTimeout(fallback, 600);
+      }
+      else { frame.classList.add("is-full"); sync(); }
+    };
+    frame.onfullscreenchange = sync;
+    frame.onkeydown = (e) => { if (e.key === "Escape" && frame.classList.contains("is-full")) { frame.classList.remove("is-full"); sync(); } };
+  }
+
   function atlas(root, img, list) {
     const d3 = window.d3, G = window.EIKON_GEO, [W0, S0, E0, N0] = G.bounds;
     const wrap = root.querySelector(".atlas");
-    const W = wrap.clientWidth, H = Math.round(Math.min(Math.max(W * 0.72, 380), window.innerHeight * 0.74));
+    const full = isFull(root.querySelector(".atlas-frame"));
+    const W = wrap.clientWidth, H = full ? wrap.parentNode.clientHeight : Math.round(Math.min(Math.max(W * 0.72, 380), window.innerHeight * 0.74));
     wrap.style.height = H + "px";
     const proj = d3.geoConicConformal().parallels([36, 62]).rotate([-30, 0])
       .fitExtent([[10, 10], [W - 10, H - 10]], { type: "MultiPoint", coordinates: d3.range(9, 56.1, 1).flatMap((lon) => [[lon, 25], [lon, 67]]) });
@@ -88,7 +144,7 @@
         for (let x = 0; x < w; x++) {
           const ll = proj.invert([(x / dpr - t.x) / t.k, (y / dpr - t.y) / t.k]);
           const k = (y * w + x) * 4;
-          if (!ll) { o[k] = 11; o[k + 1] = 8; o[k + 2] = 6; o[k + 3] = 255; continue; }
+          if (!ll || ll[0] < W0 || ll[0] > E0 || ll[1] < S0 || ll[1] > N0) { o[k] = 11; o[k + 1] = 8; o[k + 2] = 6; o[k + 3] = 255; continue; }
           const u = Math.max(0, Math.min(iw - 1.001, (ll[0] - W0) / (E0 - W0) * iw - 0.5)), v = Math.max(0, Math.min(ih - 1.001, (N0 - ll[1]) / (N0 - S0) * ih - 0.5));
           const x0 = u | 0, y0 = v | 0, fx = u - x0, fy = v - y0, a = (y0 * iw + x0) * 4, b = a + 4, c = a + iw * 4, d = c + 4;
           for (let ch = 0; ch < 3; ch++) o[k + ch] = (sd[a + ch] * (1 - fx) + sd[b + ch] * fx) * (1 - fy) + (sd[c + ch] * (1 - fx) + sd[d + ch] * fx) * fy;
@@ -116,34 +172,74 @@
     gz.append("path").attr("class", "at-coast").attr("d", path({ type: "MultiLineString", coordinates: G.coast }));
     const gl = svg.append("g");                      // screen-space labels and symbols
     const gratLabels = gl.append("g");
-    const ps = places();
+    const ps = places(), J = journeys(ps);
+    const garcs = gl.append("g").attr("class", "at-journeys").attr("display", "none");
     const r = d3.scaleSqrt().domain([1, ps[0].icons.length]).range([W < 600 ? 3.5 : 4.5, Math.max(16, Math.min(30, W / 32))]);
     const marks = gl.append("g").selectAll("g").data([...ps].sort((a, b) => (b.region - a.region) || (b.icons.length - a.icons.length))).join("g")
       .attr("class", (d) => "at-place" + (d.region ? " region" : "")).attr("tabindex", 0).attr("role", "button")
       .attr("aria-label", (d) => `${d.name}: ${d.icons.length} icons`);
     marks.append("circle").attr("r", (d) => r(d.icons.length));
     marks.append("title").text((d) => `${d.name}${d.region ? " (region, approximate)" : ""}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}`);
-    const labels = gl.append("g").selectAll("text").data(ps.filter((p) => p.icons.length >= 3)).join("text")
-      .attr("class", (d) => "at-label" + (d.region ? " region" : "")).text((d) => (d.region ? d.name.replace(/\s*\(.*\)/, "").toUpperCase() : d.name.replace(/^St Catherine's Monastery, /, "")));
-    const pick = (d) => {
-      marks.classed("on", (x) => x === d);
-      showList(list, d.name, d.region ? "Made in the region of (approximate)" : "Made in", d.icons.slice().sort((a, b) => a.year - b.year));
+    // Where the icons are kept now, shown with the journeys: a small diamond, or an arrow off the map's edge.
+    const hr = d3.scaleSqrt().domain([1, d3.max(J.homes, (h) => h.icons.length)]).range([3, 9]);
+    const homes = gl.append("g").attr("class", "at-homes").attr("display", "none").selectAll("g").data(J.homes).join("g")
+      .attr("class", (d) => "at-home" + (d.abroad ? " abroad" : "")).attr("tabindex", 0).attr("role", "button").attr("aria-label", (d) => `Kept in ${d.name}: ${d.icons.length} icons`);
+    homes.filter((d) => !d.abroad).append("rect").attr("x", (d) => -hr(d.icons.length)).attr("y", (d) => -hr(d.icons.length))
+      .attr("width", (d) => 2 * hr(d.icons.length)).attr("height", (d) => 2 * hr(d.icons.length)).attr("transform", "rotate(45)");
+    homes.filter((d) => d.abroad).append("path").attr("d", (d) => (d.lng < 0 ? "M6,-7L-6,0L6,7Z" : "M-6,-7L6,0L-6,7Z"));
+    homes.append("title").text((d) => `Kept in ${d.name}${d.abroad ? ` (${Object.keys(d.cities).join(", ")})` : ""}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}`);
+    const labels = gl.append("g").selectAll("text").data([...ps.filter((p) => p.icons.length >= 3), ...J.homes.filter((h) => h.icons.length >= 5 || h.abroad)]).join("text")
+      .attr("class", (d) => "at-label" + (d.region ? " region" : "") + (d.cities ? " home" : ""))
+      .text((d) => (d.cities ? (d.abroad ? `To ${d.name}` : d.name) : d.region ? d.name.replace(/\s*\(.*\)/, "").toUpperCase() : d.name.replace(/^St Catherine's Monastery, /, "")));
+    let showJ = false, chosen = null;              // the journeys toggle, and the place, home or route whose journeys are lit
+    const light = () => {
+      const on = (x) => chosen && (chosen === x || chosen === x.from || chosen === x.to);
+      garcs.selectAll(".at-arc").classed("on", on).classed("dim", (x) => chosen && !on(x));
     };
+    const pick = (d) => {
+      marks.classed("on", (x) => x === d); homes.classed("on", false); chosen = d; light();
+      const out = J.routes.filter((x) => x.from === d).sort((a, b) => b.icons.length - a.icons.length);
+      showList(list, d.name, d.region ? "Made in the region of (approximate)" : "Made in", d.icons.slice().sort((a, b) => a.year - b.year),
+        showJ && out.length ? `Now kept in ${out.slice(0, 6).map((x) => x.to.name).join(", ")}${out.length > 6 ? ` and ${out.length - 6} more places` : ""}.` : undefined);
+    };
+    const pickHome = (d) => {
+      homes.classed("on", (x) => x === d); marks.classed("on", false); chosen = d; light();
+      const into = J.routes.filter((x) => x.to === d).sort((a, b) => b.icons.length - a.icons.length);
+      showList(list, d.abroad ? d.name.replace(/^the /, "The ") : d.name, "Now kept in", d.icons.slice().sort((a, b) => a.year - b.year),
+        `${d.abroad ? Object.entries(d.cities).sort((a, b) => b[1] - a[1]).map(([c, n]) => `${c} (${n})`).join(", ") + ". " : ""}Made in ${into.slice(0, 6).map((x) => x.from.name).join(", ")}${into.length > 6 ? ` and ${into.length - 6} more places` : ""}.`);
+    };
+    homes.on("click", (e, d) => pickHome(d)).on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pickHome(d); } });
     marks.on("click", (e, d) => pick(d)).on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(d); } });
 
     function place(t) {
       const at = (lon, lat) => { const p = proj([lon, lat]); return [p[0] * t.k + t.x, p[1] * t.k + t.y]; };
       marks.attr("transform", (d) => `translate(${at(d.lng, d.lat)})`);
+      if (showJ) {
+        homes.attr("transform", (d) => `translate(${at(d.lng, d.lat)})`);
+        // Each arc bows to the left of its travel, so a route and its return never overlap.
+        const arc = (d) => {
+          const [x1, y1] = at(d.from.lng, d.from.lat), [x2, y2] = at(d.to.lng, d.to.lat), b = 0.22;
+          const cx = (x1 + x2) / 2 + (y2 - y1) * b, cy = (y1 + y2) / 2 - (x2 - x1) * b;
+          d.end = [x2, y2, Math.atan2(y2 - cy, x2 - cx)];
+          return `M${x1},${y1}Q${cx},${cy} ${x2},${y2}`;
+        };
+        garcs.selectAll(".at-arc").attr("d", arc);
+        garcs.selectAll(".at-arc-hit").attr("d", arc);
+        garcs.selectAll(".at-head").attr("transform", (d) => `translate(${d.end[0]},${d.end[1]}) rotate(${d.end[2] * 180 / Math.PI})`);
+      }
       // Place labels, skipping any that would collide with one already drawn.
       const boxes = [];
       labels.each(function (d) {
-        const [x, y] = at(d.lng, d.lat), rr = r(d.icons.length), el = d3.select(this);
+        const el = d3.select(this);
+        if (d.cities && !showJ) { el.attr("display", "none"); return; }
+        const [x, y] = at(d.lng, d.lat), rr = d.cities ? hr(d.icons.length) : r(d.icons.length);
         el.attr("display", null);                          // hidden text measures as zero wide
-        const tx = x + rr + 4, ty = y + 5, wdt = this.getComputedTextLength();
+        const wdt = this.getComputedTextLength(), left = d.abroad && d.lng > 0;
+        const tx = left ? x - rr - 10 - wdt : x + rr + (d.abroad ? 10 : 4), ty = y + 5;
         const box = [tx - 2, ty - 15, tx + wdt + 2, ty + 4];
         const clash = boxes.some((b) => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]));
-        const big = d.icons.length >= (t.k > 2.2 ? 1 : t.k > 1.4 ? 4 : 8);
-        el.attr("x", tx).attr("y", ty).attr("display", clash || !big || tx > W - 20 ? "none" : null);
+        const big = d.abroad || d.icons.length >= (t.k > 2.2 ? 1 : t.k > 1.4 ? 4 : 8);
+        el.attr("x", tx).attr("y", ty).attr("display", clash || !big || tx > W - 20 || tx < 0 ? "none" : null);
         if (!clash && big) boxes.push(box);
       });
       // Degree labels where the graticule meets the frame.
@@ -172,8 +268,35 @@
     svg.call(zoom).on("dblclick.zoom", null);
     root.querySelector("[data-zoom-in]").onclick = () => svg.transition().duration(400).call(zoom.scaleBy, 1.8);
     root.querySelector("[data-zoom-out]").onclick = () => svg.transition().duration(400).call(zoom.scaleBy, 1 / 1.8);
-    root.querySelector("[data-zoom-reset]").onclick = () => svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+    // With the journeys the map draws back to take in Western Europe and the arrows to homes beyond it.
+    const wide = d3.geoPath(proj).bounds({ type: "MultiPoint", coordinates: [...d3.range(-14, 63, 1).flatMap((lon) => [[lon, 30], [lon, 66]]), ...ABROAD.map((a) => [a.lng, a.lat])] });
+    const kOut = Math.min(1, 0.94 * Math.min(W / (wide[1][0] - wide[0][0]), H / (wide[1][1] - wide[0][1])));
+    const tOut = d3.zoomIdentity.translate(W / 2 - kOut * (wide[0][0] + wide[1][0]) / 2, H / 2 - kOut * (wide[0][1] + wide[1][1]) / 2).scale(kOut);
+    const homeView = () => (showJ ? tOut : d3.zoomIdentity);
+    root.querySelector("[data-zoom-reset]").onclick = () => svg.transition().duration(500).call(zoom.transform, homeView());
+    const routes = garcs.selectAll("g").data(J.routes).join("g");
+    const jw = (d) => Math.min(7, 0.7 + Math.sqrt(d.icons.length) * 0.75);
+    routes.append("path").attr("class", "at-arc").attr("stroke-width", jw);
+    routes.append("path").attr("class", "at-head").attr("d", (d) => { const s = 3 + jw(d); return `M0,0L${-2.2 * s},${-s}L${-2.2 * s},${s}Z`; });
+    routes.append("path").attr("class", "at-arc-hit").append("title").text((d) => `Made in ${d.from.name}, now in ${d.to.name}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}`);
+    routes.select(".at-arc-hit").on("click", (e, d) => {
+      chosen = d; marks.classed("on", false); homes.classed("on", false); light();
+      showList(list, `${d.from.name} to ${d.to.name.replace(/^the /, "The ")}`, "Made in, now kept in", d.icons.slice().sort((a, b) => a.year - b.year));
+    });
+    const toggleJ = root.querySelector("[data-journeys]");
+    const setJ = (on, animate) => {
+      showJ = mapState.journeys = on; chosen = null; light();
+      toggleJ.textContent = showJ ? "Hide journeys" : "Show journeys";
+      garcs.attr("display", showJ ? null : "none"); gl.select(".at-homes").attr("display", showJ ? null : "none");
+      root.querySelector(".at-jkey").hidden = !showJ;
+      if (!showJ) homes.classed("on", false);
+      zoom.scaleExtent([showJ ? kOut : 1, 7]).translateExtent(showJ ? [[Math.min(0, wide[0][0]), Math.min(0, wide[0][1])], [Math.max(W, wide[1][0]), Math.max(H, wide[1][1])]] : [[0, 0], [W, H]]);
+      if (animate) svg.transition().duration(700).call(zoom.transform, homeView());
+      else { svg.call(zoom.transform, homeView()); clearTimeout(timer); relief(homeView()); }
+    };
+    toggleJ.onclick = () => setJ(!showJ, true);
     relief(d3.zoomIdentity); place(d3.zoomIdentity);
+    if (mapState.journeys) setJ(true, false);         // kept across a redraw (entering or leaving full screen)
     // Center the map on a place at a given scale, drawing the relief at once rather than after the zoom settles.
     reel.mapZoom = (k, lon, lat) => {
       const p = proj([lon, lat]), t = d3.zoomIdentity.translate(W / 2 - k * p[0], H / 2 - k * p[1]).scale(k);
@@ -196,9 +319,9 @@
     const d3 = window.d3, box = root.querySelector(".ex-chart");
     const W = box.clientWidth, H = Math.round(Math.min(460, Math.max(300, W * 0.48)));
     const cents = d3.range(d3.min(ICONS, (i) => century(i.year)), d3.max(ICONS, (i) => century(i.year)) + 1);
-    const rows = cents.map((c) => { const o = { c }; KINDS.forEach((k) => (o[k] = ICONS.filter((i) => century(i.year) === c && i.kind === k))); return o; });
+    const rows = cents.map((c) => { const o = { c }; KINDS.forEach((k) => (o[k] = ICONS.filter((i) => century(i.year) === c && kindOf(i) === k))); return o; });
     const stack = d3.stack().keys(KINDS).value((d, k) => d[k].length)(rows);
-    const m = { t: 16, r: 10, b: 44, l: 40 };
+    const m = { t: 16, r: 60, b: 54, l: 40 };   // the last bar stands as far from the frame as the first
     const x = d3.scaleBand().domain(cents).range([m.l, W - m.r]).padding(0.22);
     const y = d3.scaleLinear().domain([0, d3.max(rows, (d) => KINDS.reduce((a, k) => a + d[k].length, 0))]).nice().range([H - m.b, m.t]);
     const svg = d3.select(box).html("").append("svg").attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img")
@@ -212,7 +335,7 @@
       svg.selectAll(".ch-bar").classed("dim", (o) => o.data.c !== c);
       showList(list, `The ${ordinal(c)} century`, "Painted in", icons); reset.hidden = false;
     });
-    svg.append("text").attr("class", "ch-cap").attr("x", (m.l + W - m.r) / 2).attr("y", H - 6).attr("text-anchor", "middle").text("Century");
+    svg.append("text").attr("class", "ch-cap").attr("x", (m.l + W - m.r) / 2).attr("y", H - 8).attr("text-anchor", "middle").text("Century");
     const tip = box.appendChild(Object.assign(document.createElement("div"), { className: "ch-tip", hidden: true }));
     const defs = svg.append("defs");
     Object.entries(HATCH).forEach(([k, angle]) => {
@@ -237,11 +360,11 @@
         showList(list, `${KIND_NAME[d.key]} · ${ordinal(d.data.c)} century`, "Painted in", icons); reset.hidden = false;
       });
     // The legend doubles as a filter: click a subject to list every icon of it.
-    root.querySelector(".ch-legend").innerHTML = KINDS.map((k) => `<button type="button" data-k="${k}"><i style="background:${swatch(k)}"></i>${KIND_NAME[k]} <small>${ICONS.filter((i) => i.kind === k).length}</small></button>`).join("");
+    root.querySelector(".ch-legend").innerHTML = KINDS.map((k) => `<button type="button" data-k="${k}"><i style="background:${swatch(k)}"></i>${KIND_NAME[k]} <small>${ICONS.filter((i) => kindOf(i) === k).length}</small></button>`).join("");
     root.querySelectorAll(".ch-legend button").forEach((b) => b.onclick = () => {
       const k = b.dataset.k;
       svg.selectAll(".ch-bar").classed("dim", (d) => d.key !== k);
-      showList(list, KIND_NAME[k], "Every icon of", ICONS.filter((i) => i.kind === k).sort((a, b) => a.year - b.year)); reset.hidden = false;
+      showList(list, KIND_NAME[k], "Every icon of", ICONS.filter((i) => kindOf(i) === k).sort((a, b) => a.year - b.year)); reset.hidden = false;
     });
     const reset = root.querySelector("[data-chart-reset]");
     reset.hidden = true;
@@ -263,11 +386,13 @@
     "Hospitality of Abraham": ["Holy Angels"],   // the three angels at Mamre, in every version; Abraham and Sarah are not (Rublev leaves them out)
   };
   const PERSON = /^(St |Sts |Prophet |Archangel |Righteous |Jesus Christ$|Theotokos$|Holy Apostles$|Holy Angels$|Adam$|Eve$|Jacob$|Solomon$|Gideon$|Seven Sleepers|Forty Martyrs|Holy Fathers|Holy Forefathers$|Holy Innocents|Myrrh-bearing Women|Three Holy Youths$|Ten Martyrs of Crete$)/;
+  // The same groups and colors as the chart; an icon of a holy thing (the Cross, a church's dedication) is a feast.
+  // The Forerunner is counted among the prophets, as the Church calls him the last and greatest of them.
   const APOSTLES = new Set(["Holy Apostles", "St Peter", "St Paul", "St Andrew", "St John the Theologian", "St Thomas", "St Philip", "St Bartholomew", "St Matthew", "St Mark", "St Luke",
     "St James", "St James, son of Alphaeus", "St James, Brother of the Lord", "St Thaddeus", "St Simon the Zealot"]);
-  const groupOf = (n) => (n === "Jesus Christ" ? "christ" : n === "Theotokos" ? "theotokos" : /^Archangel|Holy Angels/.test(n) ? "angel" : /^Prophet|^Righteous|^(Adam|Eve|Jacob|Solomon|Gideon|Holy Forefathers|Three Holy Youths)$/.test(n) ? "prophet"
-    : APOSTLES.has(n) ? "apostle" : "saint");
-  const GROUP = { christ: ["Christ", "#e2bd57"], theotokos: ["Theotokos", "#5b7cc4"], angel: ["Angels", "#c3b0dd"], prophet: ["Prophets and the righteous", "#6f9e78"], apostle: ["Apostles", "#c4573f"], saint: ["Saints", "#b89a6a"], thing: ["Holy things and places", "#9c968a"] };
+  const groupOf = (n) => (n === "Jesus Christ" ? "christ" : n === "Theotokos" ? "theotokos" : /^Archangel|Holy Angels/.test(n) ? "angel"
+    : /^Prophet|^Righteous|^(Adam|Eve|Jacob|Solomon|Gideon|Holy Forefathers|Three Holy Youths|St John the Baptist)$/.test(n) ? "prophet" : APOSTLES.has(n) ? "apostle" : "saint");
+  const GROUP = Object.fromEntries(KINDS.map((k) => [k, [KIND_NAME[k], KIND_COLOR[k]]]));
   function figures(icon) {
     const set = new Set();
     icon.subjects.forEach((s) => { s = ALIAS[s] || s; if (PERSON.test(s)) set.add(s); (IMPLY[s] || []).forEach((x) => set.add(x)); });
@@ -282,7 +407,7 @@
       // An icon with no single figure to name (a Menaion of all the saints, the Cross, a church) is shown by what it depicts.
       const f = figures(icon), things = f.length ? [] : icon.subjects.filter((s) => s !== "All Saints");
       f.forEach((n) => { if (!nodes.has(n)) nodes.set(n, { id: n, icons: [], group: groupOf(n) }); nodes.get(n).icons.push(icon); });
-      things.forEach((n) => { if (!nodes.has(n)) nodes.set(n, { id: n, icons: [], group: n === "Menaion" ? "saint" : "thing", thing: true }); nodes.get(n).icons.push(icon); });
+      things.forEach((n) => { if (!nodes.has(n)) nodes.set(n, { id: n, icons: [], group: n === "Menaion" ? "menaion" : "feast", thing: true }); nodes.get(n).icons.push(icon); });
       for (let a = 0; a < f.length; a++) for (let b = a + 1; b < f.length; b++) {
         const [s, t] = [f[a], f[b]].sort(), k = s + "|" + t;
         if (!links.has(k)) links.set(k, { source: s, target: t, icons: [] });
@@ -329,6 +454,13 @@
       gr.append("stop").attr("offset", "55%").attr("stop-color", c);
       gr.append("stop").attr("offset", "100%").attr("stop-color", d3.color(c).darker(1.3));
     });
+    // The chart's hatching, laid over the spheres it tells apart (angels from the Theotokos, the Menaion from feasts),
+    // sized to each circle so a small one is striped like a large one.
+    Object.entries(HATCH).forEach(([k, angle]) => {
+      defs.append("pattern").attr("id", `nw-hatch-${k}`).attr("patternUnits", "objectBoundingBox").attr("patternContentUnits", "objectBoundingBox")
+        .attr("width", 0.2).attr("height", 0.2).attr("patternTransform", `rotate(${angle} .5 .5)`)
+        .append("rect").attr("width", 0.075).attr("height", 0.2).attr("fill", "rgba(11, 8, 6, .55)");
+    });
     const g = svg.append("g");
     // The view that frames a set of nodes: everything, or the main graph alone while the cluster is hidden.
     const fit = (ns) => {
@@ -359,6 +491,9 @@
     const node = g.append("g").selectAll("circle").data(N).join("circle").attr("class", (d) => (d.lone ? "nw-node lone" : "nw-node")).attr("tabindex", 0).attr("role", "button")
       .attr("cx", (d) => d.x).attr("cy", (d) => d.y).attr("r", (d) => rad(d.icons.length)).attr("fill", (d) => `url(#nw-${d.group})`)
       .attr("aria-label", (d) => `${d.id}: ${d.icons.length} icons`);
+    const hatch = g.append("g").attr("class", "nw-hatches").selectAll("circle").data(N.filter((d) => HATCH[d.group] != null)).join("circle")
+      .attr("class", (d) => (d.lone ? "nw-hatch lone" : "nw-hatch")).attr("cx", (d) => d.x).attr("cy", (d) => d.y)
+      .attr("r", (d) => Math.max(0, rad(d.icons.length) - 0.5)).attr("fill", (d) => `url(#nw-hatch-${d.group})`);
     node.append("title").text((d) => `${d.id}: ${d.icons.length} ${d.icons.length === 1 ? "icon" : "icons"}, ${d.thing ? "without a single named figure" : d.lone ? "appears with no one else" : `appears with ${deg.get(d.id)} others`}`);
     const labeled = (d, k) => d.icons.length >= (k > 2.4 ? 1 : k > 1.4 ? 3 : 6) || d.id === "Jesus Christ";
     const label = g.append("g").attr("class", "nw-labels").selectAll("text").data(N).join("text").classed("lone", (d) => d.lone)
@@ -382,26 +517,26 @@
     };
     const relabel = () => {
       const nb = focused ? neighbours(focused) : null;
-      declutter(d3.zoomTransform(svg.node()).k, nb ? (n) => nb.has(n.id) : undefined);
+      declutter(d3.zoomTransform(svg.node()).k, nb ? (n) => nb.has(n.id) : picked ? (n) => n.group === picked : undefined);
     };
     const neighbours = (d) => { const nb = new Set([d.id]); L.forEach((l) => { if (l.source.id === d.id) nb.add(l.target.id); if (l.target.id === d.id) nb.add(l.source.id); }); return nb; };
     declutter(t0.k);
-    let focused = null;
+    let focused = null, picked = null;               // a chosen figure, or a chosen group from the legend
     const zoom = d3.zoom().filter(twoFingers).scaleExtent([k0 * 0.7, 6]).on("zoom", (e) => { const k = e.transform.k;
       g.attr("transform", e.transform); label.attr("font-size", 15 / k); hit.attr("stroke-width", 10 / k); g.select(".nw-ring").attr("stroke-width", 1 / k); g.select(".nw-caption").attr("font-size", 13 / k); relabel(); });
     svg.classed("no-lone", true).call(zoom).call(zoom.transform, tMain);   // the lone figures wait until asked for
     const focus = (d) => {
       const nb = neighbours(d);
-      node.classed("dim", (n) => !nb.has(n.id)).classed("on", (n) => n === d);
+      node.classed("dim", (n) => !nb.has(n.id)).classed("on", (n) => n === d); hatch.classed("dim", (n) => !nb.has(n.id));
       link.classed("dim", (l) => l.source !== d && l.target !== d).classed("on", (l) => l.source === d || l.target === d);
-      label.classed("dim", (n) => !nb.has(n.id)); focused = d;
+      label.classed("dim", (n) => !nb.has(n.id)); focused = d; picked = null;
       relabel();
       const others = L.filter((l) => l.source === d || l.target === d).map((l) => ({ who: l.source === d ? l.target.id : l.source.id, n: l.icons.length })).sort((a, b) => b.n - a.n);
       showList(list, d.id, "In the library", d.icons.slice().sort((a, b) => a.year - b.year),
-        others.length ? `Appears with ${others.slice(0, 8).map((o) => o.who).join(", ")}${others.length > 8 ? ` and ${others.length - 8} more` : ""}.` : d.thing ? "Icons with no single named figure." : "Appears alone.");
+        others.length ? `Appears with ${others.slice(0, 8).map((o) => o.who).join(", ")}${others.length > 8 ? ` and ${others.length - 8} more` : ""}.` : d.thing ? "Icons with no single named figure." : "Appears alone.", false);   // the Who graph keeps its place; the list fills in below
     };
     node.on("click", (e, d) => { e.stopPropagation(); focus(d); }).on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); focus(d); } });
-    hit.on("click", (e, d) => { e.stopPropagation(); link.classed("on", (l) => l === d); showList(list, `${d.source.id} and ${d.target.id} together in`, "Shared icons", d.icons.slice().sort((a, b) => a.year - b.year)); });
+    hit.on("click", (e, d) => { e.stopPropagation(); link.classed("on", (l) => l === d); showList(list, `${d.source.id} and ${d.target.id} together in`, "Shared icons", d.icons.slice().sort((a, b) => a.year - b.year), undefined, false); });
     // Hovering a figure lights its lines; choosing one keeps them lit until the graph is reset.
     let held = null;                                   // the figure under the pointer stays still, so it is easy to click
     node.on("mouseenter", (e, d) => { held = d; hovered = new Set([d]); relabel(); link.classed("hover", (l) => l.source === d || l.target === d); })
@@ -426,7 +561,7 @@
         d.x = d.x0 + a * (0.7 * Math.sin(w * d.f[0] + d.p[0]) + 0.3 * Math.sin(w * d.f[1] + d.p[1]));
         d.y = d.y0 + a * (0.7 * Math.sin(w * d.f[2] + d.p[2]) + 0.3 * Math.sin(w * d.f[3] + d.p[3]));
       });
-      node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+      node.attr("cx", (d) => d.x).attr("cy", (d) => d.y); hatch.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
       label.attr("x", (d) => d.x).attr("y", (d) => d.y + rad(d.icons.length) + 13);
       link.attr("d", arc);
       hit.attr("d", arc);
@@ -441,12 +576,22 @@
     if (REEL) reel.netFloat = (ms) => { if (svg.node().isConnected) float(ms); };
     else if (!still) requestAnimationFrame(drift);
     const clear = () => {
-      node.classed("dim", false).classed("on", false); link.classed("dim", false).classed("on", false); label.classed("dim", false);
-      focused = null; relabel();
+      node.classed("dim", false).classed("on", false); hatch.classed("dim", false); link.classed("dim", false).classed("on", false); label.classed("dim", false);
+      focused = null; picked = null; relabel();
     };
     svg.on("click", clear);
-    root.querySelector(".nw-legend").innerHTML = Object.entries(GROUP).map(([k, [n, c]]) => `<span><i style="background:${c}"></i>${n}</span>`).join("") +
+    // As in the chart, the legend doubles as a filter: click a group to light its figures and list every icon they appear in.
+    root.querySelector(".nw-legend").innerHTML = Object.entries(GROUP).map(([k, [n]]) => `<button type="button" data-k="${k}"><i style="background:${swatch(k)}"></i>${n} <small>${N.filter((d) => d.group === k).length}</small></button>`).join("") +
       `<span class="nw-note">${N.length} figures and subjects · ${L.length} connections</span>`;
+    root.querySelectorAll(".nw-legend button").forEach((b) => b.onclick = () => {
+      const k = b.dataset.k, members = N.filter((d) => d.group === k);
+      if (!showLone && members.every((d) => d.lone)) toggle.onclick();   // the feasts and the Menaion stand only in the lone cluster
+      node.classed("dim", (d) => d.group !== k).classed("on", false); hatch.classed("dim", (d) => d.group !== k); label.classed("dim", (d) => d.group !== k);
+      link.classed("on", false).classed("dim", (l) => l.source.group !== k && l.target.group !== k);
+      focused = null; picked = k; relabel();
+      const icons = [...new Set(members.flatMap((d) => d.icons))].sort((a, b) => a.year - b.year);
+      showList(list, GROUP[k][0], "Icons with", icons, `${members.length} ${k === "feast" || k === "menaion" ? "subject" : "figure"}${members.length === 1 ? "" : "s"}: ${members.slice().sort((a, b) => b.icons.length - a.icons.length).slice(0, 8).map((d) => d.id).join(", ")}${members.length > 8 ? ` and ${members.length - 8} more` : ""}.`, false);
+    });
     // The cluster of those alone in their icons can be set aside, and the view closes in on the main graph.
     let showLone = false;
     const home = () => (showLone ? t0 : tMain);
@@ -460,6 +605,20 @@
       svg.transition().duration(600).call(zoom.transform, home());
     };
     root.querySelector("[data-net-reset]").onclick = () => { clear(); list.hidden = true; list.innerHTML = ""; svg.transition().duration(500).call(zoom.transform, home()); };
+    // The graph keeps its place when something is chosen, so a pill like the library's tells of the icons waiting
+    // below, bobbing gently until the list comes into view. It lives on the body, clear of the view's transform.
+    document.querySelectorAll("body > .ex-cue").forEach((el) => el.remove());
+    const cue = document.createElement("button");
+    cue.type = "button"; cue.className = "ex-cue"; cue.hidden = true;
+    cue.innerHTML = `View icons <span aria-hidden="true">↓</span>`;
+    cue.onclick = () => list.scrollIntoView({ behavior: "smooth", block: "start" });
+    document.body.append(cue);
+    const recue = () => {
+      if (!root.isConnected) { cue.remove(); watch.disconnect(); seenList.disconnect(); return; }
+      cue.hidden = list.hidden || list.getBoundingClientRect().top < window.innerHeight - 40;
+    };
+    const watch = new MutationObserver(recue); watch.observe(list, { attributes: true, attributeFilter: ["hidden"], childList: true });
+    const seenList = new IntersectionObserver(recue, { rootMargin: "0px 0px -40px 0px" }); seenList.observe(list);
   }
 
   // ---------- the view ----------
@@ -472,11 +631,12 @@
       <div class="ex-tabs" role="tablist">${TABS.map(([k, l, d]) => `<a role="tab" href="#explore${k === "where" ? "" : "." + k}" aria-selected="${k === tab}"><b>${l}</b><small>${d}</small></a>`).join("")}</div>
       <div class="ex-panel" data-tab="${tab}">
         ${tab === "where" ? `
-        <p class="ex-intro">Each circle is a city, monastery or school where icons in the library were made, sized by how many. Dashed rings mark icons that can only be placed in a region. Click a circle to see its icons. Drag to pan; scroll or use the buttons to zoom (on a phone, use two fingers).</p>
+        <p class="ex-intro">Each circle is a city, monastery or school where icons in the library were made, sized by how many. Dashed rings mark icons that can only be placed in a region. Click a circle to see its icons. Show journeys draws an arc from where icons were made to where they are kept now, thicker where more traveled the same way. Drag to pan; scroll or use the buttons to zoom (on a phone, use two fingers).</p>
         <div class="atlas-frame"><div class="atlas"><canvas aria-hidden="true"></canvas><svg role="img" aria-label="Map of where the icons were made"></svg>
           <div class="at-vignette" aria-hidden="true"></div>
-          <div class="at-cartouche"><p>Number of icons made</p><div class="at-key"><svg aria-hidden="true"></svg></div><small><span class="dash"></span> region, approximate</small></div>
-          <div class="at-zoom"><button type="button" data-zoom-in aria-label="Zoom in">+</button><button type="button" data-zoom-out aria-label="Zoom out">−</button><button type="button" data-zoom-reset aria-label="Reset the map">⟲</button></div>
+          <div class="at-cartouche"><p>Number of icons made</p><div class="at-key"><svg aria-hidden="true"></svg></div><small><span class="dash"></span> region, approximate</small><small class="at-jkey" hidden><span class="jarc"></span> journey, made to kept now</small></div>
+          <button type="button" class="btn ghost at-jbtn" data-journeys>Show journeys</button>
+          <div class="at-zoom"><button type="button" data-zoom-in aria-label="Zoom in">+</button><button type="button" data-zoom-out aria-label="Zoom out">−</button><button type="button" data-zoom-reset aria-label="Reset the map">⟲</button><button type="button" data-full aria-label="Full screen"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="in" d="M1 5V1h4M11 1h4v4M15 11v4h-4M5 15H1v-4"/><path class="out" d="M5 1v4H1M15 5h-4V1M11 15v-4h4M1 11h4v4"/></svg></button></div>
         </div></div>
         <p class="at-credit">Relief, coastlines and rivers: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a>.</p>` : ""}
         ${tab === "when" ? `
@@ -508,6 +668,7 @@
         clearTimeout(t); t = setTimeout(draw, first ? 0 : 200);
       });
       ro.observe(root);
+      if (tab === "where") fullScreen(root.querySelector(".atlas-frame"), () => { clearTimeout(t); t = setTimeout(draw, 120); });
     }).catch(() => { loading.textContent = "The map could not be loaded."; });
   }
   window.EikonExplore = { render, reel };

@@ -299,10 +299,15 @@ a.today-icon:hover .kiot { box-shadow: inset 0 0 0 1px rgba(255, 240, 190, .55),
 .lib-group-head { display: flex; align-items: center; gap: 16px; margin: 6px 0 22px; font-family: var(--display); font-weight: 600; font-size: var(--step-2); color: var(--gold-hi); }
 .lib-group-head::after { content: ""; flex: 1; height: 14px; background: var(--guilloche) repeat-x center / 33px 14px; opacity: .5; }
 /* The depth meter: how many icons have come into view. */
-.lib-progress { position: fixed; z-index: 20; left: 50%; bottom: max(16px, env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
+.lib-progress, .ex-cue { position: fixed; z-index: 20; left: 50%; bottom: max(16px, env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
   display: grid; gap: 5px; justify-items: center; padding: 7px 14px 8px; min-width: 130px; border-radius: 16px;
   background: rgba(10, 7, 4, .82); border: 1px solid rgba(201, 162, 74, .3); box-shadow: 0 10px 30px rgba(0, 0, 0, .6);
   font-family: var(--label); font-size: .8rem; letter-spacing: .1em; color: var(--vellum); pointer-events: none; }
+/* Below the Who graph: the icons just chosen are waiting further down. */
+.ex-cue { pointer-events: auto; cursor: pointer; grid-auto-flow: column; align-items: center; gap: 8px; text-transform: uppercase; animation: cue-bob 2.6s ease-in-out infinite; }
+.ex-cue span { color: var(--gold-hi); font-size: .95rem; letter-spacing: 0; }
+.ex-cue:hover { border-color: var(--gold); }
+@keyframes cue-bob { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, -6px); } }
 .lib-progress i { display: block; width: 100%; height: 2px; background: rgba(201, 162, 74, .2); border-radius: 2px; overflow: hidden; }
 .lib-progress b { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--gold), var(--gold-hi)); transition: width .25s ease; }
 .lib-col { flex: 1 1 0; min-width: 0; }
@@ -561,6 +566,26 @@ section.tail { padding-top: 0; }
 .at-zoom button { width: 34px; height: 34px; border: 0; border-top: 1px solid rgba(201, 162, 74, .25); background: none; color: var(--gold-hi); font: 500 1.25rem/1 var(--body); cursor: pointer; }
 .at-zoom button:first-child { border-top: 0; }
 .at-zoom button:hover { background: rgba(201, 162, 74, .15); }
+.at-jbtn { position: absolute; left: 16px; top: 16px; padding: 6px 12px; font-size: .85rem; background: rgba(22, 15, 10, .9); }
+.at-arc { fill: none; stroke: rgba(232, 200, 120, .22); stroke-linecap: round; pointer-events: none; transition: stroke .15s, opacity .15s; }
+.at-arc.on { stroke: rgba(244, 220, 148, .9); }
+.at-arc.dim { opacity: .25; }
+.at-head { fill: rgba(244, 220, 148, .9); pointer-events: none; display: none; }
+.at-arc.on + .at-head { display: inline; }
+.at-arc-hit { fill: none; stroke: transparent; stroke-width: 10; cursor: pointer; pointer-events: stroke; }
+.at-home { cursor: pointer; outline: none; }
+.at-home rect { fill: rgba(232, 200, 120, .35); stroke: var(--gold-hi); stroke-width: 1; }
+.at-home.abroad path { fill: rgba(232, 200, 120, .6); stroke: var(--gold-hi); stroke-width: 1; }
+.at-home:hover rect, .at-home:focus-visible rect, .at-home.on rect { fill: var(--gold); stroke: #fff6d8; }
+.at-label.home { font-style: italic; fill: var(--gold-hi); font-size: 14px; }
+.at-cartouche .jarc { display: inline-block; width: 14px; height: 7px; border-top: 2px solid rgba(244, 220, 148, .7); border-radius: 50% 50% 0 0; vertical-align: -1px; margin-right: 3px; }
+.at-zoom svg { width: 15px; height: 15px; display: block; margin: auto; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.at-zoom [data-full] .out, .at-zoom [data-full].on .in { display: none; }
+.at-zoom [data-full].on .out { display: inline; }
+.atlas-frame:fullscreen, .atlas-frame.is-full { border: 0; display: flex; flex-direction: column; justify-content: center; }
+.atlas-frame.is-full { position: fixed; inset: 0; z-index: 1000; }
+.map-full, .map-full body { overflow: hidden; }
+.map-full #view { animation: none; transform: none; z-index: 60; }   /* lift the view, and the fixed frame in it, above the header */
 .at-credit { margin: 10px 0 0; font-size: .85rem; color: var(--ash); font-style: italic; }
 @media (max-width: 640px) {
   .at-cartouche { left: 8px; bottom: 8px; padding: 7px 9px; } .at-cartouche p { font-size: .7rem; } .at-key svg { transform: scale(.8); transform-origin: 0 100%; }
@@ -571,10 +596,10 @@ section.tail { padding-top: 0; }
 .ex-bar { display: flex; align-items: start; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
 .ex-reset { padding: 6px 14px; font-size: .85rem; flex: none; }
 .ch-legend { display: flex; flex-wrap: wrap; gap: 6px 8px; min-width: 0; }
-.ch-legend button { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border: 1px solid rgba(201, 162, 74, .3); border-radius: 2px; background: rgba(20, 14, 9, .55); color: var(--vellum); font: inherit; font-size: var(--step--1); cursor: pointer; }
-.ch-legend button:hover { border-color: var(--gold); }
+.ch-legend button, .nw-legend button { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border: 1px solid rgba(201, 162, 74, .3); border-radius: 2px; background: rgba(20, 14, 9, .55); color: var(--vellum); font: inherit; font-size: var(--step--1); cursor: pointer; }
+.ch-legend button:hover, .nw-legend button:hover { border-color: var(--gold); }
 .ch-legend i, .nw-legend i { width: 13px; height: 13px; border-radius: 1px; display: inline-block; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .35); }
-.ch-legend small { color: var(--ash); }
+.ch-legend small, .nw-legend small { color: var(--ash); }
 .ex-chart { position: relative; padding: 14px 10px 6px; background: rgba(20, 14, 9, .55); border: 1px solid rgba(201, 162, 74, .25); }
 .ex-chart svg { display: block; font-family: var(--body); }
 .ch-bar { cursor: pointer; stroke: rgba(11, 8, 6, .8); stroke-width: .8; transition: opacity .15s; outline: none; }
@@ -584,18 +609,18 @@ section.tail { padding-top: 0; }
 .ch-axis path, .ch-axis line { stroke: rgba(201, 162, 74, .4); }
 .ch-axis text { fill: var(--vellum-dim); font-size: 13px; font-family: var(--body); }
 .ch-axis.x .tick:hover text { fill: var(--gold-hi); }
-.ch-cap { fill: var(--ash); font-size: 12px; font-style: italic; }
+.ch-cap { fill: var(--ash); font-size: 18px; font-style: italic; }
 .ch-tip { position: absolute; pointer-events: none; padding: 4px 9px; background: rgba(11, 8, 6, .92); border: 1px solid rgba(201, 162, 74, .45); color: var(--vellum); font-size: .9rem; white-space: nowrap; }
 
 /* The company of saints */
-.nw-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 12px; font-size: var(--step--1); color: var(--vellum-dim); }
+.nw-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-bottom: 12px; font-size: var(--step--1); color: var(--vellum-dim); }
 .nw-legend span { display: inline-flex; align-items: center; gap: 7px; } .nw-legend i { border-radius: 50%; }
 .nw-legend .nw-note { margin-left: auto; color: var(--ash); font-style: italic; }
 .ex-net-frame { position: relative; background: radial-gradient(ellipse at center, rgba(201, 162, 74, .1), transparent 60%), rgba(14, 10, 7, .7); border: 1px solid rgba(201, 162, 74, .25); }
 .ex-net { touch-action: pan-y; } .ex-net svg { display: block; cursor: grab; font-family: var(--body); }
 .nw-tools { position: absolute; right: 10px; top: 10px; display: flex; gap: 8px; }
 .nw-tools .btn { padding: 6px 12px; font-size: .85rem; }
-.no-lone .nw-node.lone, .no-lone .nw-labels .lone, .no-lone .nw-ring, .no-lone .nw-caption { display: none; }
+.no-lone .nw-node.lone, .no-lone .nw-hatch.lone, .no-lone .nw-labels .lone, .no-lone .nw-ring, .no-lone .nw-caption { display: none; }
 .nw-links path { fill: none; stroke: rgba(201, 162, 74, .15); pointer-events: none; transition: opacity .15s, stroke .15s; }
 .nw-links path.hover { stroke: rgba(244, 220, 148, .75); stroke-width: var(--wf); opacity: 1; }
 .nw-links path.on { stroke: rgba(244, 220, 148, .8); stroke-width: var(--wf); }
@@ -606,7 +631,9 @@ section.tail { padding-top: 0; }
 .nw-node.lone { opacity: .75; }
 .nw-ring { fill: none; stroke: rgba(201, 162, 74, .16); stroke-dasharray: 2 5; pointer-events: none; }
 .nw-caption { fill: var(--ash); font-style: italic; letter-spacing: .02em; pointer-events: none; }
-.nw-node.dim, .nw-labels text.dim { opacity: .15; }
+.nw-hatch { pointer-events: none; transition: opacity .15s; }
+.nw-hatch.lone { opacity: .75; }
+.nw-node.dim, .nw-hatch.dim, .nw-labels text.dim { opacity: .15; }
 .nw-hits path { fill: none; stroke: transparent; cursor: pointer; pointer-events: stroke; }
 .nw-labels text { fill: var(--vellum); paint-order: stroke; stroke: rgba(11, 8, 6, .9); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
 

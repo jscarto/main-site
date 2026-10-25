@@ -516,7 +516,7 @@
     const [name, ...rest] = h.split(".");
     const arg = rest.join(".");
     document.title = "Eikon - A Library of the Saints";
-    document.querySelectorAll("body > .lib-progress").forEach((el) => el.remove());
+    document.querySelectorAll("body > .lib-progress, body > .ex-cue").forEach((el) => el.remove());
     const navKey = name === "icon" ? "library" : name === "day" ? "calendar" : name;
     document.querySelectorAll(".nav a").forEach((a) => a.toggleAttribute("aria-current", a.getAttribute("href") === "#" + navKey) || a.removeAttribute("aria-current"));
     document.querySelectorAll(".nav a").forEach((a) => { if (a.getAttribute("href") === "#" + navKey) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
