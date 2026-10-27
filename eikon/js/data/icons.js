@@ -2592,13 +2592,13 @@ window.EIKON_ICONS = [
   "origin": {
    "name": "Samokov",
    "lat": 42.337,
-   "lng": 23.552
+   "lng": 23.5528
   },
   "originShort": "Samokov",
   "home": {
    "name": "Samokov",
    "lat": 42.337,
-   "lng": 23.552
+   "lng": 23.5528
   },
   "medium": "Tempera on wood",
   "text": "Joachim and Anna were childless into old age. The Mother of God was born to them in answer to prayer, and her nativity opens the cycle of great feasts in the Church year, which begins on 1 September.\n\nAnna rests on her bed while women bring gifts and bathe the newborn. Nikola Obrazopisov belonged to a family of painters from Samokov in Bulgaria whose bright, decorative style shaped church art there in the nineteenth century.",
@@ -31203,6 +31203,5509 @@ window.EIKON_ICONS = [
    "licenseUrl": "",
    "artist": "Kirill Ulanov",
    "credit": "https://www.icon-art.info/masterpiece.php?mst_id=9497"
+  }
+ },
+ {
+  "id": "saints-jan22-tzanes",
+  "kind": "saint",
+  "title": "The Saints of the 22nd of January (Tzanes)",
+  "alt": "",
+  "cardName": "Holy Apostle Timothy",
+  "subjects": [
+   "St Timothy",
+   "St Anastasius the Persian",
+   "Martyrs of Adrianople",
+   "St Joseph Samakos"
+  ],
+  "days": [
+   {
+    "d": "01-22"
+   }
+  ],
+  "month": null,
+  "date": "Second half of the 17th century",
+  "year": 1670,
+  "school": "Cretan school (Venice)",
+  "artist": "Konstantinos Tzanes",
+  "origin": {
+   "name": "Venice",
+   "lat": 45.4408,
+   "lng": 12.3155
+  },
+  "originShort": "Venice",
+  "home": {
+   "name": "Hellenic Institute of Byzantine and Post-Byzantine Studies",
+   "lat": 45.4363,
+   "lng": 12.3424,
+   "city": "Venice"
+  },
+  "medium": "Tempera and gold on wood, 60 × 49 cm",
+  "text": "Timothy, Paul's disciple and the first bishop of Ephesus, was stoned by a pagan crowd around the year 97. Anastasius was a Persian soldier who became a Christian after seeing the relic of the True Cross, and was martyred in 628. Both are remembered on 22 January, with the martyrs of Adrianople and the Cretan ascetic Joseph Samakos.\n\nKonstantinos Tzanes of Rethymno gathered them all in one panel after he moved to Venice around 1655. It belongs to the Hellenic Institute there.",
+  "image": "assets/icons/saints-jan22-tzanes.jpg",
+  "thumb": "assets/icons/saints-jan22-tzanes-thumb.jpg",
+  "w": 966,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Saints_of_the_22nd_of_January_(K._Tzanes).png",
+   "file": "The Saints of the 22nd of January (K. Tzanes).png",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Konstantinos Tzanes",
+   "credit": ""
+  }
+ },
+ {
+  "id": "leo-catania-vita",
+  "kind": "saint",
+  "title": "St Leo of Catania, with Scenes from His Life",
+  "alt": "",
+  "cardName": "St Leo of Catania",
+  "subjects": [
+   "St Leo of Catania"
+  ],
+  "days": [
+   {
+    "d": "02-20"
+   }
+  ],
+  "month": null,
+  "date": "1818",
+  "year": 1818,
+  "school": "Old Believer (Urals)",
+  "artist": "",
+  "origin": {
+   "name": "The Urals (Yekaterinburg)",
+   "lat": 56.8389,
+   "lng": 60.6057
+  },
+  "originShort": "The Urals (Yekaterinburg)",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Leo was bishop of Catania in Sicily in the eighth century. When the sorcerer Heliodorus disrupted the liturgy, Leo bound him with his stole and led him into a fire, where Heliodorus burned and Leo walked out unharmed.\n\nTwelve scenes from his life surround him. The icon was painted for the house chapel of two Old Believer merchants of Yekaterinburg, Lev Rastorguev, whose patron Leo was, and Pyotr Kharitonov.",
+  "image": "assets/icons/leo-catania-vita.jpg",
+  "thumb": "assets/icons/leo-catania-vita-thumb.jpg",
+  "w": 737,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Leo_of_Catania.jpg",
+   "file": "Saint Leo of Catania.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "john-cassian-vita",
+  "kind": "saint",
+  "title": "St John Cassian, with Scenes from His Life",
+  "alt": "",
+  "cardName": "St John Cassian the Roman",
+  "subjects": [
+   "St John Cassian"
+  ],
+  "days": [
+   {
+    "d": "02-29"
+   }
+  ],
+  "month": null,
+  "date": "18th century, with 19th-century border scenes",
+  "year": 1750,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "John Cassian (c. 360–435) spent years among the monks of the Egyptian desert, then carried what he learned to the West and founded monasteries at Marseilles. His Institutes and Conferences taught monastic life to East and West alike.\n\nHis memory falls on 29 February, so in most years it is kept on the 28th. The central figure was painted in the eighteenth century; the scenes around it were added in the second half of the nineteenth.",
+  "image": "assets/icons/john-cassian-vita.jpg",
+  "thumb": "assets/icons/john-cassian-vita-thumb.jpg",
+  "w": 700,
+  "h": 1188,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%98%D0%BE%D0%B0%D0%BD%D0%BD_%D0%9A%D0%B0%D1%81%D1%81%D0%B8%D0%B0%D0%BD_%D0%A0%D0%B8%D0%BC%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD.jpg",
+   "file": "Иоанн Кассиан Римлянин.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "http://www.cirota.ru/forum/view.php?subj=48868&amp;fullview=1&amp;order=asc"
+  }
+ },
+ {
+  "id": "isaac-dalmatia",
+  "kind": "saint",
+  "title": "St Isaac of Dalmatia",
+  "alt": "",
+  "cardName": "St Isaacius of the Dalmatian Monastery",
+  "subjects": [
+   "St Isaac of Dalmatia"
+  ],
+  "days": [
+   {
+    "d": "05-30"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Isaac was a hermit near Constantinople who stood in the road before the Arian emperor Valens in 378 and warned him he would not return from his campaign. Valens died that summer at Adrianople. Theodosius later built Isaac a monastery in the city, named for the patrician Dalmatus.\n\nPeter the Great was born on his feast, which is why the great cathedral of St Petersburg is St Isaac's.",
+  "image": "assets/icons/isaac-dalmatia.jpg",
+  "thumb": "assets/icons/isaac-dalmatia-thumb.jpg",
+  "w": 800,
+  "h": 1042,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9_%D0%98%D1%81%D0%B0%D0%B0%D0%BA%D0%B8%D0%B9_%D0%94%D0%B0%D0%BB%D0%BC%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B9._%D0%98%D0%BA%D0%BE%D0%BD%D0%B0._%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,_XVII_%D0%B2%D0%B5%D0%BA.jpg",
+   "file": "Преподобный Исаакий Далматский. Икона. Россия, XVII век.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://fotki.yandex.ru/next/users/diomedes2/album/225371/view/1685981"
+  }
+ },
+ {
+  "id": "aquilina-paraskeva",
+  "kind": "saint",
+  "title": "Saints Aquilina and Paraskeva",
+  "alt": "",
+  "cardName": "Holy Martyr Aquilina of Byblos",
+  "subjects": [
+   "St Aquilina",
+   "St Paraskeva"
+  ],
+  "days": [
+   {
+    "d": "06-13"
+   },
+   {
+    "d": "10-28"
+   }
+  ],
+  "month": null,
+  "date": "19th century",
+  "year": 1850,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Aquilina was a girl of twelve at Byblos in Phoenicia, martyred under Diocletian around 293. Beside her stands Paraskeva, the martyr whom Russians call Pyatnitsa, 'Friday', and honor on 28 October.\n\nThe icon is Russian, of the nineteenth century.",
+  "image": "assets/icons/aquilina-paraskeva.jpg",
+  "thumb": "assets/icons/aquilina-paraskeva-thumb.jpg",
+  "w": 800,
+  "h": 800,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BA%D0%B8%D0%BB%D0%B8%D0%BD%D0%B0_%D0%91%D0%B8%D0%B1%D0%BB%D0%BE%D1%81%D1%81%D0%BA%D0%B0%D1%8F_%D0%B8_%D0%9F%D0%B0%D1%80%D0%B0%D1%81%D0%BA%D0%B5%D0%B2%D0%B0_%D0%9F%D1%8F%D1%82%D0%BD%D0%B8%D1%86%D0%B0.jpg",
+   "file": "Акилина Библосская и Параскева Пятница.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "http://1939.ru/starinnaja_ikona_svjataja_akilina_paraskeva_kupit_nedorogo_AR8143"
+  }
+ },
+ {
+  "id": "sampson-hospitable-dikarev",
+  "kind": "saint",
+  "title": "St Sampson the Hospitable",
+  "alt": "",
+  "cardName": "St Sampson the Hospitable",
+  "subjects": [
+   "St Sampson the Hospitable"
+  ],
+  "days": [
+   {
+    "d": "06-27"
+   }
+  ],
+  "month": null,
+  "date": "c. 1900",
+  "year": 1900,
+  "school": "Moscow (Dikarev workshop)",
+  "artist": "Dikarev workshop (attributed)",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Sampson was a wealthy physician of sixth-century Constantinople who turned his house into a hospice and treated the poor for nothing. He healed the emperor Justinian, who built him a great hospital.\n\nPeter the Great beat the Swedes at Poltava on his day in 1709, and Russia has honored him ever since. The icon is attributed to the Moscow workshop of Mikhail Dikarev and was sold at Sotheby's in 2021.",
+  "image": "assets/icons/sampson-hospitable-dikarev.jpg",
+  "thumb": "assets/icons/sampson-hospitable-dikarev-thumb.jpg",
+  "w": 737,
+  "h": 857,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Sampson_the_Hospitable_att._to_M.Dikarev_(c._1900,_Sotheby%27s).jpg",
+   "file": "Sampson the Hospitable att. to M.Dikarev (c. 1900, Sotheby's).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "attributed to the Dikariev workshop",
+   "credit": "https://www.sothebys.com/en/buy/auction/2021/russian-works-of-art-faberge-and-icons/an-icon-of-st-sampson-strannoprimets-attributed-to"
+  }
+ },
+ {
+  "id": "boniface-korin",
+  "kind": "saint",
+  "title": "St Boniface of Tarsus (Korin, 1887)",
+  "alt": "",
+  "cardName": "Holy Martyr Boniface of Tarsus",
+  "subjects": [
+   "St Boniface of Tarsus"
+  ],
+  "days": [
+   {
+    "d": "12-19"
+   }
+  ],
+  "month": null,
+  "date": "1887",
+  "year": 1887,
+  "school": "Palekh",
+  "artist": "Dmitry Korin",
+  "origin": {
+   "name": "Palekh",
+   "lat": 56.7979,
+   "lng": 41.8558
+  },
+  "originShort": "Palekh",
+  "home": {
+   "name": "Private collection",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood, 27 × 22 cm",
+  "text": "Boniface was the steward, and the lover, of a rich Roman woman named Aglaida. She sent him east to bring back the relics of martyrs. At Tarsus he saw Christians tortured, confessed Christ himself and was beheaded, and his own body came home as the relic. Aglaida repented and lived the rest of her life in penance.\n\nThe icon is signed by Dmitry Korin of Palekh, whose son Pavel became a famous painter and icon collector.",
+  "image": "assets/icons/boniface-korin.jpg",
+  "thumb": "assets/icons/boniface-korin-thumb.jpg",
+  "w": 992,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Bonifatius_by_Dm.Korin_(1887_%3F_priv.coll).jpg",
+   "file": "Saint Bonifatius by Dm.Korin (1887 ? priv.coll).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "DMITRY KORIN",
+   "credit": "http://macdougallauction.com/Indexx0512.asp?id=324&amp;lx=a"
+  }
+ },
+ {
+  "id": "grygorenko-dmitri-2011",
+  "kind": "saint",
+  "title": "Archbishop Dmitri of Dallas (Grygorenko, 2011)",
+  "alt": "",
+  "cardName": "Archbishop Dmitri of Dallas",
+  "subjects": [
+   "Archbishop Dmitri of Dallas"
+  ],
+  "days": [],
+  "month": null,
+  "date": "2011",
+  "year": 2011,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Dmitri Royster was born in Texas in 1923 and raised a Baptist. He became Orthodox as a young man, and in 1978 he became the first bishop of the Orthodox Church in America's Diocese of the South, based in Dallas. He led it until 2009 and died in 2011. He is sometimes called the Apostle to the South.\n\nGrygorenko, whom Archbishop Dmitri ordained a subdeacon in 2006, painted him several times. In this panel of 2011 he blesses and holds a jeweled Gospel book.",
+  "image": "assets/icons/grygorenko-dmitri-2011.jpg",
+  "thumb": "assets/icons/grygorenko-dmitri-2011-thumb.jpg",
+  "w": 900,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664793be5f7fa377a8e33209_Print17a%20(2%20of%203).jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-dmitri-2015",
+  "kind": "saint",
+  "title": "Archbishop Dmitri of Dallas (Grygorenko, 2015)",
+  "alt": "",
+  "cardName": "Archbishop Dmitri of Dallas",
+  "subjects": [
+   "Archbishop Dmitri of Dallas"
+  ],
+  "days": [],
+  "month": null,
+  "date": "2015",
+  "year": 2015,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Dmitri Royster was born in Texas in 1923 and raised a Baptist. He became Orthodox as a young man, and in 1978 he became the first bishop of the Orthodox Church in America's Diocese of the South, based in Dallas. He led it until 2009 and died in 2011. He is sometimes called the Apostle to the South.\n\nGrygorenko painted this image of the archbishop in 2015, in the vestments of a bishop, holding the Gospel.",
+  "image": "assets/icons/grygorenko-dmitri-2015.jpg",
+  "thumb": "assets/icons/grygorenko-dmitri-2015-thumb.jpg",
+  "w": 907,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664793e8ac0a2676d7e24628_Print17%20(8%20of%204).jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-dmitri-2016",
+  "kind": "saint",
+  "title": "Archbishop Dmitri of Dallas (Grygorenko, 2016)",
+  "alt": "",
+  "cardName": "Archbishop Dmitri of Dallas",
+  "subjects": [
+   "Archbishop Dmitri of Dallas"
+  ],
+  "days": [],
+  "month": null,
+  "date": "2016",
+  "year": 2016,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Dmitri Royster was born in Texas in 1923 and raised a Baptist. He became Orthodox as a young man, and in 1978 he became the first bishop of the Orthodox Church in America's Diocese of the South, based in Dallas. He led it until 2009 and died in 2011. He is sometimes called the Apostle to the South.\n\nIn this version of 2016 Grygorenko sets the archbishop against a blue ground, in white vestments.",
+  "image": "assets/icons/grygorenko-dmitri-2016.jpg",
+  "thumb": "assets/icons/grygorenko-dmitri-2016-thumb.jpg",
+  "w": 924,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6647940970c8abb3fa3914cf_icons-17.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-dmitri",
+  "kind": "saint",
+  "title": "Archbishop Dmitri of Dallas (Grygorenko)",
+  "alt": "",
+  "cardName": "Archbishop Dmitri of Dallas",
+  "subjects": [
+   "Archbishop Dmitri of Dallas"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Dmitri Royster was born in Texas in 1923 and raised a Baptist. He became Orthodox as a young man, and in 1978 he became the first bishop of the Orthodox Church in America's Diocese of the South, based in Dallas. He led it until 2009 and died in 2011. He is sometimes called the Apostle to the South.\n\nAnother of Grygorenko's images of the archbishop who brought him to Dallas and ordained him a subdeacon.",
+  "image": "assets/icons/grygorenko-dmitri.jpg",
+  "thumb": "assets/icons/grygorenko-dmitri-thumb.jpg",
+  "w": 900,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6609ce1bfe00621d2a0fa255_Grygorenko%20AIC-27-min.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-herman-alaska",
+  "kind": "saint",
+  "title": "St Herman of Alaska (Grygorenko)",
+  "alt": "",
+  "cardName": "St Herman of Alaska",
+  "subjects": [
+   "St Herman of Alaska"
+  ],
+  "days": [
+   {
+    "d": "12-13",
+    "n": "Repose of St Herman of Alaska"
+   },
+   {
+    "d": "08-09",
+    "n": "Glorification of St Herman of Alaska"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Herman came to Alaska in 1794 with the first Orthodox mission from Valaam. He lived for decades as a hermit on Spruce Island, teaching and caring for the Aleut people, and died there in 1837. In 1970 he became the first saint glorified in North America.\n\nHis scroll carries his best-known words: \"From this day, from this hour, from this minute, let us love God above all.\"",
+  "image": "assets/icons/grygorenko-herman-alaska.jpg",
+  "thumb": "assets/icons/grygorenko-herman-alaska-thumb.jpg",
+  "w": 901,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6609ce4f98f18c3fbf58b816_Grygorenko%20AIC-28-min.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-john-shanghai",
+  "kind": "saint",
+  "title": "St John of Shanghai and San Francisco (Grygorenko)",
+  "alt": "",
+  "cardName": "St John of Shanghai and San Francisco",
+  "subjects": [
+   "St John of Shanghai and San Francisco"
+  ],
+  "days": [
+   {
+    "d": "07-02",
+    "n": "St John of Shanghai and San Francisco"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "John Maximovich (1896–1966) was a Russian bishop in exile who served in Shanghai, where he sheltered hundreds of orphans, then led their flight to the Philippines and on to America. He ended his life as archbishop of San Francisco. He slept little, ate once a day, and was known for his prayer and for healings. He was glorified in 1994.\n\nGrygorenko shows him in his bishop's mantle with his staff, blessing.",
+  "image": "assets/icons/grygorenko-john-shanghai.jpg",
+  "thumb": "assets/icons/grygorenko-john-shanghai-thumb.jpg",
+  "w": 890,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6609ce805e9084457b38b11e_Grygorenko%20AIC-26-min.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-john-maximovich",
+  "kind": "saint",
+  "title": "St John Maximovich (Grygorenko)",
+  "alt": "",
+  "cardName": "St John of Shanghai and San Francisco",
+  "subjects": [
+   "St John of Shanghai and San Francisco"
+  ],
+  "days": [
+   {
+    "d": "07-02",
+    "n": "St John of Shanghai and San Francisco"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "St John of Shanghai and San Francisco, a Russian bishop in exile, cared for orphans in Shanghai, brought his flock through the Philippines to America, and died in Seattle in 1966. His relics rest in the cathedral in San Francisco.\n\nA second image of the saint by Grygorenko, in his mitre and mantle, with the staff of a bishop.",
+  "image": "assets/icons/grygorenko-john-maximovich.jpg",
+  "thumb": "assets/icons/grygorenko-john-maximovich-thumb.jpg",
+  "w": 878,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479d2993f6acb8e3df1c83_icons-36.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-george",
+  "kind": "saint",
+  "title": "St George (Grygorenko)",
+  "alt": "",
+  "cardName": "Holy Great Martyr George",
+  "subjects": [
+   "St George"
+  ],
+  "days": [
+   {
+    "d": "04-23"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "George was a Roman officer martyred under Diocletian in the early fourth century, and is honored as the Trophy-bearer, the greatest of the soldier saints.\n\nGrygorenko paints him young, with his spear and his shield, in the manner of the Byzantine bust icons of the warrior saints.",
+  "image": "assets/icons/grygorenko-george.jpg",
+  "thumb": "assets/icons/grygorenko-george-thumb.jpg",
+  "w": 899,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479d5e16ea85ec6d63c263_icons-31.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-panteleimon",
+  "kind": "saint",
+  "title": "St Panteleimon (Grygorenko)",
+  "alt": "",
+  "cardName": "Holy Great Martyr and Healer Panteleimon",
+  "subjects": [
+   "St Panteleimon"
+  ],
+  "days": [
+   {
+    "d": "07-27"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Panteleimon was a physician of Nicomedia who healed without payment and was martyred around 305. He is one of the Unmercenary healers.\n\nAs in the ancient images, he is young and holds a small box of medicines.",
+  "image": "assets/icons/grygorenko-panteleimon.jpg",
+  "thumb": "assets/icons/grygorenko-panteleimon-thumb.jpg",
+  "w": 850,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664beb24c455651a62d16cc9_icons-12.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-basil",
+  "kind": "saint",
+  "title": "St Basil the Great (Grygorenko)",
+  "alt": "",
+  "cardName": "St Basil the Great",
+  "subjects": [
+   "St Basil the Great"
+  ],
+  "days": [
+   {
+    "d": "01-01"
+   },
+   {
+    "d": "01-30"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Basil (c. 330–379), archbishop of Caesarea in Cappadocia, wrote the Divine Liturgy that bears his name, shaped the rule of Orthodox monasticism and founded a great house of care for the poor and sick.\n\nGrygorenko places him standing within an arched church, holding the Gospel.",
+  "image": "assets/icons/grygorenko-basil.jpg",
+  "thumb": "assets/icons/grygorenko-basil-thumb.jpg",
+  "w": 895,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479c033645e097235a588a_icons-24.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-gabriel",
+  "kind": "angel",
+  "title": "The Archangel Gabriel (Grygorenko)",
+  "alt": "",
+  "cardName": "Synaxis of the Archangel Gabriel",
+  "subjects": [
+   "Archangel Gabriel"
+  ],
+  "days": [
+   {
+    "d": "03-26"
+   },
+   {
+    "d": "07-13"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Gabriel is the messenger of the Annunciation, and the Church gathers in his honor on the day after it and again in July.\n\nIn this close bust the archangel wears the ribbon, or toroi, that binds the hair of angels in Byzantine painting, a sign that they hear and obey God's word.",
+  "image": "assets/icons/grygorenko-gabriel.jpg",
+  "thumb": "assets/icons/grygorenko-gabriel-thumb.jpg",
+  "w": 914,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6648fba777b8af7e326e097c_icons-42.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-gabriel-standing",
+  "kind": "angel",
+  "title": "The Archangel Gabriel, Standing (Grygorenko)",
+  "alt": "",
+  "cardName": "Synaxis of the Archangel Gabriel",
+  "subjects": [
+   "Archangel Gabriel"
+  ],
+  "days": [
+   {
+    "d": "03-26"
+   },
+   {
+    "d": "07-13"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Gabriel, the herald of the Incarnation, is honored on 26 March and 13 July.\n\nHere he stands at full length in the robes of the imperial court, with a messenger's staff and a sphere marked with the name of Christ.",
+  "image": "assets/icons/grygorenko-gabriel-standing.jpg",
+  "thumb": "assets/icons/grygorenko-gabriel-standing-thumb.jpg",
+  "w": 541,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6648fbe898b448df6cd61aa2_icons-19.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-annunciation",
+  "kind": "feast",
+  "title": "The Annunciation (Grygorenko)",
+  "alt": "",
+  "cardName": "The Annunciation of the Theotokos",
+  "subjects": [
+   "Annunciation",
+   "Theotokos",
+   "Archangel Gabriel"
+  ],
+  "days": [
+   {
+    "d": "03-25"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The archangel Gabriel brings Mary the news that she will bear the Son of God, and she answers, 'Let it be to me according to your word.'\n\nGrygorenko sets the scene in open country, with Gabriel striding toward the Virgin.",
+  "image": "assets/icons/grygorenko-annunciation.jpg",
+  "thumb": "assets/icons/grygorenko-annunciation-thumb.jpg",
+  "w": 1043,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479ace16ea85ec6d6194b1_icons-34.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-annunciation-city",
+  "kind": "feast",
+  "title": "The Annunciation, with Buildings (Grygorenko)",
+  "alt": "",
+  "cardName": "The Annunciation of the Theotokos",
+  "subjects": [
+   "Annunciation",
+   "Theotokos",
+   "Archangel Gabriel"
+  ],
+  "days": [
+   {
+    "d": "03-25"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The feast of the Annunciation, nine months before the Nativity, celebrates the moment the Word became flesh.\n\nIn this version the Virgin sits enthroned before the buildings of Nazareth while Gabriel speaks, in the manner of the great Byzantine Annunciations.",
+  "image": "assets/icons/grygorenko-annunciation-city.jpg",
+  "thumb": "assets/icons/grygorenko-annunciation-city-thumb.jpg",
+  "w": 986,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6609cdc8206686f4fc10d115_Grygorenko%20AIC-23-min.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-nativity",
+  "kind": "feast",
+  "title": "The Nativity of Christ (Grygorenko)",
+  "alt": "",
+  "cardName": "The Nativity of Christ",
+  "subjects": [
+   "Nativity of Christ",
+   "Theotokos",
+   "Jesus Christ",
+   "St Joseph"
+  ],
+  "days": [
+   {
+    "d": "12-25"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The Nativity icon gathers the whole story at once: the Child in the cave, the Mother resting beside him, the angels and shepherds, the Magi, and Joseph troubled at the side.\n\nGrygorenko follows the classic Byzantine arrangement, with the midwives bathing the Child below.",
+  "image": "assets/icons/grygorenko-nativity.jpg",
+  "thumb": "assets/icons/grygorenko-nativity-thumb.jpg",
+  "w": 964,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479c3ed437787a2e5f72e6_icons-30.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-last-supper",
+  "kind": "feast",
+  "title": "The Mystical Supper (Grygorenko)",
+  "alt": "",
+  "cardName": "Great and Holy Thursday: the Mystical Supper",
+  "subjects": [
+   "Mystical Supper",
+   "Jesus Christ",
+   "Holy Apostles"
+  ],
+  "days": [
+   {
+    "d": "pascha-3"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "On the night before his Passion Christ gave the apostles his Body and Blood. The Church remembers the Mystical Supper on Great and Holy Thursday.\n\nChrist and the twelve gather around the table, with the bread and the cup before them.",
+  "image": "assets/icons/grygorenko-last-supper.jpg",
+  "thumb": "assets/icons/grygorenko-last-supper-thumb.jpg",
+  "w": 1200,
+  "h": 974,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6648fb441c817397495acee9_icons-28.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-resurrection",
+  "kind": "feast",
+  "title": "The Resurrection (Grygorenko)",
+  "alt": "",
+  "cardName": "Pascha: the Resurrection of Christ",
+  "subjects": [
+   "Resurrection",
+   "Jesus Christ",
+   "Adam",
+   "Eve"
+  ],
+  "days": [
+   {
+    "d": "pascha+0"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The Orthodox icon of the Resurrection shows Christ's descent into Hades. He stands on its broken gates and raises Adam and Eve, while kings and prophets wait to follow.\n\nHere the risen Christ holds the cross as a standard.",
+  "image": "assets/icons/grygorenko-resurrection.jpg",
+  "thumb": "assets/icons/grygorenko-resurrection-thumb.jpg",
+  "w": 883,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664beade8ab057fd5101b6d5_icons-16.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-crucifix",
+  "kind": "christ",
+  "title": "Crucifix (Grygorenko)",
+  "alt": "",
+  "cardName": "Great and Holy Friday",
+  "subjects": [
+   "Crucifixion",
+   "Jesus Christ"
+  ],
+  "days": [
+   {
+    "d": "pascha-2"
+   },
+   {
+    "d": "09-14"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "A painted cross, with the figure of the crucified Christ under the title 'Jesus of Nazareth, King of the Jews.'\n\nCrosses like this stand in Orthodox churches and are carried out for veneration on Holy Friday and at the Exaltation of the Cross.",
+  "image": "assets/icons/grygorenko-crucifix.jpg",
+  "thumb": "assets/icons/grygorenko-crucifix-thumb.jpg",
+  "w": 664,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664794f2867b75e21c70730a_icons-29.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-mandylion",
+  "kind": "christ",
+  "title": "The Image Not Made by Hands (Grygorenko)",
+  "alt": "",
+  "cardName": "The Image of Christ Not Made by Hands",
+  "subjects": [
+   "Jesus Christ",
+   "Mandylion"
+  ],
+  "days": [
+   {
+    "d": "08-16"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Tradition holds that Christ pressed a cloth to his face and sent the image to King Abgar of Edessa, who was healed. The Mandylion was brought to Constantinople in 944, and the Church remembers it on 16 August.\n\nOnly the face of Christ appears, against the cloth and a cross-inscribed halo.",
+  "image": "assets/icons/grygorenko-mandylion.jpg",
+  "thumb": "assets/icons/grygorenko-mandylion-thumb.jpg",
+  "w": 1189,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479ca493f6acb8e3dea9b7_icons-41.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-christ-sinai",
+  "kind": "christ",
+  "title": "Christ, after the Sinai Pantocrator (Grygorenko)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Grygorenko's version of the sixth-century Christ Pantocrator of Sinai, among the oldest surviving icons of Christ, which is also in this library.\n\nAs in the original, Christ blesses and holds a jeweled Gospel book.",
+  "image": "assets/icons/grygorenko-christ-sinai.jpg",
+  "thumb": "assets/icons/grygorenko-christ-sinai-thumb.jpg",
+  "w": 794,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6648fae054ad674ea69f75b9_exibit-1-7-1.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-christ-enthroned",
+  "kind": "christ",
+  "title": "Christ Enthroned (Grygorenko)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Christ sits on a jeweled throne as the judge and ruler of all, his feet on a cushion, the Gospel open on his knee.\n\nThis is the image that sits at the center of the Deesis tier of an iconostasis.",
+  "image": "assets/icons/grygorenko-christ-enthroned.jpg",
+  "thumb": "assets/icons/grygorenko-christ-enthroned-thumb.jpg",
+  "w": 803,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479bd5ab5f480cf69179e7_icons-21.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-pantocrator",
+  "kind": "christ",
+  "title": "Christ Pantocrator (Grygorenko)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The Pantocrator, the Ruler of All, blesses with his right hand and holds the Gospel in his left.\n\nGrygorenko sets the half-length figure against a red ground.",
+  "image": "assets/icons/grygorenko-pantocrator.jpg",
+  "thumb": "assets/icons/grygorenko-pantocrator-thumb.jpg",
+  "w": 845,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664beb604606aeaa77ceb479_icons-9.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-christ-half",
+  "kind": "christ",
+  "title": "Christ, Holding the Gospel (Grygorenko)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Christ blesses and holds a jeweled Gospel book, the most familiar image of Orthodox iconography.\n\nThe panel is wider than it is tall, the figure turned slightly toward the viewer.",
+  "image": "assets/icons/grygorenko-christ-half.jpg",
+  "thumb": "assets/icons/grygorenko-christ-half-thumb.jpg",
+  "w": 1200,
+  "h": 898,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479d0c3645e097235b1229_icons-39.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-christ-2017",
+  "kind": "christ",
+  "title": "The Face of Christ (Grygorenko, 2017)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "2017",
+  "year": 2017,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "A close image of the face of Christ, painted in 2017.\n\nThe letters IC XC abbreviate the name Jesus Christ in Greek.",
+  "image": "assets/icons/grygorenko-christ-2017.jpg",
+  "thumb": "assets/icons/grygorenko-christ-2017-thumb.jpg",
+  "w": 1190,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6647943d20674a41d83c466f_icons-18.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-yaroe-oko",
+  "kind": "christ",
+  "title": "The Saviour of the Fiery Eye (Grygorenko)",
+  "alt": "",
+  "cardName": "Christ Pantocrator",
+  "subjects": [
+   "Jesus Christ"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Spas Yaroe Oko, the Saviour of the Fiery Eye, is a Russian type known from a fourteenth-century icon in the Dormition Cathedral of the Moscow Kremlin. Christ looks out with a stern, burning gaze.\n\nGrygorenko paints the face close and frontal, against gold.",
+  "image": "assets/icons/grygorenko-yaroe-oko.jpg",
+  "thumb": "assets/icons/grygorenko-yaroe-oko-thumb.jpg",
+  "w": 951,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664799f13cd1f6bb5526e2da_icons-13.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-emmanuel",
+  "kind": "christ",
+  "title": "Christ Emmanuel (Grygorenko)",
+  "alt": "",
+  "cardName": "Christ Emmanuel",
+  "subjects": [
+   "Jesus Christ",
+   "Christ Emmanuel"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Emmanuel, 'God with us,' is Isaiah's name for the coming Messiah. The icon shows Christ as a youth, the eternal Word before his earthly ministry.\n\nHere he stands at full length in golden robes beneath an arched top, against a starry blue ground.",
+  "image": "assets/icons/grygorenko-emmanuel.jpg",
+  "thumb": "assets/icons/grygorenko-emmanuel-thumb.jpg",
+  "w": 580,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479a25c2dae7ca31ba0d8c_icons-15.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-vladimirskaya",
+  "kind": "theotokos",
+  "title": "The Vladimir Mother of God (Grygorenko)",
+  "alt": "",
+  "cardName": "The Vladimir Icon of the Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Theotokos of Vladimir"
+  ],
+  "days": [
+   {
+    "d": "08-26",
+    "n": "Meeting of the Vladimir Icon of the Mother of God"
+   }
+  ],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The Vladimir icon, painted in Constantinople in the twelfth century, came to Kiev and then Vladimir and Moscow, and became the most beloved icon of Russia. The Child presses his cheek to his Mother's.\n\nGrygorenko's copy keeps the tender gesture of the original, now in the Tretyakov Gallery.",
+  "image": "assets/icons/grygorenko-vladimirskaya.jpg",
+  "thumb": "assets/icons/grygorenko-vladimirskaya-thumb.jpg",
+  "w": 806,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/6647996d699c86d737763bb2_icons-2.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-salus-populi",
+  "kind": "theotokos",
+  "title": "The Mother of God, Salus Populi Romani (Grygorenko)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "Salus Populi Romani, 'Protection of the Roman People,' is an ancient icon in the basilica of Santa Maria Maggiore in Rome, traditionally said to be painted by the Evangelist Luke.\n\nGrygorenko follows the old Roman type, the Mother of God holding the Child in her arms.",
+  "image": "assets/icons/grygorenko-salus-populi.jpg",
+  "thumb": "assets/icons/grygorenko-salus-populi-thumb.jpg",
+  "w": 830,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664798265bb56408fe75dd26_icons-32.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-theotokos-pisa",
+  "kind": "theotokos",
+  "title": "The Mother of God of Pisa (Grygorenko)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The Mother of God holds the Child, who holds an open book.\n\nGrygorenko titles this panel after Pisa, after the Byzantine-style Madonnas painted in Tuscany in the thirteenth century.",
+  "image": "assets/icons/grygorenko-theotokos-pisa.jpg",
+  "thumb": "assets/icons/grygorenko-theotokos-pisa-thumb.jpg",
+  "w": 832,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664799b6f462517d32a9296f_icons-8.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-theotokos-blue",
+  "kind": "theotokos",
+  "title": "The Mother of God (Grygorenko)",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The Mother of God holds her Son and turns toward the viewer, presenting him to the world.\n\nGrygorenko paints her maphorion in a deep blue, against gold.",
+  "image": "assets/icons/grygorenko-theotokos-blue.jpg",
+  "thumb": "assets/icons/grygorenko-theotokos-blue-thumb.jpg",
+  "w": 799,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664798aaa4a128dbee88608c_icons-33.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-theotokos-gold",
+  "kind": "theotokos",
+  "title": "The Mother of God Hodegetria (Grygorenko)",
+  "alt": "",
+  "cardName": "The Mother of God Hodegetria",
+  "subjects": [
+   "Theotokos",
+   "Theotokos Hodegetria"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The Hodegetria, 'She who shows the way,' points to the Child she carries, the way to salvation.\n\nThe Child blesses and holds a scroll.",
+  "image": "assets/icons/grygorenko-theotokos-gold.jpg",
+  "thumb": "assets/icons/grygorenko-theotokos-gold-thumb.jpg",
+  "w": 901,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479aa564f2608a737a9574_icons-26.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-theotokos-hodegetria",
+  "kind": "theotokos",
+  "title": "The Mother of God Hodegetria, in Red (Grygorenko)",
+  "alt": "",
+  "cardName": "The Mother of God Hodegetria",
+  "subjects": [
+   "Theotokos",
+   "Theotokos Hodegetria"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "The Hodegetria type goes back to a famous icon of Constantinople said to have been painted by St Luke.\n\nGrygorenko paints the Mother of God in a dark red maphorion, holding the Child.",
+  "image": "assets/icons/grygorenko-theotokos-hodegetria.jpg",
+  "thumb": "assets/icons/grygorenko-theotokos-hodegetria-thumb.jpg",
+  "w": 874,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/66479c22b6a2840df3cec630_icons-25.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "grygorenko-theotokos-eleousa",
+  "kind": "theotokos",
+  "title": "The Mother of God of Tenderness (Grygorenko)",
+  "alt": "",
+  "cardName": "The Mother of God of Tenderness",
+  "subjects": [
+   "Theotokos"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Contemporary",
+  "year": 2010,
+  "school": "Contemporary (Vladimir Grygorenko)",
+  "artist": "Vladimir Grygorenko",
+  "origin": {
+   "name": "Vladimir Grygorenko's studio",
+   "lat": null,
+   "lng": null,
+   "city": "Dallas, Texas"
+  },
+  "originShort": "Vladimir Grygorenko's studio",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Egg tempera on wood panel",
+  "text": "In the Eleousa, the Mother of God of Tenderness, the Child presses his face to his Mother's cheek.\n\nGrygorenko sets her against a red halo and a turquoise border.",
+  "image": "assets/icons/grygorenko-theotokos-eleousa.jpg",
+  "thumb": "assets/icons/grygorenko-theotokos-eleousa-thumb.jpg",
+  "w": 919,
+  "h": 1200,
+  "source": {
+   "page": "https://www.orthodox-icon.com/work/panel-icons",
+   "file": "https://cdn.prod.website-files.com/66088986009fd396c4ba56d2/664799a25bb56408fe7728e5_icons-7.jpg",
+   "license": "Used with the iconographer's permission",
+   "via": "Vladimir Grygorenko",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Vladimir Grygorenko",
+   "credit": ""
+  },
+  "modern": {
+   "artist": "Vladimir Grygorenko",
+   "url": "https://www.orthodox-icon.com"
+  }
+ },
+ {
+  "id": "alexander-svir-18c",
+  "kind": "saint",
+  "title": "St Alexander of Svir",
+  "alt": "",
+  "cardName": "St Alexander of Svir",
+  "subjects": [
+   "St Alexander of Svir"
+  ],
+  "days": [
+   {
+    "d": "08-30",
+    "n": "St Alexander of Svir"
+   }
+  ],
+  "month": null,
+  "date": "18th century",
+  "year": 1750,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Alexander (1448–1533) left home secretly to become a monk at Valaam, then lived as a hermit by the river Svir. There, in 1508, he saw the Holy Trinity as three men in white, the only such vision recorded in Russia, and built a monastery on the spot.\n\nHe holds a scroll, against a landscape of hills.",
+  "image": "assets/icons/alexander-svir-18c.jpg",
+  "thumb": "assets/icons/alexander-svir-18c-thumb.jpg",
+  "w": 954,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St_Alexander_Svirsky.jpg",
+   "file": "St Alexander Svirsky.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Old Icon"
+  }
+ },
+ {
+  "id": "alexandra-paul-platonov",
+  "kind": "saint",
+  "title": "Saints Alexandra and Paul (Platonov, 1889)",
+  "alt": "",
+  "cardName": "St Alexandra the Empress",
+  "subjects": [
+   "St Alexandra of Rome",
+   "St Paul"
+  ],
+  "days": [
+   {
+    "d": "04-21",
+    "n": "Martyr Alexandra the Empress"
+   }
+  ],
+  "month": null,
+  "date": "1889",
+  "year": 1889,
+  "school": "St Petersburg (Feodor Platonov)",
+  "artist": "Feodor Platonov",
+  "origin": {
+   "name": "St Petersburg",
+   "lat": 59.9343,
+   "lng": 30.3351
+  },
+  "originShort": "St Petersburg",
+  "home": {
+   "name": "Private collection",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel in a cast and chased silver frame",
+  "text": "Alexandra, by tradition the wife of the emperor Diocletian, was so moved by the martyrdom of St George that she confessed Christ herself, and died on the way to her execution. Paul stands beside her.\n\nThey were the patron saints of Grand Duke Paul Alexandrovich and his wife Alexandra. A plaque on the back records that his valets gave him the icon in 1889. It is signed by Feodor Platonov of St Petersburg.",
+  "image": "assets/icons/alexandra-paul-platonov.jpg",
+  "thumb": "assets/icons/alexandra-paul-platonov-thumb.jpg",
+  "w": 1001,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:S._Alexandra_and_S.Paul_by_F.Platonov_(1889,_priv.coll).jpg",
+   "file": "S. Alexandra and S.Paul by F.Platonov (1889, priv.coll).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Feodor Platonov",
+   "credit": "http://www.sothebys.com/en/auctions/ecatalogue/2010/russian-works-of-art-faberg-and-icons-l10116/lot.704.html"
+  }
+ },
+ {
+  "id": "alexander-oshevensk",
+  "kind": "saint",
+  "title": "St Alexander of Oshevensk",
+  "alt": "",
+  "cardName": "St Alexander of Oshevensk",
+  "subjects": [
+   "St Alexander of Oshevensk"
+  ],
+  "days": [
+   {
+    "d": "04-20",
+    "n": "St Alexander of Oshevensk"
+   }
+  ],
+  "month": null,
+  "date": "Second half of the 17th century",
+  "year": 1675,
+  "school": "Northern Russia",
+  "artist": "",
+  "origin": {
+   "name": "Kargopol",
+   "lat": 61.507,
+   "lng": 38.945
+  },
+  "originShort": "Kargopol",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Alexander (1427–1479) was a monk of the White Lake monastery who founded a monastery of his own on the river Churyuga, near Kargopol in the Russian north.\n\nHe prays toward Christ in the upper corner, with his monastery behind him.",
+  "image": "assets/icons/alexander-oshevensk.jpg",
+  "thumb": "assets/icons/alexander-oshevensk-thumb.jpg",
+  "w": 693,
+  "h": 800,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St_Alexander_Oshevensky.jpg",
+   "file": "St Alexander Oshevensky.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://www.solovki-monastyr.ru/ikony/view/18.jpg"
+  }
+ },
+ {
+  "id": "alypius-stylite-tzanes",
+  "kind": "saint",
+  "title": "St Alypius the Stylite (Tzanes)",
+  "alt": "",
+  "cardName": "St Alypius the Stylite",
+  "subjects": [
+   "St Alypius the Stylite"
+  ],
+  "days": [
+   {
+    "d": "11-26"
+   }
+  ],
+  "month": null,
+  "date": "1635–1660",
+  "year": 1650,
+  "school": "Cretan school",
+  "artist": "Emmanuel Tzanes",
+  "origin": {
+   "name": "Venetian Crete (Candia)",
+   "lat": 35.3387,
+   "lng": 25.1442
+  },
+  "originShort": "Venetian Crete (Candia)",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Alypius of Adrianople in Paphlagonia stood on a pillar for more than fifty years in the seventh century. When his legs would no longer hold him, he lay on his side and went on praying.\n\nThe Cretan painter Emmanuel Tzanes shows him on his column, with the monastery that grew up around it.",
+  "image": "assets/icons/alypius-stylite-tzanes.jpg",
+  "thumb": "assets/icons/alypius-stylite-tzanes-thumb.jpg",
+  "w": 884,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Alypius_the_Stylite_(Tzanes).png",
+   "file": "Alypius the Stylite (Tzanes).png",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Emmanuel Tzanes",
+   "credit": ""
+  }
+ },
+ {
+  "id": "anna-prophetess",
+  "kind": "saint",
+  "title": "Righteous Anna the Prophetess",
+  "alt": "",
+  "cardName": "Righteous Anna the Prophetess",
+  "subjects": [
+   "Righteous Anna the Prophetess"
+  ],
+  "days": [
+   {
+    "d": "02-03"
+   }
+  ],
+  "month": null,
+  "date": "15th–16th century",
+  "year": 1500,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Anna, a widow of eighty-four, never left the Temple in Jerusalem. When Mary and Joseph brought the infant Jesus there, she gave thanks and spoke of him to all who were waiting for the redemption of Jerusalem (Luke 2:36–38).\n\nShe holds the scroll of a prophet.",
+  "image": "assets/icons/anna-prophetess.jpg",
+  "thumb": "assets/icons/anna-prophetess-thumb.jpg",
+  "w": 572,
+  "h": 923,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Prophetess_Anna_Icon.jpg",
+   "file": "Prophetess Anna Icon.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://www.johnsanidopoulos.com/2017/08/holy-prophetess-anna-daughter-of-phanuel.html https://sfintisiicoane.wordpress.com/2012/02/page/3/"
+  }
+ },
+ {
+  "id": "daniel-moscow-1551",
+  "kind": "saint",
+  "title": "St Daniel of Moscow",
+  "alt": "",
+  "cardName": "Blessed Prince Daniel of Moscow",
+  "subjects": [
+   "St Daniel of Moscow"
+  ],
+  "days": [
+   {
+    "d": "03-04",
+    "n": "Blessed Prince Daniel of Moscow"
+   }
+  ],
+  "month": null,
+  "date": "1551",
+  "year": 1551,
+  "school": "Moscow",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Daniel (1261–1303), youngest son of Alexander Nevsky, was the first prince of Moscow. He founded its first monastery, the Danilov, and took the monastic habit before he died.\n\nThe prince stands in a rich robe, with the cross of a martyr-prince.",
+  "image": "assets/icons/daniel-moscow-1551.jpg",
+  "thumb": "assets/icons/daniel-moscow-1551-thumb.jpg",
+  "w": 542,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Daniel_of_Moscow.jpg",
+   "file": "Daniel of Moscow.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://diomedes2.livejournal.com/341541.html?view=comments"
+  }
+ },
+ {
+  "id": "gerasimus-boldino",
+  "kind": "saint",
+  "title": "St Gerasimus of Boldino",
+  "alt": "",
+  "cardName": "St Gerasimus of Boldino",
+  "subjects": [
+   "St Gerasimus of Boldino"
+  ],
+  "days": [
+   {
+    "d": "05-01",
+    "n": "St Gerasimus of Boldino"
+   }
+  ],
+  "month": null,
+  "date": "18th century",
+  "year": 1750,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Gerasimus (1490–1554) was a disciple of St Daniel of Pereslavl. He founded the Boldino monastery near Dorogobuzh, in the forests west of Moscow.\n\nHe stands before the churches of his monastery.",
+  "image": "assets/icons/gerasimus-boldino.jpg",
+  "thumb": "assets/icons/gerasimus-boldino-thumb.jpg",
+  "w": 800,
+  "h": 994,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Gerasim_Boldinsky.jpg",
+   "file": "Gerasim Boldinsky.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Неивестно",
+   "credit": "http://www.icon-art.info/"
+  }
+ },
+ {
+  "id": "gerasimus-vologda",
+  "kind": "saint",
+  "title": "St Gerasimus of Vologda",
+  "alt": "",
+  "cardName": "St Gerasimus of Vologda",
+  "subjects": [
+   "St Gerasimus of Vologda"
+  ],
+  "days": [
+   {
+    "d": "03-04",
+    "n": "St Gerasimus of Vologda"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Vologda",
+  "artist": "",
+  "origin": {
+   "name": "Vologda",
+   "lat": 59.2181,
+   "lng": 39.8886
+  },
+  "originShort": "Vologda",
+  "home": {
+   "name": "Vologda Museum-Reserve",
+   "lat": 59.2239,
+   "lng": 39.8843,
+   "city": "Vologda"
+  },
+  "medium": "Tempera on wood",
+  "text": "Gerasimus came from Kiev in 1147 and founded a monastery at Vologda when it was still a village. He is honored as the first saint of the city.\n\nThe icon is in the Vologda Museum-Reserve.",
+  "image": "assets/icons/gerasimus-vologda.jpg",
+  "thumb": "assets/icons/gerasimus-vologda-thumb.jpg",
+  "w": 1037,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Gerasim_of_Vologda,_XVII_century_icon.jpg",
+   "file": "Gerasim of Vologda, XVII century icon.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Неизвестен / Unknown",
+   "credit": "Вологодский музей-заповедник / Vologda art and architecture museum"
+  }
+ },
+ {
+  "id": "gideon-annunciation",
+  "kind": "saint",
+  "title": "Righteous Gideon (Annunciation Cathedral)",
+  "alt": "",
+  "cardName": "Righteous Gideon",
+  "subjects": [
+   "Righteous Gideon"
+  ],
+  "days": [],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Moscow",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Cathedral of the Annunciation, Moscow Kremlin",
+   "lat": 55.75,
+   "lng": 37.617,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Gideon, a judge of Israel, asked God for a sign: dew on a fleece while the ground stayed dry. The Church reads the dew-soaked fleece as a figure of the Virgin, who conceived the Word without seed.\n\nHe stands in the prophets' tier of the iconostasis of the Annunciation Cathedral in the Moscow Kremlin, holding his fleece.",
+  "image": "assets/icons/gideon-annunciation.jpg",
+  "thumb": "assets/icons/gideon-annunciation-thumb.jpg",
+  "w": 512,
+  "h": 1126,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Gedeon_(Annunciation_Cathedral_in_Moscow).jpg",
+   "file": "Gedeon (Annunciation Cathedral in Moscow).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://www.kreml.ru/ru/museums/annunciation/icons/Proroki_Praottsy/"
+  }
+ },
+ {
+  "id": "hypatius-embroidered",
+  "kind": "saint",
+  "title": "St Hypatius of Gangra (embroidered)",
+  "alt": "",
+  "cardName": "Hieromartyr Hypatius of Gangra",
+  "subjects": [
+   "St Hypatius of Gangra"
+  ],
+  "days": [
+   {
+    "d": "03-31"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Kostroma",
+   "lat": 57.7665,
+   "lng": 40.9269
+  },
+  "originShort": "Kostroma",
+  "home": {
+   "name": "Ipatiev Monastery (Kostroma Museum-Reserve)",
+   "lat": 57.7792,
+   "lng": 40.8957,
+   "city": "Kostroma"
+  },
+  "medium": "Silk, silver and gold thread on green silk damask",
+  "text": "Hypatius, bishop of Gangra in Asia Minor, was at the Council of Nicaea in 325 and was stoned to death by heretics on his way home from Constantinople.\n\nThis is an embroidered icon, stitched in silk and gold on green damask, from the sacristy of the Ipatiev Monastery in Kostroma, which bears his name. He blesses and holds the Gospel.",
+  "image": "assets/icons/hypatius-embroidered.jpg",
+  "thumb": "assets/icons/hypatius-embroidered-thumb.jpg",
+  "w": 735,
+  "h": 800,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Hypatius_from_Kostroma.jpeg",
+   "file": "Saint Hypatius from Kostroma.jpeg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "NN: Russian icon",
+   "credit": "http://lib.pstgu.ru/icons/index.php?option=com_alphacontent&amp;section=4&amp;Itemid=59&amp;limitstart=240"
+  }
+ },
+ {
+  "id": "procopius-john-ustyug",
+  "kind": "saint",
+  "title": "Saints Procopius and John of Ustyug",
+  "alt": "",
+  "cardName": "Blessed John of Ustyug",
+  "subjects": [
+   "St Procopius of Ustyug",
+   "St John of Ustyug"
+  ],
+  "days": [
+   {
+    "d": "05-29",
+    "n": "Blessed John of Ustyug, Fool for Christ"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Veliky Ustyug",
+  "artist": "",
+  "origin": {
+   "name": "Northern Russia",
+   "lat": 62.0,
+   "lng": 40.5
+  },
+  "originShort": "Northern Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Procopius and John were the two fools for Christ of Veliky Ustyug. John (died 1494) lived as a child in a hut by the cathedral, praying through the nights and taking the frost and heat without complaint.\n\nThe two saints pray before an icon of the Annunciation of Ustyug. The panel was photographed during its restoration.",
+  "image": "assets/icons/procopius-john-ustyug.jpg",
+  "thumb": "assets/icons/procopius-john-ustyug-thumb.jpg",
+  "w": 999,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%8F%D1%82%D1%8B%D0%B5_%D0%9F%D1%80%D0%BE%D0%BA%D0%BE%D0%BF%D0%B8%D0%B9_%D0%B8_%D0%98%D0%BE%D0%B0%D0%BD%D0%BD,_XVII_%D0%B2%D0%B5%D0%BA.jpg",
+   "file": "Святые Прокопий и Иоанн, XVII век.jpg",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "putnik (photo)",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "three-patriarchs-paradise",
+  "kind": "saint",
+  "title": "The Three Patriarchs in Paradise",
+  "alt": "",
+  "cardName": "The Holy Forefathers",
+  "subjects": [
+   "Righteous Abraham",
+   "Righteous Isaac",
+   "Righteous Jacob"
+  ],
+  "days": [],
+  "month": null,
+  "date": "18th century",
+  "year": 1750,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Private collection",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood, 35 × 29.2 cm",
+  "text": "Abraham, Isaac and Jacob sit together in the garden of Paradise, with the souls of the righteous between them. The image takes up Christ's words that many will sit down with the patriarchs in the kingdom of heaven, and the 'bosom of Abraham' where the poor man Lazarus was carried.\n\nThe Church honors the forefathers on the second Sunday before the Nativity.",
+  "image": "assets/icons/three-patriarchs-paradise.jpg",
+  "thumb": "assets/icons/three-patriarchs-paradise-thumb.jpg",
+  "w": 1007,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Three_Patriarchs_in_Paradise_(18th_c.,_Russia,_priv._coll.).jpg",
+   "file": "Three Patriarchs in Paradise (18th c., Russia, priv. coll.).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://www.auctions-fischer.de/catalogues/online-catalogues/207-i-russian-greek-icons.html?L=1&amp;kategorie=93&amp;artikel=24517&amp;L=1&amp;cHash=b907ed25a6"
+  }
+ },
+ {
+  "id": "barbara-seraphim-damascene-eugenoglu",
+  "kind": "saint",
+  "title": "Saints Barbara, Seraphim and John of Damascus (Eugenoglu)",
+  "alt": "",
+  "cardName": "St John of Damascus",
+  "subjects": [
+   "St Barbara",
+   "St Seraphim of Phanar",
+   "St John of Damascus"
+  ],
+  "days": [
+   {
+    "d": "12-04"
+   }
+  ],
+  "month": null,
+  "date": "18th–19th century",
+  "year": 1800,
+  "school": "Greek",
+  "artist": "Ioannes Eugenoglu",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Maryhill Museum of Art",
+   "lat": 45.6779,
+   "lng": -120.8189,
+   "city": "Maryhill, Washington"
+  },
+  "medium": "Tempera on wood",
+  "text": "John of Damascus (c. 675–749) was a monk of Mar Saba who wrote the great defense of the holy icons, and many of the hymns the Church still sings. Barbara, the martyr of Heliopolis, and the hieromartyr Seraphim of Phanar share his feast, 4 December.\n\nThe Greek painter Ioannes Eugenoglu gathered the saints of the day in one icon, now in the Maryhill Museum of Art in Washington State.",
+  "image": "assets/icons/barbara-seraphim-damascene-eugenoglu.jpg",
+  "thumb": "assets/icons/barbara-seraphim-damascene-eugenoglu-thumb.jpg",
+  "w": 910,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Maryhill_Museum_-_St._Barbara,_St._Seraphim,_and_St._John_of_Damascus_(Ioannes_Eugenoglu)_01.jpg",
+   "file": "Maryhill Museum - St. Barbara, St. Seraphim, and St. John of Damascus (Ioannes Eugenoglu) 01.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Icon: Ioannes Eugenoglu. Photo: Joe Mabel",
+   "credit": "Photograph by Joe Mabel"
+  }
+ },
+ {
+  "id": "john-vladimir-seven-saints",
+  "kind": "saint",
+  "title": "St John Vladimir, with the Seven Saints and St Erasmus",
+  "alt": "",
+  "cardName": "St John Vladimir",
+  "subjects": [
+   "St John Vladimir",
+   "Seven Saints",
+   "St Clement of Ohrid",
+   "St Naum of Ohrid",
+   "St Erasmus"
+  ],
+  "days": [
+   {
+    "d": "05-22",
+    "n": "St John Vladimir, Prince of Duklja"
+   }
+  ],
+  "month": null,
+  "date": "19th century",
+  "year": 1850,
+  "school": "Bulgarian",
+  "artist": "",
+  "origin": {
+   "name": "Bulgaria",
+   "lat": 42.7,
+   "lng": 23.32
+  },
+  "originShort": "Bulgaria",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "John Vladimir, prince of Duklja on the Adriatic, was murdered in 1016 by his wife's cousin, who had sworn on a cross to spare him. His relics rest in the monastery named for him near Elbasan in Albania.\n\nHere he joins the Seven Saints, Cyril and Methodius and their disciples, who brought letters and the Gospel to the Slavs, and St Erasmus of Ohrid.",
+  "image": "assets/icons/john-vladimir-seven-saints.jpg",
+  "thumb": "assets/icons/john-vladimir-seven-saints-thumb.jpg",
+  "w": 927,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:The_Seven_Saint_and_Saint_John_Vladimir_and_Saint_Erasmus_Icon.jpg",
+   "file": "The Seven Saint and Saint John Vladimir and Saint Erasmus Icon.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Self-scanned"
+  }
+ },
+ {
+  "id": "macarius-unzha",
+  "kind": "saint",
+  "title": "St Macarius of Unzha",
+  "alt": "",
+  "cardName": "St Macarius of Zheltovodsk and Unzha",
+  "subjects": [
+   "St Macarius of Unzha"
+  ],
+  "days": [
+   {
+    "d": "07-25",
+    "n": "St Macarius of Zheltovodsk and Unzha"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Macarius (1349–1444) founded monasteries on the Volga at Zheltye Vody and in the forests of Unzha. Tatars burned the first and carried him off, but released him.\n\nHe prays before the Holy Trinity, with his monastery behind him.",
+  "image": "assets/icons/macarius-unzha.jpg",
+  "thumb": "assets/icons/macarius-unzha-thumb.jpg",
+  "w": 1028,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%BF_%D0%9C%D0%B0%D0%BA%D0%B0%D1%80%D0%B8%D0%B9_%D0%96%D0%B5%D0%BB%D1%82%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D0%BA%D0%B8%D0%B9,_%D0%A3%D0%BD%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9.jpg",
+   "file": "Прп Макарий Желтоводский, Унженский.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author Original uploader was VP at ru.wikipedia",
+   "credit": "Transferred from ru.wikipedia (Original text : Минея - Июль. Издание Московской Патриархии )"
+  }
+ },
+ {
+  "id": "maximus-greek-pomor",
+  "kind": "saint",
+  "title": "St Maximus the Greek",
+  "alt": "",
+  "cardName": "St Maximus the Greek",
+  "subjects": [
+   "St Maximus the Greek"
+  ],
+  "days": [
+   {
+    "d": "01-21",
+    "n": "St Maximus the Greek"
+   }
+  ],
+  "month": null,
+  "date": "Late 18th–early 19th century",
+  "year": 1800,
+  "school": "Pomorye (Old Believer)",
+  "artist": "",
+  "origin": {
+   "name": "The White Sea coast (Pomorye)",
+   "lat": 64.5,
+   "lng": 40.5
+  },
+  "originShort": "The White Sea coast (Pomorye)",
+  "home": {
+   "name": "State Historical Museum",
+   "lat": 55.7553,
+   "lng": 37.6178,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Michael Trivolis was a Greek scholar who studied in Renaissance Italy before becoming a monk on Athos. Sent to Moscow in 1518 to translate books, he spent decades in prison for his corrections and his criticism, and died at the Trinity Lavra in 1556.\n\nThe icon was painted on the White Sea coast, in the Pomor manner, and is in the State Historical Museum.",
+  "image": "assets/icons/maximus-greek-pomor.jpg",
+  "thumb": "assets/icons/maximus-greek-pomor-thumb.jpg",
+  "w": 983,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Maximus_the_Greek.jpg",
+   "file": "Maximus the Greek.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "unknown pomorian. Поморское письмо",
+   "credit": "own photo 2008"
+  }
+ },
+ {
+  "id": "michael-maleinos-1630s",
+  "kind": "saint",
+  "title": "St Michael Maleinos (Kremlin workshops)",
+  "alt": "",
+  "cardName": "St Michael Maleinos",
+  "subjects": [
+   "St Michael Maleinos"
+  ],
+  "days": [
+   {
+    "d": "07-12",
+    "n": "St Michael Maleinos"
+   }
+  ],
+  "month": null,
+  "date": "1630s",
+  "year": 1635,
+  "school": "Moscow (Kremlin workshops)",
+  "artist": "",
+  "origin": {
+   "name": "Moscow (Kremlin workshops)",
+   "lat": 55.7517,
+   "lng": 37.6178
+  },
+  "originShort": "Moscow (Kremlin workshops)",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood with a basma revetment",
+  "text": "Michael Maleinos (894–961) was a Byzantine noble who became a monk on Mount Kyminas and spiritual father of St Athanasius of Athos.\n\nHe was the patron saint of Tsar Michael Romanov, and this icon from the tsar's own possessions was painted in the Kremlin workshops.",
+  "image": "assets/icons/michael-maleinos-1630s.jpg",
+  "thumb": "assets/icons/michael-maleinos-1630s-thumb.jpg",
+  "w": 372,
+  "h": 1036,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Mihail_malein.jpg",
+   "file": "Mihail malein.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "michael-chernigov-1688",
+  "kind": "saint",
+  "title": "St Michael of Chernigov (1688)",
+  "alt": "",
+  "cardName": "Holy Martyr Prince Michael of Chernigov",
+  "subjects": [
+   "St Michael of Chernigov"
+  ],
+  "days": [
+   {
+    "d": "09-20",
+    "n": "Martyr Prince Michael of Chernigov"
+   }
+  ],
+  "month": null,
+  "date": "1688",
+  "year": 1688,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Michael, prince of Chernigov, went to the Golden Horde in 1246 and refused to walk through the purifying fires and bow to the idols. He was beaten to death with his boyar Theodore.\n\nHe stands as a prince in a fur cap, beneath the Image Not Made by Hands.",
+  "image": "assets/icons/michael-chernigov-1688.jpg",
+  "thumb": "assets/icons/michael-chernigov-1688-thumb.jpg",
+  "w": 376,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Michael_of_Chernigov_1688.jpg",
+   "file": "Michael of Chernigov 1688.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "anonimois",
+   "credit": "http://www.bg-gallery.ru/image.php?img_id=577"
+  }
+ },
+ {
+  "id": "nicetas-goth-vita",
+  "kind": "saint",
+  "title": "St Nicetas the Goth, with Scenes from His Life",
+  "alt": "",
+  "cardName": "Great Martyr Nikitas the Goth",
+  "subjects": [
+   "St Nicetas the Goth"
+  ],
+  "days": [
+   {
+    "d": "09-15"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Nicetas was a Gothic warrior beyond the Danube who was burned for his faith around 372. St Sabbas of Cappadocia carried his relics to Mopsuestia.\n\nScenes from his life frame the armed saint.",
+  "image": "assets/icons/nicetas-goth-vita.jpg",
+  "thumb": "assets/icons/nicetas-goth-vita-thumb.jpg",
+  "w": 831,
+  "h": 1024,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:St_Nikita.jpeg",
+   "file": "St Nikita.jpeg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "nikon-radonezh-ushakov",
+  "kind": "saint",
+  "title": "St Nikon of Radonezh (Ushakov)",
+  "alt": "",
+  "cardName": "St Nikon of Radonezh",
+  "subjects": [
+   "St Nikon of Radonezh"
+  ],
+  "days": [
+   {
+    "d": "11-17",
+    "n": "St Nikon of Radonezh"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1670,
+  "school": "Moscow (Simon Ushakov)",
+  "artist": "Simon Ushakov",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Sergiev Posad Museum-Reserve",
+   "lat": 56.3105,
+   "lng": 38.13,
+   "city": "Sergiev Posad"
+  },
+  "medium": "Tempera on wood",
+  "text": "Nikon (died 1426) was the disciple and successor of St Sergius as abbot of the Trinity monastery. He rebuilt it after the Tatars burned it, and asked Andrei Rublev to paint the icon of the Holy Trinity for its stone church.\n\nThis icon is attributed to Simon Ushakov and is in the museum at Sergiev Posad.",
+  "image": "assets/icons/nikon-radonezh-ushakov.jpg",
+  "thumb": "assets/icons/nikon-radonezh-ushakov-thumb.jpg",
+  "w": 670,
+  "h": 892,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nikon_of_Radonej.jpg",
+   "file": "Nikon of Radonej.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Simon Ushakov",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "nine-martyrs-cyzicus",
+  "kind": "saint",
+  "title": "The Nine Martyrs of Cyzicus",
+  "alt": "",
+  "cardName": "The Nine Martyrs of Cyzicus",
+  "subjects": [
+   "Nine Martyrs of Cyzicus"
+  ],
+  "days": [
+   {
+    "d": "04-29"
+   }
+  ],
+  "month": null,
+  "date": "c. 1800",
+  "year": 1800,
+  "school": "Russian (Mstera or Palekh)",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Private collection",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood, 30.8 × 25.2 cm",
+  "text": "Nine Christians of Cyzicus on the Sea of Marmara were beheaded in the persecutions of the third century. Healings at their tomb made them known as helpers of the sick, especially those with fevers.\n\nThey stand together before a church.",
+  "image": "assets/icons/nine-martyrs-cyzicus.jpg",
+  "thumb": "assets/icons/nine-martyrs-cyzicus-thumb.jpg",
+  "w": 987,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:THE_NINE_MARTYRS_OF_KYZIKOS_(Russia,_19_c.).jpg",
+   "file": "THE NINE MARTYRS OF KYZIKOS (Russia, 19 c.).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "RUSSIAN (MSTERA)",
+   "credit": "http://www.macdougallauction.com/detail.asp?id=13816"
+  }
+ },
+ {
+  "id": "paisius-uglich",
+  "kind": "saint",
+  "title": "St Paisius of Uglich",
+  "alt": "",
+  "cardName": "St Paisius of Uglich",
+  "subjects": [
+   "St Paisius of Uglich"
+  ],
+  "days": [
+   {
+    "d": "06-06",
+    "n": "St Paisius of Uglich"
+   }
+  ],
+  "month": null,
+  "date": "c. 1706",
+  "year": 1706,
+  "school": "Uglich (workshop of Fyodor Rozhnov)",
+  "artist": "Workshop of Fyodor Rozhnov",
+  "origin": {
+   "name": "Uglich",
+   "lat": 57.5228,
+   "lng": 38.3302
+  },
+  "originShort": "Uglich",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Paisius (died 1504) founded the Pokrov monastery at Uglich on the Volga and led it for some forty years.\n\nThis round icon, set in a carved Baroque frame, comes from the workshop of Fyodor Rozhnov.",
+  "image": "assets/icons/paisius-uglich.jpg",
+  "thumb": "assets/icons/paisius-uglich-thumb.jpg",
+  "w": 999,
+  "h": 1024,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%B8%D1%81%D0%B8%D0%B9_%D0%A3%D0%B3%D0%BB%D0%B8%D1%87%D1%81%D0%BA%D0%B8%D0%B9.jpg",
+   "file": "Паисий Угличский.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Артель Федора Рожнова",
+   "credit": "http://kotlovka.ru/pgalery/displayimage.php?album=lastup&amp;cat=2&amp;pos=509"
+  }
+ },
+ {
+  "id": "cyricus-julitta-vita",
+  "kind": "saint",
+  "title": "Saints Cyricus and Julitta, with Scenes from Their Life",
+  "alt": "",
+  "cardName": "Martyrs Cyricus and Julitta",
+  "subjects": [
+   "Sts Cyricus and Julitta"
+  ],
+  "days": [
+   {
+    "d": "07-15"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Julitta, a widow of Iconium, fled with her three-year-old son Cyricus to Tarsus in the persecution of Diocletian. When the governor saw that the boy too called himself a Christian, he threw him down the steps; his mother was then beheaded.\n\nThe scenes around them tell the story.",
+  "image": "assets/icons/cyricus-julitta-vita.jpg",
+  "thumb": "assets/icons/cyricus-julitta-vita-thumb.jpg",
+  "w": 924,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:QuricusJulietIconLife.jpg",
+   "file": "QuricusJulietIconLife.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://www.belygorod.ru/img2/Ikona/Used/0KirikIUlitaVZhitii102x79KD.jpg"
+  }
+ },
+ {
+  "id": "savva-storozhi-vita",
+  "kind": "saint",
+  "title": "St Savva of Storozhi, with Scenes from His Life (1835)",
+  "alt": "",
+  "cardName": "St Savva of Storozhi",
+  "subjects": [
+   "St Savva of Storozhi"
+  ],
+  "days": [
+   {
+    "d": "12-03",
+    "n": "St Savva of Storozhi, Wonderworker of Zvenigorod"
+   }
+  ],
+  "month": null,
+  "date": "1835",
+  "year": 1835,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "State Russian Museum",
+   "lat": 59.9387,
+   "lng": 30.3323,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood, 31.4 × 27 cm",
+  "text": "Savva, a disciple of St Sergius, founded the monastery on the hill of Storozhi above Zvenigorod around 1398 and died there in 1406. Prince Yuri of Zvenigorod was his spiritual son.\n\nTwelve scenes from his life surround him. The icon is in the State Russian Museum.",
+  "image": "assets/icons/savva-storozhi-vita.jpg",
+  "thumb": "assets/icons/savva-storozhi-vita-thumb.jpg",
+  "w": 1036,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Savva_Storozhevsky.jpg",
+   "file": "Saint Savva Storozhevsky.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "theotokos-david-solomon",
+  "kind": "theotokos",
+  "title": "The Mother of God Enthroned, with David and Solomon",
+  "alt": "",
+  "cardName": "The Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Prophet David",
+   "Righteous Solomon"
+  ],
+  "days": [],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Moscow",
+  "artist": "",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "Cathedral of the Annunciation, Moscow Kremlin",
+   "lat": 55.75,
+   "lng": 37.617,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood with silver basma and filigree, 60.8 × 60.9 cm",
+  "text": "The Mother of God sits enthroned with the Child, between her ancestors the kings David and Solomon. Solomon built the Temple that prefigured her, and the Church sings of her as the throne of the King.\n\nThe icon has stood in the chapel of the Archangel Gabriel in the Annunciation Cathedral of the Moscow Kremlin since 1614.",
+  "image": "assets/icons/theotokos-david-solomon.jpg",
+  "thumb": "assets/icons/theotokos-david-solomon-thumb.jpg",
+  "w": 1200,
+  "h": 1083,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Virgin_with_David_and_Solomon_(Annunciation_Cathedral_in_Moscow).jpg",
+   "file": "Virgin with David and Solomon (Annunciation Cathedral in Moscow).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://lib.pstgu.ru/icons/index.php?option=com_content&amp;view=article&amp;id=244922900:244922900&amp;catid=3:2009-11-26-12-52-56"
+  }
+ },
+ {
+  "id": "stefan-decanski-18c",
+  "kind": "saint",
+  "title": "St Stefan of Dečani",
+  "alt": "",
+  "cardName": "Holy King Stefan of Dečani",
+  "subjects": [
+   "St Stefan of Dečani",
+   "St Nicholas"
+  ],
+  "days": [
+   {
+    "d": "11-11",
+    "n": "Holy King Stefan Uroš III of Dečani"
+   }
+  ],
+  "month": null,
+  "date": "18th century",
+  "year": 1750,
+  "school": "Probably Ohrid school",
+  "artist": "",
+  "origin": {
+   "name": "Macedonia",
+   "lat": 41.0,
+   "lng": 22.0
+  },
+  "originShort": "Macedonia",
+  "home": {
+   "name": "National Museum of Serbia",
+   "lat": 44.8169,
+   "lng": 20.4601,
+   "city": "Belgrade"
+  },
+  "medium": "Tempera on wood",
+  "text": "Stefan Uroš III was blinded on his father's orders and exiled to Constantinople, where St Nicholas is said to have restored his sight. He became king of Serbia and built the monastery of Dečani, and was strangled in 1331.\n\nHe stands with an angel, St Nicholas above him. The icon is in the National Museum of Serbia in Belgrade.",
+  "image": "assets/icons/stefan-decanski-18c.jpg",
+  "thumb": "assets/icons/stefan-decanski-18c-thumb.jpg",
+  "w": 725,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Sveti_Stefan_De%C4%8Danski_sa_an%C4%91elom_i_svetim_Nikolom,_18_vek.jpg",
+   "file": "Sveti Stefan Dečanski sa anđelom i svetim Nikolom, 18 vek.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "unknown",
+   "credit": "Photography: Petar Milošević"
+  }
+ },
+ {
+  "id": "theodosius-tarnovo",
+  "kind": "saint",
+  "title": "St Theodosius of Tarnovo",
+  "alt": "",
+  "cardName": "St Theodosius of Tarnovo",
+  "subjects": [
+   "St Theodosius of Tarnovo"
+  ],
+  "days": [
+   {
+    "d": "11-27",
+    "n": "St Theodosius of Tarnovo"
+   }
+  ],
+  "month": null,
+  "date": "19th century",
+  "year": 1850,
+  "school": "Bulgarian",
+  "artist": "",
+  "origin": {
+   "name": "Bulgaria",
+   "lat": 42.7,
+   "lng": 23.32
+  },
+  "originShort": "Bulgaria",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Theodosius (died 1363) was a disciple of St Gregory of Sinai and brought the hesychast way of prayer to Bulgaria, at the Kilifarevo monastery near Tarnovo.\n\nHe holds a cross and a long scroll of counsel.",
+  "image": "assets/icons/theodosius-tarnovo.jpg",
+  "thumb": "assets/icons/theodosius-tarnovo-thumb.jpg",
+  "w": 1063,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A4%D0%B5%D0%BE%D0%B4%D0%BE%D1%81%D0%B8%D0%B9_%D0%A2%D1%8B%D1%80%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.jpg",
+   "file": "Феодосий Тырновский.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://pravicon.com/sv-2089"
+  }
+ },
+ {
+  "id": "godunov-family-chirin",
+  "kind": "saint",
+  "title": "The Patron Saints of the Godunov Family (Chirin)",
+  "alt": "",
+  "cardName": "Hieromartyr Theodotus of Cyrenia",
+  "subjects": [
+   "St Theodotus of Cyrenia",
+   "St Boris",
+   "St Gleb",
+   "St Xenia of Rome",
+   "St Mary Magdalene"
+  ],
+  "days": [
+   {
+    "d": "03-02"
+   }
+  ],
+  "month": null,
+  "date": "c. 1600",
+  "year": 1600,
+  "school": "Moscow (Prokopy Chirin)",
+  "artist": "Prokopy Chirin (attributed)",
+  "origin": {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lng": 37.6173
+  },
+  "originShort": "Moscow",
+  "home": {
+   "name": "State Tretyakov Gallery",
+   "lat": 55.7414,
+   "lng": 37.6208,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "A family icon of Boris Godunov's household: the bishop Theodotus of Cyrenia, the princes Boris and Gleb, Xenia of Rome and Mary Magdalene, with Christ above. Boris and Xenia bear the names of the tsar and his daughter, and Mary that of his wife.\n\nIt is attributed to Prokopy Chirin, master of the Stroganov school, and is in the Tretyakov Gallery.",
+  "image": "assets/icons/godunov-family-chirin.jpg",
+  "thumb": "assets/icons/godunov-family-chirin-thumb.jpg",
+  "w": 983,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Boris_Godunov_family%27s_saint_by_P.Chirin_(%3F).jpg",
+   "file": "Boris Godunov family's saint by P.Chirin (?).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Прокопий Чирин (?)",
+   "credit": "Self-scanned"
+  }
+ },
+ {
+  "id": "tikhon-lukh-palekh",
+  "kind": "saint",
+  "title": "St Tikhon of Lukh",
+  "alt": "",
+  "cardName": "St Tikhon of Lukh",
+  "subjects": [
+   "St Tikhon of Lukh"
+  ],
+  "days": [
+   {
+    "d": "06-16",
+    "n": "St Tikhon of Lukh"
+   }
+  ],
+  "month": null,
+  "date": "Early 20th century",
+  "year": 1905,
+  "school": "Palekh",
+  "artist": "",
+  "origin": {
+   "name": "Palekh",
+   "lat": 56.7979,
+   "lng": 41.8558
+  },
+  "originShort": "Palekh",
+  "home": {
+   "name": "Palekh",
+   "lat": 56.7979,
+   "lng": 41.8558
+  },
+  "medium": "Tempera on wood",
+  "text": "Tikhon (died 1503) came from Lithuania and founded a monastery in the forests near Lukh, in the Kostroma country. He lived in great simplicity, chopping wood and hauling water for the brethren.\n\nThe icon is in the State Museum of Palekh Art.",
+  "image": "assets/icons/tikhon-lukh-palekh.jpg",
+  "thumb": "assets/icons/tikhon-lukh-palekh-thumb.jpg",
+  "w": 964,
+  "h": 1111,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B8%D1%85%D0%BE%D0%BD_%D0%9B%D1%83%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9,_%D0%9A%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B9._%D0%A7%D1%82%D0%B5%D1%86.jpg",
+   "file": "Тихон Луховский, Костромской. Чтец.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Неизвестен (Unknown)",
+   "credit": "http://pravicon.com/icon-3004"
+  }
+ },
+ {
+  "id": "demetrius-tsarevich-vita",
+  "kind": "saint",
+  "title": "Tsarevich Demetrius of Uglich, with Scenes from His Life",
+  "alt": "",
+  "cardName": "Holy Tsarevich Demetrius of Uglich",
+  "subjects": [
+   "St Demetrius the Tsarevich"
+  ],
+  "days": [
+   {
+    "d": "05-15",
+    "n": "Holy Tsarevich Demetrius of Uglich"
+   }
+  ],
+  "month": null,
+  "date": "18th century",
+  "year": 1750,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Tempera on wood",
+  "text": "Demetrius, the youngest son of Ivan the Terrible, died at Uglich in 1591 at the age of eight, his throat cut. Whether by accident or murder was argued for centuries; the Church honored him as a martyr after his relics were brought to Moscow in 1606.\n\nScenes around him tell the story. The icon is in the State Museum of the History of Religion in St Petersburg.",
+  "image": "assets/icons/demetrius-tsarevich-vita.jpg",
+  "thumb": "assets/icons/demetrius-tsarevich-vita-thumb.jpg",
+  "w": 881,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Dmitriy_icon.jpg",
+   "file": "Saint Dmitriy icon.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "anonimois",
+   "credit": "[1]"
+  }
+ },
+ {
+  "id": "peter-vincent-victor-pp",
+  "kind": "saint",
+  "title": "Saints Peter, Vincent and Victor",
+  "alt": "",
+  "cardName": "Martyrs Victor and Vincent",
+  "subjects": [
+   "St Peter",
+   "St Vincent",
+   "St Victor"
+  ],
+  "days": [
+   {
+    "d": "11-11",
+    "n": "Martyrs Victor and Vincent"
+   }
+  ],
+  "month": null,
+  "date": "16th century",
+  "year": 1550,
+  "school": "Greek",
+  "artist": "",
+  "origin": {
+   "name": "Greece",
+   "lat": 39.0,
+   "lng": 22.0
+  },
+  "originShort": "Greece",
+  "home": {
+   "name": "Petit Palais, Musée des Beaux-Arts de la Ville de Paris",
+   "lat": 48.866,
+   "lng": 2.3146,
+   "city": "Paris"
+  },
+  "medium": "Tempera on wood, painted on both sides",
+  "text": "Victor and Vincent share 11 November with the great martyr Menas: Victor, a soldier martyred in Syria, and Vincent, a deacon of Spain. The Apostle Peter stands with them.\n\nThe panel is painted on both sides and is in the Petit Palais in Paris.",
+  "image": "assets/icons/peter-vincent-victor-pp.jpg",
+  "thumb": "assets/icons/peter-vincent-victor-pp-thumb.jpg",
+  "w": 846,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_(%C3%89cole_grecque)_Gr%C3%A8ce_-_Saint_Pierre,_Saint_Vincent_et_Saint_Victor_-_PPP4866_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris_-_2.jpg",
+   "file": "École de (École grecque) Grèce - Saint Pierre, Saint Vincent et Saint Victor - PPP4866 - Musée des Beaux-Arts de la ville de Paris - 2.jpg",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "School of Greece",
+   "credit": ""
+  }
+ },
+ {
+  "id": "demetrius-ignatius-priluki",
+  "kind": "saint",
+  "title": "Saints Demetrius and Ignatius of Priluki",
+  "alt": "",
+  "cardName": "St Demetrius of Priluki",
+  "subjects": [
+   "St Demetrius of Priluki",
+   "St Ignatius of Priluki"
+  ],
+  "days": [
+   {
+    "d": "02-11",
+    "n": "St Demetrius of Priluki, Wonderworker of Vologda"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Vologda",
+  "artist": "",
+  "origin": {
+   "name": "Vologda",
+   "lat": 59.2181,
+   "lng": 39.8886
+  },
+  "originShort": "Vologda",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Demetrius (died 1392), a friend of St Sergius, founded the monastery of the Saviour at Priluki outside Vologda. Ignatius was a prince of Uglich who spent his childhood in prison with his brothers and died there in 1523.\n\nThey hold the monastery of Priluki between them.",
+  "image": "assets/icons/demetrius-ignatius-priluki.jpg",
+  "thumb": "assets/icons/demetrius-ignatius-priluki-thumb.jpg",
+  "w": 1026,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Icon_Dimitry_Prilutsky_Ignaty_Prilutsky.jpg",
+   "file": "Icon Dimitry Prilutsky Ignaty Prilutsky.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://pravicon.com/sv-876"
+  }
+ },
+ {
+  "id": "euphrosyne-polotsk-19c",
+  "kind": "saint",
+  "title": "St Euphrosyne of Polotsk",
+  "alt": "",
+  "cardName": "St Euphrosyne of Polotsk",
+  "subjects": [
+   "St Euphrosyne of Polotsk"
+  ],
+  "days": [
+   {
+    "d": "05-23",
+    "n": "St Euphrosyne of Polotsk"
+   }
+  ],
+  "month": null,
+  "date": "19th century",
+  "year": 1850,
+  "school": "Belarusian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Euphrosyne (c. 1104–1167), a princess of Polotsk, became a nun at twelve, copied books, and founded monasteries and schools. She died on pilgrimage in Jerusalem. She is the patron saint of Belarus.\n\nShe stands in the black habit of a nun, holding a cross.",
+  "image": "assets/icons/euphrosyne-polotsk-19c.jpg",
+  "thumb": "assets/icons/euphrosyne-polotsk-19c-thumb.jpg",
+  "w": 922,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:E%C5%ADfrasi%C5%84nia_Po%C5%82ackaja._%D0%AD%D1%9E%D1%84%D1%80%D0%B0%D1%81%D1%96%D0%BD%D1%8C%D0%BD%D1%8F_%D0%9F%D0%BE%D0%BB%D0%B0%D1%86%D0%BA%D0%B0%D1%8F_(XIX).jpg",
+   "file": "Eŭfrasińnia Połackaja. Эўфрасіньня Полацкая (XIX).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Аукцион Bidspirit"
+  }
+ },
+ {
+  "id": "john-rila-17c",
+  "kind": "saint",
+  "title": "St John of Rila",
+  "alt": "",
+  "cardName": "St John of Rila",
+  "subjects": [
+   "St John of Rila"
+  ],
+  "days": [
+   {
+    "d": "10-19",
+    "n": "St John of Rila"
+   }
+  ],
+  "month": null,
+  "date": "17th century",
+  "year": 1650,
+  "school": "Bulgarian",
+  "artist": "",
+  "origin": {
+   "name": "Rila Monastery",
+   "lat": 42.1335,
+   "lng": 23.3403
+  },
+  "originShort": "Rila Monastery",
+  "home": {
+   "name": "National Art Gallery, crypt of the Alexander Nevsky Cathedral",
+   "lat": 42.6959,
+   "lng": 23.3328,
+   "city": "Sofia"
+  },
+  "medium": "Tempera on wood",
+  "text": "John (c. 876–946) lived as a hermit in a cave in the Rila mountains, and the disciples who gathered around him became the Rila Monastery. He is the patron saint of Bulgaria.\n\nThis icon came from his monastery and is shown in the icon museum in the crypt of the Alexander Nevsky Cathedral in Sofia.",
+  "image": "assets/icons/john-rila-17c.jpg",
+  "thumb": "assets/icons/john-rila-17c-thumb.jpg",
+  "w": 957,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:StJohannRila_%D0%98%D0%B2%D0%B0%D0%BD%D0%A0%D0%B8%D0%BB%D1%81%D0%BA%D0%B8_KlosterRila-%D0%A0%D0%B8%D0%BB%D1%81%D0%BA%D0%B8-%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80-17cent_AlexNevskyMusSofia_20191012.jpg",
+   "file": "StJohannRila ИванРилски KlosterRila-Рилски-манастир-17cent AlexNevskyMusSofia 20191012.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "unknown painter; photo User:Zenwort",
+   "credit": "Photo: Own work"
+  }
+ },
+ {
+  "id": "melchizedek-19c",
+  "kind": "saint",
+  "title": "Righteous Melchizedek",
+  "alt": "",
+  "cardName": "Righteous Melchizedek",
+  "subjects": [
+   "Righteous Melchizedek"
+  ],
+  "days": [],
+  "month": null,
+  "date": "Second half of the 19th century",
+  "year": 1870,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Central Russia",
+   "lat": 56.0,
+   "lng": 39.0
+  },
+  "originShort": "Central Russia",
+  "home": {
+   "name": "Museum of Christian Culture",
+   "lat": 59.9205,
+   "lng": 30.295,
+   "city": "St Petersburg"
+  },
+  "medium": "Wood, mixed media",
+  "text": "Melchizedek, king of Salem and 'priest of God most high,' brought out bread and wine and blessed Abraham. Christ is called a priest for ever 'after the order of Melchizedek.'\n\nThe icon is in the Museum of Christian Culture in St Petersburg.",
+  "image": "assets/icons/melchizedek-19c.jpg",
+  "thumb": "assets/icons/melchizedek-19c-thumb.jpg",
+  "w": 492,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:0172Hb._Forefather_Melchizedek,_2nd_half_of_the_19th_century.jpg",
+   "file": "0172Hb. Forefather Melchizedek, 2nd half of the 19th century.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "Музей христианской культуры в Санкт-Петербурге"
+  }
+ },
+ {
+  "id": "modestus-zidarovo-1851",
+  "kind": "saint",
+  "title": "St Modestus of Jerusalem (1851)",
+  "alt": "",
+  "cardName": "St Modestus, Patriarch of Jerusalem",
+  "subjects": [
+   "St Modestus of Jerusalem"
+  ],
+  "days": [
+   {
+    "d": "12-18",
+    "n": "St Modestus, Patriarch of Jerusalem"
+   }
+  ],
+  "month": null,
+  "date": "1851",
+  "year": 1851,
+  "school": "Bulgarian",
+  "artist": "",
+  "origin": {
+   "name": "Bulgaria",
+   "lat": 42.7,
+   "lng": 23.32
+  },
+  "originShort": "Bulgaria",
+  "home": {
+   "name": "Burgas Art Gallery",
+   "lat": 42.4936,
+   "lng": 27.4721,
+   "city": "Burgas"
+  },
+  "medium": "Tempera on wood",
+  "text": "Modestus rebuilt the churches of Jerusalem after the Persians burned them in 614, and became its patriarch. In the Balkans and Russia he is the protector of cattle and farm animals, and he is often painted with them.\n\nThis icon comes from the village of Zidarovo and is in the Burgas Art Gallery.",
+  "image": "assets/icons/modestus-zidarovo-1851.jpg",
+  "thumb": "assets/icons/modestus-zidarovo-1851-thumb.jpg",
+  "w": 889,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Modestus_1851_Zidarovo.jpg",
+   "file": "Saint Modestus 1851 Zidarovo.jpg",
+   "license": "CC0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "artist": "Spiritia",
+   "credit": "Own work"
+  }
+ },
+ {
+  "id": "peter-moscow-natalia-1764",
+  "kind": "saint",
+  "title": "Saints Peter of Moscow and Natalia (1764)",
+  "alt": "",
+  "cardName": "Martyr Natalia",
+  "subjects": [
+   "St Peter of Moscow",
+   "St Natalia"
+  ],
+  "days": [
+   {
+    "d": "08-26"
+   }
+  ],
+  "month": null,
+  "date": "1764",
+  "year": 1764,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "Andrei Rublev Museum of Early Russian Art",
+   "lat": 55.7468,
+   "lng": 37.6825,
+   "city": "Moscow"
+  },
+  "medium": "Tempera on wood",
+  "text": "Natalia of Nicomedia comforted her husband Adrian through his torture and death as a martyr around 304. Metropolitan Peter moved the seat of the Russian Church to Moscow in the fourteenth century.\n\nThe icon is in the Andrei Rublev Museum in Moscow.",
+  "image": "assets/icons/peter-moscow-natalia-1764.jpg",
+  "thumb": "assets/icons/peter-moscow-natalia-1764-thumb.jpg",
+  "w": 844,
+  "h": 960,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saints_Peter_of_Moscow_and_Natalia_Icon._Rublev_Museum.jpg",
+   "file": "Saints Peter of Moscow and Natalia Icon. Rublev Museum.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "https://www.icon-art.info/topic.php?lng=ru&amp;top_id=503&amp;mode=img&amp;page=1"
+  }
+ },
+ {
+  "id": "naum-ohrid-miskolc",
+  "kind": "saint",
+  "title": "St Naum of Ohrid",
+  "alt": "",
+  "cardName": "St Naum of Ohrid",
+  "subjects": [
+   "St Naum of Ohrid"
+  ],
+  "days": [
+   {
+    "d": "12-23",
+    "n": "St Naum of Ohrid"
+   }
+  ],
+  "month": null,
+  "date": "c. 1760",
+  "year": 1760,
+  "school": "Simeon Simeonov",
+  "artist": "Simeon Simeonov",
+  "origin": {
+   "name": "Hungary",
+   "lat": 47.1,
+   "lng": 19.5
+  },
+  "originShort": "Hungary",
+  "home": {
+   "name": "Hungarian Orthodox Ecclesiastical Art Museum",
+   "lat": 48.1035,
+   "lng": 20.7784,
+   "city": "Miskolc"
+  },
+  "medium": "Tempera on wood",
+  "text": "Naum, one of the disciples of Cyril and Methodius, taught in Preslav and Ohrid and founded the monastery on Lake Ohrid that bears his name. He died in 910.\n\nThe icon is by Simeon Simeonov and is in the Hungarian Orthodox Ecclesiastical Art Museum in Miskolc.",
+  "image": "assets/icons/naum-ohrid-miskolc.jpg",
+  "thumb": "assets/icons/naum-ohrid-miskolc-thumb.jpg",
+  "w": 774,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Saint_Naum,_icon_in_Miskolc.jpg",
+   "file": "Saint Naum, icon in Miskolc.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Szimeon Szimeonov (T. Gruntovics)",
+   "credit": "Own work ; Photo by Szilas in the Greek Orthodox Church and Museum, Miskolc"
+  }
+ },
+ {
+  "id": "nil-sorsky-musrelig",
+  "kind": "saint",
+  "title": "St Nil Sorsky",
+  "alt": "",
+  "cardName": "St Nil of Sora",
+  "subjects": [
+   "St Nil Sorsky"
+  ],
+  "days": [
+   {
+    "d": "05-07",
+    "n": "St Nil of Sora"
+   }
+  ],
+  "month": null,
+  "date": "Early 20th century",
+  "year": 1905,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "State Museum of the History of Religion",
+   "lat": 59.933,
+   "lng": 30.306,
+   "city": "St Petersburg"
+  },
+  "medium": "Oil on wood",
+  "text": "Nil (c. 1433–1508) lived on Athos and then in a hermitage on the river Sora in the north, where he taught the inward prayer of the heart and argued that monasteries should own no land.\n\nHe stands in his schema with a prayer rope, between the stone churches of his hermitage and the wooden buildings of the skete across the river.",
+  "image": "assets/icons/nil-sorsky-musrelig.jpg",
+  "thumb": "assets/icons/nil-sorsky-musrelig-thumb.jpg",
+  "w": 911,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nil_Sorsky_(20th_c.,_Atheism_museum).jpg",
+   "file": "Nil Sorsky (20th c., Atheism museum).jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "http://vm1.culture.ru/muzey_istorii_religii/catalog/0002500483/"
+  }
+ },
+ {
+  "id": "stylianos-obrazopisov-1898",
+  "kind": "saint",
+  "title": "St Stylianos (Obrazopisov, 1898)",
+  "alt": "",
+  "cardName": "St Stylianos of Paphlagonia",
+  "subjects": [
+   "St Stylianos"
+  ],
+  "days": [
+   {
+    "d": "11-26",
+    "n": "St Stylianos of Paphlagonia"
+   }
+  ],
+  "month": null,
+  "date": "1898",
+  "year": 1898,
+  "school": "Samokov school",
+  "artist": "Nikola Obrazopisov",
+  "origin": {
+   "name": "Samokov",
+   "lat": 42.337,
+   "lng": 23.5528
+  },
+  "originShort": "Samokov",
+  "home": {
+   "name": "Samokov History Museum",
+   "lat": 42.337,
+   "lng": 23.5528,
+   "city": "Samokov"
+  },
+  "medium": "Tempera on wood, 40 × 28 cm",
+  "text": "Stylianos was a hermit of Paphlagonia who cared for children, and mothers pray to him for their babies. He is shown holding a swaddled infant.\n\nNikola Obrazopisov of the Samokov school painted this icon, 'St Stilian, Guardian of Children,' in 1898. It is in the Samokov History Museum.",
+  "image": "assets/icons/stylianos-obrazopisov-1898.jpg",
+  "thumb": "assets/icons/stylianos-obrazopisov-1898-thumb.jpg",
+  "w": 879,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Nikola-Obrazopisov-St.Stilian-1898.jpg",
+   "file": "Nikola-Obrazopisov-St.Stilian-1898.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Nikola Obrazopisov",
+   "credit": "Scanned from \"Nikola Ivanov Obrazopisov\", edition of Samokov History Museum, 2009, ISBN 978-954-8623-05-6"
+  }
+ },
+ {
+  "id": "three-saints-philip-moscow",
+  "kind": "saint",
+  "title": "Saints Alexis the Man of God, Alexis and Philip of Moscow",
+  "alt": "",
+  "cardName": "St Philip, Metropolitan of Moscow",
+  "subjects": [
+   "St Alexius, Man of God",
+   "St Alexis of Moscow",
+   "St Philip of Moscow"
+  ],
+  "days": [
+   {
+    "d": "01-09",
+    "n": "St Philip, Metropolitan of Moscow"
+   }
+  ],
+  "month": null,
+  "date": "Mid-17th century",
+  "year": 1650,
+  "school": "Central Russia",
+  "artist": "",
+  "origin": {
+   "name": "Central Russia",
+   "lat": 56.0,
+   "lng": 39.0
+  },
+  "originShort": "Central Russia",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood, 84.5 × 64.5 cm",
+  "text": "Philip, metropolitan of Moscow, rebuked Ivan the Terrible for the terror of the oprichnina and was strangled in prison in 1569. Beside him stand Metropolitan Alexis of Moscow and Alexis the Man of God, the Roman who lived unknown as a beggar at his father's gate.",
+  "image": "assets/icons/three-saints-philip-moscow.jpg",
+  "thumb": "assets/icons/three-saints-philip-moscow-thumb.jpg",
+  "w": 928,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Icon-_Three_Saints-_Aleksei_Nar_in_Christo,_Metropolitan_Aleksei_and_Metropolitan_Philip.jpg",
+   "file": "Icon- Three Saints- Aleksei Nar in Christo, Metropolitan Aleksei and Metropolitan Philip.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Russian icon painter (before 1917) Public domain image (according to PD-Russia-expired )",
+   "credit": "photo Own work Morsinkicongallery"
+  }
+ },
+ {
+  "id": "anna-kashin-embroidered",
+  "kind": "saint",
+  "title": "St Anna of Kashin (embroidered)",
+  "alt": "",
+  "cardName": "Blessed Princess Anna of Kashin",
+  "subjects": [
+   "St Anna of Kashin"
+  ],
+  "days": [
+   {
+    "d": "10-02",
+    "n": "Blessed Princess Anna of Kashin"
+   }
+  ],
+  "month": null,
+  "date": "Mid-17th century",
+  "year": 1650,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Russia",
+   "lat": 56.0,
+   "lng": 38.0
+  },
+  "originShort": "Russia",
+  "home": {
+   "name": "State Historical Museum",
+   "lat": 55.7553,
+   "lng": 37.6178,
+   "city": "Moscow"
+  },
+  "medium": "Silk, gold and silver thread, 196 × 99 cm",
+  "text": "Anna (c. 1280–1368) was the wife of Prince Michael of Tver, who was put to death by the Golden Horde, and the mother of two sons who met the same end. She ended her life as a nun at Kashin.\n\nThis large embroidered icon came from the museum at Kashin to the State Historical Museum in 1955.",
+  "image": "assets/icons/anna-kashin-embroidered.jpg",
+  "thumb": "assets/icons/anna-kashin-embroidered-thumb.jpg",
+  "w": 598,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D0%BD%D0%B0_%D0%9A%D0%B0%D1%88%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F.jpg",
+   "file": "Анна Кашинская.jpg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "",
+   "credit": "http://lib.pstgu.ru/icons/index.php?option=com_content&amp;view=article&amp;id=873499369:873499369&amp;catid=33:2009-11-26-13-07-10&amp;Itemid=37"
+  }
+ },
+ {
+  "id": "gennadius-kostroma",
+  "kind": "saint",
+  "title": "St Gennadius of Kostroma",
+  "alt": "",
+  "cardName": "St Gennadius of Kostroma and Lyubimograd",
+  "subjects": [
+   "St Gennadius of Kostroma"
+  ],
+  "days": [
+   {
+    "d": "01-23",
+    "n": "St Gennadius of Kostroma and Lyubimograd"
+   }
+  ],
+  "month": null,
+  "date": "Early 18th century",
+  "year": 1705,
+  "school": "Russian",
+  "artist": "",
+  "origin": {
+   "name": "Kostroma",
+   "lat": 57.7665,
+   "lng": 40.9269
+  },
+  "originShort": "Kostroma",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Tempera on wood",
+  "text": "Gennadius (died 1565) left a wealthy family to become a monk and founded the monastery of the Saviour on Lake Sondoga, near Lyubim.\n\nHe stands before his monastery among trees.",
+  "image": "assets/icons/gennadius-kostroma.jpg",
+  "thumb": "assets/icons/gennadius-kostroma-thumb.jpg",
+  "w": 1052,
+  "h": 1172,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Gennady_Kostromskoy_and_Lyubimogradsky_(XVIII_c.).jpeg",
+   "file": "Gennady Kostromskoy and Lyubimogradsky (XVIII c.).jpeg",
+   "license": "Public domain",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "",
+   "artist": "Unknown author",
+   "credit": "http://ikona.pl.ua/ru/0/1187331755/view.php"
+  }
+ },
+ {
+  "id": "eleon-gorazd",
+  "kind": "saint",
+  "title": "St Gorazd of Prague (Eleon)",
+  "alt": "",
+  "cardName": "Hieromartyr Gorazd of Prague",
+  "subjects": [
+   "St Gorazd of Prague"
+  ],
+  "days": [
+   {
+    "d": "09-04",
+    "n": "Hieromartyr Gorazd of Prague"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Gorazd (1879–1942), bishop of the Orthodox Church in Czechoslovakia, was shot by the Nazis after paratroopers who had killed Reinhard Heydrich were found sheltering in his cathedral in Prague.",
+  "image": "assets/icons/eleon-gorazd.jpg",
+  "thumb": "assets/icons/eleon-gorazd-thumb.jpg",
+  "w": 703,
+  "h": 909,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Holy_Martyr_Gorazd_Bohemian_(10587379446).jpg",
+   "file": "Holy Martyr Gorazd Bohemian (10587379446).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Holy Martyr Gorazd Bohemian"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-alexis-carpathia",
+  "kind": "saint",
+  "title": "St Alexis of Carpathia (Eleon)",
+  "alt": "",
+  "cardName": "St Alexis of Carpathia",
+  "subjects": [
+   "St Alexis of Carpathia"
+  ],
+  "days": [
+   {
+    "d": "01-02",
+    "n": "St Alexis (Kabaliuk) of Carpathia"
+   }
+  ],
+  "month": null,
+  "date": "2017",
+  "year": 2017,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Alexis Kabaliuk (1877–1947) led the return of the people of Transcarpathia to Orthodoxy, and was tried for it by the Hungarian authorities in 1913–14.",
+  "image": "assets/icons/eleon-alexis-carpathia.jpg",
+  "thumb": "assets/icons/eleon-alexis-carpathia-thumb.jpg",
+  "w": 849,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%BF_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D0%B9_%D0%9A%D0%B0%D1%80%D0%BF%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B9_(33292425121).jpg",
+   "file": "Прп Алексий Карпатский (33292425121).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "прп Алексий Карпатский"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-alexis-toth",
+  "kind": "saint",
+  "title": "St Alexis Toth of Wilkes-Barre (Eleon)",
+  "alt": "",
+  "cardName": "St Alexis of Wilkes-Barre",
+  "subjects": [
+   "St Alexis of Wilkes-Barre"
+  ],
+  "days": [
+   {
+    "d": "05-07",
+    "n": "St Alexis of Wilkes-Barre"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Alexis Toth (1854–1909), a Carpatho-Russian priest in Minneapolis, brought his parish into the Orthodox Church in 1891, and thousands of Carpatho-Russian immigrants in America followed.",
+  "image": "assets/icons/eleon-alexis-toth.jpg",
+  "thumb": "assets/icons/eleon-alexis-toth-thumb.jpg",
+  "w": 703,
+  "h": 909,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D0%B9_%D0%92%D0%B8%D0%BB%D0%BA%D0%B5%D1%81%D0%B1%D0%B0%D1%80%D1%81%D0%BA%D0%B8%D0%B9_(%D0%9A%D0%B0%D1%80%D0%BF%D0%B0%D1%82%D0%BE%D1%80%D1%83%D1%81%D0%BA%D0%B8%D0%B9)_(10586679165).jpg",
+   "file": "Праведный Алексий Вилкесбарский (Карпаторуский) (10586679165).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Праведный Алексий Вилкесбарский (Карпаторуский)"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-xenia",
+  "kind": "saint",
+  "title": "St Xenia of Petersburg (Eleon)",
+  "alt": "",
+  "cardName": "Blessed Xenia of St Petersburg",
+  "subjects": [
+   "St Xenia of Petersburg"
+  ],
+  "days": [
+   {
+    "d": "01-24"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Xenia lost her husband suddenly in the eighteenth century, gave away all she had, and wandered St Petersburg for forty-five years in his clothes as a fool for Christ, praying at night in the fields.",
+  "image": "assets/icons/eleon-xenia.jpg",
+  "thumb": "assets/icons/eleon-xenia-thumb.jpg",
+  "w": 879,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%9A%D1%81%D0%B5%D0%BD%D0%B8%D1%8F_%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D1%81%D0%BA%D0%B0%D1%8F_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Блаженная Ксения Петербурская (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Блаж. Ксения Петербурская"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-matrona-moscow",
+  "kind": "saint",
+  "title": "St Matrona of Moscow (Eleon)",
+  "alt": "",
+  "cardName": "Blessed Matrona of Moscow",
+  "subjects": [
+   "St Matrona of Moscow"
+  ],
+  "days": [
+   {
+    "d": "05-02",
+    "n": "Blessed Matrona of Moscow"
+   },
+   {
+    "d": "03-08",
+    "n": "Uncovering of the relics of Blessed Matrona of Moscow"
+   }
+  ],
+  "month": null,
+  "date": "2014",
+  "year": 2014,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Matrona (1881–1952) was born blind and lost the use of her legs at seventeen. For decades she received the sick and troubled in the rooms where she lodged in Moscow, praying for them through the Soviet years.",
+  "image": "assets/icons/eleon-matrona-moscow.jpg",
+  "thumb": "assets/icons/eleon-matrona-moscow-thumb.jpg",
+  "w": 652,
+  "h": 850,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%9C%D0%B0%D1%82%D1%80%D0%BE%D0%BD%D0%B0_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_(13899411716).jpg",
+   "file": "Блаженная Матрона Московская (13899411716).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Блаженная Матрона Московская"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-john-kronstadt",
+  "kind": "saint",
+  "title": "St John of Kronstadt (Eleon)",
+  "alt": "",
+  "cardName": "Righteous John of Kronstadt",
+  "subjects": [
+   "St John of Kronstadt"
+  ],
+  "days": [
+   {
+    "d": "12-20",
+    "n": "Righteous John of Kronstadt"
+   }
+  ],
+  "month": null,
+  "date": "2015",
+  "year": 2015,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "John Sergiev (1829–1908) served for fifty years as a priest in the naval town of Kronstadt. He celebrated the Liturgy daily, gave away nearly everything he received, and founded a house of industry for the poor. He holds the chalice.",
+  "image": "assets/icons/eleon-john-kronstadt.jpg",
+  "thumb": "assets/icons/eleon-john-kronstadt-thumb.jpg",
+  "w": 892,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BD%D1%8B%D0%B9_%D0%98%D0%BE%D0%B0%D0%BD%D0%BD_%D0%9A%D1%80%D0%BE%D0%BD%D1%88%D1%82%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B9_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Праведный Иоанн Кронштадский (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Прав.Иоанн Кронштадский"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-carpathian-saints",
+  "kind": "saint",
+  "title": "The Saints of Carpathia (Eleon)",
+  "alt": "",
+  "cardName": "The Saints of Carpathia",
+  "subjects": [
+   "Saints of Carpathia"
+  ],
+  "days": [],
+  "month": null,
+  "date": "2016",
+  "year": 2016,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "A synaxis of the saints of the Carpathian lands, gathered around the Cross, with scenes of their lives and martyrdoms in the border.",
+  "image": "assets/icons/eleon-carpathian-saints.jpg",
+  "thumb": "assets/icons/eleon-carpathian-saints-thumb.jpg",
+  "w": 927,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%80%D0%BF%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B5_%D1%81%D0%B2%D1%8F%D1%82%D1%8B%D0%B5_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Карпатские святые (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Карпатские святые"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-mary-radonezh",
+  "kind": "saint",
+  "title": "St Mary of Radonezh (Eleon)",
+  "alt": "",
+  "cardName": "Righteous Mary of Radonezh",
+  "subjects": [
+   "St Mary of Radonezh"
+  ],
+  "days": [
+   {
+    "d": "01-18",
+    "n": "Righteous Cyril and Mary of Radonezh"
+   }
+  ],
+  "month": null,
+  "date": "2015",
+  "year": 2015,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Mary and her husband Cyril, boyars of Rostov, moved to Radonezh in hard times. They were the parents of St Sergius, and both ended their lives as monastics.",
+  "image": "assets/icons/eleon-mary-radonezh.jpg",
+  "thumb": "assets/icons/eleon-mary-radonezh-thumb.jpg",
+  "w": 596,
+  "h": 900,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D1%80%D0%B8%D1%8F_%D0%A0%D0%B0%D0%B4%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_(18549729019).jpg",
+   "file": "Мария Радонежская (18549729019).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Мария"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-victor-chalcedon",
+  "kind": "saint",
+  "title": "Martyr Victor of Chalcedon (Eleon)",
+  "alt": "",
+  "cardName": "Martyr Victor",
+  "subjects": [
+   "St Victor of Chalcedon"
+  ],
+  "days": [],
+  "month": null,
+  "date": "2014",
+  "year": 2014,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "A martyr of Chalcedon, on the Bosporus across from Constantinople. He holds the cross of a martyr.",
+  "image": "assets/icons/eleon-victor-chalcedon.jpg",
+  "thumb": "assets/icons/eleon-victor-chalcedon-thumb.jpg",
+  "w": 569,
+  "h": 803,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%BA_%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80_%D0%A5%D0%B0%D0%BB%D0%BA%D0%B8%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_(13899400971).jpg",
+   "file": "Мученик Виктор Халкидонский (13899400971).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Мученик Виктор Халкидонский"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-cyrion",
+  "kind": "saint",
+  "title": "Martyr Cyrion of Sebaste (Eleon)",
+  "alt": "",
+  "cardName": "The Forty Martyrs of Sebaste",
+  "subjects": [
+   "St Cyrion of Sebaste",
+   "Forty Martyrs of Sebaste"
+  ],
+  "days": [
+   {
+    "d": "03-09"
+   }
+  ],
+  "month": null,
+  "date": "2014",
+  "year": 2014,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Cyrion was one of the Forty Martyrs of Sebaste, the soldiers who froze on a lake rather than deny Christ in 320.",
+  "image": "assets/icons/eleon-cyrion.jpg",
+  "thumb": "assets/icons/eleon-cyrion-thumb.jpg",
+  "w": 569,
+  "h": 803,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%BA_%D0%9A%D0%B8%D1%80%D0%B8%D0%BE%D0%BD_%D0%A1%D0%B5%D0%B2%D0%B0%D1%81%D1%82%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_(13899421652).jpg",
+   "file": "Мученик Кирион Севастийский (13899421652).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Мученик Кирион Севастийский"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-mariamne",
+  "kind": "saint",
+  "title": "Righteous Mariamne (Eleon)",
+  "alt": "",
+  "cardName": "Righteous Mariamne",
+  "subjects": [
+   "St Mariamne"
+  ],
+  "days": [
+   {
+    "d": "02-17",
+    "n": "Righteous Mariamne, sister of the Apostle Philip"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Mariamne was the sister of the Apostle Philip and preached with him in Asia Minor. After his martyrdom at Hierapolis she went on to Lycaonia.",
+  "image": "assets/icons/eleon-mariamne.jpg",
+  "thumb": "assets/icons/eleon-mariamne-thumb.jpg",
+  "w": 563,
+  "h": 800,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%B0%D0%B2%D0%B5%D0%B4%D0%BD%D0%B0%D1%8F_%D0%9C%D0%B0%D1%80%D0%B8%D0%B0%D0%BC%D0%BD%D0%B0_(10581361246).jpg",
+   "file": "Праведная Мариамна (10581361246).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Праведная Мариамна"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-mary-gatchina",
+  "kind": "saint",
+  "title": "St Mary of Gatchina (Eleon)",
+  "alt": "",
+  "cardName": "Venerable Martyr Mary of Gatchina",
+  "subjects": [
+   "St Mary of Gatchina"
+  ],
+  "days": [],
+  "month": null,
+  "date": "2014",
+  "year": 2014,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Mary Lelyanova (1874–1932) was a nun who lay paralyzed for years in Gatchina near St Petersburg, receiving the many who came for her counsel. She was arrested by the Soviet authorities and is counted among the New Martyrs.",
+  "image": "assets/icons/eleon-mary-gatchina.jpg",
+  "thumb": "assets/icons/eleon-mary-gatchina-thumb.jpg",
+  "w": 953,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%BC%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%86%D0%B0_%D0%9C%D0%B0%D1%80%D0%B8%D1%8F_%D0%93%D0%B0%D1%82%D1%87%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Преподобномученица Мария Гатчинская (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Прмц.Мария Гатчинская"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-job-pochaev",
+  "kind": "saint",
+  "title": "St Job of Pochaev (Eleon)",
+  "alt": "",
+  "cardName": "St Job of Pochaev",
+  "subjects": [
+   "St Job of Pochaev"
+  ],
+  "days": [
+   {
+    "d": "10-28",
+    "n": "St Job of Pochaev"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Job Zalizo (c. 1551–1651) was abbot of the Pochaev monastery in Volhynia for fifty years, defending Orthodoxy and printing books. He prayed so long in his cave that his feet were left in sores.",
+  "image": "assets/icons/eleon-job-pochaev.jpg",
+  "thumb": "assets/icons/eleon-job-pochaev-thumb.jpg",
+  "w": 660,
+  "h": 900,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9_%D0%98%D0%BE%D0%B2_%D0%9F%D0%BE%D1%87%D0%B0%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Преподобный Иов Почаевский (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Преподобный Иов Почаевский"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-moses-hungarian",
+  "kind": "saint",
+  "title": "St Moses the Hungarian (Eleon)",
+  "alt": "",
+  "cardName": "St Moses the Hungarian",
+  "subjects": [
+   "St Moses the Hungarian"
+  ],
+  "days": [
+   {
+    "d": "07-26",
+    "n": "St Moses the Hungarian"
+   }
+  ],
+  "month": null,
+  "date": "2016",
+  "year": 2016,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Moses, a Hungarian in the service of St Boris, was taken captive to Poland, where he refused a noblewoman who wanted to marry him and suffered for it. He ended his life in the Kiev Caves around 1043.",
+  "image": "assets/icons/eleon-moses-hungarian.jpg",
+  "thumb": "assets/icons/eleon-moses-hungarian-thumb.jpg",
+  "w": 849,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%B5%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9_%D0%9C%D0%BE%D0%B8%D1%81%D0%B5%D0%B9_%D0%A3%D0%B3%D1%80%D0%B8%D0%BD_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Преподобный Моисей Угрин (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Прп. Моисей Угрин"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-angelina-serbia",
+  "kind": "saint",
+  "title": "St Angelina of Serbia (Eleon)",
+  "alt": "",
+  "cardName": "St Angelina of Serbia",
+  "subjects": [
+   "St Angelina of Serbia"
+  ],
+  "days": [
+   {
+    "d": "07-30",
+    "n": "St Angelina of Serbia"
+   },
+   {
+    "d": "12-10",
+    "n": "St Angelina of Serbia"
+   }
+  ],
+  "month": null,
+  "date": "2015",
+  "year": 2015,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Angelina Branković, the widow of the blind Serbian despot Stefan, built churches and a monastery in Srem with her sons in the fifteenth century, and ended her life as a nun.",
+  "image": "assets/icons/eleon-angelina-serbia.jpg",
+  "thumb": "assets/icons/eleon-angelina-serbia-thumb.jpg",
+  "w": 477,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%BF.%D0%90%D0%BD%D0%B3%D0%B5%D0%BB%D0%B8%D0%BD%D0%B0_%D0%A1%D0%B5%D1%80%D0%B1%D1%81%D0%BA%D0%B0%D1%8F_(18441516238).jpg",
+   "file": "Прп.Ангелина Сербская (18441516238).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Прп.Ангелина Сербская"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-seraphim-sobolev",
+  "kind": "saint",
+  "title": "St Seraphim Sobolev (Eleon)",
+  "alt": "",
+  "cardName": "St Seraphim of Boguchar",
+  "subjects": [
+   "St Seraphim Sobolev"
+  ],
+  "days": [
+   {
+    "d": "02-26",
+    "n": "St Seraphim (Sobolev), Archbishop of Boguchar"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Seraphim Sobolev (1881–1950) left Russia after the Revolution and became archbishop of the Russian parishes in Bulgaria. He is buried in the crypt of the Russian church in Sofia, where people still leave him notes.",
+  "image": "assets/icons/eleon-seraphim-sobolev.jpg",
+  "thumb": "assets/icons/eleon-seraphim-sobolev-thumb.jpg",
+  "w": 887,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%82._%D0%A1%D0%B5%D1%80%D0%B0%D1%84%D0%B8%D0%BC_%D0%A1%D0%BE%D0%B1%D0%BE%D0%BB%D0%B5%D0%B2_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Свт. Серафим Соболев (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Свт. Серафим Соболев"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-luke-crimea",
+  "kind": "saint",
+  "title": "St Luke of Crimea (Eleon)",
+  "alt": "",
+  "cardName": "St Luke, Archbishop of Crimea",
+  "subjects": [
+   "St Luke of Crimea"
+  ],
+  "days": [
+   {
+    "d": "06-11",
+    "n": "St Luke, Archbishop of Crimea"
+   }
+  ],
+  "month": null,
+  "date": "2014",
+  "year": 2014,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Valentin Voyno-Yasenetsky (1877–1961) was a surgeon and a pioneer of purulent surgery who became a bishop. He spent years in Soviet prisons and exile, operated on the wounded through the war, and won the Stalin Prize for his textbook.",
+  "image": "assets/icons/eleon-luke-crimea.jpg",
+  "thumb": "assets/icons/eleon-luke-crimea-thumb.jpg",
+  "w": 275,
+  "h": 900,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%8F%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%9B%D1%83%D0%BA%D0%B0_%D0%9A%D1%80%D1%8B%D0%BC%D1%81%D0%BA%D0%B8%D0%B9_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Святитель Лука Крымский (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Свт.Лука Крымский"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-tikhon-moscow",
+  "kind": "saint",
+  "title": "St Tikhon of Moscow (Eleon)",
+  "alt": "",
+  "cardName": "St Tikhon, Patriarch of Moscow",
+  "subjects": [
+   "St Tikhon of Moscow"
+  ],
+  "days": [
+   {
+    "d": "04-07",
+    "n": "St Tikhon, Patriarch of Moscow and Enlightener of North America"
+   }
+  ],
+  "month": null,
+  "date": "2014",
+  "year": 2014,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Tikhon Bellavin (1865–1925) served as archbishop in North America before he was elected Patriarch of Moscow in 1917. He led the Church through the first years of Soviet persecution and died under arrest.",
+  "image": "assets/icons/eleon-tikhon-moscow.jpg",
+  "thumb": "assets/icons/eleon-tikhon-moscow-thumb.jpg",
+  "w": 278,
+  "h": 900,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B2%D1%8F%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%A2%D0%B8%D1%85%D0%BE%D0%BD_%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Святитель Тихон Московский (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Свт.Тихон Московский"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-russian-saints",
+  "kind": "saint",
+  "title": "All Saints of Russia (Eleon)",
+  "alt": "",
+  "cardName": "All Saints of Russia",
+  "subjects": [
+   "All Saints of Russia"
+  ],
+  "days": [
+   {
+    "d": "pascha+63",
+    "n": "Sunday of All Saints of Russia"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "The saints who shone forth in the Russian land gather around the Mother of God, on the second Sunday after Pentecost.",
+  "image": "assets/icons/eleon-russian-saints.jpg",
+  "thumb": "assets/icons/eleon-russian-saints-thumb.jpg",
+  "w": 715,
+  "h": 1000,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%B1%D0%BE%D1%80_%D1%81%D0%B2%D1%8F%D1%82%D1%8B%D1%85_%D0%B2_%D0%B7%D0%B5%D0%BC%D0%BB%D0%B5_%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B9_%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%8F%D0%B2%D1%88%D0%B8%D1%85_(10587577546).jpg",
+   "file": "Собор святых в земле русской просиявших (10587577546).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Собор святых в земле русской просиявших"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-derzhavnaya",
+  "kind": "theotokos",
+  "title": "The Reigning Mother of God (Eleon)",
+  "alt": "",
+  "cardName": "The Reigning Icon of the Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Theotokos Derzhavnaya"
+  ],
+  "days": [
+   {
+    "d": "03-15",
+    "n": "The Reigning Icon of the Mother of God"
+   }
+  ],
+  "month": null,
+  "date": "2007",
+  "year": 2007,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "The 'Reigning' icon was found at Kolomenskoye near Moscow on 15 March 1917, the day Nicholas II gave up the throne. The Mother of God sits enthroned with the orb and scepter of the tsars.",
+  "image": "assets/icons/eleon-derzhavnaya.jpg",
+  "thumb": "assets/icons/eleon-derzhavnaya-thumb.jpg",
+  "w": 672,
+  "h": 900,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%B5%D1%80%D0%B6%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D0%98%D0%BA%D0%BE%D0%BD%D0%B0_(%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BF%D0%B8%D1%81%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%95%D0%BB%D0%B5%D0%BE%D0%BD).jpg",
+   "file": "Державная Икона (иконописная мастерская Елеон).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Державная"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-burning-bush",
+  "kind": "theotokos",
+  "title": "The Mother of God of the Burning Bush (Eleon)",
+  "alt": "",
+  "cardName": "The Burning Bush Icon of the Mother of God",
+  "subjects": [
+   "Theotokos",
+   "Burning Bush"
+  ],
+  "days": [
+   {
+    "d": "09-04",
+    "n": "The Burning Bush Icon of the Mother of God"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "The bush Moses saw burning and not consumed is a figure of the Virgin, who held the fire of God and was not consumed. The Mother of God sits within two four-pointed stars, red and blue.",
+  "image": "assets/icons/eleon-burning-bush.jpg",
+  "thumb": "assets/icons/eleon-burning-bush-thumb.jpg",
+  "w": 800,
+  "h": 1080,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B5%D0%BE%D0%BF%D0%B0%D0%BB%D0%B8%D0%BC%D0%B0%D1%8F_%D0%BA%D1%83%D0%BF%D0%B8%D0%BD%D0%B0_(10587557805).jpg",
+   "file": "Неопалимая купина (10587557805).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Неопалимая купина"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-vera",
+  "kind": "saint",
+  "title": "Martyr Vera (Eleon)",
+  "alt": "",
+  "cardName": "Martyr Faith",
+  "subjects": [
+   "St Faith"
+  ],
+  "days": [
+   {
+    "d": "09-17"
+   }
+  ],
+  "month": null,
+  "date": "2015",
+  "year": 2015,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Vera (Faith) was the eldest of the three daughters of Sophia, martyred in Rome in the second century. She was twelve.",
+  "image": "assets/icons/eleon-vera.jpg",
+  "thumb": "assets/icons/eleon-vera-thumb.jpg",
+  "w": 866,
+  "h": 1169,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:Sveta_Vera.jpg",
+   "file": "Sveta Vera.jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Мц.Вера"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
+  }
+ },
+ {
+  "id": "eleon-empress-theodora",
+  "kind": "saint",
+  "title": "Empress Theodora, Restorer of the Icons (Eleon)",
+  "alt": "",
+  "cardName": "Holy Empress Theodora",
+  "subjects": [
+   "St Theodora"
+  ],
+  "days": [
+   {
+    "d": "02-11",
+    "n": "Holy Empress Theodora"
+   }
+  ],
+  "month": null,
+  "date": "2013",
+  "year": 2013,
+  "school": "Contemporary (Eleon icon workshop)",
+  "artist": "Eleon icon workshop",
+  "origin": {
+   "name": "Eleon icon workshop",
+   "lat": null,
+   "lng": null,
+   "city": "Ukraine"
+  },
+  "originShort": "Eleon icon workshop",
+  "home": {
+   "name": "Present location not recorded",
+   "lat": null,
+   "lng": null,
+   "city": ""
+  },
+  "medium": "Painted panel icon",
+  "text": "Theodora, widow of the iconoclast emperor Theophilus, ruled for her young son and restored the veneration of icons in 843. The Church keeps that day as the Triumph of Orthodoxy. She holds an icon of Christ.",
+  "image": "assets/icons/eleon-empress-theodora.jpg",
+  "thumb": "assets/icons/eleon-empress-theodora-thumb.jpg",
+  "w": 897,
+  "h": 1200,
+  "source": {
+   "page": "https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B0%D1%80%D0%B8%D1%86%D0%B0_%D0%A4%D0%B5%D0%BE%D0%B4%D0%BE%D1%80%D0%B0_(10587815393).jpg",
+   "file": "Царица Феодора (10587815393).jpg",
+   "license": "CC BY 2.0",
+   "via": "Wikimedia Commons",
+   "museum": null,
+   "accession": null,
+   "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+   "artist": "Иконописная мастерская Елеон",
+   "credit": "Царица Феодора"
+  },
+  "modern": {
+   "artist": "Eleon icon workshop",
+   "url": "https://www.flickr.com/people/107233269@N08"
   }
  }
 ];

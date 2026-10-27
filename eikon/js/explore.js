@@ -41,7 +41,7 @@
   }
 
   // ---------- the shared list of icons ----------
-  const tile = (i) => `<a class="ex-tile" href="icon/${i.id}/"><img src="${i.thumb}" alt="" loading="lazy"><span><b>${esc(i.title)}</b><i>${esc(i.date)}</i></span></a>`;
+  const tile = (i) => `<a class="ex-tile" href="icon/${i.id}/"><img src="${i.thumb}" alt="" loading="lazy"><span><b>${esc(i.title)}</b><i>${i.modern ? `<em class="modern-badge sm">Modern</em>` : ""}${esc(i.date)}</i></span></a>`;
   function showList(box, title, sub, icons, note, scroll = true) {
     const first = 48;
     box.hidden = false;
@@ -364,7 +364,7 @@
     root.querySelectorAll(".ch-legend button").forEach((b) => b.onclick = () => {
       const k = b.dataset.k;
       svg.selectAll(".ch-bar").classed("dim", (d) => d.key !== k);
-      showList(list, KIND_NAME[k], "Every icon of", ICONS.filter((i) => kindOf(i) === k).sort((a, b) => a.year - b.year)); reset.hidden = false;
+      showList(list, KIND_NAME[k], "Every icon of", ICONS.filter((i) => kindOf(i) === k).sort((a, b) => a.year - b.year), undefined, false); reset.hidden = false;
     });
     const reset = root.querySelector("[data-chart-reset]");
     reset.hidden = true;
@@ -603,7 +603,7 @@
     let showLone = false;
     const home = () => (showLone ? t0 : tMain);
     const toggle = root.querySelector("[data-net-lone]");
-    toggle.hidden = !lone.length;
+    toggle.hidden = !N.some((n) => n.lone);
     toggle.onclick = () => {
       showLone = !showLone;
       svg.classed("no-lone", !showLone);

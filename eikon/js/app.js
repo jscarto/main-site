@@ -109,13 +109,21 @@
     return `<span class="church-date">${C.formatDate(info.church)} on the Old Calendar</span>`;
   }
   function tile(icon) {
-    return `<a class="icon-tile" href="${iconHref(icon.id)}">${frame(icon)}<div class="cap"><h3>${esc(icon.title)}</h3><p class="meta">${esc(icon.date)} · ${esc(icon.originShort || icon.origin.name)}</p></div></a>`;
+    return `<a class="icon-tile" href="${iconHref(icon.id)}">${frame(icon)}<div class="cap"><h3>${esc(icon.title)}</h3><p class="meta">${icon.modern ? `<span class="modern-badge sm">Modern</span>` : ""}${esc(icon.date)} · ${esc(icon.originShort || icon.origin.name)}</p></div></a>`;
   }
+  // A modern icon, shared by its living iconographer, says so and links to the iconographer.
+  const modernMark = (icon) => icon.modern ? `<p class="modern-mark"><span class="modern-badge">Modern icon</span> by <a href="${esc(icon.modern.url)}" target="_blank" rel="noopener">${esc(icon.modern.artist)}</a></p>` : "";
   const SEARCH_ICON = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.6-4.6"/></svg>`;
 
   // "Image: The Met, 17.190.133 · CC0" or "Image: Wikimedia Commons · Public domain"
   function creditLine(icon) {
     const src = icon.source;
+    if (icon.modern) {
+      // An openly licensed modern icon also names its license and where the file is published.
+      const lic = src.licenseUrl ? `<a href="${esc(src.licenseUrl)}" target="_blank" rel="noopener">${esc(src.license)}</a>` : esc(src.license);
+      const via = src.via !== icon.modern.artist ? ` · via <a href="${src.page}" target="_blank" rel="noopener">${esc(src.via)}</a>` : "";
+      return `Image: <a href="${esc(icon.modern.url)}" target="_blank" rel="noopener">${esc(icon.modern.artist)}</a> · ${lic}${via}`;
+    }
     const where = src.via === "Wikimedia Commons" && src.museum ? `${src.museum}, released on Wikimedia Commons` : src.via;
     return `Image: <a href="${src.page}" target="_blank" rel="noopener">${esc(where)}</a>${src.accession ? ` · Accession ${esc(src.accession)}` : ""} · ${esc(src.license)}${src.artist ? " · Photograph or credit: " + esc(src.artist) : ""}`;
   }
@@ -366,6 +374,7 @@
           <p class="eyebrow">${esc(KIND_LABEL[icon.kind])}</p>
           <h1 class="gilt-text">${esc(icon.title)}</h1>
           ${icon.alt ? `<p class="alt">${esc(icon.alt)}</p>` : ""}
+          ${modernMark(icon)}
           <p class="medium-line">${esc(icon.medium)}</p>
           <dl class="facts facts-grid">
             <div class="fact wide"><dt>Depicts</dt><dd>${icon.subjects.map((s) => `<a class="tag" href="#library" data-q="${esc(s)}">${esc(s)}</a>`).join(" ")}</dd></div>
@@ -467,8 +476,10 @@
     <section><div class="wrap">
       <div class="section-head"><div><p class="eyebrow">Sources and licenses</p><h2>Where these images come from</h2></div></div>
       <div class="placard prose" style="max-width:none">
-        <p>Eikon uses only images that are in the public domain or released under open licenses. It does not rely on fair use. Where a museum releases its own photographs, Eikon takes the image from the museum. Images from The Metropolitan Museum of Art and the Cleveland Museum of Art come directly from their open-access programs under CC0. Images from the Walters Art Museum are the museum's own CC0 releases, hosted on Wikimedia Commons.</p>
+        <p>Apart from a few modern icons shared by their iconographers, described below, Eikon uses only images that are in the public domain or released under open licenses. It does not rely on fair use. Where a museum releases its own photographs, Eikon takes the image from the museum. Images from The Metropolitan Museum of Art and the Cleveland Museum of Art come directly from their open-access programs under CC0. Images from the Walters Art Museum are the museum's own CC0 releases, hosted on Wikimedia Commons.</p>
         <p>The other icons come from Wikimedia Commons. The icons themselves are centuries old and in the public domain. Faithful photographs of flat artworks carry no new copyright in the United States or the European Union, and Commons marks these "PD-Art".</p>
+        <p>A few modern icons appear by the kind permission of the iconographers who painted them. Each is marked "Modern icon" and credited to its iconographer, with a link to their work. These images are not openly licensed: they may not be reused beyond Eikon without the iconographer's permission. The icons of <a href="https://www.orthodox-icon.com" target="_blank" rel="noopener">Vladimir Grygorenko</a> appear in this way.</p>
+        <p>Other modern icons were released by the workshops that painted them under open licenses, such as the icons the <a href="https://www.flickr.com/people/107233269@N08" target="_blank" rel="noopener">Eleon icon workshop</a> published under CC BY 2.0. They too are marked "Modern icon" and credited to the workshop. Eikon does not use photographs of modern icons taken by others, since a photographer can license a photograph but not the icon in it.</p>
         <p>Each icon's page names where its image came from, its license, and the photographer or museum, with a link to the original record.</p>
         <p>Many more icons exist than appear here, painted across two thousand years and kept in churches, monasteries and museums around the world. Many of them cannot be shown in Eikon because their photographs are not openly licensed or their owners restrict reuse. The library grows as more images are released for free use.</p>
         <p>The candle-lit background on each icon's page is adapted from <a href="https://commons.wikimedia.org/wiki/File:Mtskheta,_Jvari_Monastery,_Candle_light_2,_Georgia.jpg" target="_blank" rel="noopener">"Mtskheta, Jvari Monastery, Candle light 2"</a> by Vyacheslav Argenberg, used under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.</p>

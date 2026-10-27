@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- The app's root: links resolve from here, even after the address changes to an icon's page (icon/<id>/). -->
+<base href="../../">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christ Emmanuel (Grygorenko) · Eikon</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Emmanuel, &#x27;God with us,&#x27; is Isaiah&#x27;s name for the coming Messiah. The icon shows Christ as a youth, the eternal Word before his earthly ministry.">
+<meta name="author" content="Joshua Stevens">
+<meta name="theme-color" content="#0b0806">
+<link rel="canonical" href="https://www.joshuastevens.net/eikon/icon/grygorenko-emmanuel/">
+<!-- Link previews -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Eikon">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.joshuastevens.net/eikon/icon/grygorenko-emmanuel/">
+<meta property="og:title" content="Christ Emmanuel (Grygorenko) · Eikon">
+<meta property="og:description" content="Emmanuel, &#x27;God with us,&#x27; is Isaiah&#x27;s name for the coming Messiah. The icon shows Christ as a youth, the eternal Word before his earthly ministry.">
+<meta property="og:image" content="https://www.joshuastevens.net/eikon/assets/icons/grygorenko-emmanuel.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="580">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:alt" content="Christ Emmanuel (Grygorenko): Egg tempera on wood panel, Contemporary">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@jscarto">
+<meta name="twitter:title" content="Christ Emmanuel (Grygorenko) · Eikon">
+<meta name="twitter:description" content="Emmanuel, &#x27;God with us,&#x27; is Isaiah&#x27;s name for the coming Messiah. The icon shows Christ as a youth, the eternal Word before his earthly ministry.">
+<meta name="twitter:image" content="https://www.joshuastevens.net/eikon/assets/icons/grygorenko-emmanuel.jpg">
+<meta name="twitter:image:alt" content="Christ Emmanuel (Grygorenko): Egg tempera on wood panel, Contemporary">
+<!-- Icons -->
+<link rel="icon" href="assets/social/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/social/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/social/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Marcellus+SC&display=swap">
+<!-- The wordmark's dotted i comes from Cormorant Garamond (subset to that one letter). -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&text=i&display=swap">
+<link rel="stylesheet" href="css/eikon.css?v=116">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VisualArtwork", "name": "Christ Emmanuel (Grygorenko)", "url": "https://www.joshuastevens.net/eikon/icon/grygorenko-emmanuel/", "description": "Emmanuel, 'God with us,' is Isaiah's name for the coming Messiah. The icon shows Christ as a youth, the eternal Word before his earthly ministry.", "image": {"@type": "ImageObject", "contentUrl": "https://www.joshuastevens.net/eikon/assets/icons/grygorenko-emmanuel.jpg", "width": 580, "height": 1200, "acquireLicensePage": "https://www.orthodox-icon.com/work/panel-icons", "creditText": "Vladimir Grygorenko"}, "artform": "Icon", "artMedium": "Egg tempera on wood panel", "dateCreated": "Contemporary", "locationCreated": {"@type": "Place", "name": "Vladimir Grygorenko's studio"}, "about": [{"@type": "Thing", "name": "Jesus Christ"}, {"@type": "Thing", "name": "Christ Emmanuel"}], "isPartOf": {"@type": "Collection", "name": "Eikon - A Library of the Saints", "url": "https://www.joshuastevens.net/eikon/"}, "creator": {"@type": "Person", "name": "Vladimir Grygorenko"}, "holdingArchive": {"@type": "Place", "name": "Present location not recorded"}}</script>
+</head>
+<body>
+<div class="wall" aria-hidden="true"></div>
+<canvas id="nave" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="vault">
+  <div class="vault-inner">
+    <a class="mark" href="#today" aria-label="Eikon, home">
+      <svg viewBox="0 0 26 34" aria-hidden="true" width="34" height="44"><g fill="none" stroke="#e9c873" stroke-width="2.2" stroke-linecap="round"><path d="M13 1v32"/><path d="M8 5h10"/><path d="M3 12h20"/><path d="M8 22l10 4"/></g></svg>
+      <span><b>E<span class="wm-i">i</span>kon</b><small>A Library of the Saints</small></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#today">Today</a>
+      <a href="#library">Library</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#explore">Explore</a>
+    </nav>
+    <div class="style-toggle" role="group" aria-label="Church calendar" title="Church calendar: New (Revised Julian) or Old (Julian)">
+      <span class="cal-ico"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span>
+      <button type="button" id="style-new" data-style="new" aria-pressed="true" title="Revised Julian calendar">New</button>
+      <button type="button" id="style-old" data-style="old" aria-pressed="false" title="Julian calendar">Old</button>
+    </div>
+  </div>
+</header>
+
+<main id="view" tabindex="-1">
+<article class="prerendered">
+<section><div class="wrap detail">
+  <div class="detail-icon"><div class="kiot"><img src="assets/icons/grygorenko-emmanuel.jpg" alt="Christ Emmanuel (Grygorenko)" width="580" height="1200"></div></div>
+  <div class="detail-side"><div class="placard">
+    <p class="eyebrow">Christ</p>
+    <h1 class="gilt-text">Christ Emmanuel (Grygorenko)</h1>
+    
+    <p class="modern-mark"><span class="modern-badge">Modern icon</span> by <a href="https://www.orthodox-icon.com" target="_blank" rel="noopener">Vladimir Grygorenko</a></p>
+    <p class="medium-line">Egg tempera on wood panel</p>
+    <dl class="facts facts-grid"><div class="fact wide"><dt>Depicts</dt><dd>Jesus Christ, Christ Emmanuel</dd></div><div class="fact"><dt>Period</dt><dd>Contemporary<span class="sub">Vladimir Grygorenko</span></dd></div><div class="fact"><dt>School</dt><dd>Contemporary (Vladimir Grygorenko)</dd></div><div class="fact"><dt>Made in</dt><dd>Vladimir Grygorenko&#x27;s studio</dd></div><div class="fact"><dt>Kept at</dt><dd>Present location not recorded</dd></div></dl>
+  </div></div>
+</div></section>
+<section class="detail-more"><div class="wrap"><div class="placard detail-text">
+  <div class="prose"><p>Emmanuel, &#x27;God with us,&#x27; is Isaiah&#x27;s name for the coming Messiah. The icon shows Christ as a youth, the eternal Word before his earthly ministry.</p><p>Here he stands at full length in golden robes beneath an arched top, against a starry blue ground.</p></div>
+  <p class="credit">Image: <a href="https://www.orthodox-icon.com" target="_blank" rel="noopener">Vladimir Grygorenko</a> · Used with the iconographer&#x27;s permission</p>
+  <div class="pager"><a class="btn ghost" href="icon/grygorenko-yaroe-oko/"><span>‹ The Saviour of the Fiery Eye (Grygorenko)</span></a><a class="btn ghost" href="icon/grygorenko-vladimirskaya/"><span>The Vladimir Mother of God (Grygorenko) ›</span></a></div>
+</div></div></section>
+<section><div class="wrap"><h2>Of the same subject</h2><ul><li><a href="icon/sinai-pantocrator/">Christ Pantocrator of Sinai</a></li><li><a href="icon/transfiguration-theophanes/">The Transfiguration</a></li><li><a href="icon/dormition-don/">The Dormition of the Theotokos</a></li><li><a href="icon/nativity-annunciation-cathedral/">The Nativity of Christ</a></li><li><a href="icon/baptism-annunciation-cathedral/">The Baptism of Christ (Theophany)</a></li><li><a href="icon/entry-jerusalem/">The Entry into Jerusalem</a></li></ul></div></section>
+</article>
+</main>
+
+<footer class="crypt">
+  <div class="wrap">
+    <p>Eikon · A Library of the Saints. Images are public domain or openly licensed, from museum open-access programs and Wikimedia Commons. See <a href="#sources">sources</a>.</p>
+    <p>Fasting guidance is a general summary. Follow the practice of your parish and the counsel of your spiritual father.</p>
+    <p class="rights">This site, its information, and design © <a href="https://www.joshuastevens.net/">Joshua Stevens</a>. Images used under their individual permissions.</p>
+  </div>
+</footer>
+
+<dialog id="share-dialog" aria-label="Share this icon as a card">
+  <div class="placard share-shell">
+    <button type="button" class="iconbtn close-x" id="share-close" aria-label="Close">✕</button>
+    <div class="share-box">
+      <div class="share-preview"><canvas id="share-canvas" width="1080" height="1350"></canvas></div>
+      <form class="share-opts" id="share-form">
+        <div>
+          <p class="eyebrow">Share a card</p>
+          <h3 id="share-title">Icon</h3>
+        </div>
+        <div class="opt-group" id="share-kind-group">
+          <span>Card</span>
+          <div class="radio-row" id="share-kinds"></div>
+        </div>
+        <div class="opt-group" id="share-day-group">
+          <span>Day</span>
+          <div id="share-day-control"></div>
+          <p class="share-readout" id="share-day-note"></p>
+        </div>
+        <div class="opt-group" id="share-icons-group">
+          <span id="share-icons-label">Icons on the card</span>
+          <div class="pick-icons" id="share-icons"></div>
+        </div>
+        <div class="opt-group">
+          <span>Shape</span>
+          <div class="radio-row">
+            <label><input type="radio" name="shape" value="landscape"><span class="chip">Landscape</span></label>
+            <label><input type="radio" name="shape" value="portrait" checked><span class="chip">Portrait</span></label>
+            <label><input type="radio" name="shape" value="square"><span class="chip">Square</span></label>
+            <label><input type="radio" name="shape" value="story"><span class="chip">Story</span></label>
+          </div>
+        </div>
+        <div class="radio-row">
+          <button type="button" class="btn" id="share-download">Save image</button>
+          <button type="button" class="btn ghost" id="share-native">Share…</button>
+          <button type="button" class="btn ghost" id="share-copy">Copy link</button>
+        </div>
+        <p class="note" id="share-hint">Dates and commemorations come from the Church calendar and cannot be edited. If saving does nothing here, right-click or long-press the card to save it.</p>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<script src="js/data/menaion.js?v=116"></script>
+<script src="js/data/icons.js?v=116"></script>
+<script src="js/calendar.js?v=116"></script>
+<script src="js/atmosphere.js?v=116"></script>
+<script src="js/share.js?v=116"></script>
+<script src="js/explore.js?v=116"></script>
+<script src="js/app.js?v=116"></script>
+</body>
+</html>

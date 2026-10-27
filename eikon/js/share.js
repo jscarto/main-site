@@ -153,6 +153,28 @@
     WM.forEach(([t, f, s]) => { ctx.font = `700 ${size * s}px "${f}", Georgia, serif`; gilt(t, x, y, size); x += ctx.measureText(t).width; });
     ctx.restore();
   }
+  // A modern icon carries a small line beneath its frame: that it is contemporary, and who painted it.
+  const capText = (icon) => (icon.modern ? `Contemporary icon · ${icon.modern.artist}` : "");
+  const CAP = { size: 28, lineH: 34, gap: 16 };   // gap: below the frame, which reaches about 4.5% of the icon's width past the image
+  const capFont = (size) => `italic ${size}px "EB Garamond", Georgia, serif`;
+  function capLines(icon, w, size) {
+    const txt = capText(icon);
+    if (!txt) return [];
+    // Too long for one line: break at the " · ", so the painter's name stays whole.
+    const lines = wrap(txt, Math.max(w, 260), capFont(size));
+    return (lines.length > 1 ? txt.split(" · ") : lines).slice(0, 2);
+  }
+  // The height to keep free below the icons for their captions, given the icons' height.
+  function capSpace(icons, ars, h, size) {
+    const n = Math.max(0, ...icons.map((ic, k) => capLines(ic, ars[k] * h, size).length));
+    return n ? Math.max(12, Math.round(ars[0] * h * 0.045)) + CAP.gap + n * Math.round(size * 1.2) : 0;
+  }
+  function caption(icon, x, y, w, h, size) {
+    const lines = capLines(icon, w, size); if (!lines.length) return;
+    const pad = Math.max(12, Math.round(w * 0.045)), lh = Math.round(size * 1.2);
+    shadowed(() => { ctx.fillStyle = "#d8c49a"; ctx.font = capFont(size); lines.forEach((l, i) => ctx.fillText(l, x + w / 2, y + h + pad + CAP.gap + size * 0.8 + i * lh)); });
+  }
+
   // Text that stays legible over a photograph: a soft dark halo, then the fill.
   function shadowed(fn) {
     ctx.save(); ctx.shadowColor = "rgba(0,0,0,.9)"; ctx.shadowBlur = 18; ctx.shadowOffsetY = 2; fn(); ctx.restore();
@@ -187,7 +209,7 @@
     ctx.save(); ctx.globalCompositeOperation = "lighter"; ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); ctx.restore();
     ctx.fillStyle = ctx.createPattern(grain, "repeat"); ctx.fillRect(0, 0, W, H);
 
-    if (land) return drawLandscape(t, imgs, W, H);
+    if (land) return drawLandscape(t, imgs, icons, W, H);
 
     // The picture fades to black toward the top and bottom edges, so text sits on shadow.
     g = ctx.createLinearGradient(0, 0, 0, H);
@@ -237,13 +259,15 @@
         const mid = (lo + hi) / 2;
         const w = Math.min(rowWidth(mid), W - 120);
         const hd = fitHead(Math.max(w, 480) - 20);
-        if (rowWidth(mid) <= W - 120 && imgTop + mid + hd.size + 24 <= hd.headTop) lo = mid; else hi = mid;
+        if (rowWidth(mid) <= W - 120 && imgTop + mid + capSpace(icons, ars, mid, CAP.size) + hd.size + 24 <= hd.headTop) lo = mid; else hi = mid;
       }
       h = lo; head = fitHead(Math.max(Math.min(rowWidth(h), W - 120), 480) - 20);
     } else {
       head = fitHead(W - 140);
       const availH = head.headTop - head.size - 40 - imgTop, availW = W - 180;
       h = availH;
+      // Shrink until the icons and any captions beneath them fit.
+      for (let i = 0; i < 3; i++) h = availH - capSpace(icons, ars, h, CAP.size);
       if (rowWidth(h) > availW) h = (availW - gap * (imgs.length - 1)) / ars.reduce((a, r) => a + r, 0);
     }
     const textW = story ? Math.max(Math.min(rowWidth(h), W - 120), 480) : W - 140;
@@ -259,8 +283,9 @@
     // The icon(s), centered in the space between the date and the headline.
     const totalW = rowWidth(h);
     let x = (W - totalW) / 2;
-    const y = imgTop + Math.max(0, (head.headTop - head.size - (story ? 24 : 40) - imgTop - h) / 2);
-    imgs.forEach((im, k) => { const w = ars[k] * h; kiot(im, x, y, w, h); x += w + gap; });
+    const capH = capSpace(icons, ars, h, CAP.size);
+    const y = imgTop + Math.max(0, (head.headTop - head.size - (story ? 24 : 40) - imgTop - h - capH) / 2);
+    imgs.forEach((im, k) => { const w = ars[k] * h; kiot(im, x, y, w, h); caption(icons[k], x, y, w, h, CAP.size); x += w + gap; });
 
     // Headline, foot line and the Eikon mark.
     let ty = head.headTop;
@@ -277,7 +302,7 @@
   }
 
   // Landscape: the icon on the left, and the words in a column on the right, over shadow.
-  function drawLandscape(t, imgs, W, H) {
+  function drawLandscape(t, imgs, icons, W, H) {
     let g = ctx.createLinearGradient(0, 0, W, 0);
     g.addColorStop(0, "rgba(2,1,0,.35)"); g.addColorStop(0.42, "rgba(2,1,0,0)"); g.addColorStop(0.6, "rgba(2,1,0,.72)"); g.addColorStop(1, "rgba(2,1,0,.95)");
     ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
@@ -290,11 +315,13 @@
     const gap = 36, ars = imgs.map((im) => im.width / im.height);
     const boxX = 90, boxY = 90, boxW = W * 0.5 - 130, boxH = H - 180;
     const rowW = (hh) => ars.reduce((a, r) => a + r * hh, 0) + gap * (imgs.length - 1);
+    const cs = 26;   // caption size
     let h = boxH;
+    for (let i = 0; i < 3; i++) h = boxH - capSpace(icons, ars, h, cs);
     if (rowW(h) > boxW) h = (boxW - gap * (imgs.length - 1)) / ars.reduce((a, r) => a + r, 0);
     let x = boxX + (boxW - rowW(h)) / 2;
-    const y = boxY + (boxH - h) / 2;
-    imgs.forEach((im, k) => { const w = ars[k] * h; kiot(im, x, y, w, h); x += w + gap; });
+    const y = boxY + (boxH - h - capSpace(icons, ars, h, cs)) / 2;
+    imgs.forEach((im, k) => { const w = ars[k] * h; kiot(im, x, y, w, h); caption(icons[k], x, y, w, h, cs); x += w + gap; });
 
     // The words, centered in the right-hand column.
     const colL = W * 0.54, colR = W - 80, cx = (colL + colR) / 2, colW = colR - colL;
