@@ -399,9 +399,10 @@
     if (icon.kind === "christ") set.add("Jesus Christ");
     return [...set];
   }
-  function network(root, list) {
-    const d3 = window.d3, box = root.querySelector(".ex-net");
-    const W = box.clientWidth, H = Math.round(Math.min(Math.max(W * 0.8, 460), window.innerHeight * 0.82));
+  // The figures, the icons they share and their places: the main graph around Christ, and those alone in their icons
+  // packed in a cluster beside it (or below it). The poster (tools/poster) draws the same graph.
+  function graph(side) {
+    const d3 = window.d3;
     const nodes = new Map(), links = new Map();
     ICONS.forEach((icon) => {
       // An icon with no single figure to name (a Menaion of all the saints, the Cross, a church) is shown by what it depicts.
@@ -436,7 +437,7 @@
     lone.sort((a, b) => b.icons.length - a.icons.length || order.indexOf(a.group) - order.indexOf(b.group) || a.id.localeCompare(b.id));
     lone.forEach((d) => { d.r = rad(d.icons.length) + 5; d.lone = true; });
     d3.packSiblings(lone);
-    const enc = lone.length ? d3.packEnclose(lone) : null, side = W >= H * 1.05;
+    const enc = lone.length ? d3.packEnclose(lone) : null;
     if (enc) {
       const reach = side ? d3.max(N, (n) => n.x + rad(n.icons.length)) : d3.max(N, (n) => n.y + rad(n.icons.length));
       const cx = side ? reach + 90 + enc.r : 0, cy = side ? 0 : reach + 90 + enc.r;
@@ -444,6 +445,12 @@
       enc.x = cx; enc.y = cy;
     }
     N.push(...lone);
+    return { N, L, deg, rad, enc };
+  }
+  function network(root, list) {
+    const d3 = window.d3, box = root.querySelector(".ex-net");
+    const W = box.clientWidth, H = Math.round(Math.min(Math.max(W * 0.8, 460), window.innerHeight * 0.82));
+    const { N, L, deg, rad, enc } = graph(W >= H * 1.05);
     const svg = d3.select(box).html("").append("svg").attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`).attr("role", "img")
       .attr("aria-label", "A network of the figures in the icons: lines join figures who appear in the same icon");
     // Each group's color as a sphere: full at the center, darkening toward the rim.
@@ -671,5 +678,7 @@
       if (tab === "where") fullScreen(root.querySelector(".atlas-frame"), () => { clearTimeout(t); t = setTimeout(draw, 120); });
     }).catch(() => { loading.textContent = "The map could not be loaded."; });
   }
-  window.EikonExplore = { render, reel };
+  // The data behind the three views, for the poster (tools/poster).
+  const data = { KINDS, KIND_NAME, KIND_COLOR, HATCH, kindOf, groupOf, places, journeys, ABROAD, graph, ordinal, century };
+  window.EikonExplore = { render, reel, data };
 })();
