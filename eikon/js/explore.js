@@ -333,7 +333,7 @@
       const all = rows.find((r) => r.c === c); const icons = KINDS.flatMap((k) => all[k]).sort((a, b) => a.year - b.year);
       if (!icons.length) return;
       svg.selectAll(".ch-bar").classed("dim", (o) => o.data.c !== c);
-      showList(list, `The ${ordinal(c)} century`, "Painted in", icons); reset.hidden = false;
+      showList(list, `The ${ordinal(c)} century`, "Painted in", icons, undefined, false); reset.hidden = false;
     });
     svg.append("text").attr("class", "ch-cap").attr("x", (m.l + W - m.r) / 2).attr("y", H - 8).attr("text-anchor", "middle").text("Century");
     const tip = box.appendChild(Object.assign(document.createElement("div"), { className: "ch-tip", hidden: true }));
@@ -357,7 +357,7 @@
         if (e.type === "keydown" && e.key !== "Enter" && e.key !== " ") return;
         const icons = d.data[d.key].slice().sort((a, b) => a.year - b.year); if (!icons.length) return;
         svg.selectAll(".ch-bar").classed("dim", (o) => o !== d);
-        showList(list, `${KIND_NAME[d.key]} · ${ordinal(d.data.c)} century`, "Painted in", icons); reset.hidden = false;
+        showList(list, `${KIND_NAME[d.key]} · ${ordinal(d.data.c)} century`, "Painted in", icons, undefined, false); reset.hidden = false;
       });
     // The legend doubles as a filter: click a subject to list every icon of it.
     root.querySelector(".ch-legend").innerHTML = KINDS.map((k) => `<button type="button" data-k="${k}"><i style="background:${swatch(k)}"></i>${KIND_NAME[k]} <small>${ICONS.filter((i) => kindOf(i) === k).length}</small></button>`).join("");
