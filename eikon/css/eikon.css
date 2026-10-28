@@ -659,3 +659,21 @@ section.tail { padding-top: 0; }
 .modern-badge { display: inline-block; margin-right: 8px; padding: 2px 8px; border: 1px solid rgba(178, 58, 34, .75); border-radius: 2px;
   font-family: var(--label); font-style: normal; font-size: 0.78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--vellum); vertical-align: 1px; }
 .modern-badge.sm { margin-right: 6px; padding: 0 5px; font-size: 0.66rem; letter-spacing: .14em; }
+
+/* ---------- about ---------- */
+/* One placard read like an icon's description: a gilded label over each part, a drop cap opening its first paragraph. */
+.about { max-width: 72ch; }
+.about section { padding-block: 0; }
+.about section + section { margin-top: clamp(30px, 4vw, 44px); padding-top: clamp(26px, 3.5vw, 38px); border-top: 1px solid rgba(201, 162, 74, .2); }
+.about h3 { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; font-family: var(--label); font-weight: 400; font-size: var(--step-0); letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+.about h3::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201, 162, 74, .45), transparent); }
+.about p + p { margin-top: 1em; }
+.about h3 + p::first-letter { font-family: var(--display); float: left; font-size: 3.6em; line-height: .8; padding: 6px 10px 0 0; color: var(--cinnabar); filter: brightness(1.3); }
+/* Beside the text on a wide screen, the spiral of icons (drawn in app.js); on narrower screens the text stands alone. */
+.about-grid { display: grid; grid-template-columns: minmax(0, 72ch) minmax(0, 1fr); gap: clamp(28px, 4vw, 64px); align-items: stretch; }
+.about-spiral { margin: 0; display: flex; flex-direction: column; pointer-events: none; min-width: 0; min-height: 640px; }
+.spiral-stage { position: relative; flex: 1; min-height: 0; }
+.spiral-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+@media (max-width: 1000px) { .about-grid { grid-template-columns: minmax(0, 1fr); } .about-spiral { display: none; } }
+/* Five sections share one row on a phone. */
+@media (max-width: 440px) { .nav { flex-wrap: nowrap; gap: 0; } .nav a { padding: 6px 4px; font-size: .84rem; letter-spacing: .04em; } }

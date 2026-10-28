@@ -1,5 +1,5 @@
 /* Eikon — views and routing. Views are named by a bare hash token at the app's root (#today, #library,
-   #day.2026-10-21, #calendar, #explore, #sources); an icon has a page of its own (icon/rublev-trinity/). */
+   #day.2026-10-21, #calendar, #explore, #sources, #about); an icon has a page of its own (icon/rublev-trinity/). */
 (function () {
   const C = window.EikonCalendar;
   const ICONS = window.EIKON_ICONS;
@@ -490,6 +490,166 @@
     </div></section>`;
   }
 
+  /* ---------- ABOUT ---------- */
+  function renderAbout() {
+    view.innerHTML = `
+    <section><div class="wrap">
+      <div class="section-head"><div><p class="eyebrow">About Eikon</p><h2>A Library of the Saints</h2></div></div>
+      <div class="about-grid">
+      <div class="placard about">
+        <section>
+          <h3>About</h3>
+          <p>Eikon is a deep and growing collection of the iconography of the Orthodox Church, now ${ICONS.length} icons. Christians have painted the faces of Christ, his Mother and the saints since the first centuries. In 787 the Seventh Ecumenical Council affirmed that icons are to be venerated, because the honor shown to an image passes to the one it shows. An icon is not decoration. It is a window: it teaches the faith to those who cannot read, keeps the Church's memory of its saints, and stands in every Orthodox church and home as a place of prayer. Icons are painted within a tradition handed down from iconographer to iconographer, so that a panel from Sinai in the sixth century and one from Novgorod a thousand years later speak the same language.</p>
+          <p>This archive gathers icons from Constantinople and Crete, Russia and the Balkans, Georgia and Sinai, and from iconographers working today. Together they bear witness to the breadth of that tradition and its reach across the centuries.</p>
+        </section>
+        <section>
+          <h3>Sources</h3>
+          <p>Many of the featured icons come from the public domain and other publicly available resources. Every icon is paired with information about the saints and figures it shows, researched and checked for accuracy and authenticity. A number of icons are also featured by the gracious permission of living iconographers, who carry on this important work today.</p>
+          <p>Each icon's page credits its image and links to the original record. <a href="#sources">Read more about the sources and licenses</a>.</p>
+        </section>
+        <section>
+          <h3>Author</h3>
+          <p>This project was created by <a href="https://www.joshuastevens.net/" target="_blank" rel="noopener">Joshua Stevens</a>. Joshua is a cartographer by education and trade, with a deep interest in the Church, its history and its art. This project brings those interests together with his craft of data visualization and communication, to give the public free access to explore these icons.</p>
+          <p>Joshua is a catechumen of Holy Ascension Orthodox Church in Albion, Michigan.</p>
+        </section>
+      </div>
+      <figure class="about-spiral" aria-hidden="true"><div class="spiral-stage"><canvas></canvas></div></figure>
+      </div>
+    </div></section>`;
+    // The spiral is drawn only on a screen wide enough to show it, and starts if a narrow window is widened.
+    const fig = view.querySelector(".about-spiral"), wide = matchMedia("(min-width: 1001px)");
+    const start = () => { if (wide.matches && fig.isConnected && !fig.dataset.on) { fig.dataset.on = "1"; aboutSpiral(fig); } };
+    start(); wide.addEventListener("change", start);
+  }
+
+  // Beside the About text, the library as a spiral of light: Christ at the top, then every other icon from the newest
+  // to the oldest, turning downward and shrinking until the oldest are sparks rising from the domes of a church.
+  // Each spark is an icon too.
+  function aboutSpiral(fig) {
+    const stage = fig.querySelector(".spiral-stage"), cv = fig.querySelector("canvas"), ctx = cv.getContext("2d");
+    const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const christ = BY_ID["sinai-pantocrator"] || ICONS.find((i) => i.kind === "christ");
+    const rest = ICONS.filter((i) => i !== christ).sort((a, b) => b.year - a.year);
+    const pics = new Map();
+    const pic = (icon) => {
+      if (!pics.has(icon.id)) { const im = new Image(); im.onload = () => { if (still) draw(0); }; im.src = icon.thumb; pics.set(icon.id, im); }
+      return pics.get(icon.id);
+    };
+    // One soft spark, drawn once and stamped for every small icon.
+    const spark = document.createElement("canvas"); spark.width = spark.height = 32;
+    { const g = spark.getContext("2d"), r = g.createRadialGradient(16, 16, 0, 16, 16, 16);
+      r.addColorStop(0, "rgba(255,246,214,1)"); r.addColorStop(.25, "rgba(255,214,140,.75)"); r.addColorStop(1, "rgba(255,170,70,0)");
+      g.fillStyle = r; g.fillRect(0, 0, 32, 32); }
+    let W = 0, H = 0, dpr = 1, items = [], motes = [], head = null, cx = 0, gy = 0, u = 0, apexY = 0;
+    const PIC = 9;                                     // the smallest picture; smaller icons are sparks
+    function layout() {
+      const r = stage.getBoundingClientRect(); W = r.width; H = r.height; dpr = Math.min(2, devicePixelRatio || 1);
+      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+      cx = W / 2; u = Math.min(W * 0.4, 190); gy = H - 6; apexY = gy - 1.66 * u - 8;
+      const s0 = Math.min(W * 0.4, 200), y0 = 10 + s0 + 26, span = apexY - y0;
+      head = { icon: christ, h: s0, y: 10 + s0 / 2 };
+      // The newest icons are pictures, each smaller than the one before, stepping down the spiral by an amount in
+      // proportion to their size. The rest are sparks, crowding ever closer as they near the cross of the church.
+      const nPic = Math.min(42, rest.length), s1 = s0 * 0.5, q = Math.pow(PIC / s1, 1 / nPic), split = 0.55;
+      const hs = rest.slice(0, nPic).map((_, i) => s1 * Math.pow(q, i)), total = hs.reduce((x, y) => x + y, 0);
+      let acc = 0, seed = 7;
+      const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+      items = rest.map((icon, i) => {
+        let t, h;
+        if (i < nPic) { h = hs[i]; t = split * acc / total; acc += h; }
+        else { const f = (i - nPic) / Math.max(1, rest.length - nPic - 1); t = split + (1 - split) * Math.pow(f, 0.75); h = PIC * 0.6 * Math.pow(1 - f, 1.3) + 1.1; }
+        const small = i >= nPic, ar = icon.w && icon.h ? icon.w / icon.h : 0.75;
+        let R = W * 0.36 * Math.pow(1 - t, 0.42) * Math.min(1, 0.45 + t * 5);
+        if (!small) R = Math.min(R, W / 2 - (h * ar) / 2 - 6);
+        return { icon, t, h, ar, small, R, th: Math.PI * 2 * 3 * t, y: y0 + span * t,
+          jx: small ? (rnd() - .5) * (10 + 46 * t) : 0, jy: small ? (rnd() - .5) * (8 + 30 * t) : 0, ph: rnd() * 6.28, sp: 0.0008 + rnd() * 0.0016 };
+      });
+      // In place of a glow, motes of light rise around the church and fade, thinning out with distance from it.
+      const bell = () => (rnd() + rnd() + rnd() - 1.5) / 1.5;
+      motes = Array.from({ length: 260 }, () => {
+        const x = cx + bell() * u * 1.25, y = gy - u * (0.2 + rnd() * 1.6) + bell() * u * .25;
+        const d = Math.hypot((x - cx) / (u * 1.3), (y - (gy - .8 * u)) / (u * 1.1));
+        return { x, y, rise: 30 + rnd() * 90, sway: 3 + rnd() * 8, r: 1.4 + rnd() * 2.6, a: .55 * Math.max(0, 1 - d * .8), off: rnd(), sp: 0.00004 + rnd() * 0.00008, k: rnd() * 6.28 };
+      });
+    }
+    function onion(x, by, w, h) {                       // an onion dome standing on (x, by), w wide at its widest, h tall
+      ctx.moveTo(x - w * .36, by);
+      ctx.bezierCurveTo(x - w * .62, by - h * .3, x - w * .58, by - h * .62, x, by - h);
+      ctx.bezierCurveTo(x + w * .58, by - h * .62, x + w * .62, by - h * .3, x + w * .36, by);
+      ctx.closePath();
+    }
+    function cross(x, y, l) {                           // a three-barred cross rising l from (x, y)
+      const tip = y - l;
+      ctx.moveTo(x, y); ctx.lineTo(x, tip);
+      ctx.moveTo(x - l * .16, tip + l * .16); ctx.lineTo(x + l * .16, tip + l * .16);
+      ctx.moveTo(x - l * .3, tip + l * .34); ctx.lineTo(x + l * .3, tip + l * .34);
+      ctx.moveTo(x - l * .2, tip + l * .58); ctx.lineTo(x + l * .2, tip + l * .7);
+    }
+    function church() {
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(cx - .95 * u, gy - .34 * u, 1.9 * u, .34 * u);                       // aisles
+      ctx.rect(cx - .55 * u, gy - .5 * u, 1.1 * u, .5 * u);                         // nave
+      [-1, 0, 1].forEach((k) => { const x = cx + k * .367 * u; ctx.moveTo(x - .183 * u, gy - .5 * u); ctx.arc(x, gy - .5 * u, .183 * u, Math.PI, 0); });   // its rounded gables
+      ctx.rect(cx - .15 * u, gy - .94 * u, .3 * u, .3 * u);                         // drum
+      onion(cx, gy - .94 * u, .38 * u, .42 * u);
+      [-1, 1].forEach((k) => { const x = cx + k * .7 * u; ctx.rect(x - .08 * u, gy - .5 * u, .16 * u, .17 * u); onion(x, gy - .5 * u, .22 * u, .26 * u); });
+      ctx.fillStyle = "#070504"; ctx.shadowColor = "rgba(255,190,100,.45)"; ctx.shadowBlur = 14; ctx.fill(); ctx.shadowBlur = 0; ctx.fill();
+      ctx.beginPath(); cross(cx, gy - 1.35 * u, .3 * u); [-1, 1].forEach((k) => cross(cx + k * .7 * u, gy - .75 * u, .17 * u));
+      ctx.strokeStyle = "#070504"; ctx.lineWidth = Math.max(1.6, u * .026); ctx.lineCap = "round";
+      ctx.shadowColor = "rgba(255,200,120,.7)"; ctx.shadowBlur = 10; ctx.stroke(); ctx.shadowBlur = 0; ctx.stroke();
+      ctx.fillStyle = "rgba(255,186,96,.32)";                                       // candlelight in the windows
+      [-.3, 0, .3].forEach((k) => { const x = cx + k * u, w = .06 * u, top = gy - .38 * u; ctx.beginPath(); ctx.rect(x - w / 2, top + w / 2, w, .17 * u); ctx.arc(x, top + w / 2, w / 2, Math.PI, 0); ctx.fill(); });
+      [-.07, .07].forEach((k) => { const x = cx + k * u, w = .04 * u, top = gy - .86 * u; ctx.beginPath(); ctx.rect(x - w / 2, top + w / 2, w, .12 * u); ctx.arc(x, top + w / 2, w / 2, Math.PI, 0); ctx.fill(); });
+      ctx.restore();
+    }
+    function framed(icon, x, y, h, w, alpha, glow) {
+      const im = pic(icon);
+      ctx.globalAlpha = alpha;
+      ctx.shadowColor = `rgba(255,190,90,${glow})`; ctx.shadowBlur = h * .18;
+      ctx.fillStyle = "#1a120b"; ctx.fillRect(x - w / 2 - 2, y - h / 2 - 2, w + 4, h + 4);
+      ctx.shadowBlur = 0;
+      if (im.complete && im.naturalWidth) ctx.drawImage(im, x - w / 2, y - h / 2, w, h);
+      ctx.strokeStyle = "rgba(201,162,74,.85)"; ctx.lineWidth = 1; ctx.strokeRect(x - w / 2 - 1.5, y - h / 2 - 1.5, w + 3, h + 3);
+      ctx.globalAlpha = 1;
+    }
+    function draw(time) {
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, H);
+      ctx.globalCompositeOperation = "lighter";
+      for (const m of motes) {
+        const f = still ? m.off : (time * m.sp + m.off) % 1, x = m.x + Math.sin(f * 6.28 + m.k) * m.sway, y = m.y - f * m.rise;
+        const edge = Math.min(1, Math.min(x, W - x) / 40);               // and fade before the canvas edge
+        ctx.globalAlpha = m.a * Math.sin(Math.PI * f) * Math.max(0, edge);
+        if (ctx.globalAlpha > .01) ctx.drawImage(spark, x - m.r, y - m.r, m.r * 2, m.r * 2);
+      }
+      ctx.globalCompositeOperation = "source-over"; ctx.globalAlpha = 1;
+      church();
+      const phi = 0.6 + (still ? 0 : time * 0.00003);
+      const placed = items.map((it) => {
+        const a = it.th + phi, z = Math.cos(a);
+        return { it, z, x: cx + it.R * Math.sin(a) + it.jx, y: it.y + it.R * 0.1 * z + it.jy };
+      }).sort((p, q) => p.z - q.z);
+      for (const { it, z, x, y } of placed) {
+        const near = (z + 1) / 2;
+        if (it.small) {
+          const tw = still ? .85 : .55 + .45 * Math.sin(time * it.sp + it.ph), r = Math.max(1.8, it.h * 1.05) * (.7 + .3 * near);
+          ctx.globalCompositeOperation = "lighter"; ctx.globalAlpha = (.22 + .5 * near) * tw;
+          ctx.drawImage(spark, x - r, y - r, r * 2, r * 2);
+          ctx.globalCompositeOperation = "source-over"; ctx.globalAlpha = 1;
+        } else {
+          const h = it.h * (.8 + .2 * near);
+          framed(it.icon, x, y, h, h * it.ar, .45 + .55 * near, .12 + .2 * near);
+        }
+      }
+      const ar = christ.w / christ.h || .75;
+      framed(christ, cx, head.y, head.h, head.h * ar, 1, .45);
+    }
+    layout();
+    const ro = new ResizeObserver(() => { layout(); draw(performance.now()); });
+    ro.observe(stage);
+    if (!still) (function loop(now) { if (!cv.isConnected) { ro.disconnect(); return; } if (W && cv.offsetParent) draw(now); requestAnimationFrame(loop); })(performance.now());
+  }
+
   /* ---------- lightbox ---------- */
   function lightbox(icon) {
     const lb = document.createElement("div"); lb.className = "lightbox"; lb.setAttribute("role", "dialog"); lb.setAttribute("aria-label", icon.title);
@@ -536,6 +696,7 @@
     else if (name === "calendar") renderCalendar();
     else if (name === "day" && /^\d{4}-\d{2}-\d{2}$/.test(arg)) renderCalendar(arg);
     else if (name === "sources") renderSources();
+    else if (name === "about") renderAbout();
     else if (name === "explore") window.EikonExplore.render(view, arg);
     else renderToday();
     view.classList.remove("view-enter"); void view.offsetWidth; view.classList.add("view-enter");

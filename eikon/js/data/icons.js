@@ -7924,8 +7924,7 @@ window.EIKON_ICONS = [
   "alt": "",
   "cardName": "Holy Apostle Thaddeus",
   "subjects": [
-   "St Thaddeus",
-   "Mandylion"
+   "St Thaddeus"
   ],
   "days": [
    {
@@ -9905,7 +9904,7 @@ window.EIKON_ICONS = [
   "cardName": "Christ Pantocrator",
   "subjects": [
    "Jesus Christ",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -13040,7 +13039,7 @@ window.EIKON_ICONS = [
   "cardName": "St John the Baptist",
   "subjects": [
    "St John the Baptist",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -13629,7 +13628,7 @@ window.EIKON_ICONS = [
   "cardName": "Synaxis of the Archangel Gabriel",
   "subjects": [
    "Archangel Gabriel",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -13680,7 +13679,7 @@ window.EIKON_ICONS = [
   "cardName": "The Mother of God",
   "subjects": [
    "Theotokos",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -13726,7 +13725,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Chief Apostles Peter and Paul",
   "subjects": [
    "St Peter",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -13776,7 +13775,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Chief Apostles Peter and Paul",
   "subjects": [
    "St Paul",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -13826,7 +13825,7 @@ window.EIKON_ICONS = [
   "cardName": "Synaxis of the Archangel Michael",
   "subjects": [
    "Archangel Michael",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -16540,7 +16539,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Chief Apostles Peter and Paul",
   "subjects": [
    "St Peter",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -16590,7 +16589,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Chief Apostles Peter and Paul",
   "subjects": [
    "St Paul",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -16934,7 +16933,7 @@ window.EIKON_ICONS = [
   "cardName": "Synaxis of the Archangel Michael",
   "subjects": [
    "Archangel Michael",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -17235,7 +17234,7 @@ window.EIKON_ICONS = [
   "cardName": "Christ the Savior",
   "subjects": [
    "Jesus Christ",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -18083,7 +18082,7 @@ window.EIKON_ICONS = [
   "cardName": "St John the Baptist",
   "subjects": [
    "St John the Baptist",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -18482,7 +18481,7 @@ window.EIKON_ICONS = [
   "cardName": "Christ in Glory",
   "subjects": [
    "Jesus Christ",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -18917,6 +18916,7 @@ window.EIKON_ICONS = [
   "cardName": "St Athanasius of Athos",
   "subjects": [
    "St Athanasius of Athos",
+   "St Barlaam",
    "St Joasaph"
   ],
   "days": [
@@ -19319,7 +19319,7 @@ window.EIKON_ICONS = [
   "cardName": "St Nicholas the Wonderworker",
   "subjects": [
    "St Nicholas",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -19369,7 +19369,7 @@ window.EIKON_ICONS = [
   "cardName": "St Basil the Great",
   "subjects": [
    "St Basil the Great",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -21692,7 +21692,7 @@ window.EIKON_ICONS = [
   "cardName": "St Leontius of Rostov",
   "subjects": [
    "St Leontius of Rostov",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -21744,7 +21744,7 @@ window.EIKON_ICONS = [
   "cardName": "St Gregory the Theologian",
   "subjects": [
    "St Gregory the Theologian",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -21795,7 +21795,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Apostle and Evangelist John the Theologian",
   "subjects": [
    "St John the Theologian",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -21849,7 +21849,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Apostle Andrew the First-called",
   "subjects": [
    "St Andrew",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -21900,7 +21900,7 @@ window.EIKON_ICONS = [
   "cardName": "St John Chrysostom",
   "subjects": [
    "St John Chrysostom",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -21951,7 +21951,7 @@ window.EIKON_ICONS = [
   "cardName": "St Peter, Metropolitan of Moscow",
   "subjects": [
    "St Peter of Moscow",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -22003,7 +22003,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Great Martyr Demetrios",
   "subjects": [
    "St Demetrios",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -22054,7 +22054,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Great Martyr George",
   "subjects": [
    "St George",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -22155,7 +22155,7 @@ window.EIKON_ICONS = [
   "cardName": "Synaxis of the Archangel Gabriel",
   "subjects": [
    "Archangel Gabriel",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -24433,7 +24433,7 @@ window.EIKON_ICONS = [
   "cardName": "Synaxis of the Archangel Michael",
   "subjects": [
    "Archangel Michael",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -24483,7 +24483,7 @@ window.EIKON_ICONS = [
   "cardName": "The Mother of God",
   "subjects": [
    "Theotokos",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -24529,7 +24529,7 @@ window.EIKON_ICONS = [
   "cardName": "St John the Baptist",
   "subjects": [
    "St John the Baptist",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -28222,7 +28222,7 @@ window.EIKON_ICONS = [
   "cardName": "Synaxis of the Archangel Michael",
   "subjects": [
    "Archangel Michael",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -28567,7 +28567,7 @@ window.EIKON_ICONS = [
   "cardName": "The Mother of God",
   "subjects": [
    "Theotokos",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -28810,7 +28810,7 @@ window.EIKON_ICONS = [
   "cardName": "St John Chrysostom",
   "subjects": [
    "St John Chrysostom",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -30231,7 +30231,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Apostle and Evangelist John the Theologian",
   "subjects": [
    "St John the Theologian",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -30281,7 +30281,7 @@ window.EIKON_ICONS = [
   "cardName": "St John the Baptist",
   "subjects": [
    "St John the Baptist",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -30626,7 +30626,7 @@ window.EIKON_ICONS = [
   "cardName": "The Mother of God",
   "subjects": [
    "Theotokos",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [],
   "month": null,
@@ -30672,7 +30672,7 @@ window.EIKON_ICONS = [
   "cardName": "Holy Apostle Andrew the First-called",
   "subjects": [
    "St Andrew",
-   "Deesis"
+   "Deesis tier"
   ],
   "days": [
    {
@@ -35945,8 +35945,7 @@ window.EIKON_ICONS = [
   "alt": "",
   "cardName": "The Forty Martyrs of Sebaste",
   "subjects": [
-   "St Cyrion of Sebaste",
-   "Forty Martyrs of Sebaste"
+   "St Cyrion of Sebaste"
   ],
   "days": [
    {
