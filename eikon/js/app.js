@@ -500,7 +500,7 @@
         <section>
           <h3>About</h3>
           <p>Eikon is a deep and growing collection of the iconography of the Orthodox Church, now ${ICONS.length} icons. Christians have painted the faces of Christ, his Mother and the saints since the first centuries. In 787 the Seventh Ecumenical Council affirmed that icons are to be venerated, because the honor shown to an image passes to the one it shows. An icon is not decoration. It is a window: it teaches the faith to those who cannot read, keeps the Church's memory of its saints, and stands in every Orthodox church and home as a place of prayer. Icons are painted within a tradition handed down from iconographer to iconographer, so that a panel from Sinai in the sixth century and one from Novgorod a thousand years later speak the same language.</p>
-          <p>This archive gathers icons from Constantinople and Crete, Russia and the Balkans, Georgia and Sinai, and from iconographers working today. Together they bear witness to the breadth of that tradition and its reach across the centuries.</p>
+          <p>This archive gathers icons from Constantinople to Crete, from Russia to Sinai, and across the globe. It also includes contemporary works from iconographers of today. Together they bear witness to the breadth of that tradition and its reach across the centuries.</p>
         </section>
         <section>
           <h3>Sources</h3>

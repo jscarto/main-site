@@ -664,7 +664,7 @@ section.tail { padding-top: 0; }
 /* One placard read like an icon's description: a gilded label over each part, a drop cap opening its first paragraph. */
 .about { max-width: 72ch; }
 .about section { padding-block: 0; }
-.about section + section { margin-top: clamp(30px, 4vw, 44px); padding-top: clamp(26px, 3.5vw, 38px); border-top: 1px solid rgba(201, 162, 74, .2); }
+.about section + section { margin-top: clamp(40px, 5.5vw, 60px); }
 .about h3 { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; font-family: var(--label); font-weight: 400; font-size: var(--step-0); letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
 .about h3::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(201, 162, 74, .45), transparent); }
 .about p + p { margin-top: 1em; }
